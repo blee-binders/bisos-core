@@ -1,0 +1,4 @@
+####+BEGIN: blee:bxPanel:sisterPanels :model "auto"
+*   =Sibling Panels=  :: [[elisp:(blee:bnsm:panel-goto "../bootstrap")][ *bootstrap* ]] || [[elisp:(blee:bnsm:panel-goto "../storage")][ *storage* ]] || 
+*   =Node Panels=     ::  [[elisp:(blee:bnsm:panel-goto "../main/")][ *This: (bisos-core)* ]] || [[elisp:(blee:bnsm:panel-goto "../../main/")][ *Parent: (blee-binders)* ]] ||
+####+END
