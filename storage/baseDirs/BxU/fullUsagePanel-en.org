@@ -93,6 +93,7 @@
 # eval: (setq-local ~primaryMajorMode 'org-mode)
 # eval: (setq-local ~blee:panelUpdater nil)
 # eval: (setq-local ~blee:dblockEnabler nil)
+# eval: (setq-local ~blee:dblockController "interactive")
 # eval: (img-link-overlays)
 # eval: (set-fill-column 115)
 # eval: (blee:fill-column-indicator/enable)

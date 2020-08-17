@@ -64,30 +64,9 @@ function examplesHookPost {
 $( examplesSeperatorTopLabel "EXTENSION EXAMPLES" )
 _EOF_
 
-    pypiFtpWalks
-
-    templatesEvolution
+    # templatesEvolution
     
     return
-}
-
-
-function pypiFtpWalks {
-    cat  << _EOF_
-$( examplesSeperatorChapter "ftpWalks: Uninstall" )
-ftoProc.sh -v -n showRun -i ftoWalkRunCmnd pypiProc.sh -i pkgUnInstall sys
-$( examplesSeperatorChapter "PyPi AuxNode ftpWalks" )
-ftoProc.sh -v -n showRun -i treeRecurse runFunc pypiProc.sh -i distClean
-ftoProc.sh -v -n showRun -i ftoWalkRunCmnd pypiProc.sh -i distClean
-ftoProc.sh -v -n showRun -i ftoWalkRunCmnd pypiProc.sh -i pkgInstall edit /bystar/dist/venv/dev-py2-bisos-3
-ftoProc.sh -v -n showRun -i ftoWalkRunCmnd pypiProc.sh -i pkgInstall edit sys
-ftoProc.sh -v -n showRun -i ftoWalkRunCmnd icmPlayer.sh -i clean ftoProc.sh pypiProc.sh
-ftoProc.sh -v -n showRun -i ftoWalkRunCmnd icmPlayer.sh -i pkgedPrep ftoProc.sh pypiProc.sh
-$( examplesSeperatorChapter "Under Files Update" )
-ftoProc.sh -v -n showRun -i updateUnderFilesTo  /libre/ByStar/InitialTemplates/update/fto/start/commonProc/anyFtoItem/ftoProcNode.sh ftoProc.sh
-ftoProc.sh -v -n showRun -i updateUnderFilesTo /libre/ByStar/InitialTemplates/software/starts/pypiProc.sh pypiProc.sh 
-_EOF_
- return
 }
 
 
@@ -104,33 +83,6 @@ cp /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/mainPanel.org 
 _EOF_
  return
 }
-
-
-function vis_updateUnderFilesTo {
-    G_funcEntry
-    function describeF {  cat  << _EOF_
-_EOF_
-    }
-    EH_assert [[ $# -eq 2 ]]
-
-    local updateToFile="$1"        
-    local underFilesName="$2"
-
-    if [ ! -f "${updateToFile}" ] ; then
-	EH_problem "Bad Usage Missing ${updateToFile}"
-	lpReturn
-    fi
-
-    local underFilesList=$(find . -type f -print | egrep "/${underFilesName}"'$')
-
-    for each in ${underFilesList} ; do
-	opDo cp ${updateToFile} ${each} 
-	opDo bx-dblock -i dblockUpdateFile ${each}
-    done
-
-    lpReturn
-}
-
 
 
 ####+BEGIN: bx:dblock:bash:end-of-file :types ""

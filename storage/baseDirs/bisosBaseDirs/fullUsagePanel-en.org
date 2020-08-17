@@ -51,12 +51,6 @@
 ####+END
 
 ####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "echo command"  :results "none" :comment "Allows you to edit" :afterComment "-- tailor the command line"
-blee:bxPanel:runResult dblock skipped due to blee:dblockEnabler 202008-14-23:23:10
-blee:bxPanel:runResult dblock skipped due to blee:dblockEnabler 202008-14-23:05:52
-blee:bxPanel:runResult dblock skipped due to blee:dblockEnabler 202008-14-22:47:04
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "echo command")][echo command]] *|*  =Allows you to edit= *|*  -- tailor the command line  [[elisp:(org-shifttab)][<)]] E|
-
-
 
 ####+END:
 
@@ -125,8 +119,10 @@ blee:bxPanel:runResult dblock skipped due to blee:dblockEnabler 202008-14-22:47:
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| */bisos/panels:* |]]  bxPanels  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
-** */bisos/panels/blee*
-** */bisos/panels/core*
+** */bisos/panels/blee*  -- then blee/{core,dev,model} /bisos/git/auth/bxRepos/blee-binders/blee-core
+** */bisos/panels/bisos* -- then bisos/{core,dev,model} /bisos/git/auth/bxRepos/blee-binders/bisos-core
+** */bisos/panels/bxde*  -- then bxde/{core,dev,model} /bisos/git/auth/bxRepos/blee-binders/bxde-core
+** 
 ** */bisos/panels/site*
 ** */bisos/panels/user*
 ** 
@@ -200,6 +196,7 @@ blee:bxPanel:runResult dblock skipped due to blee:dblockEnabler 202008-14-22:47:
 # eval: (setq-local ~primaryMajorMode 'org-mode)
 # eval: (setq-local ~blee:panelUpdater nil)
 # eval: (setq-local ~blee:dblockEnabler nil)
+# eval: (setq-local ~blee:dblockController "interactive")
 # eval: (img-link-overlays)
 # eval: (set-fill-column 115)
 # eval: (blee:fill-column-indicator/enable)
