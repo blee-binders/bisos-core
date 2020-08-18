@@ -51,7 +51,7 @@
 ####+END
 
 ####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "echo command"  :results "none" :comment "Allows you to edit" :afterComment "-- tailor the command line"
-
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "echo command")][echo command]] *|*  =Allows you to edit= *|*  -- tailor the command line  [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "ICMs -- This Platform Setting" :anchor "" :extraInfo ""
@@ -118,6 +118,9 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| */bisos/panels:* |]]  bxPanels  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** 
+** TODO Automate git cloning and sym link creations
+   SCHEDULED: <2020-08-17 Mon>
 ** 
 ** */bisos/panels/blee*  -- then blee/{core,dev,model} /bisos/git/auth/bxRepos/blee-binders/blee-core
 ** */bisos/panels/bisos* -- then bisos/{core,dev,model} /bisos/git/auth/bxRepos/blee-binders/bisos-core
