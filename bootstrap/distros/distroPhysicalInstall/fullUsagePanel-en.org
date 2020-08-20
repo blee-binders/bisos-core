@@ -41,6 +41,56 @@
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bootstrap/_nodeBase_")][@ =bootstrap= @]]    ::  Node: /bootstrap/
 ** [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Boot Media Creation" :anchor "" :extraInfo "usb-creator-gtk"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Boot Media Creation:* |]]  usb-creator-gtk  [[elisp:(org-shifttab)][<)]] E|
+####+END
+**  [[elisp:(org-cycle)][| ]]  0.1      ::  Boot Media Creation  [[elisp:(org-cycle)][| ]]
+***      Boot Media Creation      ::  Media Download 
+***      Boot Media By* Repo      ::  /uniform/Public/ext/unpub/distro/ubuntu/2004
+                                      /uniform/Public/ext/unpub/distro/ubuntu/2004/download.sh
+                                      /uniform/Public/ext/unpub/distro/ubuntu/2004//usbCreate.sh
+***      Boot Media USB Creation  ::  Startup Disk Creator   [[elisp:(lsip-local-run-command "sudo /usr/bin/python3 /usr/bin/usb-creator-gtk")][sudo /usr/bin/python3 /usr/bin/usb-creator-gtk]]
+***      Boot Media CD Creation   ::  Startup Disk Creator   [[elisp:(lsip-local-run-command "/usr/bin/python3 /usr/bin/usb-creator-gtk")][/usr/bin/python3 /usr/bin/usb-creator-gtk]]
+***  [[elisp:(org-cycle)][| ]]  Boot Media DVD Creation  ::  usb-creator-gtk Does Not work Use CD/DVD Creator  [[elisp:(org-cycle)][| ]]
+     Drag and drop the .iso file -- Don't write as one file -- Write Content
+***  [[elisp:(org-cycle)][| ]]  Boot From .iso file with existing GRUB  ::  https://help.ubuntu.com/community/Grub2/ISOBoot  [[elisp:(org-cycle)][| ]]
+        1) sudo apt-get install grml-rescueboot
+        2) Copy 32 bit or 64 bit os to target machine
+	3) mv os.iso /boot/grml
+	4) sudo update-grub
+	5) Reboot and select in grub
+***      Boot Media VMware        ::  
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Booting Process" :anchor "" :extraInfo "F1, F12 etc"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Booting Process:* |]]  F1, F12 etc  [[elisp:(org-shifttab)][<)]] E|
+####+END
+**  [[elisp:(org-cycle)][| ]]  0.2      ::  Booting Process  [[elisp:(org-cycle)][| ]]
+***      Older Machines           ::  F1 or F12
+***      Newer Machines           ::  Boot from USB
+***  [[elisp:(org-cycle)][| ]]  Dual Booting             ::  Ubuntu 16.04 and Win 10   [[elisp:(org-cycle)][| ]]
+****       https://sites.google.com/site/easylinuxtipsproject/windows
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Distro Installtion" :anchor "" :extraInfo "with intra user"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Distro Installtion:* |]]  with intra user  [[elisp:(org-shifttab)][<)]] E|
+####+END
+***    Debian Squeeze
+****     Answer “intra” for everything
+****     Make ready for root and remote access.
+         sudo su
+	 passwd
+         With CD back in apt-get -y install ssh
+         apt-get -y install openssh-server on sparc.
+***    ========
+***    Ubuntu The LTS (12.04) and the latest
+****     open a terminal -- Dash Home - Search Apps "xterm"
+****     sudo apt-get install gnome-panel
+****     Logout, At Login prompt, click on ubuntu and choose Gnome 
+****     Make ready for root and remote access.
+         sudo su
+	 passwd
+         With CD back in apt-get -y install ssh
+         apt-get -y install openssh-server on sparc.
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
