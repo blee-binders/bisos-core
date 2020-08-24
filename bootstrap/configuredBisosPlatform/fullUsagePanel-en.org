@@ -50,6 +50,16 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BleePanel: Re-Passwd ByStar User:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "gitRepos Auth Clone" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *gitRepos Auth Clone:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** TODO Add configPlatform.sh 
+   SCHEDULED: <2020-08-22 Sat>
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Switch /bisos/git/bxRepos to auth" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Switch /bisos/git/bxRepos to auth:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
