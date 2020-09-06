@@ -71,18 +71,19 @@
 ** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bootstrap/distros/distroPhysicalInstall")][@ ~distroPhysicalInstall~ @]]   ::  [[elisp:(org-cycle)][| /distroPhysicalInstall/ |]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "IntraUser: Getting The Default Python Pip" :anchor "" :extraInfo "apt install python-pip"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "IntraUser: Getting The Default Python Pip" :anchor "" :extraInfo "sudo apt-get -y install python3-pip"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *IntraUser: Getting The Default Python Pip:* |]]  apt install python-pip  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *IntraUser: Getting The Default Python Pip:* |]]  sudo apt-get -y install python3-pip  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "IntraUser: Obatining bisos.provison pip pkg" :anchor "" :extraInfo "pip install bisos.provision"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "IntraUser: Obatining bisos.provison pip pkg" :anchor "" :extraInfo "sudo pip3 install --upgrade bisos.provision"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *IntraUser: Obatining bisos.provison pip pkg:* |]]  pip install bisos.provision  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *IntraUser: Obatining bisos.provison pip pkg:* |]]  sudo pip3 install --upgrade bisos.provision  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "IntraUser: Run bisos-provision" :anchor "" :extraInfo "/usr/local/bin/bisosProvision.sh"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *IntraUser: Run bisos-provision:* |]]  /usr/local/bin/bisosProvision.sh  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** Choose sysBasePlatform
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStarUser: ByStar Login And Blee Panel Access" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStarUser: ByStar Login And Blee Panel Access:* |]]    [[elisp:(org-shifttab)][<)]] E|
