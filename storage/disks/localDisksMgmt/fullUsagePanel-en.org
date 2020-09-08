@@ -41,14 +41,147 @@
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/storage/_nodeBase_")][@ =storage= @]]    ::  Node: /storage/
 ** [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Locally Attached Disks" :anchor "" :extraInfo "Perhaps Unformatted and Unmounted"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Locally Attached Disks:* |]]  Perhaps Unformatted and Unmounted  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "block-device" :command "sudo blkid" :comment "Show attached disks" :afterComment "Non-Intrusive"
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /block-device/ :: [[elisp:(lsip-local-run-command "sudo blkid")][sudo blkid]] *|*  =Show attached disks= *|*  Non-Intrusive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "block-device" :command "sudo lsblk" :comment "List Disks" :afterComment "Non-Intrusive"
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /block-device/ :: [[elisp:(lsip-local-run-command "sudo lsblk")][sudo lsblk]] *|*  =List Disks= *|*  Non-Intrusive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "block-device" :command "sudo lsblk -o NAME,UUID" :comment "List Name and UUID of Disks" :afterComment "Non-Intrusive"
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /block-device/ :: [[elisp:(lsip-local-run-command "sudo lsblk -o NAME,UUID")][sudo lsblk -o NAME,UUID]] *|*  =List Name and UUID of Disks= *|*  Non-Intrusive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Disk Partitioning And Administration" :anchor "" :extraInfo "Perhaps Unformatted and Unmounted"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Disk Partitioning And Administration:* |]]  Perhaps Unformatted and Unmounted  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "gnome" :command "sudo baobab &" :comment "Disk Usage Analyzer" :afterComment "Non-Intrusive"
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /gnome/ :: [[elisp:(lsip-local-run-command "sudo baobab &")][sudo baobab &]] *|*  =Disk Usage Analyzer= *|*  Non-Intrusive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "gnome" :command "echo baobab /etc &" :comment "Specific Directory Disk Usage Analyzer" :afterComment "Non-Intrusive"
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /gnome/ :: [[elisp:(lsip-local-run-command "echo baobab /etc &")][echo baobab /etc &]] *|*  =Specific Directory Disk Usage Analyzer= *|*  Non-Intrusive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "gnome" :command "gnome-disks &" :comment "Disks Viewer And Partitioner" :afterComment "Can Be VERY Intrusive"
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /gnome/ :: [[elisp:(lsip-local-run-command "gnome-disks &")][gnome-disks &]] *|*  =Disks Viewer And Partitioner= *|*  Can Be Intrusive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "gnome" :command "gparted &" :comment "Disks Partitioner" :afterComment "Can Be VERY Intrusive"
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /gnome/ :: [[elisp:(lsip-local-run-command "gparted &")][gparted &]] *|*  =Disks Partitioner= *|*  Can Be VERY Intrusive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Locally Mounted Disks" :anchor "" :extraInfo "/etc/fstab or manually"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Locally Mounted Disks:* |]]  /etc/fstab or manually  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "fstab" :command "mount" :comment "Show mounted file system" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /fstab/ :: [[elisp:(lsip-local-run-command "mount")][mount]] *|*  =Show mounted file system= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "fstab" :command "sudo mount -a" :comment "Mount everything in fstab" :afterComment "Action"
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /fstab/ :: [[elisp:(lsip-local-run-command "sudo mount -a")][sudo mount -a]] *|*  =Mount everything in fstab= *|*  Action  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "mounted" :command "df -h" :comment "Disk space" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /mounted/ :: [[elisp:(lsip-local-run-command "df -h")][df -h]] *|*  =Disk space= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Disk Performance Monitoring" :anchor "" :extraInfo "Disk Activity"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Disk Performance Monitoring:* |]]  Disk Activity  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "perf" :command "iostat -x 1" :comment "iostat -y 5" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /perf/ :: [[elisp:(lsip-local-run-command "iostat -x 1")][iostat -x 1]] *|*  =iostat -y 5= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "disk-perf" :command "iotop -o" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /disk-perf/ :: [[elisp:(lsip-local-run-command "iotop -o")][iotop -o]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "disk-perf" :command "dstat" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /disk-perf/ :: [[elisp:(lsip-local-run-command "dstat")][dstat]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "disk-perf" :command "atop 1" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /disk-perf/ :: [[elisp:(lsip-local-run-command "atop 1")][atop 1]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "disk-perf" :command "echo ioping diskPart" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /disk-perf/ :: [[elisp:(lsip-local-run-command "echo ioping diskPart")][echo ioping diskPart]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Adding Disks To System" :anchor "" :extraInfo "partition, format, add to /etc/fstab"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Adding Disks To System:* |]]  partition, format, add to /etc/fstab  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** 
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "disk" :command "echo sudo mkdir -p /dd/this/d1" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /disk/ :: [[elisp:(lsip-local-run-command "echo sudo mkdir -p /dd/this/d1")][echo sudo mkdir -p /dd/this/d1]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "block-device" :command "sudo lsblk" :comment "Identify desired device" :afterComment "Non-Intrusive"
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /block-device/ :: [[elisp:(lsip-local-run-command "sudo lsblk")][sudo lsblk]] *|*  =Identify desired device= *|*  Non-Intrusive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "disk" :command "tail /etc/fstab" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /disk/ :: [[elisp:(lsip-local-run-command "tail /etc/fstab")][tail /etc/fstab]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "disk" :command "echo opDiskDriveAdmin.sh -i fstabLineGen /dev/sdb1 /dd/this/d1 ext4" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /disk/ :: [[elisp:(lsip-local-run-command "echo opDiskDriveAdmin.sh -i fstabLineGen /dev/sdb1 /dd/this/d1 ext4")][echo opDiskDriveAdmin.sh -i fstabLineGen /dev/sdb1 /dd/this/d1 ext4]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "disk" :command "echo 'opDiskDriveAdmin.sh -i fstabLineGen /dev/sdb1 /dd/this/d1 ext4 | sudo tee -a /etc/fstab'" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /disk/ :: [[elisp:(lsip-local-run-command "echo 'opDiskDriveAdmin.sh -i fstabLineGen /dev/sdb1 /dd/this/d1 ext4 | sudo tee -a /etc/fstab'")][echo 'opDiskDriveAdmin.sh -i fstabLineGen /dev/sdb1 /dd/this/d1 ext4 | sudo tee -a /etc/fstab']] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "disk" :command "tail /etc/fstab" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /disk/ :: [[elisp:(lsip-local-run-command "tail /etc/fstab")][tail /etc/fstab]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "disk" :command "sudo mount -a" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /disk/ :: [[elisp:(lsip-local-run-command "sudo mount -a")][sudo mount -a]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+** mkdir -p /dd/this/d1 
+** opDiskDriveAdmin.sh -i fstabLineGen /dev/sdd1 /dd/this/d1 ext4
+**   [[elisp:(find-file "/root@localhost:/etc/fstab")]["/root@localhost:/etc/fstab"]
+**  mount -a
+** 
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Software RAID Disks" :anchor "" :extraInfo "raid-1"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Software RAID Disks:* |]]  raid-1  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** Software RAID 1 Creation
+*** Partition two identical disks
+*** mdadm --create --verbose /dev/md0 --level=raid1 --raid-disks=2 --spare-disks=0 /dev/sda1 /dev/sdb1
+*** mkfs.ext4 /dev/md0
+*** mkdir -p /dd/this/md0 
+*** opDiskDriveAdmin.sh -i fstabLineGen /dev/md0 /dd/this/md0 ext4
+***   [[elisp:(find-file "/root@localhost:/etc/fstab")]["/root@localhost:/etc/fstab"]]
+***  mount -a
+** Software RAID 1 Monitor
+***  lpDiskRaidManage.sh
+***  cat /proc/mdstat | sudo mdadm --query --detail /dev/md0
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Partition A Disk -- Format -- Create File Sys" :anchor "" :extraInfo "gparted"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Partition A Disk -- Format -- Create File Sys:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** 
+** Use Gparted
+** Unmount 
+** Device -> Create Partition Table
+** Choose gpt -- apply
+** Partition -- New
+** File Sys -ext4 --- Label data1
+** 
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Format Disk Partitions" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Format Disk Partitions:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Make A File System" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Make A File System:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** 
+** echo mkdosfs -F 32 -I /dev/sdl
+** 
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "USB Creator" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *USB Creator:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** 
+**   [[elisp:(lsip-local-run-command "sudo /usr/bin/python3 /usr/bin/usb-creator-gtk")][sudo /usr/bin/python3 /usr/bin/usb-creator-gtk]] 
+** 
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
-*  [[elisp:(beginning-of-buffer)][Top]] ################ [[elisp:(delete-other-windows)][(1)]]              *Local Disks /etc/fstab*
-*  [[elisp:(org-cycle)][| ]]  [BxP]         ::  /fstb/   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  fstab         ::     [[elisp:(lsip-local-run-command "mount")][mount]] || [[elisp:(lsip-local-run-command "df -h")][df -h]] || [[elisp:(lsip-local-run-command "sudo mount -a")][sudo mount -a]]  [[elisp:(org-cycle)][| ]] 
-**  [[elisp:(org-cycle)][| ]]  fstab         ::     [[elisp:(find-file "/root@localhost:/etc/fstab")]]  (C-X q) --  [[elisp:(org-cycle)][| ]] 
-*  [[elisp:(org-cycle)][| ]]  [BxP]         ::  NOTYET::  mkdosfs -F 32 -I /dev/sdl  [[elisp:(org-cycle)][| ]]
 ####+BEGIN: blee:bxPanel:evolution
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
