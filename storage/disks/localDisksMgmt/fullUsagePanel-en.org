@@ -149,7 +149,7 @@
 ** Software RAID 1 Monitor
 ***  lpDiskRaidManage.sh
 ***  cat /proc/mdstat | sudo mdadm --query --detail /dev/md0
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Partition A Disk -- Format -- Create File Sys" :anchor "" :extraInfo "gparted"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Partition A Disk -- Format -- Create File Sys -- mount FS" :anchor "" :extraInfo "gparted"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Partition A Disk -- Format -- Create File Sys:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
@@ -160,12 +160,22 @@
 ** Choose gpt -- apply
 ** Partition -- New
 ** File Sys -ext4 --- Label data1
+** Then Mount FS
 ** 
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Format Disk Partitions" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Diagnose And Repair A Damaged Disk" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Format Disk Partitions:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Diagnose And Repair A Damaged Disk:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Make A File System" :anchor "" :extraInfo ""
+** 
+** smartctl -H /dev/sda
+** smartctl -a /dev/sda
+** smarrctl -t short /dev/sda
+** -T permissive
+** sudo smartctl -l selftest -T permissive /dev/sda
+** 
+** sudo fsck -y /dev/sda1
+** 
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Making File System" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Make A File System:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
