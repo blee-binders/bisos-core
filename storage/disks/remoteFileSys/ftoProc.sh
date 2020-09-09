@@ -34,9 +34,9 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-davfs
 nfs
 samba
+davfs
 "
 # }}} DBLOCK-leavesList
 ####+END:

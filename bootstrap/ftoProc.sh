@@ -34,8 +34,8 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-configuredBisosPlatform
 baseBisosPlatform
+configuredBisosPlatform
 "
 # }}} DBLOCK-leavesList
 ####+END:

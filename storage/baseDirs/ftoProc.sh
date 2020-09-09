@@ -34,12 +34,12 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-siteBaseDirs
-districtBaseDirs
-uniformBaseDirs
 bisosBaseDirs
 BxIso
 BxU
+districtBaseDirs
+siteBaseDirs
+uniformBaseDirs
 "
 # }}} DBLOCK-leavesList
 ####+END:

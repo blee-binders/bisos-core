@@ -5,7 +5,16 @@
 ####+END:
 
 ####+BEGIN: bx:dblock:lsip:bash:seed-spec :types "seedBleePanelProc.sh"
-
+SEED="
+*  /[dblock]/ /Seed/ :: [[file:/opt/public/osmt/bin/seedBleePanelProc.sh]] | 
+"
+FILE="
+*  /This File/ :: /bisos/panels/bisos/core/virtualization/_nodeBase_/bleePanelProc.sh 
+"
+if [ "${loadFiles}" == "" ] ; then
+    /opt/public/osmt/bin/seedBleePanelProc.sh -l $0 "$@" 
+    exit $?
+fi
 ####+END:
 
 

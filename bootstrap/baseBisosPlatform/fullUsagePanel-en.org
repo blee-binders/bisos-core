@@ -26,22 +26,36 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
-** Overview Comes Here.
+** Install Initial BISOS sysBasePlatform and continue from there
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Panel Tree Navigation" :anchor "panelTreeNav" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Panel Tree Navigation:* |]] <<panelTreeNav>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:linedTreeNavigator :model "auto" :outLevel 2
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     ~Siblings Links Of:~ ~baseBisosPlatform~ 
+** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~baseBisosPlatform~>> ~nil:~ :inDblock 
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bootstrap/baseBisosPlatform")][@ *baseBisosPlatform* @]]    ::  Leaf: /baseBisosPlatform/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bootstrap/configuredBisosPlatform")][@ *configuredBisosPlatform* @]]    ::  Leaf: /configuredBisosPlatform/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bootstrap/distros/_nodeBase_")][@ =distros= @]]    ::  Node: /distros/
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     ~Ancestor Links Of:~ ~baseBisosPlatform~ 
+** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~baseBisosPlatform~>> ~nil:~ :inDblock 
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bootstrap/_nodeBase_")][@ =bootstrap= @]]    ::  Node: /bootstrap/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/_nodeBase_")][@ =core= @]]    ::  Node: /core/
 ** [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Known Problems And Next Steps" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Known Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** 
+** TODO PyVirtEnv Packages Are Not Being Installed
+   SCHEDULED: <2020-09-08 Tue>
+** TODO Virtualization in Host Env Should Not Be Part Of SysBase Because of firmware dependencies.
+   SCHEDULED: <2020-09-08 Tue>
+** TODO Record mode should be default (-r basic)
+   SCHEDULED: <2020-09-08 Tue>
+** TODO -r basic should default to inside of /bisos/var/records
+** TODO At the end point to fireing up emacs and continuing with specified panel
+** 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Provisioning Model (Chain To)" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _Provisioning Model (Chain To)_: |]]    [[elisp:(org-shifttab)][<)]] E|
@@ -76,24 +90,23 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *IntraUser: Getting The Default Python Pip:* |]]  sudo apt install python3-pip  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "IntraUser: Obatining bisos.provison pip pkg" :anchor "" :extraInfo "sudo pip3 install bisos.provision"
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *IntraUser: Obatining bisos.provison pip pkg:* |]]  sudo pip3 install bisos.provision  [[elisp:(org-shifttab)][<)]] E|
-=======
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "IntraUser: Getting The Default Python Pip" :anchor "" :extraInfo "sudo apt-get -y install python3-pip"
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *IntraUser: Getting The Default Python Pip:* |]]  sudo apt-get -y install python3-pip  [[elisp:(org-shifttab)][<)]] E|
-####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "IntraUser: Obatining bisos.provison pip pkg" :anchor "" :extraInfo "sudo pip3 install --upgrade bisos.provision"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *IntraUser: Obatining bisos.provison pip pkg:* |]]  sudo pip3 install --upgrade bisos.provision  [[elisp:(org-shifttab)][<)]] E|
->>>>>>> 78bfdd1af4550d36f6de44b62e789d55479340fe
 ####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "bootstrap" :command "sudo pip3 install --upgrade bisos.provision" :comment "Produces provisionBisos.sh" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bootstrap/ :: [[elisp:(lsip-local-run-command "sudo pip3 install --upgrade bisos.provision")][sudo pip3 install --upgrade bisos.provision]] *|*  =Produces provisionBisos.sh= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "IntraUser: Run bisos-provision" :anchor "" :extraInfo "/usr/local/bin/bisosProvision.sh"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *IntraUser: Run bisos-provision:* |]]  /usr/local/bin/bisosProvision.sh  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** Choose sysBasePlatform
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "bootstrap" :command "/usr/local/bin/provisionBisos.sh" :comment "To get a menu" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bootstrap/ :: [[elisp:(lsip-local-run-command "/usr/local/bin/provisionBisos.sh")][/usr/local/bin/provisionBisos.sh]] *|*  =To get a menu= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "bootstrap" :command "/usr/local/bin/provisionBisos.sh -h -v -n showRun -i sysBasePlatform" :comment "First Target" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bootstrap/ :: [[elisp:(lsip-local-run-command "/usr/local/bin/provisionBisos.sh -h -v -n showRun -i sysBasePlatform")][/usr/local/bin/provisionBisos.sh -h -v -n showRun -i sysBasePlatform]] *|*  =First Target= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStarUser: ByStar Login And Blee Panel Access" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStarUser: ByStar Login And Blee Panel Access:* |]]    [[elisp:(org-shifttab)][<)]] E|

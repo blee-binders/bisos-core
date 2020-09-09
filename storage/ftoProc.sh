@@ -46,9 +46,9 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-baseDirs
-_nodeBase_
 disks
+_nodeBase_
+baseDirs
 "
 # }}} DBLOCK-nodesList
 ####+END:

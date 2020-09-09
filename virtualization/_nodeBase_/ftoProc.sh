@@ -4,8 +4,17 @@
 
 ####+END:
 
-####+BEGIN: bx:dblock:lsip:bash:seed-spec :types "seedFtoCommon.sh"
-
+####+BEGIN: bx:bsip:bash:seed-spec :types "seedFtoCommon.sh"
+SEED="
+*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] | 
+"
+FILE="
+*  /This File/ :: /bisos/panels/bisos/core/virtualization/_nodeBase_/ftoProc.sh 
+"
+if [ "${loadFiles}" == "" ] ; then
+    /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@" 
+    exit $?
+fi
 ####+END:
 
 

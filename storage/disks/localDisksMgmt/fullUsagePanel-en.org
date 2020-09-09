@@ -33,10 +33,10 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Panel Tree Navigation:* |]] <<panelTreeNav>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:linedTreeNavigator :model "auto" :outLevel 2
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     ~Siblings Links Of:~ ~localDisksMgmt~ 
+** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~localDisksMgmt~>> ~nil:~ :inDblock 
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/storage/disks/localDisksMgmt")][@ *localDisksMgmt* @]]    ::  Leaf: /localDisksMgmt/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/storage/disks/remoteFileSys/_nodeBase_")][@ =remoteFileSys= @]]    ::  Node: /remoteFileSys/
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     ~Ancestor Links Of:~ ~localDisksMgmt~ 
+** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~localDisksMgmt~>> ~nil:~ :inDblock 
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/storage/disks/_nodeBase_")][@ =disks= @]]    ::  Node: /disks/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/storage/_nodeBase_")][@ =storage= @]]    ::  Node: /storage/
 ** [[elisp:(org-shifttab)][<)]] E|
@@ -65,7 +65,7 @@
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /gnome/ :: [[elisp:(lsip-local-run-command "echo baobab /etc &")][echo baobab /etc &]] *|*  =Specific Directory Disk Usage Analyzer= *|*  Non-Intrusive  [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "gnome" :command "gnome-disks &" :comment "Disks Viewer And Partitioner" :afterComment "Can Be VERY Intrusive"
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /gnome/ :: [[elisp:(lsip-local-run-command "gnome-disks &")][gnome-disks &]] *|*  =Disks Viewer And Partitioner= *|*  Can Be Intrusive  [[elisp:(org-shifttab)][<)]] E|
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /gnome/ :: [[elisp:(lsip-local-run-command "gnome-disks &")][gnome-disks &]] *|*  =Disks Viewer And Partitioner= *|*  Can Be VERY Intrusive  [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "gnome" :command "gparted &" :comment "Disks Partitioner" :afterComment "Can Be VERY Intrusive"
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /gnome/ :: [[elisp:(lsip-local-run-command "gparted &")][gparted &]] *|*  =Disks Partitioner= *|*  Can Be VERY Intrusive  [[elisp:(org-shifttab)][<)]] E|
@@ -129,7 +129,7 @@
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /disk/ :: [[elisp:(lsip-local-run-command "sudo mount -a")][sudo mount -a]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 
-** mkdir -p /dd/this/d1 
+** sudo mkdir -p /dd/this/d1 ; sudo chown bisos:bisos /dd/this/d2; sudo chmod 775 /dd/this/d2
 ** opDiskDriveAdmin.sh -i fstabLineGen /dev/sdd1 /dd/this/d1 ext4
 **   [[elisp:(find-file "/root@localhost:/etc/fstab")]["/root@localhost:/etc/fstab"]
 **  mount -a
@@ -151,7 +151,7 @@
 ***  cat /proc/mdstat | sudo mdadm --query --detail /dev/md0
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Partition A Disk -- Format -- Create File Sys -- mount FS" :anchor "" :extraInfo "gparted"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Partition A Disk -- Format -- Create File Sys:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Partition A Disk -- Format -- Create File Sys -- mount FS:* |]]  gparted  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
 ** Use Gparted
@@ -159,7 +159,7 @@
 ** Device -> Create Partition Table
 ** Choose gpt -- apply
 ** Partition -- New
-** File Sys -ext4 --- Label data1
+** File Sys -ext4 --- Label data1 (But no name)
 ** Then Mount FS
 ** 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Diagnose And Repair A Damaged Disk" :anchor "" :extraInfo ""
@@ -177,7 +177,7 @@
 ** 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Making File System" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Make A File System:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Making File System:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
 ** echo mkdosfs -F 32 -I /dev/sdl
