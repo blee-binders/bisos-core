@@ -58,6 +58,7 @@ platform
 storage
 _nodeBase_
 monitoring
+multimedia
 virtualization
 bootstrap
 "
