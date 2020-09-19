@@ -50,10 +50,46 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _Related Chained Panels_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep t :outLevel 2 :model "auto" :foldDesc "Model" :destDesc "auto" :dest "/bisos/panels/bisos/model/bisosAccts"
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep t :outLevel 2 :model "auto" :foldDesc "Model" :destDesc "Model And Concepts Of BISOS Accounts" :dest "/bisos/panels/bisos/model/bisosAccts"
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/model/bisosAccts")][@ ~bisosAccts~ @]]   ::  [[elisp:(org-cycle)][| /Model/ |]]  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/model/bisosAccts")][@ ~Model And Concepts Of BISOS Accounts~ @]]   ::  [[elisp:(org-cycle)][| /Model/ |]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "BSIP ICMs And Libraries Introductions" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _BSIP ICMs And Libraries Introductions_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "BSIP Libraries" :anchor "" :extraInfo ""
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /BSIP Libraries:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep nil :folding t :fileName "/bisos/core/bsip/bin/unisosAccounts_lib.sh" :comment "Unisos Accts Lib"  :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/core/bsip/bin/unisosAccounts_lib.sh")][/bisos/core/bsip/bin/unisosAccounts_lib.sh]] || [[elisp:(find-file-other-window "/bisos/core/bsip/bin/unisosAccounts_lib.sh")][Visit In Other]] *|*  =Unisos Accts Lib= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep nil :folding t :fileName "/bisos/core/bsip/bin/bisosGroupAccount_lib.sh" :comment "BISOS Group And BISOS Acct"  :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/core/bsip/bin/bisosGroupAccount_lib.sh")][/bisos/core/bsip/bin/bisosGroupAccount_lib.sh]] || [[elisp:(find-file-other-window "/bisos/core/bsip/bin/bisosGroupAccount_lib.sh")][Visit In Other]] *|*  =BISOS Group And BISOS Acct= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep nil :folding t :fileName "/bisos/core/bsip/bin/bisosAccounts_lib.sh" :comment "USG And BxO Accts"  :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/core/bsip/bin/bisosAccounts_lib.sh")][/bisos/core/bsip/bin/bisosAccounts_lib.sh]] || [[elisp:(find-file-other-window "/bisos/core/bsip/bin/bisosAccounts_lib.sh")][Visit In Other]] *|*  =USG And BxO Accts= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep nil :folding t :fileName "/bisos/core/bsip/bin/opAcctLib.sh" :comment "To Be Absorbed and Obsoleted"  :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/core/bsip/bin/opAcctLib.sh")][/bisos/core/bsip/bin/opAcctLib.sh]] || [[elisp:(find-file-other-window "/bisos/core/bsip/bin/opAcctLib.sh")][Visit In Other]] *|*  =To Be Absorbed and Obsoleted= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "BSIP BASH ICMs" :anchor "" :extraInfo ""
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /BSIP BASH ICMs:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? t :label "Bash ICM" :icmName "unisosAccts.sh" :comment "Unix Accounts Management" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /Bash ICM/ |]] :: [[elisp:(lsip-local-run-command "unisosAccts.sh -i examples")][unisosAccts.sh]]  [[elisp:(lsip-local-run-command "unisosAccts.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "unisosAccts.sh -i describe")][describe]] *|*  =Unix Accounts Management= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? t :label "Bash ICM" :icmName "bisosAccounts.sh" :comment "BISOS Accounts Mgmt" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /Bash ICM/ |]] :: [[elisp:(lsip-local-run-command "bisosAccounts.sh -i examples")][bisosAccounts.sh]]  [[elisp:(lsip-local-run-command "bisosAccounts.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bisosAccounts.sh -i describe")][describe]] *|*  =BISOS Accounts Mgmt= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? t :label "Bash ICM" :icmName "usgAcctManage.sh" :comment "USG Accounts Mgmt" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /Bash ICM/ |]] :: [[elisp:(lsip-local-run-command "usgAcctManage.sh -i examples")][usgAcctManage.sh]]  [[elisp:(lsip-local-run-command "usgAcctManage.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "usgAcctManage.sh -i describe")][describe]] *|*  =USG Accounts Mgmt= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? t :label "Bash ICM" :icmName "bxoAcctManage.sh" :comment "NOTYET -- BxO Accounts Mgmt" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /Bash ICM/ |]] :: [[elisp:(lsip-local-run-command "bxoAcctManage.sh -i examples")][bxoAcctManage.sh]]  [[elisp:(lsip-local-run-command "bxoAcctManage.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxoAcctManage.sh -i describe")][describe]] *|*  =NOTYET -- BxO Accounts Mgmt= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "OSMT ICMs Introductions" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _OSMT ICMs Introductions_: |]]    [[elisp:(org-shifttab)][<)]] E|
@@ -97,9 +133,25 @@
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? t :label "OSMT ICM" :icmName "/opt/public/osmt/bin/seedBystarAcctAdmin.sh" :comment "BxO Acct" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /OSMT ICM/ |]] :: [[elisp:(lsip-local-run-command "/opt/public/osmt/bin/seedBystarAcctAdmin.sh -i examples")][/opt/public/osmt/bin/seedBystarAcctAdmin.sh]]  [[elisp:(lsip-local-run-command "/opt/public/osmt/bin/seedBystarAcctAdmin.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "/opt/public/osmt/bin/seedBystarAcctAdmin.sh -i describe")][describe]] *|*  =BxO Acct= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "bashrc and profile" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Platform Accounts Status" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *bashrc and profile:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _Platform Accounts Status_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "bystar Acct" :icmName "bisosAccounts.sh -h -v -n showRun -i bisosGroupAcctVerify" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bystar Acct/ :: [[elisp:(lsip-local-run-command "bisosAccounts.sh -h -v -n showRun -i bisosGroupAcctVerify")][bisosAccounts.sh -h -v -n showRun -i bisosGroupAcctVerify]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "bystar Acct" :icmName "bisosAccounts.sh -h -v -n showRun -i usgAcctVerify bystar" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bystar Acct/ :: [[elisp:(lsip-local-run-command "bisosAccounts.sh -h -v -n showRun -i usgAcctVerify bystar")][bisosAccounts.sh -h -v -n showRun -i usgAcctVerify bystar]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "USG Acct" :icmName "usgAcctManage.sh -h -v -n showRun -i usgAcctVerify bystar" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /USG Acct/ :: [[elisp:(lsip-local-run-command "usgAcctManage.sh -h -v -n showRun -i usgAcctVerify bystar")][usgAcctManage.sh -h -v -n showRun -i usgAcctVerify bystar]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Accts Report" :icmName "unisosAccts.sh -h -v -n showRun -i userAcctsReport bisos bystar" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Accts Report/ :: [[elisp:(lsip-local-run-command "unisosAccts.sh -h -v -n showRun -i userAcctsReport bisos bystar")][unisosAccts.sh -h -v -n showRun -i userAcctsReport bisos bystar]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "bashrc and profile structure" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *bashrc and profile structure:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
 ** BISOS counts on BASH-4+. Below applies to BASH version 4+
