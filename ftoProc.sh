@@ -55,8 +55,9 @@ _CommentEnd_
 # {{{ DBLOCK-nodesList
 nodesList="
 platform
-storage
+disks
 _nodeBase_
+baseDirs
 monitoring
 multimedia
 virtualization
