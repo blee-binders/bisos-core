@@ -1,0 +1,76 @@
+####+BEGIN: bx:dblock:bnsm:top-of-menu "basic"
+*  #Controls:  [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]]  [[elisp:(save-buffer)][Save]]  [[elisp:(kill-buffer)][Quit]]  [[elisp:(bury-buffer)][Bury]]  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]]
+####+END:
+####+BEGIN: bx:dblock:bnsm:this-node "basic"
+*  This File :: *= /libre/ByStar/InitialTemplates/activeDocs/bxPlatform/physical/fullUsagePanel-en.org =*
+####+END:
+####+BEGINNOT: bx:dblock:bnsm:menu-stack "basic"
+*  #Menu Stack: [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs")][listOfDocs]] [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/bxServices")][bxServices]] [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/bxServices")][bxServices]] [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/bxServices/basaManage")][basaManage]]
+####+END:
+####+BEGIN: bx:dblock:bnsm:see-related
+*  [[elisp:(org-cycle)][|#Bash:|]] (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
+**  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
+####+END:
+####+BEGIN: bx:dblock:bnsm:agenda-list
+*  [[elisp:(org-cycle)][|#Marshal:|]]  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] ||  [[elisp:(bx:org:agenda:this-file-otherWin)][Agenda List This]] || [[elisp:(bx:org:todo:this-file-otherWin)][ToDo List This]] |
+**  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]
+####+END:
+*      ================
+*  [[elisp:(beginning-of-buffer)][Top]] ################ [[elisp:(delete-other-windows)][(1)]]            *Physical Platform (PP) Information And Management*
+*  [[elisp:(beginning-of-buffer)][Top]] ################ [[elisp:(delete-other-windows)][(1)]]
+*      ================
+*  [[elisp:(org-cycle)][| ]]  Related BxPanels   ::  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/bxPlatform/physical/fullUsagePanel-en.org")][Physical BxPlatform]] || [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/bxPlatform/physical/hwBox")][Hardware Boxes]]   [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][| ]]  Model and Info     ::  Panel's Position In Bx Reference Model And Related External Info [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Info              ::  https://www.howtoforge.com/tutorial/samba-server-ubuntu-16-04/
+*  [[elisp:(org-cycle)][| ]]  Panel Usage Notes  ::  Extensions, New Modules & ReNew Process And Procedures  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  [Start Script]    ::   iimBashStart.sh -h -v -n showRun -i adminDaemonSysD lcaXxSysdAdmin.sh [[elisp:(org-cycle)][| ]]
+
+*  [[elisp:(org-cycle)][| ]]  [All]         ::      /Box Hardware/   [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/bxPlatform/physical/hwBox")][Hardware Boxes]]   |  [[elisp:(org-cycle)][| ]] 
+*  [[elisp:(org-cycle)][| ]]  [All]         ::      /IIM Xrefs (Exec and Visit):/      *[[elisp:(org-cycle)][<<Xref->>]]*  [[elisp:(org-cycle)][| ]] 
+**      ############
+**      ============    /BxPlatform/
+**      commonPlatformBaseDirs.libSh  -- /dd [0-17] As use:archive:backup
+**     ============    *To Be Absorbed Examples*
+**     [All]         ::   [[elisp:(lsip-local-run-command%20"lcaPyCelerySvcUse.sh")][lcaPyCelerySvcUse.sh]]               [[file:/opt/public/osmt/bin/lcaPyCelerySvcUse.sh::Xref-Here-][Visit]] -- Applicability Of Service-Software to Platform
+*      ================
+*  [[elisp:(beginning-of-buffer)][Top]] ################ [[elisp:(delete-other-windows)][(1)]]            *Overview*
+*  [[elisp:(org-cycle)][| ]]  [All]         ::      /Model, Info and Pointers/  [[elisp:(org-cycle)][| ]] 
+*      ================
+*  [[elisp:(beginning-of-buffer)][Top]] ################ [[elisp:(delete-other-windows)][(1)]]            *Physiacl Platform (Box) Info*
+*  [[elisp:(org-cycle)][| ]]  [All]         ::      /VirtualizationP/  [[elisp:(lsip-local-run-command "sudo virt-what")][sudo virt-what]]  [[elisp:(org-cycle)][| ]]
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "sudo dmidecode | grep Product"  :results "none" :comment "When VM, you get Virtualization Tech" :afterComment "-- -s system-manufacturer"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "sudo dmidecode | grep Product")][sudo dmidecode | grep Product]] ~||~  =When VM, you get Virtualization Tech= -- -s system-manufacturer  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "sudo dmidecode -s system-manufacturer" :results "none" :comment "When VM, you get Virtualization Tech" :afterComment "-- -s system-manufacturer"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "sudo dmidecode -s system-manufacturer")][sudo dmidecode -s system-manufacturer]] ~||~  =When VM, you get Virtualization Tech= -- -s system-manufacturer  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "sudo dmidecode -s system-product-name" :results "none" :comment "When VM, you get Virtualization Tech" :afterComment "-- -s system-manufacturer"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "sudo dmidecode -s system-product-name")][sudo dmidecode -s system-product-name]] ~||~  =When VM, you get Virtualization Tech= -- -s system-manufacturer  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "sudo dmidecode -s system-uuid" :results "none" :comment "When VM, you get Virtualization Tech" :afterComment "-- -s system-manufacturer"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "sudo dmidecode -s system-uuid")][sudo dmidecode -s system-uuid]] ~||~  =When VM, you get Virtualization Tech= -- -s system-manufacturer  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+*  [[elisp:(org-cycle)][| ]]  [All]         ::      /Box Info and Assignment/  [[elisp:(lsip-local-run-command "ppMachineInfo.sh")][ppMachineInfo.sh]] | [[elisp:(lsip-local-run-command "opMachines.sh")][opMachines.sh]]  |  [[elisp:(lsip-local-run-command "opMachines.sh  -i myBoxName")][opMachines.sh  -i myBoxName]] |  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject     ::   [Info]      [[elisp:(lsip-local-run-command "opMachines.sh  -i myUniqueId")][opMachines.sh  -i myUniqueId]] [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject     ::   [Action]    [[elisp:(lsip-local-run-command "opMachines.sh  -i thisBoxAdd")][opMachines.sh  -i thisBoxAdd]] [[elisp:(org-cycle)][| ]]
+*      ================
+*  [[elisp:(beginning-of-buffer)][Top]] ################                *Development -- Evolution*
+*  [[elisp:(org-cycle)][| ]]  [All]         ::      /Development, Ideas, Tasks, Todo, Agenda/  [[elisp:(org-cycle)][| ]] 
+*      ================
+*  [[elisp:(beginning-of-buffer)][Top]] ################                *End Of Panel*
+*  [[elisp:(org-cycle)][| ]]  [Panel]       ::      /Editable Section Ends -- DBLOCK BEGINS/  [[elisp:(org-cycle)][| ]] 
+####+BEGINNOT: bx:dblock:bnsm:sub-nodes-and-siblings "basic"
+*  #Sub Nodes: 
+*  #Siblings Nodes: baseDirs params identity distros physical
+*  #Leaves: fullUsagePanel-en.org
+####+END:
+####+BEGIN: bx:dblock:bnsm:languages "basic"
+*  #Languages: [[elisp:(blee:bnsm:panel-goto-langauge "en")][globish/english]]  [[elisp:(blee:bnsm:panel-goto-langauge "fa")][فارسی‌:persian/farsi]]
+####+END:
+####+BEGIN: bx:dblock:bnsm:end-of-menu "basic"
+*  #Controls:  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]
+####+END:
+
+#+STARTUP: overview
