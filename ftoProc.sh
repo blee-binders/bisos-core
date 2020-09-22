@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] | 
 "
 FILE="
-*  /This File/ :: /bisos/git/auth/bxRepos/blee-binders/bisos-core/ftoProc.sh 
+*  /This File/ :: /bisos/panels/bisos/core/ftoProc.sh 
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@" 
@@ -57,6 +57,7 @@ nodesList="
 platform
 disks
 _nodeBase_
+versionControl
 baseDirs
 monitoring
 multimedia
