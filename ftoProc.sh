@@ -54,15 +54,16 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
+bootstrap
 platform
+bxHw-PP
+multimedia
 disks
-_nodeBase_
+virtualization
 versionControl
 baseDirs
 monitoring
-multimedia
-virtualization
-bootstrap
+_nodeBase_
 "
 # }}} DBLOCK-nodesList
 ####+END:

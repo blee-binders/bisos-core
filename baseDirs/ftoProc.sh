@@ -41,10 +41,10 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-bisosBaseDirs
 BxIso
-BxU
+bisosBaseDirs
 districtBaseDirs
+BxU
 githubSync
 siteBaseDirs
 uniformBaseDirs

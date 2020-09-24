@@ -19,7 +19,7 @@
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
 *   =Decedent Panels=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/disks/remoteFileSys/davfs")][davfs]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/disks/remoteFileSys/nfs")][nfs]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/disks/remoteFileSys/samba")][samba]] *|* 
-*   =Sibling Panels=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/disks/localDisksMgmt")][localDisksMgmt]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/disks/remoteFileSys/_nodeBase_")][ =remoteFileSys= ]] *|* 
+*   =Sibling Panles=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/disks/localDisksMgmt")][localDisksMgmt]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/disks/remoteFileSys/_nodeBase_")][ =remoteFileSys= ]] *|* 
 *   =Ancestor Panles=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/disks/_nodeBase_")][ =disks= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/_nodeBase_")][ =core= ]] *|* 
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END

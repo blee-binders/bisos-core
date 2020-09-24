@@ -54,8 +54,8 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-remoteFileSys
 _nodeBase_
+remoteFileSys
 "
 # }}} DBLOCK-nodesList
 ####+END:

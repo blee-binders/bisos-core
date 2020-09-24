@@ -18,8 +18,8 @@
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
-*   =Decedent Panels=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/asus")][asus]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/dell")][dell]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/raspberryPi")][raspberryPi]] *|* 
-*   =Sibling Panels=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/graphics")][graphics]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox")][hwBox]] *|* 
+*   =Decedent Panels=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/asus/_nodeBase_")][ =asus= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/dell/_nodeBase_")][ =dell= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/raspberryPi/_nodeBase_")][ =raspberryPi= ]] *|* 
+*   =Sibling Panles=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/graphics/_nodeBase_")][ =graphics= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/_nodeBase_")][ =hwBox= ]] *|* 
 *   =Ancestor Panles=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/_nodeBase_")][ =bxHw-PP= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/_nodeBase_")][ =core= ]] *|* 
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
@@ -35,12 +35,12 @@
 ####+END
 ####+BEGIN: blee:bxPanel:linedTreeNavigator :model "auto" :outLevel 2
 ** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~hwBox~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/asus")][@ *asus* @]]    ::  Leaf: /asus/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/dell")][@ *dell* @]]    ::  Leaf: /dell/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/raspberryPi")][@ *raspberryPi* @]]    ::  Leaf: /raspberryPi/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/asus/_nodeBase_")][@ =asus= @]]    ::  Node: /asus/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/dell/_nodeBase_")][@ =dell= @]]    ::  Node: /dell/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/raspberryPi/_nodeBase_")][@ =raspberryPi= @]]    ::  Node: /raspberryPi/
 ** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~hwBox~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/graphics")][@ *graphics* @]]    ::  Leaf: /graphics/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox")][@ *hwBox* @]]    ::  Leaf: /hwBox/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/graphics/_nodeBase_")][@ =graphics= @]]    ::  Node: /graphics/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/_nodeBase_")][@ =hwBox= @]]    ::  Node: /hwBox/
 ** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~hwBox~>> ~nil:~ :inDblock 
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/_nodeBase_")][@ =bxHw-PP= @]]    ::  Node: /bxHw-PP/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/_nodeBase_")][@ =core= @]]    ::  Node: /core/
@@ -48,21 +48,24 @@
 ####+END
 ####+BEGIN: blee:bxPanel:runResult :outLevel 1 :command "find .. -type f -print | egrep fullUsagePanel-en.org$"  :results "stdout" :comment "List Of Panels" :afterComment "-- In case it has not been updates here"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "find .. -type f -print | egrep fullUsagePanel-en.org$")][find .. -type f -print | egrep fullUsagePanel-en.org$]] *|*  =List Of Panels= *|*  -- In case it has not been updates here  |
-Last Executed at: 202009-21-18:55:40  by: bystar on: intra-Latitude-7390
+Last Executed at: 202009-23-23:50:24  by: bystar on: intra-Latitude-7390
 ----------------------------
-../Graphics/hwGraphicsNvidia/fullUsagePanel-en.org
-../Graphics/fullUsagePanel-en.org
-../Main/fullUsagePanel-en.org
-../hwBox/raspberryPi/3b/fullUsagePanel-en.org
-../hwBox/asus/hwBoxAsusT100/fullUsagePanel-en.org
-../hwBox/dell/hwBoxDellR-Series/fullUsagePanel-en.org
-../hwBox/dell/hwBoxDellR710/fullUsagePanel-en.org
-../hwBox/dell/hwBoxDellR510/fullUsagePanel-en.org
-../hwBox/dell/hwBoxDellR610/fullUsagePanel-en.org
-../hwBox/dell/hwBoxDellR320/fullUsagePanel-en.org
-../hwBox/dell/hwBoxDellStudio/fullUsagePanel-en.org
-../hwBox/dell/hwBoxDellXps8900/fullUsagePanel-en.org
-../hwBox/fullUsagePanel-en.org
+../raspberryPi/_nodeBase_/fullUsagePanel-en.org
+../raspberryPi/3b/absorb-fullUsagePanel-en.org
+../raspberryPi/3b/fullUsagePanel-en.org
+../asus/hwBoxAsusT100/fullUsagePanel-en.org
+../asus/_nodeBase_/fullUsagePanel-en.org
+../dell/hwBoxDellR-Series/fullUsagePanel-en.org
+../dell/hwBoxDellR710/fullUsagePanel-en.org
+../dell/hwBoxDellR510/fullUsagePanel-en.org
+../dell/hwBoxDellR420/fullUsagePanel-en.org
+../dell/hwBoxDellR610/fullUsagePanel-en.org
+../dell/hwBoxDellR320/fullUsagePanel-en.org
+../dell/hwBoxDellStudio/fullUsagePanel-en.org
+../dell/_nodeBase_/fullUsagePanel-en.org
+../dell/hwBoxDellXps8900/fullUsagePanel-en.org
+../dell/hwBoxDellR310/fullUsagePanel-en.org
+../_nodeBase_/fullUsagePanel-en.org
 
 * [[elisp:(org-shifttab)][<)]] E|
 ####+END:

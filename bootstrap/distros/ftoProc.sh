@@ -41,8 +41,8 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-distroImages
 distroPhysicalInstall
+distroImages
 "
 # }}} DBLOCK-leavesList
 ####+END:

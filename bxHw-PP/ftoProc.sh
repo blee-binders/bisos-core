@@ -41,9 +41,6 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-Graphics
-hwBox
-Main
 "
 # }}} DBLOCK-leavesList
 ####+END:
@@ -56,6 +53,9 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
+graphics
+hwBox
+_nodeBase_
 "
 # }}} DBLOCK-nodesList
 ####+END:

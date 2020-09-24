@@ -9,7 +9,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/opt/public/osmt/bin/seedFtoCommon.sh]] | 
 "
 FILE="
-*  /This File/ :: /libre/ByStar/InitialTemplates/activeDocs/bxHwBoxes/dell/hwBoxDellR610/ftoProc.sh 
+*  /This File/ :: /bisos/panels/bisos/core/bxHw-PP/hwBox/dell/hwBoxDellR610/ftoProc.sh 
 "
 if [ "${loadFiles}" == "" ] ; then
     /opt/public/osmt/bin/seedFtoCommon.sh -l $0 "$@" 
