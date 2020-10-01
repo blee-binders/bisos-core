@@ -101,51 +101,6 @@ After a while we run out of disk space and the install freezes.
     There will be 3 occurences.
 *** update-grub" (after system restart)
     6) Final step is to run "sudo update-grub" (after system restart).
-*** Edit /boot/grub/grub.cfg
-    5) copy and paste the above command in the grub.cfg file located
-       at /media/ubuntu/<somenumber>/boot/grub/ (if you don't have
-       one, just create a grub folder inside the /boot of your
-       hard-disk and create a grub.cfg file. I have copied the
-       /boot/grub/grub.cfg file located on the live CD to
-       /media/ubuntu/<somenumber>/boot/grub/ and edited it). This is
-       very important if you are NOT making your system dual boot
-       (i.e. a plain ubuntu installation). Changing the grub.cfg file
-       allows you to log-in your system after a system restart.
-    s/$vt_handoff/$vt_handoff pcie_aspm=off
-
-    There will be 3 occurences.
-*** update-grub" (after system restart)
-    6) Final step is to run "sudo update-grub" (after system restart).
-boot/grub/grub.cfg
-    5) copy and paste the above command in the grub.cfg file located
-       at /media/ubuntu/<somenumber>/boot/grub/ (if you don't have
-       one, just create a grub folder inside the /boot of your
-       hard-disk and create a grub.cfg file. I have copied the
-       /boot/grub/grub.cfg file located on the live CD to
-       /media/ubuntu/<somenumber>/boot/grub/ and edited it). This is
-       very important if you are NOT making your system dual boot
-       (i.e. a plain ubuntu installation). Changing the grub.cfg file
-       allows you to log-in your system after a system restart.
-    s/$vt_handoff/$vt_handoff pcie_aspm=off
-
-    There will be 3 occurences.
-*** update-grub" (after system restart)
-    6) Final step is to run "sudo update-grub" (after system restart).
-
-    5) copy and paste the above command in the grub.cfg file located
-       at /media/ubuntu/<somenumber>/boot/grub/ (if you don't have
-       one, just create a grub folder inside the /boot of your
-       hard-disk and create a grub.cfg file. I have copied the
-       /boot/grub/grub.cfg file located on the live CD to
-       /media/ubuntu/<somenumber>/boot/grub/ and edited it). This is
-       very important if you are NOT making your system dual boot
-       (i.e. a plain ubuntu installation). Changing the grub.cfg file
-       allows you to log-in your system after a system restart.
-    s/$vt_handoff/$vt_handoff pcie_aspm=off
-
-    There will be 3 occurences.
-*** update-grub" (after system restart)
-    6) Final step is to run "sudo update-grub" (after system restart).
 *** After clean boot verify that /var/log/syslog is not seeing the messages.
 *** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Historic Notes" :anchor "" :extraInfo ""

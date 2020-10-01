@@ -19,8 +19,8 @@
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
 *   =Decedent Panels=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/asus/hwBoxAsusT100")][hwBoxAsusT100]] *|* 
-*   =Sibling Panles=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/asus/_nodeBase_")][ =asus= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/dell/_nodeBase_")][ =dell= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/raspberryPi")][raspberryPi]] *|* 
-*   =Ancestor Panles=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox")][hwBox]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/_nodeBase_")][ =bxHw-PP= ]] *|* 
+*   =Sibling Panels=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/asus/_nodeBase_")][ =asus= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/dell/_nodeBase_")][ =dell= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/raspberryPi/_nodeBase_")][ =raspberryPi= ]] *|* 
+*   =Ancestor Panles=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/_nodeBase_")][ =hwBox= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/_nodeBase_")][ =bxHw-PP= ]] *|* 
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
@@ -39,9 +39,9 @@
 ** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~asus~>> ~nil:~ :inDblock 
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/asus/_nodeBase_")][@ =asus= @]]    ::  Node: /asus/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/dell/_nodeBase_")][@ =dell= @]]    ::  Node: /dell/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/raspberryPi")][@ *raspberryPi* @]]    ::  Leaf: /raspberryPi/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/raspberryPi/_nodeBase_")][@ =raspberryPi= @]]    ::  Node: /raspberryPi/
 ** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~asus~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox")][@ *hwBox* @]]    ::  Leaf: /hwBox/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/hwBox/_nodeBase_")][@ =hwBox= @]]    ::  Node: /hwBox/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxHw-PP/_nodeBase_")][@ =bxHw-PP= @]]    ::  Node: /bxHw-PP/
 ** [[elisp:(org-shifttab)][<)]] E|
 ####+END

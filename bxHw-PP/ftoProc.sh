@@ -53,9 +53,9 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-graphics
-hwBox
 _nodeBase_
+hwBox
+graphics
 "
 # }}} DBLOCK-nodesList
 ####+END:

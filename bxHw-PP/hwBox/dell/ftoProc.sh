@@ -41,14 +41,14 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-hwBoxDellR-Series
 hwBoxDellR710
-hwBoxDellR510
-hwBoxDellR420
 hwBoxDellR610
-hwBoxDellR320
+hwBoxDellR-Series
+hwBoxDellR510
 hwBoxDellStudio
+hwBoxDellR320
 hwBoxDellXps8900
+hwBoxDellR420
 hwBoxDellR310
 "
 # }}} DBLOCK-leavesList

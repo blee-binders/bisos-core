@@ -11,7 +11,7 @@ __copying__="
 
 ####+END:
 
-####+BEGIN: bx:bsip:bash:seed-spec :types  "seedFtoCommon.sh"
+####+BEGIN: bx:bsip:bash:seed-spec :types "seedFtoCommon.sh"
 SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] | 
 "
@@ -25,6 +25,43 @@ fi
 ####+END:
 
 
+leavesExcludes=""
+
+leavesOrdered=""
+
+nodesExcludes=""
+
+nodesOrdered=""
+
+
+_CommentBegin_
+*  [[elisp:(org-cycle)][| ]]  [[elisp:(blee:ppmm:org-mode-toggle)][Nat]] [[elisp:(beginning-of-buffer)][Top]] [[elisp:(delete-other-windows)][(1)]] || List       ::  Leaves List    [[elisp:(org-cycle)][| ]]
+_CommentEnd_
+
+####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
+# {{{ DBLOCK-leavesList
+leavesList="
+"
+# }}} DBLOCK-leavesList
+####+END:
+
+
+_CommentBegin_
+*  [[elisp:(org-cycle)][| ]]  [[elisp:(blee:ppmm:org-mode-toggle)][Nat]] [[elisp:(beginning-of-buffer)][Top]] [[elisp:(delete-other-windows)][(1)]] || List       ::  Nodes List    [[elisp:(org-cycle)][| ]]
+_CommentEnd_
+
+####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
+# {{{ DBLOCK-nodesList
+nodesList="
+asus
+raspberryPi
+_nodeBase_
+dell
+"
+# }}} DBLOCK-nodesList
+####+END:
+
+
 _CommentBegin_
 *  [[elisp:(org-cycle)][| ]]  [[elisp:(blee:ppmm:org-mode-toggle)][Nat]] [[elisp:(beginning-of-buffer)][Top]] [[elisp:(delete-other-windows)][(1)]] || Cmnd       ::  examplesHookPostExample    [[elisp:(org-cycle)][| ]]
 _CommentEnd_
@@ -32,14 +69,24 @@ _CommentEnd_
 function examplesHookPost {
     cat  << _EOF_
 $( examplesSeperatorTopLabel "EXTENSION EXAMPLES" )
-$( examplesSeperatorSection "commonProc.sh -- Templates Evolution" )
-diff ./commonProc.sh  /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/commonProcLeaf.sh
-cp  ./commonProc.sh  /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/commonProcLeaf.sh
-cp /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/commonProcLeaf.sh ./commonProc.sh  
+_EOF_
+
+    templatesEvolution
+    
+    return
+}
+
+
+function templatesEvolution {
+    cat  << _EOF_
+$( examplesSeperatorSection "ftoProc.sh -- Templates Evolution" )
+diff ./ftoProc.sh  /libre/ByStar/InitialTemplates/update/fto/start/commonProc/anyFtoItem/ftoProcNode.sh
+cp ./ftoProc.sh  /libre/ByStar/InitialTemplates/update/fto/start/commonProc/anyFtoItem/ftoProcNode.sh
+cp /libre/ByStar/InitialTemplates/update/fto/start/commonProc/anyFtoItem/ftoProcNode.sh ./ftoProc.sh  
 $( examplesSeperatorSection "commonPanel.org -- Templates Evolution" )
-diff ./commonPanel.org  /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/commonPanel.org
-cp ./commonPanel.org /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/commonPanel.org
-cp /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/commonPanel.org ./commonPanel.org
+diff ./Panel.org  /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/mainPanel.org
+cp ./Panel.org /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/mainPanel.org
+cp /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/mainPanel.org ./Panel.org
 _EOF_
  return
 }
@@ -55,4 +102,3 @@ _CommentEnd_
 #fill-column: 90
 # end:
 ####+END:
-
