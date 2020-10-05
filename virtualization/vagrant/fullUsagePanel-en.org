@@ -18,7 +18,8 @@
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
-*   =Sibling Panles=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/hostFirmware")][hostFirmware]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/vagrant")][vagrant]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/virtualBox")][virtualBox]] *|* 
+*   =Sibling Panles=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/hostFirmware")][hostFirmware]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/kvm")][kvm]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/legacy-virsh")][legacy-virsh]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/legacy-vmware")][legacy-vmware]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/vagrant")][vagrant]] *|* 
+*   =Sibling Panles=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/virsh")][virsh]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/virtualBox")][virtualBox]] *|* 
 *   =Ancestor Panles=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/_nodeBase_")][ =virtualization= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/_nodeBase_")][ =core= ]] *|* 
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
@@ -35,7 +36,11 @@
 ####+BEGIN: blee:bxPanel:linedTreeNavigator :model "auto" :outLevel 2
 ** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~vagrant~>> ~nil:~ :inDblock 
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/hostFirmware")][@ *hostFirmware* @]]    ::  Leaf: /hostFirmware/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/kvm")][@ *kvm* @]]    ::  Leaf: /kvm/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/legacy-virsh")][@ *legacy-virsh* @]]    ::  Leaf: /legacy-virsh/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/legacy-vmware")][@ *legacy-vmware* @]]    ::  Leaf: /legacy-vmware/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/vagrant")][@ *vagrant* @]]    ::  Leaf: /vagrant/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/virsh")][@ *virsh* @]]    ::  Leaf: /virsh/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/virtualBox")][@ *virtualBox* @]]    ::  Leaf: /virtualBox/
 ** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~vagrant~>> ~nil:~ :inDblock 
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/_nodeBase_")][@ =virtualization= @]]    ::  Node: /virtualization/
@@ -54,17 +59,23 @@
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "BinsPrep Cmnd" :icmName "lcaVagrantBinsPrep.sh -v -n showRun -i fullUpdate" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /BinsPrep Cmnd/ :: [[elisp:(lsip-local-run-command "lcaVagrantBinsPrep.sh -v -n showRun -i fullUpdate")][lcaVagrantBinsPrep.sh -v -n showRun -i fullUpdate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Vagrant Admin" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Vagrant Manage" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Vagrant Admin:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Vagrant Manage:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "vagrant --version"  :results t :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "vagrant --version")][vagrant --version]] *|*  == *|*    |
-Last Executed at: 202009-30-21:38:17  by: bystar on: intra-Latitude-7390
+Last Executed at: 202010-04-11:38:11  by: bystar on: intra-XPS-8900
 ----------------------------
-Vagrant 2.2.10
+Vagrant 2.2.6
 
 ** [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "Manage ICM" :icmName "lcaVagrantManage.sh" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Manage ICM/ :: [[elisp:(lsip-local-run-command "lcaVagrantManage.sh -i examples")][lcaVagrantManage.sh]]  [[elisp:(lsip-local-run-command "lcaVagrantManage.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "lcaVagrantManage.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Manage Cmnd" :icmName "lcaVagrantManage.sh -v -n showRun -i fullUpdate" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Manage Cmnd/ :: [[elisp:(lsip-local-run-command "lcaVagrantManage.sh -v -n showRun -i fullUpdate")][lcaVagrantManage.sh -v -n showRun -i fullUpdate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
