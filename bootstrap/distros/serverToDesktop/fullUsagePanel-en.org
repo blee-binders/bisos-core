@@ -49,9 +49,10 @@
 ** 
 ** /To add ubuntu desktop to server, just do the following:/
 ** 
-** sudo apt-get -y install tasksel
-** sudo tasksel install ubuntu-desktop         # takes time, be patient
-** sudo apt-get -y install gnome-session gdm3  # Brings over some extra stuff
+** sudo apt-get update
+** # sudo apt-get -y install tasksel
+** # sudo tasksel install ubuntu-desktop         # takes time, be patient
+** sudo apt-get -y install ubuntu-desktop gnome-session gdm3  # Brings over some extra stuff
 ** sudo service gdm3 start
 ** 
 ** /Then reboot and you should have a desktop./

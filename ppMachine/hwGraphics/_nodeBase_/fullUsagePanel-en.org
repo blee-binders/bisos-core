@@ -3,7 +3,7 @@
 *  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
 **  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]] 
-**  This File :: *= /bisos/git/auth/bxRepos/blee-binders/bisos-core/ppMachine/hwGraphics/_nodeBase_/fullUsagePanel-en.org =* 
+**  This File :: *= /bisos/panels/bisos/core/ppMachine/hwGraphics/_nodeBase_/fullUsagePanel-en.org =* 
 *  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
 **  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
 **  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
@@ -11,16 +11,16 @@
 ####+END
 ####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
 * [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
-*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: bisos-core/ppMachine -- hwGraphics~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: core/ppMachine -- hwGraphics~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
 * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
-*   =Decedent Panels=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/ppMachine/hwGraphics/hwGraphicsNvidia")][hwGraphicsNvidia]] *|* 
-*   =Sibling Panels=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/ppMachine/hwBox/_nodeBase_")][ =hwBox= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/ppMachine/hwGraphics/_nodeBase_")][ =hwGraphics= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/ppMachine/siteAssign")][siteAssign]] *|* 
-*   =Ancestor Panles=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/ppMachine/_nodeBase_")][ =ppMachine= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* 
+*   =Decedent Panels=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/ppMachine/hwGraphics/hwGraphicsNvidia")][hwGraphicsNvidia]] *|* 
+*   =Sibling Panels=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/ppMachine/hwBox/_nodeBase_")][ =hwBox= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/ppMachine/hwGraphics/_nodeBase_")][ =hwGraphics= ]] *|* 
+*   =Ancestor Panles=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/ppMachine/_nodeBase_")][ =ppMachine= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/_nodeBase_")][ =core= ]] *|* 
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
@@ -35,14 +35,13 @@
 ####+END
 ####+BEGIN: blee:bxPanel:linedTreeNavigator :model "auto" :outLevel 2
 ** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~hwGraphics~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/ppMachine/hwGraphics/hwGraphicsNvidia")][@ *hwGraphicsNvidia* @]]    ::  Leaf: /hwGraphicsNvidia/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/ppMachine/hwGraphics/hwGraphicsNvidia")][@ *hwGraphicsNvidia* @]]    ::  Leaf: /hwGraphicsNvidia/
 ** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~hwGraphics~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/ppMachine/hwBox/_nodeBase_")][@ =hwBox= @]]    ::  Node: /hwBox/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/ppMachine/hwGraphics/_nodeBase_")][@ =hwGraphics= @]]    ::  Node: /hwGraphics/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/ppMachine/siteAssign")][@ *siteAssign* @]]    ::  Leaf: /siteAssign/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/ppMachine/hwBox/_nodeBase_")][@ =hwBox= @]]    ::  Node: /hwBox/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/ppMachine/hwGraphics/_nodeBase_")][@ =hwGraphics= @]]    ::  Node: /hwGraphics/
 ** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~hwGraphics~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/ppMachine/_nodeBase_")][@ =ppMachine= @]]    ::  Node: /ppMachine/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/_nodeBase_")][@ =bisos-core= @]]    ::  Node: /bisos-core/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/ppMachine/_nodeBase_")][@ =ppMachine= @]]    ::  Node: /ppMachine/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/_nodeBase_")][@ =core= @]]    ::  Node: /core/
 ** [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:separator :outLevel 1

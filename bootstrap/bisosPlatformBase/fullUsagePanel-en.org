@@ -18,7 +18,7 @@
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
-*   =Sibling Panles=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bootstrap/afterBaseSteps")][afterBaseSteps]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bootstrap/bisosPlatformBase")][bisosPlatformBase]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bootstrap/bisosPlatformFeatures/_nodeBase_")][ =bisosPlatformFeatures= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bootstrap/credentialsReset")][credentialsReset]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bootstrap/distros/_nodeBase_")][ =distros= ]] *|* 
+*   =Sibling Panles=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bootstrap/afterBaseSteps")][afterBaseSteps]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bootstrap/bisosPlatformBase")][bisosPlatformBase]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bootstrap/credentialsReset")][credentialsReset]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bootstrap/distros/_nodeBase_")][ =distros= ]] *|* 
 *   =Ancestor Panles=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bootstrap/_nodeBase_")][ =bootstrap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* 
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
@@ -36,7 +36,6 @@
 ** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~bisosPlatformBase~>> ~nil:~ :inDblock 
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bootstrap/afterBaseSteps")][@ *afterBaseSteps* @]]    ::  Leaf: /afterBaseSteps/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bootstrap/bisosPlatformBase")][@ *bisosPlatformBase* @]]    ::  Leaf: /bisosPlatformBase/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bootstrap/bisosPlatformFeatures/_nodeBase_")][@ =bisosPlatformFeatures= @]]    ::  Node: /bisosPlatformFeatures/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bootstrap/credentialsReset")][@ *credentialsReset* @]]    ::  Leaf: /credentialsReset/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bootstrap/distros/_nodeBase_")][@ =distros= @]]    ::  Node: /distros/
 ** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~bisosPlatformBase~>> ~nil:~ :inDblock 
@@ -49,15 +48,15 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Known Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
-** TODO PyVirtEnv Packages Are Not Being Installed
+** DONE PyVirtEnv Packages Are Not Being Installed -- Fixed
    SCHEDULED: <2020-09-08 Tue>
-** TODO Virtualization in Host Env Should Not Be Part Of SysBase Because of firmware dependencies.
+** DONE Virtualization in Host Env Should Not Be Part Of SysBase Because of firmware dependencies.
    SCHEDULED: <2020-09-08 Tue>
 ** TODO Record mode should be default (-r basic)
    SCHEDULED: <2020-09-08 Tue>
 ** TODO -r basic should default to inside of /bisos/var/records
 ** TODO At the end point to fireing up emacs and continuing with specified panel
-** 
+** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Provisioning Model (Chain To)" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _Provisioning Model (Chain To)_: |]]    [[elisp:(org-shifttab)][<)]] E|
