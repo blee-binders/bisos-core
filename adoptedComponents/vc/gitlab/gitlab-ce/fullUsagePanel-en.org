@@ -46,6 +46,13 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _Installation -- BinsPreps_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "BinsPrepIcm" :icmName "lcaGitlabCeBinsPrep.sh" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /BinsPrepIcm/ :: [[elisp:(lsip-local-run-command "lcaGitlabCeBinsPrep.sh -i examples")][lcaGitlabCeBinsPrep.sh]]  [[elisp:(lsip-local-run-command "lcaGitlabCeBinsPrep.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "lcaGitlabCeBinsPrep.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "BinsPrepCmnd" :icmName "lcaGitlabCeBinsPrep.sh -v -n showRun -i fullUpdate" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /BinsPrepCmnd/ :: [[elisp:(lsip-local-run-command "lcaGitlabCeBinsPrep.sh -v -n showRun -i fullUpdate -i examples")][lcaGitlabCeBinsPrep.sh -v -n showRun -i fullUpdate]]  [[elisp:(lsip-local-run-command "lcaGitlabCeBinsPrep.sh -v -n showRun -i fullUpdate -i visit")][visit]]  [[elisp:(lsip-local-run-command "lcaGitlabCeBinsPrep.sh -v -n showRun -i fullUpdate -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+** 
 ** script.deb.sh has been absorbed in lcaGitlabCeBinsPrep.sh
 *** curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
 ** B|
@@ -62,13 +69,19 @@
 ** Add or edit the following line in /etc/gitlab/gitlab.rb:
 ** 
 ** 
-####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep t :folding t :fileName "/etc/gitlab/gitlab.rb" :comment "Title Comment"  :afterComment "Extra Info"
-** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/etc/gitlab/gitlab.rb")][/etc/gitlab/gitlab.rb]] || [[elisp:(find-file-other-window "/etc/gitlab/gitlab.rb")][Visit In Other]] *|*  =Title Comment= *|*  Extra Info [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "ConfigEdit" :command "sudo chmod 666 /etc/gitlab//gitlab.rb" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ConfigEdit/ :: [[elisp:(lsip-local-run-command "sudo chmod 666 /etc/gitlab//gitlab.rb")][sudo chmod 666 /etc/gitlab//gitlab.rb]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-** 
+####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep t :folding t :label "Edit" :fileName "/etc/gitlab//gitlab.rb" :comment "ConfigFile"  :afterComment ""
+** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Edit/ :: [[elisp:(find-file "/etc/gitlab//gitlab.rb")][/etc/gitlab//gitlab.rb]] || [[elisp:(find-file-other-window "/etc/gitlab/gitlab.rb")][Visit In Other]] *|*  =ConfigFile= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ** Then edit:   external_url "http://gitlab.example.com"
+** or:   external_url "http://192.168.0.x"
 ** 
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "ConfigEdit" :command "sudo chmod 600 /etc/gitlab//gitlab.rb" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ConfigEdit/ :: [[elisp:(lsip-local-run-command "sudo chmod 600 /etc/gitlab//gitlab.rb")][sudo chmod 600 /etc/gitlab//gitlab.rb]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Operation" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
