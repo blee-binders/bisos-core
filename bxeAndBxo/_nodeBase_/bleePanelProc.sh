@@ -11,65 +11,19 @@ __copying__="
 
 ####+END:
 
-####+BEGIN: bx:bsip:bash:seed-spec :types "seedFtoCommon.sh"
+####+BEGIN: bx:bsip:bash:seed-spec :types "seedBleePanelProc.sh"
 SEED="
-*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] | 
+*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedBleePanelProc.sh]] | 
 "
 FILE="
-*  /This File/ :: /bisos/panels/bisos/core/ftoProc.sh 
+*  /This File/ :: /bisos/panels/bisos/core/bxeAndBxo/_nodeBase_/bleePanelProc.sh 
 "
 if [ "${loadFiles}" == "" ] ; then
-    /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@" 
+    /bisos/core/bsip/bin/seedBleePanelProc.sh -l $0 "$@" 
     exit $?
 fi
 ####+END:
 
-
-leavesExcludes=""
-
-leavesOrdered=""
-
-nodesExcludes=""
-
-nodesOrdered=""
-
-
-_CommentBegin_
-*  [[elisp:(org-cycle)][| ]]  [[elisp:(blee:ppmm:org-mode-toggle)][Nat]] [[elisp:(beginning-of-buffer)][Top]] [[elisp:(delete-other-windows)][(1)]] || List       ::  Leaves List    [[elisp:(org-cycle)][| ]]
-_CommentEnd_
-
-####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
-# {{{ DBLOCK-leavesList
-leavesList="
-bisosAccts
-"
-# }}} DBLOCK-leavesList
-####+END:
-
-
-_CommentBegin_
-*  [[elisp:(org-cycle)][| ]]  [[elisp:(blee:ppmm:org-mode-toggle)][Nat]] [[elisp:(beginning-of-buffer)][Top]] [[elisp:(delete-other-windows)][(1)]] || List       ::  Nodes List    [[elisp:(org-cycle)][| ]]
-_CommentEnd_
-
-####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
-# {{{ DBLOCK-nodesList
-nodesList="
-platform
-sites
-projs
-groupedComponents
-disks
-adoptedComponents
-_nodeBase_
-bxeAndBxo
-sync
-baseDirs
-multimedia
-bootstrap
-ppMachine
-"
-# }}} DBLOCK-nodesList
-####+END:
 
 
 _CommentBegin_
@@ -87,6 +41,7 @@ _EOF_
 }
 
 
+
 function templatesEvolution {
     cat  << _EOF_
 $( examplesSeperatorSection "ftoProc.sh -- Templates Evolution" )
@@ -100,6 +55,7 @@ cp /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/mainPanel.org 
 _EOF_
  return
 }
+
 
 
 ####+BEGIN: bx:dblock:bash:end-of-file :types ""

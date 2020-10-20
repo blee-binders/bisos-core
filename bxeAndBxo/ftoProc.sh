@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] | 
 "
 FILE="
-*  /This File/ :: /bisos/panels/bisos/core/ftoProc.sh 
+*  /This File/ :: /bisos/panels/bisos/core/bxeAndBxo/ftoProc.sh 
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@" 
@@ -41,7 +41,6 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-bisosAccts
 "
 # }}} DBLOCK-leavesList
 ####+END:
@@ -54,19 +53,7 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-platform
-sites
-projs
-groupedComponents
-disks
-adoptedComponents
 _nodeBase_
-bxeAndBxo
-sync
-baseDirs
-multimedia
-bootstrap
-ppMachine
 "
 # }}} DBLOCK-nodesList
 ####+END:
@@ -81,7 +68,7 @@ function examplesHookPost {
 $( examplesSeperatorTopLabel "EXTENSION EXAMPLES" )
 _EOF_
 
-    # templatesEvolution
+    templatesEvolution
     
     return
 }
