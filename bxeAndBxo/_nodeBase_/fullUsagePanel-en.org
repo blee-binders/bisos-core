@@ -94,28 +94,45 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BxAE: ByStar Autonomous Entity:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BxAE-Reg-Req: Registration Request" :anchor "" :extraInfo "bxeRegReqCreate.sh -- Prev BARC"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BxAE-Reg-Req: Registration Request:* |]]  bxeRegReqCreate.sh -- Prev BARC  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "BxAE-Reg-Req Abstract Information Content" :anchor "" :extraInfo ""
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /BxAE-Reg-Req Abstract Information Content:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "BxE" :icmName "bxeRegReqCreate.sh" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /BxE/ :: [[elisp:(lsip-local-run-command "bxeRegReqCreate.sh -i examples")][bxeRegReqCreate.sh]]  [[elisp:(lsip-local-run-command "bxeRegReqCreate.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxeRegReqCreate.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+** 
+** /bisos/var/bxeRegReq
+** 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BxCentral Autonomous Entity Registrar" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BxCentral Autonomous Entity Registrar:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BxAE-RR-Pkg: Registration Request Package" :anchor "" :extraInfo "Replaces & Obsoletes BARC"
+** 
+** bxCentralRegistrar.sh -p bxeRegReq
+** Produces a bxeDesc
+** 
+** B |
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BxAE-Desc: Autonomous Entity Descriptor" :anchor "" :extraInfo "Obsoletes RBAE -- Un-Realized"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BxAE-RR-Pkg: Registration Request Package:* |]]  Replaces & Obsoletes BARC  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BxAE-Desc: Autonomous Entity Descriptor:* |]]  Obsoletes RBAE -- Un-Realized  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "BxAE-RR-Pkg Abstract Information Content" :anchor "" :extraInfo ""
-** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /BxAE-RR-Pkg Abstract Information Content:/ |]]    [[elisp:(org-shifttab)][<)]] E|
-####+END
-
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BxAE-Pkg: Autonomous Entity Package" :anchor "" :extraInfo "Obsoletes RBAE -- Un-Realized"
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BxAE-Pkg: Autonomous Entity Package:* |]]  Obsoletes RBAE -- Un-Realized  [[elisp:(org-shifttab)][<)]] E|
-####+END
+** 
+** /bisos/var/bxeDesc
+** 
+** B |
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS BxAE Realization Process" :anchor "" :extraInfo "Realization"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BISOS BxAE Realization Process:* |]]  Realization  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
+** bxeRealize.sh -p bxeDesc=path
+*** 
+*** Produces ~rdn BxO and Git Account and Git Repos
 *** 
 ** B |
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Realized BxAE" :anchor "" :extraInfo "git Repo for ~bxo/RBxAE"
