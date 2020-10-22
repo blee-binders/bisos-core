@@ -29,7 +29,28 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
-** Overview Comes Here.
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Design" :anchor "" :extraInfo ""
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Design:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** 
+*** /bisos/bsip/bin/bxeRegReq_lib.sh        :: Creates a bxeRegReq Package |
+**** Scope is all bxe-s autonomous and controlled
+*** /bisos/bsip/bin/bxCentralRegistrar.sh   :: Creates a bxeDesc |
+**** Scope is  autonomous bxe-s
+*** /bisos/bsip/bin/bxeDesc_lib.sh          :: Handles bxeDesc-s -- all bxe-s | 
+*** 
+*** /bisos/bsip/bin/bxeRealize.sh           :: Creates bxo and git -- all bxe-s
+*** 
+*** /bisos/bsip/bin/bxeProvision_lib.sh     :: all bxe-s
+*** 
+*** /bisos/bsip/bin/bxaeProvision.sh        :: From RegReq to relaize
+*** 
+*** /bisos/bsip/bin/bxcieProvision.sh        :: From RegReq to relaize
+*** 
+*** /bisos/bsip/bin/bxcseProvision.sh        :: From RegReq to relaize
+*** 
+** 
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "BxE=(BxSIe or BxIe) -- Autonomus/Controlled Concepts" :anchor "" :extraInfo "Model & Terminology"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
