@@ -1,0 +1,570 @@
+* B|
+####+BEGIN: blee:bxPanel:topPanelControls
+*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
+**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]] 
+**  This File :: *= /bisos/panels/bisos/core/adoptedComponents/vc/gitolite/snapshot-2016/fullUsagePanel-en.org =* 
+*  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
+**  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
+**  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
+**  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]  E|
+####+END
+####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Leaf:: vc/gitolite -- snapshot-2016~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
+
+*   =Sibling Panles=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/adoptedComponents/vc/gitolite/snapshot-2016")][snapshot-2016]] *|* 
+*   =Ancestor Panles=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/adoptedComponents/vc/gitolite/_nodeBase_")][ =gitolite= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/adoptedComponents/vc/_nodeBase_")][ =vc= ]] *|* 
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** 
+** Overview Comes Here.
+** B|
+*      ================
+*  [[elisp:(beginning-of-buffer)][Top]] ################ [[elisp:(delete-other-windows)][(1)]]            *GIT Version Control -- BUE and BACS* 
+*      ################
+* 
+*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]   Related Panels  :: [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/bxDE/main/fullUsagePanel-en.org")][bxDE]] || [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/bxServices/bxCentral/fullUsagePanel-en.org")][bxCentral]] || [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/bxServices/versionControl/git/fullUsagePanel-en.org")][GIT]] || [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/bxServices/versionControl/gitRawAccess/fullUsagePanel-en.org")][GitRawAccess]] || [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/bxServices/versionControl/githubAccess/fullUsagePanel-en.org")][GithubAccess]] || [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/blee/syncUpdate")][Bx-Synch]]
+
+* 
+*  [[elisp:(org-cycle)][| ]]  [All]         ::       /Related -- See Also/   [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::   [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/blee/syncUpdate")][Synchronize]] |  [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/bxServices/versionControl")][VCs]] | [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/bxServices/versionControl/git")][GIT]]  | [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/bxServices/versionControl/cvs")][CVS]] [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][| ]]  [All]         ::       /IIMs Invoke and Visit Xrefs:/       *[[elisp:(org-cycle)][<<Xref-VersionControlGit>>]]*   [[elisp:(org-cycle)][| ]]
+**      ############
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [All]   [[elisp:(lsip-local-run-command "lcaGitBinsPrep.sh")][lcaGitBinsPrep.sh]]              [[file:/opt/public/osmt/bin/lcaGitBinsPrep.sh::Xref-Here-][Visit]] -- Applies to all of BxGit [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [All]   [[elisp:(lsip-local-run-command "lcaGitManage.sh")][lcaGitManage.sh]]                [[file:/opt/public/osmt/bin/lcaGitManage.sh::Xref-Here-][Visit]] -- Setting up Repositories And Users [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [All]   [[elisp:(lsip-local-run-command "lcaGitoliteManage.sh")][lcaGitoliteManage.sh]]           [[file:/opt/public/osmt/bin/lcaGitoliteManage.sh::Xref-Here-][Visit]] -- SSH Authenticated Network Access To Git [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [All]   [[elisp:(lsip-local-run-command "lcaGitDaemonAdmin.sh")][lcaGitDaemonAdmin.sh]]           [[file:/opt/public/osmt/bin/lcaGitoliteManage.sh::Xref-Here-][Visit]] -- Daemon For Anonymous Network Access To Git  [[elisp:(org-cycle)][| ]]
+**      ############
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [By*]   [[elisp:(lsip-local-run-command "bystarGitsManage.sh")][bystarFgcGitManage.sh]]          [[file:/opt/public/osmt/bin/bystarGitsManage.sh::Xref-Here-][Visit]] -- BxSO's GIT Functional Group Management [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [BxSo]  [[elisp:(lsip-local-run-command "bxsoGitManage.sh")][bxsoGitManage.sh]]               [[file:/opt/public/osmt/bin/bxsoGitManage.sh::Xref-Here-][Visit]] -- Manage ~BxSo/git (Initial, Create, Update, etc) [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [BxSo]  [[elisp:(lsip-local-run-command "bxsoPkiManage.sh")][bxsoPkiManage.sh]]                     -- Create Priv/Pub Key for BxSo [[elisp:(org-cycle)][| ]]
+**      ############
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [By*]   [[elisp:(lsip-local-run-command "bystarGitoliteManage.sh")][bystarGitoliteManage.sh]]        [[file:/opt/public/osmt/bin/bystarGitoliteManage.sh::Xref-Here-][Visit]] -- BxSO's GITs SSH Server Side Access (pub key exports) [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [By*]   [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh")][bystarGitoliteHttpAdmin.sh]]     [[file:/opt/public/osmt/bin/bystarGitoliteHttpAdmin.sh::Xref-Here-][Visit]] -- BxSO's GITs HTTP Server Side Access [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [By*]   [[elisp:(lsip-local-run-command "bystarGitwebAdmin.sh")][bystarGitwebAdmin.sh]]           [[file:/opt/public/osmt/bin/bystarGitwebAdmin.sh::Xref-Here-][Visit]] -- BxSO's Public GITs Web Access [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [By*]   [[elisp:(lsip-local-run-command "bystarGitwebAdmin.sh")][bystarGitDaemonManage.sh]]       [[file:/opt/public/osmt/bin/bystarGitwebAdmin.sh::Xref-Here-][Visit]] -- BxSO's Public GITs git protocol access [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [By*]   [[elisp:(lsip-local-run-command "bystarPkcsManage.sh")][bystarPkcsManage.sh]]            [[file: /opt/public/osmt/bin/bystarPkcsManage.sh::Xref-Here-][Visit]] -- BxSO's Certificate and Public Key [[elisp:(org-cycle)][| ]]
+**      ############
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [Bx-]   [[elisp:(lsip-local-run-command "bx-gitAccess.sh")][bx-gitAccess.sh]]                [[file:/opt/public/osmt/bin/bx-gitAccess.sh::Xref-Here-][Visit]] -- BxU and Ue-BxSO's acces to Remote BxSe Locator Name (BxSeLN) [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [BxU]   [[elisp:(lsip-local-run-command "bxuSshAccess.sh")][bxuSshAccess.sh]]                [[file:/opt/public/osmt/bin/bxuSshAccess.sh::Xref-Here-][Visit]] -- ~BxU/.ssh Management -- Adding BxSO's SSH Client Side Access [[elisp:(org-cycle)][| ]]
+**      ############
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [All]   [[elisp:(lsip-local-run-command "fgcGitSw.sh")][fgcGitSw.sh]]                    [[file:/opt/public/osmt/bin/fgcGitSw.sh::Xref-Here-][Visit]] -- Software Functional Grouping [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [All]   [[elisp:(lsip-local-run-command "fgcGitSvc.sh")][fgcGitSvc.sh]]                   [[file:/opt/public/osmt/bin/fgcGitSvc.sh::Xref-Here-][Visit]] -- Service Functional Grouping [[elisp:(org-cycle)][| ]]
+**      ############
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [Blee]  [[file:~/lisp/setup-global-magit.el::Xref-Here-][setup-global-magit.el]]          [[file:~/lisp/setup-global-magit.el::Xref-Here-][Visit]] -- Emacs Mode For Git [[elisp:(org-cycle)][| ]]
+*  [[elisp:(beginning-of-buffer)][Top]] ################ [[elisp:(delete-other-windows)][(1)]]            *Overview*
+*      *Plain Git: Model, Info and Pointers* ::  [[elisp:(beginning-of-buffer)][Top]]  [[elisp:(org-cycle)][| ]] 
+GIT services are based on the following:
+
+   - (Un-Authenticated) (anonymous) Read-Only Public Access GIT
+       - git-daemon   --- git clone git://host/rep
+       - gitweb       --- Web site for accessing public repositories
+       - gitolite anon http  --- git clone http://host/gitpub/rep
+
+   - (Authenticated) Access Controlled GIT
+       - gitolite ssh       --- git clone ssh:user@host/rep
+       - gitolite https     --- git clone https://user:passwd@host/git/rep
+       - gitolite http      --- git clone http://user:passwd@host/git/rep
+
+**  [[elisp:(org-cycle)][| ]]  Subject      :: Platform Setup Summary [[elisp:(org-cycle)][| ]]
+The ~bxu/.ssh/key.pub is used as gitolite administrator.
+**  [[elisp:(org-cycle)][| ]]  Subject      :: Basic Tutorial: Local Git Configuration And Usage [[elisp:(org-cycle)][| ]]
+
+Every git user should first introduce himself to git, by running these two commands:
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+The above is already sufficient to use git in a distributed and secure way, provided users have
+access to the machine assuming the server role via SSH. On the server machine, creating a new
+repository can be done with
+
+git init --bare /path/to/repository
+
+This creates a bare repository, that cannot be used to edit files directly. If you would rather
+have a working copy of the contents of the repository on the server, ommit the --bare option.
+
+Any client with ssh access to the machine can from then on clone the repository with
+
+git clone username@hostname:/path/to/repository
+
+Once cloned to the client's machine, the client can edit files, then commit and share them with:
+
+cd /path/to/repository
+#(edit some files
+git commit -a # Commit all changes to the local version of the repository
+git push origin master # Push changes to the server's version of the repository
+**  [[elisp:(org-cycle)][| ]]  Subject      :: Gitolite + gitweb + http Misc Pointers (URLs) [[elisp:(org-cycle)][| ]]
+http://gitolite.com/gitolite/g2/ggshb.html
+
+http://gitolite.com/gitolite/ssh-and-http.html
+
+http://josephspiros.com/2009/07/26/configuring-gitweb-for-apache-on-debian
+
+http://git-scm.com/book/en/Git-on-the-Server-Gitolite
+
+http://git-scm.com/book
+
+https://aricgardner.com/gitolite3/
+
+http://alouate.blogspot.com/2013/07/set-up-gitolite3-with-http-on.html
+
+http://blog.laimbock.com/2013/10/15/how-to-setup-gitolite-and-cgit-on-centos-6/
+
+http://www.marcmorgan.ca/?p=38
+
+https://github.com/sitaramc/gitolite/blob/master/t/smart-http.root-setup
+
+http://gitolite.googlecode.com/git-history/d4ea7e7fe76455e5e3596eacdda64bf4b1df7652/doc/http-backend.html
+
+https://github.com/tmatilai/gitolite-tools
+
+http://developer.pardus.org.tr/people/mehmet/blog/?p=23
+
+http://gitolite.com/gitolite/gitolite.html
+
+http://stackoverflow.com/questions/11649208/gitolite-smart-http-gives-uninitialised-value-for-rcumask/11813048#11813048
+
+**  [[elisp:(org-cycle)][| ]]  Subject      :: Work In Progress To Be Absorbed [[elisp:(org-cycle)][| ]]
+
+    setup apache so that the htaccess file it looks for is owned by the "git" user
+    in the ~/.gitolite.rc file, look for the variable $HTPASSWD_FILE and point it to this file
+    tell your users to type in ssh git@server htpasswd to set or change their HTTP passwords
+
+htpasswd -bc $GITOLITE_HTTP_HOME/gitolite-http-authuserfile admin admin
+map "htpasswd -b $GITOLITE_HTTP_HOME/gitolite-http-authuserfile % %" u{1..6}
+chown apache.apache $GITOLITE_HTTP_HOME/gitolite-http-authuserfile
+
+
+# ssh git@server info
+curl http://user:password@server/git/info
+# ssh git@server info repopatt
+curl http://user:password@server/git/info?repopatt
+# ssh git@server info repopatt user1 user2
+curl http://user:password@server/git/info?repopatt+user1+user2
+
+
+Hello,
+
+I have used subdirs for each user, in keydirs as in the repos, so that I can list them separately, and by urls. The configuration I used was something like this:
+
+txomon/Universidad "Javier Domingo" = "El repositorio de las cosas de la Uni"
+
+repo txomon/Universidad
+        RW+D = javier
+
+txomon/Ubuntu "Javier Domingo" = "El repositorio del script de instalacion de ubuntu"
+
+repo txomon/grub-melody
+        RW+D = javier
+    
+txomon/grub-melody "Javier Domingo" = "El repositorio para crear un creador de melodias para el grub"
+
+repo txomon/Ubuntu
+        RW+D = javier
+
+And keys where of the type:
+
+gitolite-admin/keydir/javier:
+javier@desktop.pub  javier@laptop.pub  javier@netbook.pub
+
+for user javier, in his own directory. Other keyfiles where in separate folders, thought this doesn't matter for gitolite, It does for having a concrete management 
+
+Hope it helps,
+
+2011/1/9 Marcello de Sousa <li...@area151.com>
+
+*      *ByStar Git: -- Structures, Uses And Policies* ::  [[elisp:(beginning-of-buffer)][Top]]  [[elisp:(org-cycle)][| ]] 
+**     ByStar-Git Structures  [[elisp:(beginning-of-buffer)][Top]]  [[elisp:(org-cycle)][| ]] 
+       Based on who will have  READ access to a Principle-BxISo, the following 
+       three top level Git directory structures are always created:
+
+       gitoBiso is /usr/lib/gitolite3/xxx/biso
+
+       1) gitoBiso/pub -- Everything under that is always anon readable by ALL
+	              Some may have write access
+       2) gitoBiso/priv  -- Only and only biso can read and write to all repos under this
+       3) gitoBiso/group -- Only members of defined groups can read  repos under this
+
+       *gitoBiso/priv/iso  -> ~biso/iso -- BxISe information*
+       See "Structure Of BxISo/iso" in ByStar Reference Model.
+       All that is realted to creation and maintenance of BxISo/BxISe 
+       and which should be subject to version control is contained here.
+
+       *General Sync Areas Under priv-pub-group*
+       There will always be:
+       - gitoBiso/pub/sync/0     ->  ~biso/sync/pub/0       # Repository For Std Bx Facilities (lcnt, mailings)
+       - biso/priv/sync/0        ->  ~biso/sync/priv/0
+       - biso/group/sync/0
+       - biso/pub/sync/1         ->  ~biso/sync/pub/1       # Repository For General Purpose Usage
+       - biso/priv/sync/1
+       - biso/group/sync/1
+	 
+**     ByStar-Git Usages  [[elisp:(beginning-of-buffer)][Top]]  [[elisp:(org-cycle)][| ]] 
+
+       Each BxISo has two sets of Gits.
+
+There are three different models for configuration and usages of
+BxGit:
+    1) General Model (Distros) (BxCentral and BxDevelopment) -- And for anonymous  access (managed by BxCentral)
+    2) BxCollective -- Group Development
+    3) ByEntityGit  -- Where a Git is bound to a BxEntity -- Private and ByEntity Administered
+
+**     Principle-Biso Git Creation  [[elisp:(beginning-of-buffer)][Top]]  [[elisp:(org-cycle)][| ]] 
+
+At The time of ``Realization Of A BxIse'', optionally the following happens:
+
+  1) Based on the BxIse, BxIso is created.
+  2) With [[elisp:(lsip-local-run-command "bystarFgcGitManage.sh")][bystarFgcGitManage.sh]], 
+     - bxuSshAccess.sh :: Should this be first or second?
+     - bystarGitoliteManage.sh :: Base config files are created -- When is the repository actually created
+     - bystarPkcsManage.sh ::
+     - bystarGitoliteHttpAdmin.sh :: With Principle-Biso's passwd https access to Biso GIT is provided.
+     - bystarGitwebAdmin.sh :: Initial https cloning
+     - [[bystarGitDaemonManage.sh]] ::  A read-only public Biso-Git is created
+
+For all Principle-BxISos on a BxPlatform, the platform's BxU is the Git administrator.
+
+Public Key of each BxISo is added to Git.
+
+**     Cloning From Principle-Biso   [[elisp:(beginning-of-buffer)][Top]]  [[elisp:(org-cycle)][| ]] 
+
+**     Collaborative Group GIT Management   [[elisp:(beginning-of-buffer)][Top]]  [[elisp:(org-cycle)][| ]] 
+
+Just assign http-git passwds.
+
+*  [[elisp:(beginning-of-buffer)][Top]] ################ [[elisp:(delete-other-windows)][(1)]]            *Activities*
+*  [[elisp:(org-cycle)][| ]]  [BxU]         ::        /BxU -- BxSo Relations/   [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [BxU]   [[elisp:(lsip-local-run-command "bxuSshAccess.sh")][bxuSshAccess.sh]]                [[file:/opt/public/osmt/bin/bxuSshAccess.sh::Xref-Here-][Visit]] -- ~BxU/.ssh Management  | [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bxuSshAccess.sh -v -n showRun -i bxuAcctBxsoList")][bxuSshAccess.sh -i bxuAcctBxsoList]] [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][| ]]  [BACS]        ::  [By*]     /BxIso FGC TopLevel:/   [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [By*]   [[elisp:(lsip-local-run-command "bystarFgcGitManage.sh")][bystarFgcGitManage.sh]]          [[file:/opt/public/osmt/bin/bystarFgcGitManage.sh::Xref-Here-][Visit]] -- BxSO's GIT Functional Group Management [[elisp:(org-cycle)][| ]]
+***      ########
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bystarFgcGitManage.sh -v -n showRun -p bystarUid=current -i fullUpdate")][bystarFgcGitManage.sh -p bystarUid=current -i fullUpdate]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bystarFgcGitManage.sh -v -n showRun -p bystarUid=prompt -i fullUpdate")][bystarFgcGitManage.sh -p bystarUid=prompt -i fullUpdate]] [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][| ]]  [BACS]        ::  [Bx-]     /bx-gitAccess+bxuSshAccess/ =Usage=  ssh, http/https / gitProtocol |  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [BxU]   [[elisp:(lsip-local-run-command "bxuSshAccess.sh")][bxuSshAccess.sh]]                [[file:/opt/public/osmt/bin/bxuSshAccess.sh::Xref-Here-][Visit]] -- ~BxU/.ssh Management -- Adding BxSO's SSH Client Side Access |  [[elisp:(org-cycle)][| ]]
+***      ########
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bxuSshAccess.sh -v -n showRun -i bxuAcctBxsoList")][bxuSshAccess.sh -i bxuAcctBxsoList]] [[elisp:(org-cycle)][| ]]
+***      ########
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bxuSshAccess.sh -v -n showRun -p bystarUid=current -i sshAccess")][bxuSshAccess.sh -p bystarUid=current -i sshAccess]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bxuSshAccess.sh -v -n showRun -p bystarUid=prompt -i sshAccess")][bxuSshAccess.sh -p bystarUid=prompt -i sshAccess]] [[elisp:(org-cycle)][| ]]
+***      ########
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   ~/.ssh/config   ~/.ssh/sa-20000.dest [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [Bx]    [[elisp:(lsip-local-run-command "bx-gitAccess.sh")][bx-gitAccess.sh]]                [[file:/opt/public/osmt/bin/bx-gitAccess.sh::Xref-Here-][Visit]] -- BxU and Ue-BxSO's access to Remote BxSe Locator Name |  [[elisp:(org-cycle)][| ]]
+***      ########
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bx-gitAccess.sh -v -n showRun -p bystarUid=current -i reposListWithSsh git.example.com")][bx-gitAccess.sh -p bystarUid=current -i reposListWithSsh git.example.com]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bx-gitAccess.sh -v -n showRun -p bystarUid=prompt -i reposListWithSsh git.example.com")][bx-gitAccess.sh -p bystarUid=prompt -i reposListWithSsh git.example.com]] [[elisp:(org-cycle)][| ]]
+***      ########
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bx-gitAccess.sh -v -n showRun -p bystarUid=current -i gitSshAccess git.example.com")][bx-gitAccess.sh -p bystarUid=current -i gitSshAccess git.example.com]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bx-gitAccess.sh -v -n showRun -p bystarUid=prompt -i gitSshAccess git.example.com")][bx-gitAccess.sh -p bystarUid=prompt -i gitSshAccess git.example.com]] [[elisp:(org-cycle)][| ]]
+
+*  [[elisp:(org-cycle)][| ]]  [BACS]        ::  [By*]     /GitoLite (ssh and http)/ =Service=   [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [By*]   [[elisp:(lsip-local-run-command "bystarGitoliteManage.sh")][bystarGitoliteManage.sh]]        [[file:/opt/public/osmt/bin/bystarGitoliteManage.sh::Xref-Here-][Visit]] -- BxSO's GITs SSH Server Side Access (pub key exports) |  [[elisp:(org-cycle)][| ]]
+***      ########
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bystarGitoliteManage.sh -i gitoAcctPubKeysList")][bystarGitoliteManage.sh -i gitoAcctPubKeysList]]            # List Of Those Who Have SSH Access [[elisp:(org-cycle)][| ]]
+***      ########
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bystarGitoliteManage.sh -v -n showRun -p bystarUid=current -i fullConfigUpdate")][bystarGitoliteManage.sh -p bystarUid=current -i fullConfigUpdate]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bystarGitoliteManage.sh -v -n showRun -p bystarUid=prompt -i fullConfigUpdate")][bystarGitoliteManage.sh -p bystarUid=prompt -i fullConfigUpdate]] [[elisp:(org-cycle)][| ]]
+***      ########
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bystarGitoliteManage.sh -v -n showRun -p bystarUid=current -i fullUpdate")][bystarGitoliteManage.sh -p bystarUid=current -i fullUpdate]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bystarGitoliteManage.sh -v -n showRun -p bystarUid=prompt -i fullUpdate")][bystarGitoliteManage.sh -p bystarUid=prompt -i fullUpdate]] [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [By*]   [[elisp:(lsip-local-run-command "bystarGitsManage.sh")][bystarGitsManage.sh]]            [[file:/opt/public/osmt/bin/bystarGitsManage.sh::Xref-Here-][Visit]] -- BxSO's GITs Manage (Create, Update, etc) -- BxSO Mapfile [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [By*]   [[elisp:(lsip-local-run-command "bystarPkcsManage.sh")][bystarPkcsManage.sh]]            [[file: /opt/public/osmt/bin/bystarPkcsManage.sh::Xref-Here-][Visit]] -- BxSO's Certificate and Public Key [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bystarPkcsManage.sh -p bystarUid=current -i bxsoCertInspect")][bystarPkcsManage.sh -p bystarUid=current -i bxsoCertInspect]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bystarPkcsManage.sh -p bystarUid=prompt -i bxsoCertInspect")][bystarPkcsManage.sh -p bystarUid=prompt -i bxsoCertInspect]] [[elisp:(org-cycle)][| ]]
+***      ########
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bystarPkcsManage.sh -p bystarUid=current -i bxsoPkcsFullUpdate")][bystarPkcsManage.sh -p bystarUid=current -i bxsoPkcsFullUpdate]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bystarPkcsManage.sh -p bystarUid=prompt -i bxsoPkcsFullUpdate")][bystarPkcsManage.sh -p bystarUid=prompt -i bxsoPkcsFullUpdate]] [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [By*]   [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh")][bystarGitoliteHttpAdmin.sh]]     [[file:/opt/public/osmt/bin/bystarGitoliteHttpAdmin.sh::Xref-Here-][Visit]] -- BxSO's GITs HTTP Server Side Access [[elisp:(org-cycle)][| ]]
+***      ########
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh -v -n showRun -p bystarUid=current -i fullUpdate")][bystarGitoliteHttpAdmin.sh -p bystarUid=current -i fullUpdate]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh -v -n showRun -p bystarUid=prompt -i fullUpdate")][bystarGitoliteHttpAdmin.sh -p bystarUid=prompt -i fullUpdate]] [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][| ]]  [BACS]        ::  [By*]     /GitWeb/  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [By*]   [[elisp:(lsip-local-run-command "bystarGitwebAdmin.sh")][bystarGitwebAdmin.sh]]           [[file:/opt/public/osmt/bin/bystarGitwebAdmin.sh::Xref-Here-][Visit]] -- BxSO's Public GITs Web Access [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][| ]]  [BACS]        ::  [By*]     /GitDaemon/  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [By*]   [[elisp:(lsip-local-run-command "bystarGitDaemonManage.sh")][bystarGitDaemonManage.sh]]       [[file:/opt/public/osmt/bin/bystarGitDaemonManage.sh::Xref-Here-][Visit]] -- BxSO's Public git access [[elisp:(org-cycle)][| ]]
+*  [[elisp:(beginning-of-buffer)][Top]] ################ [[elisp:(delete-other-windows)][(1)]]            *Git User (Client): Procedures -- How Tos* 
+*  [[elisp:(org-cycle)][| ]]  [Aue]         ::            /Initial Setp -- Overview/  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Git          ::  Git Initializations [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Git          ::  [[elisp:(lsip-local-run-command "git --no-pager config --list")][git --no-pager config --list]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Git          ::  [[elisp:(lsip-local-run-command "echo git config --global user.email email@example.com")][echo git config --global user.email email@example.com]]   [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Git          ::  [[elisp:(lsip-local-run-command "echo git config --global user.name UserName")][echo git config --global user.name UserName]]   [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Git          ::  [[elisp:(lsip-local-run-command "git config --global http.sslverify false")][git config --global http.sslverify false]]  # or export GIT_SSL_NO_VERIFY=1  [[elisp:(org-cycle)][| ]]
+*** TODO [[elisp:(org-cycle)][| ]]  Git          ::  update-ca-certificates Can also happen when ntp is not working  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Localhost    ::  GitoLite [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  [[elisp:(lsip-local-run-command "lcaGitoliteManage.sh -i moduleDescription | emlVisit")][lcaGitoliteManage.sh -i moduleDescription | emlVisit]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  test it with  [[elisp:(lsip-local-run-command "ssh git@localhost info")][ssh git@localhost info]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  [[elisp:(lsip-local-run-command "lcaGitoliteManage.sh -h -v -n showRun -i glAdminClone")][lcaGitoliteManage.sh -h -v -n showRun -i glAdminClone]]  # clones in /var/osmt/gits/gitolite-admin [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  [[elisp:(lsip-local-run-command "lcaGitoliteManage.sh -h -v -n showRun -i glAdminShow")][lcaGitoliteManage.sh -h -v -n showRun -i glAdminShow]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  Next Use bystarGitoliteManage to create per BxSo repositories [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  lcaGitwebManage.sh     -- Perhaps should be deleted [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][| ]]  [BACS]        ::  [IsoU]    /BxIso Setup For Specified GitBxIseLN --  Step-By-Step/   [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [[elisp:(lsip-local-run-command "bxsoPkiManage.sh")][bxsoPkiManage.sh]]    -- Create/Verify BxSo's Pub/Priv Keys (BUE) |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   Verify BxSo Keys:           [[elisp:(lsip-local-run-command "bxsoPkiManage.sh -p bystarUid=current -i bxsoSshAcctKeyVerify")][bxsoPkiManage.sh -p bystarUid=current -i bxsoSshAcctKeyVerify]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                               [[elisp:(lsip-local-run-command "bxsoPkiManage.sh -p bystarUid=prompt -i bxsoSshAcctKeyVerify")][bxsoPkiManage.sh -p bystarUid=prompt -i bxsoSshAcctKeyVerify]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   Update BxSo Keys:           [[elisp:(lsip-local-run-command "bxsoPkiManage.sh -p bystarUid=current -i bxsoSshAcctKeyUpdate")][bxsoPkiManage.sh -p bystarUid=current -i bxsoSshAcctKeyUpdate]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                               [[elisp:(lsip-local-run-command "bxsoPkiManage.sh -p bystarUid=prompt -i bxsoSshAcctKeyUpdate")][bxsoPkiManage.sh -p bystarUid=prompt -i bxsoSshAcctKeyUpdate]] [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [[elisp:(lsip-local-run-command "bx-gitAccess.sh")][bx-gitAccess.sh]]     -- Push Pub-Keys To Specified GIT Servers |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   Send BxSo Keys (To Own):    [[elisp:(lsip-local-run-command "bx-gitAccess.sh -p bystarUid=current -i gitoBxSoPubKeySend")][bx-gitAccess.sh -p bystarUid=current -i gitoBxSoPubKeySend]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                               [[elisp:(lsip-local-run-command "bx-gitAccess.sh -p bystarUid=prompt -i gitoBxSoPubKeySend")][bx-gitAccess.sh -p bystarUid=prompt -i gitoBxSoPubKeySend]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   Send BxSo Keys (Specific):  [[elisp:(lsip-local-run-command "bx-gitAccess.sh -p bystarUid=current -i gitoBxSoPubKeySend  10.154.95.13")][bx-gitAccess.sh -p bystarUid=current -i gitoBxSoPubKeySend 10.154.95.13]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                               [[elisp:(lsip-local-run-command "bx-gitAccess.sh -p bystarUid=prompt -i gitoBxSoPubKeySend  10.154.95.13")][bx-gitAccess.sh -p bystarUid=prompt -i gitoBxSoPubKeySend 10.154.95.13]] [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [[elisp:(lsip-local-run-command "bxuSshAccess.sh")][bxuSshAccess.sh]]     -- Import BxSo Keys into BxU's ssh Environement |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   BxU BxSo List:              [[elisp:(lsip-local-run-command "bxuSshAccess.sh -h -v -n showRun -i bxuAcctBxsoList")][bxuSshAccess.sh -i bxuAcctBxsoList]] [[elisp:(org-cycle)][| ]]
+***      ========
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   BxU Import/Update BxSo:     [[elisp:(lsip-local-run-command "bxuSshAccess.sh -h -v -n showRun -p bystarUid=current -i bxuAcctBxsoCredentialsUpdate")][bxuSshAccess.sh -p bystarUid=current -i bxuAcctBxsoCredentialsUpdate]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                               [[elisp:(lsip-local-run-command "bxuSshAccess.sh -h -v -n showRun -p bystarUid=prompt -i bxuAcctBxsoCredentialsUpdate")][bxuSshAccess.sh -p bystarUid=prompt -i bxuAcctBxsoCredentialsUpdate]] [[elisp:(org-cycle)][| ]]
+***      ========   
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   Full Update                 [[elisp:(lsip-local-run-command "bxuSshAccess.sh -h -v -n showRun -p bystarUid=current -i fullUpdate")][bxuSshAccess.sh -p bystarUid=current -i fullUpdate]] [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [[elisp:(lsip-local-run-command "bxuSshAccess.sh")][bxuSshAccess.sh]]     -- Configure Local Ssh For Access To Each GIT Server |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   Config File Show:           [[elisp:(lsip-local-run-command "bxuSshAccess.sh -h -v -n showRun -i configFileShow")][bxuSshAccess.sh -i configFileShow]] [[elisp:(org-cycle)][| ]]
+***      ========
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   Config Update (Own GIT):    [[elisp:(lsip-local-run-command "bxuSshAccess.sh -h -v -n showRun -p bystarUid=current -i configFileUpdate")][bxuSshAccess.sh -p bystarUid=current -i configFileUpdate]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                               [[elisp:(lsip-local-run-command "bxuSshAccess.sh -h -v -n showRun -p bystarUid=prompt -i configFileUpdate")][bxuSshAccess.sh -p bystarUid=prompt -i configFileUpdate]] [[elisp:(org-cycle)][| ]]
+***      ========
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   Config Update (Specific):   [[elisp:(lsip-local-run-command "bxuSshAccess.sh -h -v -n showRun -p bystarUid=current -i configFileUpdate")][bxuSshAccess.sh -p bystarUid=current -i configFileUpdate]]  NOTYET [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                               [[elisp:(lsip-local-run-command "bxuSshAccess.sh -h -v -n showRun -p bystarUid=prompt -i configFileUpdate")][bxuSshAccess.sh -p bystarUid=prompt -i configFileUpdate]] [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [[elisp:(lsip-local-run-command "bxuSshAccess.sh")][bxuSshAccess.sh]]     -- Test Access To Each GIT Server |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   BxSo Access To (Own Git):   [[elisp:(lsip-local-run-command "bxuSshAccess.sh -h -v -n showRun -p bystarUid=current -i sshAccess")][bxuSshAccess.sh -p bystarUid=current -i sshAccess]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                               [[elisp:(lsip-local-run-command "bxuSshAccess.sh -h -v -n showRun -p bystarUid=prompt -i sshAccess")][bxuSshAccess.sh -p bystarUid=prompt -i sshAccess]] [[elisp:(org-cycle)][| ]]
+***      ========
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   Specified GIT Server:       [[elisp:(lsip-local-run-command "bxuSshAccess.sh -h -v -n showRun -p bystarUid=current -i sshAccess")][bxuSshAccess.sh -p bystarUid=current -i sshAccess]] [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][| ]]  [BACS]        ::  [All]     /BxIso Setup For Specified GitBxIseLN --  FullUpdate/  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::   [[elisp:(lsip-local-run-command "bx-gitAccess.sh")][bx-gitAccess.sh]]    -- Full Update For BxSo+RemGitBxSeLN  -- Verify BxSo Keys, + Send + BxU Ssh Config + Test |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   Full Update (To Own):       [[elisp:(lsip-local-run-command "bx-gitAccess.sh -p bystarUid=current -i fullUpdate")][bx-gitAccess.sh -p bystarUid=current -i fullUpdate]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                               [[elisp:(lsip-local-run-command "bx-gitAccess.sh -p bystarUid=prompt -i fullUpdate")][bx-gitAccess.sh -p bystarUid=prompt -i fullUpdate]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   Full Update (To Specific):  [[elisp:(lsip-local-run-command "bx-gitAccess.sh -p bystarUid=current -i fullUpdate 10.154.95.13")][bx-gitAccess.sh -p bystarUid=current -i fullUpdate 10.154.95.13]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                               [[elisp:(lsip-local-run-command "bx-gitAccess.sh -p bystarUid=prompt -i fullUpdate 10.154.95.13")][bx-gitAccess.sh -p bystarUid=prompt -i fullUpdate 10.154.95.13]] [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][| ]]  [BACS]        ::  [All]     /Git Access -- SSH/HTTP/HTTPS/Anon -- List, Clone (Initial Pull)/  [[elisp:(org-cycle)][| ]]
+**      ############
+**  [[elisp:(org-cycle)][| ]]  Subject      ::   Initializing/Setting-Up Local Git |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: git config --global user.email "git@mohsen.1.banan.byname.net" [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: git config --global user.name "Mohsen BANAN" [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: The above two needs to be automated based on BxSO [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::   [[elisp:(lsip-local-run-command "bx-gitAccess.sh")][bx-gitAccess.sh]] |  [[elisp:(lsip-local-run-command "bx-gitAccess.sh -i visit")][bx-gitAccess.sh -i visit]] [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::   Authenticated (Keys) SSH          -- List-Clone/Pull From BxSo Git Server |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  authSsh List: [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  authSsh Clone: [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  Authenticated -- cd ~/tmp/git2; git clone git@sa-20000.git.bysource.org:ea-59075/pub/sync1 [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::   Authenticated (Passwd) HTTP/HTTPS -- List-Clone/Pull From BxSo Git Server |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  Passwd Authenticated HTTP/HTTPS -- List Of Repos: |  [[elisp:(org-cycle)][| ]]
+****  [[elisp:(org-cycle)][| ]]  Subject    :: BySource  [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=ea-59075 -p sr=iso/sr/apache2/git -i gitAccessAuth")][bystarGitoliteHttpAdmin.sh -p bystarUid=ea-59075 -p sr=iso/sr/apache2/git -i gitAccessAuth]] [[elisp:(org-cycle)][| ]]
+****  [[elisp:(org-cycle)][| ]]  Subject    :: BySource  [[elisp:(lsip-local-run-command "echo bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=ea-59075 -p sr=iso/sr/apache2/git -i gitAccessAuth user passwd")][echo bystarGitoliteHttpAdmin.sh -p bystarUid=ea-59075 -p sr=iso/sr/apache2/git -i gitAccessAuth user passwd]] [[elisp:(org-cycle)][| ]]
+****   ####
+****  [[elisp:(org-cycle)][| ]]  Subject    :: Devel   [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=ea-59070 -p sr=iso/sr/apache2/git -i gitAccessAuth")][bystarGitoliteHttpAdmin.sh -p bystarUid=ea-59070 -p sr=iso/sr/apache2/git -i gitAccessAuth]] [[elisp:(org-cycle)][| ]]
+****  [[elisp:(org-cycle)][| ]]  Subject    :: Devel   [[elisp:(lsip-local-run-command "echo bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=ea-59070 -p sr=iso/sr/apache2/git -i gitAccessAuth user passwd")][echo bystarGitoliteHttpAdmin.sh -p bystarUid=ea-59070 -p sr=iso/sr/apache2/git -i gitAccessAuth user passwd]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  Passwd Authenticated HTTP/HTTPS -- Clone Repos: |  [[elisp:(org-cycle)][| ]]
+****  [[elisp:(org-cycle)][| ]]  Subject    ::  Authenticated Clone -- cd ~/tmp/git2; git clone git@sa-20000.git.bysource.org:ea-59075/pub/sync1 [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::   Anon/Public HTTP/HTTPS            -- List-Clone/Pull From BxSo Git Server |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  Anon/Public   --  HTTP/HTTPS -- List Of Repos: |  [[elisp:(org-cycle)][| ]]
+****  [[elisp:(org-cycle)][| ]]  Subject    :: BySource  [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=ea-59075 -p sr=iso/sr/apache2/git -i gitAccessAnon")][bystarGitoliteHttpAdmin.sh -p bystarUid=ea-59075 -p sr=iso/sr/apache2/git -i gitAccessAnon]] [[elisp:(org-cycle)][| ]]
+****  [[elisp:(org-cycle)][| ]]  Subject    :: BySource  [[elisp:(lsip-local-run-command "echo bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=ea-59075 -p sr=iso/sr/apache2/git -i gitAccessAnon user passwd")][echo bystarGitoliteHttpAdmin.sh -p bystarUid=ea-59075 -p sr=iso/sr/apache2/git -i gitAccessAnon user passwd]] [[elisp:(org-cycle)][| ]]
+****   ####
+****  [[elisp:(org-cycle)][| ]]  Subject    :: Devel   [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=ea-59070 -p sr=iso/sr/apache2/git -i gitAccessAnon")][bystarGitoliteHttpAdmin.sh -p bystarUid=ea-59070 -p sr=iso/sr/apache2/git -i gitAccessAnon]] [[elisp:(org-cycle)][| ]]
+****  [[elisp:(org-cycle)][| ]]  Subject    :: Devel   [[elisp:(lsip-local-run-command "echo bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=ea-59070 -p sr=iso/sr/apache2/git -i gitAccessAnon user passwd")][echo bystarGitoliteHttpAdmin.sh -p bystarUid=ea-59070 -p sr=iso/sr/apache2/git -i gitAccessAnon user passwd]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  Anon/Public   --  HTTP/HTTPS -- Clone Repos:  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::   Anon/Public GitGeamon             -- List-Clone/Pull From BxSo Git Server | [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: [[elisp:(lsip-local-run-command "bystarGitDaemonManage.sh")][bystarGitDaemonManage.sh]] |  [[elisp:(lsip-local-run-command "bystarGitDaemonManage.sh -i visit")][bystarGitDaemonManage.sh -i visit]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: FullUpdate At BxSo Creation:  [[elisp:(lsip-local-run-command "bystarGitDaemonManage.sh -h -v -n showRun -p bystarUid=current -i gitAccess")][bystarGitDaemonManage.sh -p bystarUid=current -i gitAccess]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                               [[elisp:(lsip-local-run-command "bystarGitDaemonManage.sh -h -v -n showRun -p bystarUid=prompt -i gitAccess")][bystarGitDaemonManage.sh -p bystarUid=prompt -i gitAccess]] [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][| ]]  [BACS]        ::  [All]     /Git Usage -- UIs -- Stage, Commit, Push/   [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::   Command Line:  [[elisp:(lsip-local-run-command "lcaGitManage.sh")][lcaGitManage.sh]] |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   Full Update (To Own):       [[elisp:(lsip-local-run-command "bx-gitAccess.sh -p bystarUid=current -i fullUpdate")][bx-gitAccess.sh -p bystarUid=current -i fullUpdate]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                               [[elisp:(lsip-local-run-command "bx-gitAccess.sh -p bystarUid=prompt -i fullUpdate")][bx-gitAccess.sh -p bystarUid=prompt -i fullUpdate]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   Full Update (To Specific):  [[elisp:(lsip-local-run-command "bx-gitAccess.sh -p bystarUid=current -i fullUpdate 10.154.95.13")][bx-gitAccess.sh -p bystarUid=current -i fullUpdate 10.154.95.13]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                               [[elisp:(lsip-local-run-command "bx-gitAccess.sh -p bystarUid=prompt -i fullUpdate 10.154.95.13")][bx-gitAccess.sh -p bystarUid=prompt -i fullUpdate 10.154.95.13]] [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::   Blee Git (MaGit)|  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: Blee Menu -- Sync (VC) Magit [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: Cheat Sheet:       http://daemianmack.com/magit-cheatsheet.html [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: MaGit Tutorial:    http://www.masteringemacs.org/article/introduction-magit-emacs-mode-git [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: MaGit Manual:       [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: Starting Point:    Go To The Repo Dir -- M-x magit-status [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::   Eclipse Git |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: Installing GIT on Eclipse [[elisp:(org-cycle)][| ]]
+	 Latest Eclipse comes with Builtin Git  -- For Older versions Get eGit
+**  [[elisp:(org-cycle)][| ]]  Subject      ::   Git Gui |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: sudo apt-get install git-gui [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: gitk [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [[elisp:(lsip-local-run-command "bystarGitwebAdmin.sh")][bystarGitwebAdmin.sh]]  -- Configuration Of Public Web To Publicly Designated Gits | [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: Web Access To BxSo Git:        [[elisp:(lsip-local-run-command "bystarGitwebAdmin.sh -h -v -n showRun -p bystarUid=current -i visitUrl")][bystarGitwebAdmin.sh -p bystarUid=current -i visitUrl]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                                [[elisp:(lsip-local-run-command "bystarGitwebAdmin.sh -h -v -n showRun -p bystarUid=prompt -i visitUrl")][bystarGitwebAdmin.sh -p bystarUid=prompt -i visitUrl]] [[elisp:(org-cycle)][| ]]
+*  [[elisp:(beginning-of-buffer)][Top]] ################ [[elisp:(delete-other-windows)][(1)]]            *Git Provider (Server):  Procedures -- How Tos*
+*  [[elisp:(org-cycle)][| ]]  [BACS]        ::  [BxP]     /Initial Setup -- At Platform Build/    details of fgcGitSvc.sh [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [All]   [[elisp:(lsip-local-run-command "fgcGitSw.sh")][fgcGitSw.sh]]                    [[file:/opt/public/osmt/bin/fgcGitSw.sh::Xref-Here-][Visit]] -- Software Functional Grouping [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [All]   [[elisp:(lsip-local-run-command "fgcGitSvc.sh")][fgcGitSvc.sh]]                   [[file:/opt/public/osmt/bin/fgcGitSvc.sh::Xref-Here-][Visit]] -- Service Functional Grouping [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  BinsPreps -- Run lcaGitBinsPrep.sh -- make sure suexec is enabled in lcaApache2Admin.sh [[elisp:(org-cycle)][| ]]
+**      ############
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [[elisp:(lsip-local-run-command "lcaGitoliteManage.sh")][lcaGitoliteManage.sh]]     -- PLATFORM General Access Control and Base Of Repositories |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  [[file:/opt/public/osmt/bin/lcaGitoliteManage.sh::Xref-Here-][Visit-lcaGitoliteManage.sh]] -- SSH Authenticated Network Access To Git [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  [[elisp:(lsip-local-run-command "lcaGitoliteManage.sh -i moduleDescription | emlVisit")][lcaGitoliteManage.sh -i moduleDescription | emlVisit]] [[elisp:(org-cycle)][| ]]
+***      ========
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  [[elisp:(lsip-local-run-command "lcaGitoliteManage.sh -h -v -n showRun -i gitoliteBaseDirGet")][lcaGitoliteManage.sh -i gitoliteBaseDirGet]]                # Platform's BaseDir [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  [[elisp:(lsip-local-run-command "lcaGitoliteManage.sh -h -v -n showRun -i gitoliteRepositoriesBaseDirGet")][lcaGitoliteManage.sh -i gitoliteRepositoriesBaseDirGet]]    # Platform's Repositories BaseDir [[elisp:(org-cycle)][| ]]
+***      ========
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  [[elisp:(lsip-local-run-command "ssh git@localhost info")][ssh git@localhost info]]                                    # Access/Test Platform's Response [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  [[elisp:(lsip-local-run-command "lcaGitoliteManage.sh -h -v -n showRun -i glAdminClone")][lcaGitoliteManage.sh -h -v -n showRun -i glAdminClone]]     # clones in /var/osmt/gits/gitolite-admin [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  [[elisp:(lsip-local-run-command "lcaGitoliteManage.sh -h -v -n showRun -i glAdminShow")][lcaGitoliteManage.sh -h -v -n showRun -i glAdminShow]]      # Visit Cloned Admin Repositories [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  Next Use bystarGitoliteManage to create per BxSo repositories [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [[elisp:(lsip-local-run-command "lcaGitDaemonAdmin.sh")][lcaGitDaemonAdmin.sh]]     -- Anon git protocol access setup |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   [[elisp:(lsip-local-run-command "lcaGitDaemonAdmin.sh -i daemonStatus")][lcaGitDaemonAdmin.sh  -i daemonStatus]] [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][| ]]  [BACS]        ::  [IsoP]    /Initial Setup -- At BxIso Creation/   [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [By*]   [[elisp:(lsip-local-run-command "bystarFgcGitManage.sh")][bystarFgcGitManage.sh]]          [[file:/opt/public/osmt/bin/bystarFgcGitManage.sh::Xref-Here-][Visit]] -- BxSO's GIT Functional Group Management [[elisp:(org-cycle)][| ]]
+**      ############
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [[elisp:(lsip-local-run-command "bxsoPkiManage.sh")][bxsoPkiManage.sh]]         -- Create/Verfiy BxSo's Pub/Priv Keys (BACS) |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   Verify BxSo Keys:           [[elisp:(lsip-local-run-command "bxsoPkiManage.sh -p bystarUid=current -i bxsoSshAcctKeyVerify")][bxsoPkiManage.sh -p bystarUid=current -i bxsoSshAcctKeyVerify]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                               [[elisp:(lsip-local-run-command "bxsoPkiManage.sh -p bystarUid=prompt -i bxsoSshAcctKeyVerify")][bxsoPkiManage.sh -p bystarUid=prompt -i bxsoSshAcctKeyVerify]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   Update BxSo Keys:           [[elisp:(lsip-local-run-command "bxsoPkiManage.sh -p bystarUid=current -i bxsoSshAcctKeyUpdate")][bxsoPkiManage.sh -p bystarUid=current -i bxsoSshAcctKeyUpdate]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                               [[elisp:(lsip-local-run-command "bxsoPkiManage.sh -p bystarUid=prompt -i bxsoSshAcctKeyUpdate")][bxsoPkiManage.sh -p bystarUid=prompt -i bxsoSshAcctKeyUpdate]] [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [[elisp:(lsip-local-run-command "bxsoGitManage.sh")][bxsoGitManage.sh]]         -- Verfiy ~BxSo/gits are in place |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::   Update ~BxSo/gits:          [[elisp:(lsip-local-run-command "bxsoGitManage.sh -p bystarUid=current -i gitoReposBasesPrep")][bxsoGitManage.sh -p bystarUid=current -i gitoReposBasesPrep]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                               [[elisp:(lsip-local-run-command "bxsoGitManage.sh -p bystarUid=prompt -i gitoReposBasesPrep")][bxsoGitManage.sh -p bystarUid=prompt -i gitoReposBasesPrep]] [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [[elisp:(lsip-local-run-command "bystarGitoliteManage.sh")][bystarGitoliteManage.sh]]  -- Config And Manage Repositories |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: FullUpdate At BxSo Creation:  [[elisp:(lsip-local-run-command "bystarGitoliteManage.sh -h -v -n showRun -p bystarUid=current -i fullUpdate")][bystarGitoliteManage.sh -p bystarUid=current -i fullUpdate]] | [[elisp:(org-cycle)][| ]]
+	 Will export pub key to server, Create config file and starting point repositories
+***      ########
+***  [[elisp:(org-cycle)][| ]]  Subject     :: ls -ldt /var/lib/gitolite3/.gitolite/keydir [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: Config File Show:             [[elisp:(lsip-local-run-command "bystarGitoliteManage.sh -h -v -n showRun -i configFileShow")][bystarGitoliteManage.sh -i configFileShow]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: Config File Update:           [[elisp:(lsip-local-run-command "bystarGitoliteManage.sh -h -v -n showRun -p bystarUid=current -i fullConfigUpdate")][bystarGitoliteManage.sh -p bystarUid=current -i fullConfigUpdate]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: NOTYET -- Make sure dns record for git.xxx has been created [[elisp:(org-cycle)][| ]]
+**      ############
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh")][bystarGitoliteHttpAdmin.sh]]   -- Https With Passwords |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: Full Update At BxSo Creation:  [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=current -i fullUpdate")][bystarGitoliteHttpAdmin.sh -p bystarUid=current -i fullUpdate]] iso/sr/apache2/git [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                                [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=prompt -i fullUpdate")][bystarGitoliteHttpAdmin.sh -p bystarUid=prompt -i fullUpdate]] [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [[elisp:(lsip-local-run-command "bystarGitDaemonManage.sh")][bystarGitDaemonManage.sh]]     -- Anon Git Configuration For BxSo |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: Full Update At BxSo Creation:  [[elisp:(lsip-local-run-command "bystarGitDaemonManage.sh -h -v -n showRun -p bystarUid=current -i fullUpdate")][bystarGitDaemonManage.sh -p bystarUid=current -i fullUpdate]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                                [[elisp:(lsip-local-run-command "bystarGitDaemonManage.sh -h -v -n showRun -p bystarUid=prompt -i fullUpdate")][bystarGitDaemonManage.sh -p bystarUid=prompt -i fullUpdate]] [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  [[elisp:(lsip-local-run-command "bystarGitwebAdmin.sh")][bystarGitwebAdmin.sh]]         -- Configuration Of Public Web To Publicly Designated Gits |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: Full Update At BxSo Creation:  [[elisp:(lsip-local-run-command "bystarGitwebAdmin.sh -h -v -n showRun -p bystarUid=current -i fullUpdate")][bystarGitwebAdmin.sh -p bystarUid=current -i fullUpdate]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::                                [[elisp:(lsip-local-run-command "bystarGitwebAdmin.sh -h -v -n showRun -p bystarUid=prompt -i fullUpdate")][bystarGitwebAdmin.sh -p bystarUid=prompt -i fullUpdate]] [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][| ]]  [BACS]        ::  [By*]     /Server Configuration: Adding-Modifying Repositories/ =Repos=   [[elisp:(org-cycle)][| ]]
+**      ############
+**  [[elisp:(org-cycle)][| ]]  [ISoP]        ::  Adding Repositories And Access Control  [[elisp:(org-cycle)][| ]]
+***      Policy         ::  Make sure that the name of the repo does not include any dashes use camelCase naming
+***  [[elisp:(org-cycle)][| ]]  Conf           ::  Repositories And Access List:  [[elisp:(find-file "/var/osmt/gits/gitolite-admin/conf/gitolite.conf")][visit gitolite.conf]]  [[elisp:(lsip-local-run-command "lcaGitManage.sh -i  gitCommitPushThere /var/osmt/gits/gitolite-admin/conf")][CommitPush conf]]  # Needs to become aggregate of all BxIso-s [[elisp:(org-cycle)][| ]]
+***      ######## Repository "description" for gitweb, etc:
+***  [[elisp:(org-cycle)][| ]]  Desc           ::  Create in ~BxIso/iso/gits/repoControl/xx/desc [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Desc           ::  bystarGitoliteManage.sh -i repoSetDesc [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  [ISoU]        ::  Cloning The Newly Empty Repo [[elisp:(org-cycle)][| ]]
+***       Cloning       ::  Use bx-gitAccess.sh to clone
+**  [[elisp:(org-cycle)][| ]]  [ISoU]        ::  Using The New Repo  [[elisp:(org-cycle)][| ]]
+***       Populate      ::  Bring over the files, stage, commit, push
+*  [[elisp:(org-cycle)][| ]]  [BACS]        ::  [BxP]     /Server Configuration: Adding-Modifying Users/ =Users=   [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  A2Users      ::  Adding Apache2 Users/Passwd  -- See ~BxIso/bin/ ~ea-59070/LUE/Sync/bin/bxGitUserAdd.sh [[elisp:(org-cycle)][| ]]
+***  In bxGitUserAdd.sh Add to Users List
+***  Run bxGitUserAdd.sh -h -v -n showRun -i gitApache2AuthUserPasswdAdd
+***  Follow instructions in bxGitUserAdd.sh -h -v -n showRun -i gitUsersAddInstructions
+***  Test It With: bx-gitAccess.sh -h -v -n showRun -p gitServer=git.devel.example.com -i reposList authHttp uid passwd
+*  [[elisp:(org-cycle)][| ]]  [BACS]        ::  [By*]     /NOTYET At BxIso Level -- Server Configuration: Adding-Modifying Users/ =Users=   [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  A2Users      ::  Adding Apache2 Users/Passwd  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Add           ::  BySource    [[elisp:(lsip-local-run-command "echo bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=ea-59075 -p sr=iso/sr/apache2/git -i  gitApache2AuthUserPasswdAdd userName passwd")][echo bystarGitoliteHttpAdmin.sh -p bystarUid=ea-59075 -p sr=iso/sr/apache2/git -i gitApache2AuthUserPasswdAdd userName passwd]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Add           ::  Devel     [[elisp:(lsip-local-run-command "echo bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=ea-59070 -p sr=iso/sr/apache2/git -i  gitApache2AuthUserPasswdAdd userName passwd")][echo bystarGitoliteHttpAdmin.sh -p bystarUid=ea-59070 -p sr=iso/sr/apache2/git -i gitApache2AuthUserPasswdAdd userName passwd]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Add           ::  Current     [[elisp:(lsip-local-run-command "echo bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=current -p sr=iso/sr/apache2/git -i  gitApache2AuthUserPasswdAdd userName passwd")][echo bystarGitoliteHttpAdmin.sh -p bystarUid=current -p sr=iso/sr/apache2/git -i gitApache2AuthUserPasswdAdd userName passwd]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Add           ::  Prompt      [[elisp:(lsip-local-run-command "echo bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=prompt -p sr=iso/sr/apache2/git -i  gitApache2AuthUserPasswdAdd userName passwd")][echo bystarGitoliteHttpAdmin.sh -p bystarUid=prompt -p sr=iso/sr/apache2/git -i gitApache2AuthUserPasswdAdd userName passwd]] [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  A2Users      ::  List Apache2 Users/Passwd  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  List          ::  BySource    [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=ea-59075 -p sr=iso/sr/apache2/git -i bxsoGitApache2AuthUsersList")][bystarGitoliteHttpAdmin.sh -p bystarUid=ea-59075 -p sr=iso/sr/apache2/git -i bxsoGitApache2AuthUsersList]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  List          ::  Devel     [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=ea-59070 -p sr=iso/sr/apache2/git -i bxsoGitApache2AuthUsersList")][bystarGitoliteHttpAdmin.sh -p bystarUid=ea-59070 -p sr=iso/sr/apache2/git -i bxsoGitApache2AuthUsersList]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  List          ::  Current     [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=current -p sr=iso/sr/apache2/git -i bxsoGitApache2AuthUsersList")][bystarGitoliteHttpAdmin.sh -p bystarUid=current -p sr=iso/sr/apache2/git -i bxsoGitApache2AuthUsersList]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  List          ::  Prompt      [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=prompt -p sr=iso/sr/apache2/git -i bxsoGitApache2AuthUsersList")][bystarGitoliteHttpAdmin.sh -p bystarUid=prompt -p sr=iso/sr/apache2/git -i bxsoGitApache2AuthUsersList]] [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Repos        ::  Adding New Users To Config Files [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Conf          ::  Repositories And Access List:  [[elisp:(find-file "/var/osmt/gits/gitolite-admin/conf/gitolite.conf")][visit gitolite.conf]]  [[elisp:(lsip-local-run-command "lcaGitManage.sh -i  gitCommitPushThere /var/osmt/gits/gitolite-admin/conf")][CommitPush conf]]  # Needs to become aggregate of all BxIso-s [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][| ]]  [BACS]        ::  [By*]     /Server Monitoring: Logs Analysis, Stop-Start/ =Logs=   [[elisp:(org-cycle)][| ]]
+**      ############
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  Logs Analysis (GitoliteHttp) |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  BySource    [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=ea-59075 -p sr=iso/sr/apache2/git -i bxSvcLogFilesList")][bystarGitoliteHttpAdmin.sh -p bystarUid=ea-59075 -p sr=iso/sr/apache2/git -i bxbxSvcLogFilesList]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  Devel     [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=ea-59070 -p sr=iso/sr/apache2/git -i bxSvcLogFilesList")][bystarGitoliteHttpAdmin.sh -p bystarUid=ea-59070 -p sr=iso/sr/apache2/git -i bxbxSvcLogFilesList]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  Current     [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=current -p sr=iso/sr/apache2/git -i bxSvcLogFilesList")][bystarGitoliteHttpAdmin.sh -p bystarUid=current -p sr=iso/sr/apache2/git -i bxbxSvcLogFilesList]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  Prompt      [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=prompt -p sr=iso/sr/apache2/git -i bxSvcLogFilesList")][bystarGitoliteHttpAdmin.sh -p bystarUid=prompt -p sr=iso/sr/apache2/git -i bxbxSvcLogFilesList]] [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  Stop/Start Services |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  Current NOTYET    [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=current -p sr=iso/sr/apache2/git -i bxsoGitApache2AuthUsersList")][bystarGitoliteHttpAdmin.sh -p bystarUid=current -p sr=iso/sr/apache2/git -i bxsoGitApache2AuthUsersList]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     ::  Prompt  NOTYET    [[elisp:(lsip-local-run-command "bystarGitoliteHttpAdmin.sh -h -v -n showRun -p bystarUid=prompt -p sr=iso/sr/apache2/git -i bxsoGitApache2AuthUsersList")][bystarGitoliteHttpAdmin.sh -p bystarUid=prompt -p sr=iso/sr/apache2/git -i bxsoGitApache2AuthUsersList]] [[elisp:(org-cycle)][| ]]
+*  [[elisp:(beginning-of-buffer)][Top]] ################ [[elisp:(delete-other-windows)][(1)]]            *Development -- Evolution*
+*  [[elisp:(org-cycle)][| ]]  [BACS]        ::  [All]     /Development, Ideas, Tasks, Todo, Agenda/   [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      :: Create lcaGit.libSh [[elisp:(org-cycle)][| ]]
+	Create /git/reps/dist1/ and put gitBaseDir in there
+**  [[elisp:(org-cycle)][| ]]  Subject      :: gitweb [[elisp:(org-cycle)][| ]]
+	/usr/share/doc/git/README.Debian
+	/usr/share/doc/git/README.emacs  # Obsoleted -- get magit
+**  [[elisp:(org-cycle)][| ]]  Subject      :: setup git.bysource.org [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      :: Add to /opt/public/osmt/bin/bx-gitAccess.sh initial User Email and Name [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: git config --global user.email "git@mohsen.1.banan.byname.net" [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: git config --global user.name "Mohsen BANAN" [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: The above two needs to be automated based on BxSO [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      :: Add to /opt/public/osmt/bin/bx-gitAccess.sh -- Extract list of repos and create list of git clone lines [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      :: .ssh/config in bxuSshAdmin segment creation and assembly needs to be revisited [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      :: generation of /var/osmt/gits/gitolite-admin/conf/gitolite.conf needs to become segment oriented [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      :: In git.bysource.org setup /hss/dist/lhip  /hss/dist/blee -- combine it with file generators [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: For each segment in /hss/dist create a separate module in the config file. [[elisp:(org-cycle)][| ]]
+*      ================
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Panel Tree Navigation" :anchor "panelTreeNav" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Panel Tree Navigation:* |]] <<panelTreeNav>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:linedTreeNavigator :model "auto" :outLevel 2
+** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~snapshot-2016~>> ~nil:~ :inDblock 
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/adoptedComponents/vc/gitolite/snapshot-2016")][@ *snapshot-2016* @]]    ::  Leaf: /snapshot-2016/
+** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~snapshot-2016~>> ~nil:~ :inDblock 
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/adoptedComponents/vc/gitolite/_nodeBase_")][@ =gitolite= @]]    ::  Node: /gitolite/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/adoptedComponents/vc/_nodeBase_")][@ =vc= @]]    ::  Node: /vc/
+** [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:separator :outLevel 1
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+####+END
+####+BEGIN: blee:bxPanel:evolution
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *Maintenance:* | ]]  [[elisp:(blee:menu-sel:agenda:popupMenu)][||Agenda]]  <<Evolution>>  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Notes, Ideas, Tasks, Agenda" :anchor "Tasks"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** TODO Some Idea
+####+BEGIN: blee:bxPanel:evolutionMaintainers
+** [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolutionMaintainers)][dbf]]
+** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>  
+***  Problem Report                       ::   [[elisp:(find-file "")][Send debbug Email]]
+***  Maintainers                          ::   [[bbdb:Mohsen.*Banan]]  :: http://mohsen.1.banan.byname.net  E|
+####+END
+* B|
+####+BEGIN: blee:bxPanel:footerPanelControls
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+* /Footer Controls/ ::  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:footerOrgParams
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerOrgParams)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Org-Mode Local Params: =* | ]]
+#+STARTUP: overview
+#+STARTUP: lognotestate
+#+STARTUP: inlineimages
+#+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
+#+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
+#+CATEGORY: L:snapshot-2016
+####+END
+####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerEmacsParams)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
+# Local Variables:
+# eval: (setq-local ~selectedSubject "noSubject")
+# eval: (setq-local ~primaryMajorMode 'org-mode)
+# eval: (setq-local ~blee:panelUpdater nil)
+# eval: (setq-local ~blee:dblockEnabler nil)
+# eval: (setq-local ~blee:dblockController "interactive")
+# eval: (img-link-overlays)
+# eval: (set-fill-column 115)
+# eval: (blee:fill-column-indicator/enable)
+# eval: (bx:load-file:ifOneExists "./panelActions.el")
+# End:
+
+####+END

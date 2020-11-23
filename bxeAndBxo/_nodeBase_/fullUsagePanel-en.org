@@ -18,7 +18,8 @@
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
-*   =Decedent Panels=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxae")][bxae]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxcie")][bxcie]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxcse")][bxcse]] *|* 
+*   =Decedent Panels=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxeManagement")][bxeManagement]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxeRealization")][bxeRealization]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxie")][bxie]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxoConstruction")][bxoConstruction]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxoManagement")][bxoManagement]] *|* 
+*   =Decedent Panels=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxre")][bxre]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxse")][bxse]] *|* 
 *   =Sibling Panels=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/adoptedComponents/_nodeBase_")][ =adoptedComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/baseDirs/_nodeBase_")][ =baseDirs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bisosAccts")][bisosAccts]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bootstrap/_nodeBase_")][ =bootstrap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/_nodeBase_")][ =bxeAndBxo= ]] *|* 
 *   =Sibling Panels=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/disks/_nodeBase_")][ =disks= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/groupedComponents/_nodeBase_")][ =groupedComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/multimedia/_nodeBase_")][ =multimedia= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/platform/_nodeBase_")][ =platform= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/ppMachine/_nodeBase_")][ =ppMachine= ]] *|* 
 *   =Sibling Panels=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/projs/_nodeBase_")][ =projs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/sites/_nodeBase_")][ =sites= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/sync/_nodeBase_")][ =sync= ]] *|* 
@@ -28,40 +29,163 @@
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** 
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Design" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Prerequisites" :anchor "" :extraInfo ""
 ** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Design:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Prerequisites:/ |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 *** 
-*** /bisos/bsip/bin/bxeRegReq_lib.sh        :: Creates a bxeRegReq Package |
-**** Scope is all bxe-s autonomous and controlled
-*** /bisos/bsip/bin/bxCentralRegistrar.sh   :: Creates a bxeDesc |
-**** Scope is  autonomous bxe-s
-*** /bisos/bsip/bin/bxeDesc_lib.sh          :: Handles bxeDesc-s -- all bxe-s | 
+*** Install BISOS 
+*** Install And Start privGitlab-Server
 *** 
-*** /bisos/bsip/bin/bxeRealize.sh           :: Creates bxo and git -- all bxe-s
+*** Verify /bisos/var/init/privRegistrar and /bisos/var/init/interim-site are in place.
+***  /bisos/var/init/interim-site/gitServerInfo
 *** 
-*** /bisos/bsip/bin/bxeProvision_lib.sh     :: all bxe-s
+***   /bisos/var/init is used for bootstrapping of bxoId=rs-bisos.
 *** 
-*** /bisos/bsip/bin/bxaeProvision.sh        :: From RegReq to relaize
+*** siteGitServerManage.sh initially uses /bisos/var/init/interim-site/gitServerInfo & then ~is-bisosSite/gitServerInfo
+*** bxeRegistrarPriv.sh initially uses /bisos/var/init/privRegistrar and then ~rs-bisos/privRegistrar
 *** 
-*** /bisos/bsip/bin/bxcieProvision.sh        :: From RegReq to relaize
+*** Once prs-bisos is realized, 
+***      ~prs-bisos/privRegistrar replaces /bisos/var/init/privRegistrar
+***      ~pis-bisosSite replaces /bisos/var/init/interim-site
 *** 
-*** /bisos/bsip/bin/bxcseProvision.sh        :: From RegReq to relaize
 *** 
 ** 
+** *cliUserInput*   -> _bxeRegReqManage.sh_    ->  =/bisos/var/bxe/regReq=
+*** eg /bisos/var/bxe/regReq/real/system/real_system_bisos.20201106223130293723380.REGREQ
+** 
+** */bisos/var/bxe/regReq* -> _registrarPrivBxe.sh_ -> =/bisos/var/init/privRegistrar/bxeDesc=
+*** /bisos/var/init/privRegistrar/bxeDesc/r/system/1
+** 
+** */bisos/var/init/selfRegistrar/bxeDesc* -> _bxeDescManage.sh_ -> =/bisos/var/bxae/bxeDesc/A/system/as-bisos=
+** 
+** */bisos/var/bxae/bxeDesc/A/system/as-bisos* -> _bxeRealize.sh_ -> =~as-bisos=
+** 
+** *"as-bisos"* -> _bxoConstruct.sh_ -> =~as-bisos=
+** 
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "BxE Provisioning" :anchor "" :extraInfo ""
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /BxE Provisioning:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "BxE Visibility, Kind And Types" :anchor "" :extraInfo ""
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /BxE Visibility, Kind And Types:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** 
+***  BxE-Visibility  -- Private, Group, All
+***  BxE-Kind   -- BxRE (Bx Real Entity) -- BxISE (Bx Info or Svc Entity)
+***  BxRE-Types  -- Real Individual (ri-) -- Real Organization (ro-) -- Real System (rs-)
+***  BxIE-Types  -- Info Site (is-) -- Info UE (iu-) -- Info-Sys-Char (ic-)
+***  BxSE-Types  -- Service Autonomous (sa-) -- Service Controlled (sc-)
+*** 
+***  BxE-Node    -- BxE-Branch, BxE-Leaf  (SubTree)
+**** 
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "BxE=(BxSIe or BxIe) -- Autonomus/Controlled Concepts" :anchor "" :extraInfo "Model & Terminology"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Related Chained Panels" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _BxE=(BxSIe or BxIe) -- Autonomus/Controlled Concepts_: |]]  Model & Terminology  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _Related Chained Panels_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep t :outLevel 2 :model "auto" :foldDesc "Gitlab Python-API and bxoGitlab.py" :destDesc "Gitlab API" :dest "/bisos/panels/bisos/core/adoptedComponents/vc/gitlab/gitlab-api"
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/adoptedComponents/vc/gitlab/gitlab-api")][@ ~Gitlab API~ @]]   ::  [[elisp:(org-cycle)][| /Gitlab Python-API and bxoGitlab.py/ |]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep t :outLevel 2 :model "auto" :foldDesc "Gitlab Server Configuration And Operation" :destDesc "Gitlab Server" :dest "/bisos/panels/bisos/core/adoptedComponents/vc/gitlab/gitlab-ce"
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/adoptedComponents/vc/gitlab/gitlab-ce")][@ ~Gitlab Server~ @]]   ::  [[elisp:(org-cycle)][| /Gitlab Server Configuration And Operation/ |]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Design Overview: ICMs And Libraries Introductions" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _Design Overview: ICMs And Libraries Introductions_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? t :label "ShIcm" :icmName "siteGitServerManage.sh" :comment "Points to Priv Site Git Server" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ShIcm/ |]] :: [[elisp:(lsip-local-run-command "siteGitServerManage.sh -i examples")][siteGitServerManage.sh]]  [[elisp:(lsip-local-run-command "siteGitServerManage.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "siteGitServerManage.sh -i describe")][describe]] *|*  =Points to Priv Site Git Server= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+*** 
+***  PrivToken (taken from gitlab web interface) needs to be entered using bxeRegistrarPriv.sh -i gitServerInfoSet
+*** 
+####+BEGIN: blee:panel:icm:py:intro :outLevel 2 :sep nil :folding? nil :label "PyIcm" :icmName "bxoGitlab.py" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /PyIcm/ :: [[elisp:(lsip-local-run-command "bxoGitlab.py -i examples")][bxoGitlab.py]]  [[elisp:(lsip-local-run-command "bxoGitlab.py -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxoGitlab.py -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "BxE Registration Request -- resulting into BxeRegReq " :anchor "" :extraInfo ""
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /BxE Registration Request -- resulting into BxeRegReq :/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep nil :folding? t :label "ShLib" :fileName "/bisos/core/bsip/bin/bxeRegReq_lib.sh" :comment "Creates a bxeRegReq Package"  :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ShLib/ |]] :: [[elisp:(find-file "/bisos/core/bsip/bin/bxeRegReq_lib.sh")][/bisos/core/bsip/bin/bxeRegReq_lib.sh]] || [[elisp:(find-file-other-window "/bisos/core/bsip/bin/bxeRegReq_lib.sh")][Visit In Other]] *|*  =Creates a bxeRegReq Package= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+*** Scope is all bxe-s autonomous and controlled
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxeRegReqManage.sh" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxeRegReqManage.sh -i examples")][bxeRegReqManage.sh]]  [[elisp:(lsip-local-run-command "bxeRegReqManage.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxeRegReqManage.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "BxE Registration -- resulting into BxeDesc " :anchor "" :extraInfo ""
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /BxE Registration -- resulting into BxeDesc :/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "registrarPrivBxe.sh" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "registrarPrivBxe.sh -i examples")][registrarPrivBxe.sh]]  [[elisp:(lsip-local-run-command "registrarPrivBxe.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "registrarPrivBxe.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "registrarCentralBxe.sh" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "registrarCentralBxe.sh -i examples")][registrarCentralBxe.sh]]  [[elisp:(lsip-local-run-command "registrarCentralBxe.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "registrarCentralBxe.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep nil :folding? t :label "ShLib" :fileName "/bisos/core/bsip/bin/bxeDesc_lib.sh" :comment "Creates a bxeDesc"  :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ShLib/ |]] :: [[elisp:(find-file "/bisos/core/bsip/bin/bxeDesc_lib.sh")][/bisos/core/bsip/bin/bxeDesc_lib.sh]] || [[elisp:(find-file-other-window "/bisos/core/bsip/bin/bxeDesc_lib.sh")][Visit In Other]] *|*  =Creates a bxeDesc= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxeDescManage.sh" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxeDescManage.sh -i examples")][bxeDescManage.sh]]  [[elisp:(lsip-local-run-command "bxeDescManage.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxeDescManage.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "BxE Provisioning -- Resulting In RBxE" :anchor "" :extraInfo "Realized BxE"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /BxE Provisioning -- Resulting In RBxE:/ |]]  Realized BxE  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxoAcctManage.sh" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxoAcctManage.sh -i examples")][bxoAcctManage.sh]]  [[elisp:(lsip-local-run-command "bxoAcctManage.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxoAcctManage.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "usgBxoSshManage.sh" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "usgBxoSshManage.sh -i examples")][usgBxoSshManage.sh]]  [[elisp:(lsip-local-run-command "usgBxoSshManage.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "usgBxoSshManage.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep nil :folding? t :label "ShLib" :fileName "/bisos/core/bsip/bin/bxeProvision_lib.sh" :comment ""  :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ShLib/ |]] :: [[elisp:(find-file "/bisos/core/bsip/bin/bxeProvision_lib.sh")][/bisos/core/bsip/bin/bxeProvision_lib.sh]] || [[elisp:(find-file-other-window "/bisos/core/bsip/bin/bxeProvision_lib.sh")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxeRealize.sh" :comment "Create bxo/rbxe & git acct. Export init repos." :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxeRealize.sh -i examples")][bxeRealize.sh]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -i describe")][describe]] *|*  =Create bxo/rbxe & git acct. Export init repos.= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxreProvision.sh" :comment "Create bxo/rbxe & git acct. Export init repos." :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxreProvision.sh -i examples")][bxreProvision.sh]]  [[elisp:(lsip-local-run-command "bxreProvision.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxreProvision.sh -i describe")][describe]] *|*  =Create bxo/rbxe & git acct. Export init repos.= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxieProvision.sh" :comment "Create bxo/rbxe & git acct. Export init repos." :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxieProvision.sh -i examples")][bxieProvision.sh]]  [[elisp:(lsip-local-run-command "bxieProvision.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxieProvision.sh -i describe")][describe]] *|*  =Create bxo/rbxe & git acct. Export init repos.= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxseProvision.sh" :comment "Create bxo/rbxe & git acct. Export init repos." :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxseProvision.sh -i examples")][bxseProvision.sh]]  [[elisp:(lsip-local-run-command "bxseProvision.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxseProvision.sh -i describe")][describe]] *|*  =Create bxo/rbxe & git acct. Export init repos.= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Bxo Construction (Management) -- Resulting In BxO" :anchor "" :extraInfo ""
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bxo Construction (Management) -- Resulting In BxO:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep nil :folding? t :label "ShLib" :fileName "/bisos/core/bsip/bin/bxo_lib.sh" :comment ""  :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ShLib/ |]] :: [[elisp:(find-file "/bisos/core/bsip/bin/bxo_lib.sh")][/bisos/core/bsip/bin/bxo_lib.sh]] || [[elisp:(find-file-other-window "/bisos/core/bsip/bin/bxo_lib.sh")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxoManage.sh" :comment "Create bxo acct. Importd repos." :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxoManage.sh -i examples")][bxoManage.sh]]  [[elisp:(lsip-local-run-command "bxoManage.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxoManage.sh -i describe")][describe]] *|*  =Create bxo acct. Importd repos.= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "BxIO Management" :anchor "" :extraInfo ""
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /BxIO Management:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep nil :folding? t :label "ShLib" :fileName "/bisos/core/bsip/bin/bxioCommon_lib.sh" :comment ""  :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ShLib/ |]] :: [[elisp:(find-file "/bisos/core/bsip/bin/bxioCommon_lib.sh")][/bisos/core/bsip/bin/bxioCommon_lib.sh]] || [[elisp:(find-file-other-window "/bisos/core/bsip/bin/bxioCommon_lib.sh")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxioCommon.sh" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxioCommon.sh -i examples")][bxioCommon.sh]]  [[elisp:(lsip-local-run-command "bxioCommon.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxioCommon.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxioRegistrar.sh" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxioRegistrar.sh -i examples")][bxioRegistrar.sh]]  [[elisp:(lsip-local-run-command "bxioRegistrar.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxioRegistrar.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "BxE=(BxRe or BxSe or BxIe) -- Real/Info/Svc Concepts" :anchor "" :extraInfo "Model & Terminology"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _BxE=(BxRe or BxSe or BxIe) -- Real/Info/Svc Concepts_: |]]  Model & Terminology  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 **  [[elisp:(org-cycle)][| ]]  BxE               ::   A ByStar-Entity is either a BxSe or a BxIe  [[elisp:(org-cycle)][| ]]
 ***   With the concepts of BxSIe/BxSIo ByStar takes those software universalities to service and content universalities
      which then result in complete Content, Software, Service Continuity.
      These involve Unified and coherent Abstractions of Information, Software, Platform and Service.
-
-**  [[elisp:(org-cycle)][| ]]  BxSe              ::   A ByStar Serviced Information Entity
+**  [[elisp:(org-cycle)][| ]]  BxRe              ::   A ByStar Real Entity
+**  [[elisp:(org-cycle)][| ]]  BxSe              ::   A ByStar Serviced Entity
 **  [[elisp:(org-cycle)][| ]]  BxIe              ::   A ByStar Information Entity -- (projects, sw)  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(org-cycle)][| ]]  BxE Attributes    ::   Attributes: Sovereignty/Privacy/Access/Modifyability/Exposition [[elisp:(org-cycle)][| ]]
 **  [[elisp:(org-cycle)][| ]]  BxE Sovereignty   ::   Sovereignty: Autonomus/Controlled/Federated/Collaborative/Central/Anonymous  [[elisp:(org-cycle)][| ]]
@@ -108,24 +232,24 @@
 ***  [[elisp:(org-cycle)][| ]]  BxIo Project     ::  BxIo.Project.Standalone (Controlled) -- Generic Data  [[elisp:(org-cycle)][| ]]
 ***  [[elisp:(org-cycle)][| ]]  BxIo Project     ::  BxIo.Project.Colaborative (Controlled)   [[elisp:(org-cycle)][| ]]
 ***  [[elisp:(org-cycle)][| ]]  BxIo Usage       ::  BxIo.User.Standalone (Controlled) -- Users and User Environments  [[elisp:(org-cycle)][| ]]
- ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "BxAE Registration And Realization" :anchor "" :extraInfo ""
+ ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Bxe Registration And Realization" :anchor "" :extraInfo ""
  * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
- * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _BxAE Registration And Realization_: |]]    [[elisp:(org-shifttab)][<)]] E|
+ * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _Bxe Registration And Realization_: |]]    [[elisp:(org-shifttab)][<)]] E|
  ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BxAE: ByStar Autonomous Entity" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BxE: ByStar Real Entity" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BxAE: ByStar Autonomous Entity:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BxE: ByStar Real Entity:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BxAE-Reg-Req: Registration Request" :anchor "" :extraInfo "bxeRegReqCreate.sh -- Prev BARC"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BxE-Reg-Req: Registration Request" :anchor "" :extraInfo "bxeRegReqManage.sh -- Prev BARC"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BxAE-Reg-Req: Registration Request:* |]]  bxeRegReqCreate.sh -- Prev BARC  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BxE-Reg-Req: Registration Request:* |]]  bxeRegReqManage.sh -- Prev BARC  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "BxAE-Reg-Req Abstract Information Content" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "BxE-Reg-Req Abstract Information Content" :anchor "" :extraInfo ""
 ** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /BxAE-Reg-Req Abstract Information Content:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /BxE-Reg-Req Abstract Information Content:/ |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "BxE" :icmName "bxeRegReqCreate.sh" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /BxE/ :: [[elisp:(lsip-local-run-command "bxeRegReqCreate.sh -i examples")][bxeRegReqCreate.sh]]  [[elisp:(lsip-local-run-command "bxeRegReqCreate.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxeRegReqCreate.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "BxE" :icmName "bxeRegReqManage.sh" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /BxE/ :: [[elisp:(lsip-local-run-command "bxeRegReqManage.sh -i examples")][bxeRegReqManage.sh]]  [[elisp:(lsip-local-run-command "bxeRegReqManage.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxeRegReqManage.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** 
 ** /bisos/var/bxae/bxeRegReq
@@ -139,27 +263,82 @@
 ** Produces a bxeDesc
 ** 
 ** B |
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BxAE-Desc: Autonomous Entity Descriptor" :anchor "" :extraInfo "Obsoletes RBAE -- Un-Realized"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Bxe-Desc: Autonomous Entity Descriptor" :anchor "" :extraInfo "Obsoletes RBAE -- Un-Realized"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BxAE-Desc: Autonomous Entity Descriptor:* |]]  Obsoletes RBAE -- Un-Realized  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Bxe-Desc: Autonomous Entity Descriptor:* |]]  Obsoletes RBAE -- Un-Realized  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
-** /bisos/var/bxae/bxeDesc
+** /bisos/var/bxe/bxeDesc
 ** 
 ** B |
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS BxAE Realization Process" :anchor "" :extraInfo "Realization"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS BxE Realization Process" :anchor "" :extraInfo "Realization"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BISOS BxAE Realization Process:* |]]  Realization  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BISOS BxE Realization Process:* |]]  Realization  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** 
-** bxeRealize.sh -p bxeDesc=path 
-*** 
-*** Produces ~rdn BxO and Git Account and Git Repos
-*** 
-** B |
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Realized BxAE" :anchor "" :extraInfo "git Repo for ~bxo/RBxAE"
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxeRealize.sh" :comment "Create bxo & git acct. Export init repos." :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxeRealize.sh -i examples")][bxeRealize.sh]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -i describe")][describe]] *|*  =Create bxo & git acct. Export init repos.= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Full Realization" :anchor "" :extraInfo "Start-To-End -- all of below"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Full Realization:/ |]]  Start-To-End -- all of below  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "Cmnd" :icmName "bxeRealize.sh -p bxeDesc=current -i realize" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxeDesc=current -i realize -i examples")][bxeRealize.sh -p bxeDesc=current -i realize]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxeDesc=current -i realize -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxeDesc=current -i realize -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "BxE-BxO Local Account Creation" :anchor "" :extraInfo ""
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /BxE-BxO Local Account Creation:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep t :folding? nil :label "Cmnd" :icmName "bxeRealize.sh -p bxeDesc=current -i bxoAcctCreate" :comment "" :afterComment ""
+** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxeDesc=current -i bxoAcctCreate -i examples")][bxeRealize.sh -p bxeDesc=current -i bxoAcctCreate]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxeDesc=current -i bxoAcctCreate -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxeDesc=current -i bxoAcctCreate -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "BxO-Home/rbxe Setup" :anchor "" :extraInfo ""
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /BxO-Home/rbxe Setup:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "Cmnd" :icmName "bxeRealize.sh -p bxeDesc=current -i rbxeSetup" :comment "creates credentials" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxeDesc=current -i rbxeSetup -i examples")][bxeRealize.sh -p bxeDesc=current -i rbxeSetup]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxeDesc=current -i rbxeSetup -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxeDesc=current -i rbxeSetup -i describe")][describe]] *|*  =creates credentials= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "Cmnd" :icmName "bxeRealize.sh -p bxeDesc=current -i getBxoId" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxeDesc=current -i getBxoId -i examples")][bxeRealize.sh -p bxeDesc=current -i getBxoId]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxeDesc=current -i getBxoId -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxeDesc=current -i getBxoId -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "BxO GitServer Provision -- Git Acct Creation & Key Upload" :anchor "" :extraInfo ""
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /BxO GitServer Provision -- Git Acct Creation & Key Upload:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:py:intro :outLevel 2 :sep nil :folding? nil :label "PyIcm" :icmName "bxoGitlab.py" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /PyIcm/ :: [[elisp:(lsip-local-run-command "bxoGitlab.py -i examples")][bxoGitlab.py]]  [[elisp:(lsip-local-run-command "bxoGitlab.py -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxoGitlab.py -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "Cmnd" :icmName "bxeRealize.sh -p bxoId=current -i gitServerAcctCreate" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxoId=current -i gitServerAcctCreate -i examples")][bxeRealize.sh -p bxoId=current -i gitServerAcctCreate]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxoId=current -i gitServerAcctCreate -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxoId=current -i gitServerAcctCreate -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "Cmnd" :icmName "bxeRealize.sh -p bxoId=current -i gitServerPubkeyUpload" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxoId=current -i gitServerPubkeyUpload -i examples")][bxeRealize.sh -p bxoId=current -i gitServerPubkeyUpload]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxoId=current -i gitServerPubkeyUpload -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxoId=current -i gitServerPubkeyUpload -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "BxO SSH Config Update" :anchor "" :extraInfo ""
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /BxO SSH Config Update:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "usgBxoSshManage.sh" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "usgBxoSshManage.sh -i examples")][usgBxoSshManage.sh]]  [[elisp:(lsip-local-run-command "usgBxoSshManage.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "usgBxoSshManage.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "Cmnd" :icmName "bxeRealize.sh -p bxoId=current -p usg=current -i sshConfigUpdate" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxoId=current -p usg=current -i sshConfigUpdate -i examples")][bxeRealize.sh -p bxoId=current -p usg=current -i sshConfigUpdate]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxoId=current -p usg=current -i sshConfigUpdate -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxoId=current -p usg=current -i sshConfigUpdate -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Push Initial Repos" :anchor "" :extraInfo ""
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Push Initial Repos:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "Cmnd" :icmName "bxeRealize.sh -p bxoId=current -i initialReposPush" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxoId=current -i initialReposPush -i examples")][bxeRealize.sh -p bxoId=current -i initialReposPush]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxoId=current -i initialReposPush -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxoId=current -i initialReposPush -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "Cmnd" :icmName "bxeRealize.sh -p bxoId=current -i repoCreateAndPush rbxe /bxo/r3/iso/as-test1_5/rbxe priv" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxoId=current -i repoCreateAndPush rbxe /bxo/r3/iso/as-test1_5/rbxe priv -i examples")][bxeRealize.sh -p bxoId=current -i repoCreateAndPush rbxe /bxo/r3/iso/as-test1_5/rbxe priv]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxoId=current -i repoCreateAndPush rbxe /bxo/r3/iso/as-test1_5/rbxe priv -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxeRealize.sh -p bxoId=current -i repoCreateAndPush rbxe /bxo/r3/iso/as-test1_5/rbxe priv -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Realized Bxe" :anchor "" :extraInfo "git Repo for ~bxo/RBxe"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Realized BxAE:* |]]  git Repo for ~bxo/RBxAE  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Realized Bxe:* |]]  git Repo for ~bxo/RBxe  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BxAOs: ByStar Autonomous Objects" :anchor "" :extraInfo "~ai-first.last"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
@@ -173,9 +352,9 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _Site BxE and BxO Initial Setup_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Special BxAE: rdn=as-bisos" :anchor "" :extraInfo "Autonomous System - bisos"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Special Bxe: rdn=as-bisos" :anchor "" :extraInfo "Autonomous System - bisos"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Special BxAE: rdn=as-bisos:* |]]  Autonomous System - bisos  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Special Bxe: rdn=as-bisos:* |]]  Autonomous System - bisos  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Special Site BxIE: rdn=s-bisos.site" :anchor "" :extraInfo "Initial Default BISOS Site"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
@@ -432,9 +611,13 @@
 ####+END
 ####+BEGIN: blee:bxPanel:linedTreeNavigator :model "auto" :outLevel 2
 ** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~bxeAndBxo~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxae")][@ *bxae* @]]    ::  Leaf: /bxae/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxcie")][@ *bxcie* @]]    ::  Leaf: /bxcie/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxcse")][@ *bxcse* @]]    ::  Leaf: /bxcse/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxeManagement")][@ *bxeManagement* @]]    ::  Leaf: /bxeManagement/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxeRealization")][@ *bxeRealization* @]]    ::  Leaf: /bxeRealization/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxie")][@ *bxie* @]]    ::  Leaf: /bxie/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxoConstruction")][@ *bxoConstruction* @]]    ::  Leaf: /bxoConstruction/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxoManagement")][@ *bxoManagement* @]]    ::  Leaf: /bxoManagement/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxre")][@ *bxre* @]]    ::  Leaf: /bxre/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxse")][@ *bxse* @]]    ::  Leaf: /bxse/
 ** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~bxeAndBxo~>> ~nil:~ :inDblock 
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/adoptedComponents/_nodeBase_")][@ =adoptedComponents= @]]    ::  Node: /adoptedComponents/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/baseDirs/_nodeBase_")][@ =baseDirs= @]]    ::  Node: /baseDirs/

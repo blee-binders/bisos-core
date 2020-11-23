@@ -65,9 +65,9 @@
 ####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "pip install" :command "pip3 install --no-cache-dir --upgrade python-gitlab" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /pip install/ :: [[elisp:(lsip-local-run-command "pip3 install --no-cache-dir --upgrade python-gitlab")][pip3 install --no-cache-dir --upgrade python-gitlab]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Usage" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "CLI Usage" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Usage:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *CLI Usage:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "List" :command "gitlab -c ~/_python-gitlab.cfg project list" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /List/ :: [[elisp:(lsip-local-run-command "gitlab -c ~/_python-gitlab.cfg project list")][gitlab -c ~/_python-gitlab.cfg project list]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
@@ -75,6 +75,40 @@
 ####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "List" :command "gitlab -c ~/_python-gitlab.cfg --output json project list" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /List/ :: [[elisp:(lsip-local-run-command "gitlab -c ~/_python-gitlab.cfg --output json project list")][gitlab -c ~/_python-gitlab.cfg --output json project list]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Python Usage" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Python Usage:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Repo Snapshot" :anchor "" :extraInfo "Instead of Cloning"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Repo Snapshot:/ |]]  Instead of Cloning  [[elisp:(org-shifttab)][<)]] E|
+####+END
+tar_file = project.snapshot()
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Import A Project" :anchor "" :extraInfo ""
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Import A Project:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+output = gl.projects.import_project(open('/tmp/export.tgz', 'rb'), 'my_new_project')
+# Get a ProjectImport object to track the import status
+project_import = gl.projects.get(output['id'], lazy=True).imports.get()
+while project_import.import_status != 'finished':
+    time.sleep(1)
+    project_import.refresh()
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Import A Local Repo To Gitlab" :anchor "" :extraInfo "create bare and push"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Import A Local Repo To Gitlab:/ |]]  create bare and push  [[elisp:(org-shifttab)][<)]] E|
+####+END
+git remote add gitlab <url>
+git push <branch> gitlab 
+https://docs.github.com/en/free-pro-team@latest/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "bxoGitlab.py" :anchor "" :extraInfo "ICM"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *bxoGitlab.py:* |]]  ICM  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:py:intro :outLevel 2 :sep nil :folding? nil :label "Py ICM" :icmName "bxoGitlab.py" :comment "BxO specialization of gitlab API" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Py ICM/ :: [[elisp:(lsip-local-run-command "bxoGitlab.py -i examples")][bxoGitlab.py]]  [[elisp:(lsip-local-run-command "bxoGitlab.py -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxoGitlab.py -i describe")][describe]] *|*  =BxO specialization of gitlab API= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END

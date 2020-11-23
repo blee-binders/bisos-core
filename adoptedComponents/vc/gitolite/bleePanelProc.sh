@@ -11,18 +11,19 @@ __copying__="
 
 ####+END:
 
-####+BEGIN: bx:bsip:bash:seed-spec :types  "seedFtoCommon.sh"
+####+BEGIN: bx:bsip:bash:seed-spec :types "seedBleePanelProc.sh"
 SEED="
-*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] | 
+*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedBleePanelProc.sh]] | 
 "
 FILE="
-*  /This File/ :: /bisos/panels/bisos/core/bxeAndBxo/bxcie/ftoProc.sh 
+*  /This File/ :: /bisos/panels/bisos/core/adoptedComponents/vc/gitolite/bleePanelProc.sh 
 "
 if [ "${loadFiles}" == "" ] ; then
-    /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@" 
+    /bisos/core/bsip/bin/seedBleePanelProc.sh -l $0 "$@" 
     exit $?
 fi
 ####+END:
+
 
 
 _CommentBegin_
@@ -32,17 +33,29 @@ _CommentEnd_
 function examplesHookPost {
     cat  << _EOF_
 $( examplesSeperatorTopLabel "EXTENSION EXAMPLES" )
-$( examplesSeperatorSection "commonProc.sh -- Templates Evolution" )
-diff ./commonProc.sh  /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/commonProcLeaf.sh
-cp  ./commonProc.sh  /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/commonProcLeaf.sh
-cp /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/commonProcLeaf.sh ./commonProc.sh  
+_EOF_
+
+    # templatesEvolution
+    
+    return
+}
+
+
+
+function templatesEvolution {
+    cat  << _EOF_
+$( examplesSeperatorSection "ftoProc.sh -- Templates Evolution" )
+diff ./ftoProc.sh  /libre/ByStar/InitialTemplates/update/fto/start/commonProc/anyFtoItem/ftoProcNode.sh
+cp ./ftoProc.sh  /libre/ByStar/InitialTemplates/update/fto/start/commonProc/anyFtoItem/ftoProcNode.sh
+cp /libre/ByStar/InitialTemplates/update/fto/start/commonProc/anyFtoItem/ftoProcNode.sh ./ftoProc.sh  
 $( examplesSeperatorSection "commonPanel.org -- Templates Evolution" )
-diff ./commonPanel.org  /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/commonPanel.org
-cp ./commonPanel.org /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/commonPanel.org
-cp /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/commonPanel.org ./commonPanel.org
+diff ./Panel.org  /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/mainPanel.org
+cp ./Panel.org /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/mainPanel.org
+cp /libre/ByStar/InitialTemplates/start/fto/commonProc/anyFtoItem/mainPanel.org ./Panel.org
 _EOF_
  return
 }
+
 
 
 ####+BEGIN: bx:dblock:bash:end-of-file :types ""
@@ -55,4 +68,3 @@ _CommentEnd_
 #fill-column: 90
 # end:
 ####+END:
-

@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] | 
 "
 FILE="
-*  /This File/ :: /bisos/panels/bisos/core/bxeAndBxo/ftoProc.sh 
+*  /This File/ :: /bisos/panels/bisos/core/adoptedComponents/vc/gitolite/_nodeBase_/ftoProc.sh 
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@" 
@@ -41,13 +41,6 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-bxre
-bxeManagement
-bxoConstruction
-bxie
-bxoManagement
-bxse
-bxeRealization
 "
 # }}} DBLOCK-leavesList
 ####+END:
@@ -60,7 +53,6 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-_nodeBase_
 "
 # }}} DBLOCK-nodesList
 ####+END:

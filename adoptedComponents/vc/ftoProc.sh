@@ -56,6 +56,7 @@ nodesList="
 github
 _nodeBase_
 gitlab
+gitolite
 "
 # }}} DBLOCK-nodesList
 ####+END:

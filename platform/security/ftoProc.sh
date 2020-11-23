@@ -43,6 +43,7 @@ _CommentEnd_
 leavesList="
 keyrings
 firewall
+sshAndSsl
 "
 # }}} DBLOCK-leavesList
 ####+END:
