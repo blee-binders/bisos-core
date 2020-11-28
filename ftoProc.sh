@@ -59,12 +59,14 @@ sites
 projs
 groupedComponents
 disks
+registrations
 adoptedComponents
 _nodeBase_
 bxeAndBxo
 sync
 baseDirs
 multimedia
+virtualization
 bootstrap
 ppMachine
 "

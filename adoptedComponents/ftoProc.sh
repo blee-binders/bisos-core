@@ -54,7 +54,6 @@ _CommentEnd_
 # {{{ DBLOCK-nodesList
 nodesList="
 blee
-vmHost
 _nodeBase_
 sys
 vc

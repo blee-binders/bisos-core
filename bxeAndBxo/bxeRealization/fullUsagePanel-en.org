@@ -27,37 +27,64 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
-** Overview Comes Here.
+** Realization And Provisioning menu offerings.
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Real Entity (BxRE) -- Realization" :anchor "anchor" :extraInfo "extraInfo"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Real Entity (BxRE) -- Realization And Provisioning" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Real Entity (BxRE) -- Realization:* |]] <<anchor>> extraInfo  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Real Entity (BxRE) -- Realization And Provisioning:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxreProvision.sh" :comment "Create bxo/rbxe & git acct. Export init repos." :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxreProvision.sh -i examples")][bxreProvision.sh]]  [[elisp:(lsip-local-run-command "bxreProvision.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxreProvision.sh -i describe")][describe]] *|*  =Create bxo/rbxe & git acct. Export init repos.= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Indiv" :icmName "bxreProvision.sh -i examplesBxRealEntity indiv startToPrivRealize" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Indiv/ :: [[elisp:(lsip-local-run-command "bxreProvision.sh -i examplesBxRealEntity indiv startToPrivRealize")][bxreProvision.sh -i examplesBxRealEntity indiv startToPrivRealize]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Indiv" :icmName "bxreProvision.sh -i examplesBxRealEntity individual startToPrivRealize" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Indiv/ :: [[elisp:(lsip-local-run-command "bxreProvision.sh -i examplesBxRealEntity individual startToPrivRealize")][bxreProvision.sh -i examplesBxRealEntity individual startToPrivRealize]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Corp" :icmName "bxreProvision.sh -i examplesBxRealEntity corp startToPrivRealize" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Corp/ :: [[elisp:(lsip-local-run-command "bxreProvision.sh -i examplesBxRealEntity corp startToPrivRealize")][bxreProvision.sh -i examplesBxRealEntity corp startToPrivRealize]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Corp" :icmName "bxreProvision.sh -i examplesBxRealEntity sys startToPrivRealize" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Corp/ :: [[elisp:(lsip-local-run-command "bxreProvision.sh -i examplesBxRealEntity sys startToPrivRealize")][bxreProvision.sh -i examplesBxRealEntity sys startToPrivRealize]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Sys" :icmName "bxreProvision.sh -i examplesBxRealEntity system startToPrivRealize all" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Sys/ :: [[elisp:(lsip-local-run-command "bxreProvision.sh -i examplesBxRealEntity system startToPrivRealize all")][bxreProvision.sh -i examplesBxRealEntity system startToPrivRealize all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Information Entity (BxRE) -- Realization" :anchor "anchor" :extraInfo "extraInfo"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Information Entity (BxIE) -- Realization And Provisioning" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Information Entity (BxRE) -- Realization:* |]] <<anchor>> extraInfo  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Information Entity (BxIE) -- Realization And Provisioning:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxieProvision.sh" :comment "Create bxo/rbxe & git acct. Export init repos." :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxieProvision.sh -i examples")][bxieProvision.sh]]  [[elisp:(lsip-local-run-command "bxieProvision.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxieProvision.sh -i describe")][describe]] *|*  =Create bxo/rbxe & git acct. Export init repos.= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Service Entity (BxRE) -- Realization" :anchor "anchor" :extraInfo "extraInfo"
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "indiv" :icmName "bxieProvision.sh -i examplesBxInfoEntity registrar startToPrivRealize all" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /indiv/ :: [[elisp:(lsip-local-run-command "bxieProvision.sh -i examplesBxInfoEntity registrar startToPrivRealize all")][bxieProvision.sh -i examplesBxInfoEntity registrar startToPrivRealize all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "site" :icmName "bxieProvision.sh -i examplesBxInfoEntity site startToPrivRealize all" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /site/ :: [[elisp:(lsip-local-run-command "bxieProvision.sh -i examplesBxInfoEntity site startToPrivRealize all")][bxieProvision.sh -i examplesBxInfoEntity site startToPrivRealize all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "sysChar" :icmName "bxieProvision.sh -i examplesBxInfoEntity sysChar startToPrivRealize all" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /sysChar/ :: [[elisp:(lsip-local-run-command "bxieProvision.sh -i examplesBxInfoEntity sysChar startToPrivRealize all")][bxieProvision.sh -i examplesBxInfoEntity sysChar startToPrivRealize all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "usgAcct" :icmName "bxieProvision.sh -i examplesBxInfoEntity usgAcct startToPrivRealize all" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /usgAcct/ :: [[elisp:(lsip-local-run-command "bxieProvision.sh -i examplesBxInfoEntity usgAcct startToPrivRealize all")][bxieProvision.sh -i examplesBxInfoEntity usgAcct startToPrivRealize all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "usage" :icmName "bxieProvision.sh -i examplesBxInfoEntity usage startToPrivRealize all" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /usage/ :: [[elisp:(lsip-local-run-command "bxieProvision.sh -i examplesBxInfoEntity usage startToPrivRealize all")][bxieProvision.sh -i examplesBxInfoEntity usage startToPrivRealize all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "project" :icmName "bxieProvision.sh -i examplesBxInfoEntity project startToPrivRealize all" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /project/ :: [[elisp:(lsip-local-run-command "bxieProvision.sh -i examplesBxInfoEntity project startToPrivRealize all")][bxieProvision.sh -i examplesBxInfoEntity project startToPrivRealize all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "virtGuest" :icmName "bxieProvision.sh -i examplesBxInfoEntity virtGuest startToPrivRealize all" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /virtGuest/ :: [[elisp:(lsip-local-run-command "bxieProvision.sh -i examplesBxInfoEntity virtGuest startToPrivRealize all")][bxieProvision.sh -i examplesBxInfoEntity virtGuest startToPrivRealize all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Service Entity (BxSE) -- Realization And Provisioning" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Service Entity (BxRE) -- Realization:* |]] <<anchor>> extraInfo  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Service Entity (BxSE) -- Realization And Provisioning:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxseProvision.sh" :comment "Create bxo/rbxe & git acct. Export init repos." :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxseProvision.sh -i examples")][bxseProvision.sh]]  [[elisp:(lsip-local-run-command "bxseProvision.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxseProvision.sh -i describe")][describe]] *|*  =Create bxo/rbxe & git acct. Export init repos.= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "ByName" :icmName "bxseProvision.sh -i examplesBxServiceEntity byname startToPrivRealize all" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ByName/ :: [[elisp:(lsip-local-run-command "bxseProvision.sh -i examplesBxServiceEntity byname startToPrivRealize all")][bxseProvision.sh -i examplesBxServiceEntity byname startToPrivRealize all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "BySmb" :icmName "bxseProvision.sh -i examplesBxServiceEntity bysmb startToPrivRealize all" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /BySmb/ :: [[elisp:(lsip-local-run-command "bxseProvision.sh -i examplesBxServiceEntity bysmb startToPrivRealize all")][bxseProvision.sh -i examplesBxServiceEntity bysmb startToPrivRealize all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Panel Tree Navigation" :anchor "panelTreeNav" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
