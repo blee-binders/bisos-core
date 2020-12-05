@@ -26,7 +26,11 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
-** Overview Comes Here.
+** This Panel's scope starts with =BISOS KVM Hosting Platform= 
+** towards creating =Specific BISOS Guest Platforms=
+** 
+** Common inputs 
+** 
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Design Overiew: ICMs List" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 

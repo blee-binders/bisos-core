@@ -31,6 +31,22 @@
 ** 
 ** IMPORTANT preseed == https://app.vagrantup.com/peru/boxes/ubuntu-20.04-desktop-amd64
 ** 
+** sudo apt-get clean  # remove APT cache
+** cat /dev/null > ~/.bash_history && history -c
+** 
+** https://scotch.io/tutorials/how-to-create-a-vagrant-base-box-from-an-existing-one#
+** Building a base box from a base box  with libvirt provider is done with
+** vagrant package --output baseBox Name.
+** You first need to run a prePackage.sh like below: 
+
+sudo chmod a+r /var/lib/libvirt/images/bxo_pic_dnsServer.1.img
+
+sudo chmod +r /boot/vmlinuz-*
+
+ls -l /boot/vmlinuz-*
+
+** But as of  [2020-11-30 Mon 19:08], it did not work. created VM seems to hang and SSH fails.
+** 
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Design Overview: ICMs And Libraries Introductions" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 

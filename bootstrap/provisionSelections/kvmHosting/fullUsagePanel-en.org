@@ -26,7 +26,14 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
-** Overview Comes Here.
+** This panel's scope starts with =BISOS-Sys-Base= towards creating =BISOS KVM Hosting Platform=.
+** Scope of this panel includes:
+** - libvirt and kvm
+** - vargrant
+** - vagrant base box construction
+**  
+** With =BISOS KVM Hosting Platform= in place, =Guest Chars= can be used to deploy 
+** =Specific BISOS Guest Platforms= in an automated and repeatable fashion.
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Design Overview: ICMs" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 

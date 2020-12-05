@@ -57,6 +57,12 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStar System Character Information Entity:* |]]  ~sc-name  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ICM" :icmName "bxioSysChar.sh" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ICM/ :: [[elisp:(lsip-local-run-command "bxioSysChar.sh -i examples")][bxioSysChar.sh]]  [[elisp:(lsip-local-run-command "bxioSysChar.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxioSysChar.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Cmnd" :icmName "bxioSysChar.sh -p bxoId=pic_dnsServer -i vagrantFile_base" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "bxioSysChar.sh -p bxoId=pic_dnsServer -i vagrantFile_base")][bxioSysChar.sh -p bxoId=pic_dnsServer -i vagrantFile_base]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar System Character Type Information Entity" :anchor "" :extraInfo "~ct-name"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStar System Character Type Information Entity:* |]]  ~ct-name  [[elisp:(org-shifttab)][<)]] E|
