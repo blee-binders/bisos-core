@@ -21,14 +21,24 @@
 *   =Decedent Panels=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxeManagement")][bxeManagement]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxeRealization")][bxeRealization]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxie")][bxie]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxoConstruction")][bxoConstruction]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxoManagement")][bxoManagement]] *|* 
 *   =Decedent Panels=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxre")][bxre]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/bxse")][bxse]] *|* 
 *   =Sibling Panels=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/adoptedComponents/_nodeBase_")][ =adoptedComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/baseDirs/_nodeBase_")][ =baseDirs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bisosAccts")][bisosAccts]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bootstrap/_nodeBase_")][ =bootstrap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/_nodeBase_")][ =bxeAndBxo= ]] *|* 
-*   =Sibling Panels=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/disks/_nodeBase_")][ =disks= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/groupedComponents/_nodeBase_")][ =groupedComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/multimedia/_nodeBase_")][ =multimedia= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/platform/_nodeBase_")][ =platform= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/ppMachine/_nodeBase_")][ =ppMachine= ]] *|* 
-*   =Sibling Panels=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/projs/_nodeBase_")][ =projs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/registrations/_nodeBase_")][ =registrations= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/sites/_nodeBase_")][ =sites= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/sync/_nodeBase_")][ =sync= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/_nodeBase_")][ =virtualization= ]] *|* 
-*   =Ancestor Panles=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/_nodeBase_")][ =core= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos")][bisos]] *|* 
+*   =Sibling Panels=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/disks/_nodeBase_")][ =disks= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/groupedComponents/_nodeBase_")][ =groupedComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/platform/_nodeBase_")][ =platform= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/ppMachine/_nodeBase_")][ =ppMachine= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/projs/_nodeBase_")][ =projs= ]] *|* 
+*   =Sibling Panels=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/registrations/_nodeBase_")][ =registrations= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/sites/_nodeBase_")][ =sites= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/sync/_nodeBase_")][ =sync= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/_nodeBase_")][ =virtualization= ]] *|* 
+*   =Ancestor Panles=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/_nodeBase_")][ =core= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/_nodeBase_")][ =bisos= ]] *|* 
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "BxE Registration, Realization, Activation, Materialization" :anchor "" :extraInfo ""
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /BxE Registration, Realization, Activation, Materialization:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** 
+*** BxE Registration     -- Creates A BxE-Desc -- Uniq OID and RDN
+*** BxE Relization       -- Creates A BxE-Repo-Acct at the GitServer -- Creates rbxe, bxeTree and mapFiles repos
+*** BxE Activation       -- Creates A BxO -- Retrievs rbxe and creates bxo acct and clones into it
+*** BxO Materialization  -- Based on the BxO, creates a VM, runs a service, etc
+*** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Prerequisites" :anchor "" :extraInfo ""
 ** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 ** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Prerequisites:/ |]]    [[elisp:(org-shifttab)][<)]] E|
@@ -73,10 +83,11 @@
 ####+END
 *** 
 ***  BxE-Visibility  -- Private, Group, All
-***  BxE-Kind   -- BxRE (Bx Real Entity) -- BxISE (Bx Info or Svc Entity)
+***  BxE-Kind   -- BxRE (Bx Real Entity) -- BxISE (Bx Info or Svc Entity) -- BxO Container
 ***  BxRE-Types  -- Real Individual (ri-) -- Real Organization (ro-) -- Real System (rs-)
 ***  BxIE-Types  -- Info Site (is-) -- Info UE (iu-) -- Info-Sys-Char (ic-)
 ***  BxSE-Types  -- Service Autonomous (sa-) -- Service Controlled (sc-)
+***  BxCE-Types  -- BxO Containers -- (ci) intar (ce) container exposed
 *** 
 ***  BxE-Node    -- BxE-Branch, BxE-Leaf  (SubTree)
 **** 
@@ -187,6 +198,7 @@
 **  [[elisp:(org-cycle)][| ]]  BxRe              ::   A ByStar Real Entity
 **  [[elisp:(org-cycle)][| ]]  BxSe              ::   A ByStar Serviced Entity
 **  [[elisp:(org-cycle)][| ]]  BxIe              ::   A ByStar Information Entity -- (projects, sw)  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  BxCe              ::   A ByStar Container Entity -- (projects, sw)  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(org-cycle)][| ]]  BxE Attributes    ::   Attributes: Sovereignty/Privacy/Access/Modifyability/Exposition [[elisp:(org-cycle)][| ]]
 **  [[elisp:(org-cycle)][| ]]  BxE Sovereignty   ::   Sovereignty: Autonomus/Controlled/Federated/Collaborative/Central/Anonymous  [[elisp:(org-cycle)][| ]]
 ***  [[elisp:(org-cycle)][| ]]  BxE Sovereignty  ::  Autonomous   [[elisp:(org-cycle)][| ]]
@@ -360,251 +372,6 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Special Site BxIE: rdn=s-bisos.site:* |]]  Initial Default BISOS Site  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "BxCIE (Bx Controlled Info Entity) Self Registration And Realization" :anchor "" :extraInfo ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _BxCIE (Bx Controlled Info Entity) Self Registration And Realization_: |]]    [[elisp:(org-shifttab)][<)]] E|
-####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "BxCSE (Bx Controlled Service Entity) Self Registration And Realization" :anchor "" :extraInfo ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _BxCSE (Bx Controlled Service Entity) Self Registration And Realization_: |]]    [[elisp:(org-shifttab)][<)]] E|
-####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "BxCSE (Bx Controlled Service Entity) Public Registration And Realization" :anchor "" :extraInfo ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _BxCSE (Bx Controlled Service Entity) Public Registration And Realization_: |]]    [[elisp:(org-shifttab)][<)]] E|
-####+END
-
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "From Old Bx Ref Model" :anchor "" :extraInfo "To Be Absorbed"
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _From Old Bx Ref Model_: |]]  To Be Absorbed  [[elisp:(org-shifttab)][<)]] E|
-####+END
-*  [[elisp:(org-cycle)][| ]]  BxE                   ::  [[xx Panel]]    || One of BxSe or BxIe  [[elisp:(org-cycle)][| ]]
-*  [[elisp:(org-cycle)][| ]]  BxO                   ::  [[xx Panel]]    || One of BxSo or BxIo  [[elisp:(org-cycle)][| ]]
-*  [[elisp:(org-cycle)][| ]]  BxSR Instance         ::  [[xx Panel]]    ||    [[elisp:(org-cycle)][| ]]
-*  [[elisp:(org-cycle)][| ]]  BxCU                  ::  [[xx Panel]]    || ByStar Canonical User -- ~bystar  (formerly lsipusr) [[elisp:(org-cycle)][| ]]
-*  [[elisp:(org-cycle)][| ]]  BxU                   ::  [[xx Panel]]    || Bx User, Same as Associated Bxo User Character --  ~bystar/abxo -> ~bxo [[elisp:(org-cycle)][| ]]
-*  [[elisp:(org-cycle)][| ]]  BxUe                  ::  [[xx Panel]]    || Bx User Env, Associated Bx Ue -- ~bystar/abue -> ~bxo/ue  [[elisp:(org-cycle)][| ]]
-*  [[elisp:(org-cycle)][| ]]  ABxUC (BxAUe-SIo)     ::  Associated Bxo User Character --  ~bystar/abxo -> ~bxo  [[elisp:(org-cycle)][| ]]
-*  [[elisp:(org-cycle)][| ]]  ABxUeC (BxAUe-SIo-Ue) ::  [[xx Panel]]    || Associated Bx Ue -- ~bystar/abue -> ~bxo/ue  [[elisp:(org-cycle)][| ]]
-*  [[elisp:(org-cycle)][| ]]  Terminology           ::   /Terminology: Concepts, Facilities, Scoping Tags And / [[elisp:(org-cycle)][| ]]
-** TODO ============ For All Of This Section
-*** TODO [[elisp:(org-cycle)][| ]]  Xref         ::  Xref to appropriate BxPanels  [[elisp:(org-cycle)][| ]]
-*** TODO [[elisp:(org-cycle)][| ]]  Absorb       ::  Absrob from old /opt/public/osmt/bin/MODEL.org -- Partly brough into this file already  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxDE            ::  *bxde*        -- ByStar Digital Echo System [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxDistrict      ::  *bxDistrict*  -- ByStar District (e.g., LibreCenter) [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxSite          ::  *bxSite*      -- ByStar Site (e.g., your house)  [[elisp:(org-cycle)][| ]]
-**      ============
-**  [[elisp:(org-cycle)][| ]]  BxE             ::  *bxe*         -- ByStar Entity [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxSE            ::  *bxse*        -- ByStar Serviced Information Entity [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxIE            ::  *bxie*        -- ByStar Information Entity [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE-DN          ::  *bxeDn*       -- ByStar Entity Distinguished Name [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE-OId         ::  *bxeOId*      -- ByStar Entity Distinguished Name [[elisp:(org-cycle)][| ]]
-**      ============
-**  [[elisp:(org-cycle)][| ]]  BxO             ::  *bxo*         -- ByStar Object [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxO-Id          ::  *bxoId*       -- A Unix Uid -- Replaces bystarUid [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxSO            ::  *bxso*        -- ByStar Serviced Information Object [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxIO            ::  *bxio*        -- ByStar Information Object [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxSIoP (SIoP)   ::  *siop*        -- BxSIo Provider -- Activities that apply to BxSIo Provider  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxSIoU (SIoU)   ::  *siou*        -- BxSIo Usage -- Activities that apply to Usage Of BxSIo  [[elisp:(org-cycle)][| ]]
-**      ============
-**  [[elisp:(org-cycle)][| ]]  BxP             ::  *bxp*         -- Bx Platform -- Entirety Of The Current Platform Excluding Bue [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxP-COC         ::  *bxp-coc*     -- Common BxOs Container BxPlatform -- Starting Point For Everything [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  PP              ::  *pp*          -- Physical Platform [[elisp:(org-cycle)][| ]]
-**      ============
-**  [[elisp:(org-cycle)][| ]]  BxU (~bystar)   ::  *bxu*         -- Will replace lsipusr  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  ABxU            ::  *abxu*        -- The current associated BxO  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  ABxUe           ::  *abxue*       -- The current associated BxO-Ue  [[elisp:(org-cycle)][| ]]
-**      ============
-**  [[elisp:(org-cycle)][| ]]  BISOS           ::                --  ByStar Internet Services OS [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxSRF           ::                -- ByStar Service Realization Framework (Abstractions, Conceptual) (An Aspect Of Ref Model) [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BSIF            ::  *bsif*        -- ByStar Services Integration Facilities (Code) (Bash and Python) [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  IICM            ::  *iicm*        -- Interactivly Invokable Command Modules  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  IICM.Bash       ::  Bash IICM  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  IICM.Py         ::  Python IICM  [[elisp:(org-cycle)][| ]]
-**      ============
-**  [[elisp:(org-cycle)][| ]]  FV              ::  File Variables  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  FP              ::  File Parameters  [[elisp:(org-cycle)][| ]]
-
-**  [[elisp:(org-cycle)][| ]]  BXT             ::  *bxt*         -- ByStar Tree File Objects  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  bxtStart        ::  *bxtStart*    -- bxtStartXx based on seedBxtCommon.sh -- ByStar Tree File Objects Initial Creator  [[elisp:(org-cycle)][| ]]
-
-**      ============
-**  [[elisp:(org-cycle)][| ]]  serviceCap      ::  *sc*          -- ByStar Service Capability  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  sr              ::  *sr*          -- ByStar Service Realization Instance  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  srBase          ::  *srBase*      -- ByStar Service Realization Base Directory [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  bsr             ::  *bsr*         -- ByStar Service Realization Facilities Collection  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  srMode          ::  *srMode*      -- ByStar Service Realization Mode (xx)  [[elisp:(org-cycle)][| ]]
-**      ============
-**  [[elisp:(org-cycle)][| ]]  lca             ::  *lca*         -- Libre Component Adopted  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  lce             ::  *lce*         -- Libre Component Extended  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  lcn             ::  *lcn*         -- Libre Component Native  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  nlc             ::  *nlc*         -- None Libre Component [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  lcaXxBinsPrep   ::  *BinsPrep*    -- Postfix -- Applies to All of lca,lce,lcn,nlc [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  lcaXxSvcUse     ::  *SvcUse*      -- Postfix -- Works In Combination With BinsPrep and xxx [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  lcaXxManage     ::  *Manage*      -- Postfix -- Applies to All of lca,lce,lcn,nlc,priv [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  lcaXxAdmin      ::  *Admin*       -- Postfix -- Applies to All of lca,lce,lcn,nlc,priv [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  lcaXxProc       ::  *Proc*        -- Postfix -- Applies to All of lca,lce,lcn,nlc,priv [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  fgc             ::  *fgc*         -- Functionally Grouped Components [[elisp:(org-cycle)][| ]]
-**      ============
-**  [[elisp:(org-cycle)][| ]]  Synchronization ::  *git*   [[elisp:(org-cycle)][| ]]
-**      ============
-** [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]   Blee Model -- Needs To Become Its Own Panel
-** [[elisp:(org-cycle)][| ]]  Blee            ::  *blee*  Model      -- ByStar Libre Emacs Environment  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  Blee.Notebook     :: (Now panelBinders)  panelNotebooks      -- Blee PanelNotebook  [[elisp:(org-cycle)][| ]]
-*** A collection of linked Blee.Panles
-**  [[elisp:(org-cycle)][| ]]  Blee.Panels     ::  *panel*       -- Blee Panels  [[elisp:(org-cycle)][| ]]
-*** General concept and facilities for all panels
-*** Blee.Panel     :: (namespace bx:panel) Any panel that conforms to bx:panel policies and facilities.
-*** 
-*** Blee.Panels.Menubar     Blee Panles That Are Reachable Through Menu Bars
-*** Blee.Panels.Menubar.Node
-*** Blee.Panels.Menubar.Leaf
-*** Blee.Panles.Bx        :: For BxE. BxSRF are 
-*** Blee.Panels.Bisos     :: For BSIP - but called BISOS
-*** Blee.Panles.Activities
-*** Blee.Panles.Activities.Projs
-*** Blee.Panles.Activities.SvcProvider
-*** Blee.Panles.Iim              :: Common Aspects of All IIMs
-*** Blee.Panles.Iim.sh.Pkged        :: Auto generated in a iimPkgBase for each IIM next to the IIM itself
-*** Blee.Panles.Iim.sh.Grouped      :: Auto generated in a base for each IIM estranged from the IIM itself
-*** Blee.Panles.Iim.sh.Bxt          :: Custimzed in the base of a BxtIim next to BxtIim itself
-*** Blee.Panles.Iim.sh.Customized   :: Custimzed estranged from  Iim itself
-*** =========
-*** Blee.Panles.Iim.py.Pkged        :: Auto generated in a iimPkgBase for each IIM next to the IIM itself
-*** Blee.Panles.Iim.py.Grouped      :: Auto generated in a base each panel IIM estranged from the IIM itself
-*** Blee.Panles.Iim.py.Bxt          :: Custimzed in the base of a BxtIim next to BxtIim itself
-*** Blee.Panles.Iim.py.Customized   :: Custimzed estranged from  Iim itself
-
-**  [[elisp:(org-cycle)][| ]]  BxPanels        ::  *bxPanel*     -- Blee ByStar Panels --(aka Blee Control Panel)  [[elisp:(org-cycle)][| ]]
-*** ByStar Control Panels -- Rooted in a directory -- Preped for multilingualization
-
-**  [[elisp:(org-cycle)][| ]]  BisosPanels     ::  *bisosPanel*  -- Blee BISOS Panels (Blee IIM-Grouped Panels)  [[elisp:(org-cycle)][| ]]
-*** Panels That Group IIM-Panels and invoke iimPanels
-**  [[elisp:(org-cycle)][| ]]  IimPanels       ::  *iimPanel*    -- Blee Iim Panels  [[elisp:(org-cycle)][| ]]
-*** Panels that go with IIMs
-**  [[elisp:(org-cycle)][| ]]  emacs.enml      ::  *enml*        -- Emacs Native Markup Language (Next Generation Org-Mode) [[elisp:(org-cycle)][| ]]
-*** TODO [[elisp:(org-cycle)][| ]]   emacs.enml      ::  Or Eml Description   [[elisp:(org-cycle)][| ]]
-*** [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]   EML Conceptual Layering  -- Display Engine -- Font Locking -- EML -- Emacs Abstract Object Description Language (org-links) -- Emacs Native Mode -- Emacs Apps
-**  [[elisp:(org-cycle)][| ]]  OMEEGS          ::  *omeegs*      -- Org-Moded Enhancements Emacs Generalized Syntax  [[elisp:(org-cycle)][| ]]
-*** [[elisp:(org-cycle)][| ]]   OMEGS LaTeX      ::  Description   [[elisp:(org-cycle)][| ]]
-*** [[elisp:(org-cycle)][| ]]   OMEGS Elisp      ::  Description   [[elisp:(org-cycle)][| ]]
-*** [[elisp:(org-cycle)][| ]]   OMEGS Bash Iim   ::  Description   [[elisp:(org-cycle)][| ]]
-*** [[elisp:(org-cycle)][| ]]   OMEGS Python Iim ::  Description   [[elisp:(org-cycle)][| ]]
-*** [[elisp:(org-cycle)][| ]]   OMEGS Logs       ::  Description   [[elisp:(org-cycle)][| ]]
-
-**  [[elisp:(org-cycle)][| ]]  COMEEGA         ::  *omeegs Authorship*  -- Collaborative Org-Moded Enhancements Emacs Generalized Authorship  [[elisp:(org-cycle)][| ]]
-**      ============
-*      ================
-*  [[elisp:(beginning-of-buffer)][Top]] ################ [[elisp:(delete-other-windows)][(1)]]            *BxE=(BxSIe or BxIe) -- Autonomus/Controlled*
-*  [[elisp:(org-cycle)][| ]]  BxE               ::   A ByStar-Entity is either a BxSe or a BxIe  [[elisp:(org-cycle)][| ]]
-**   With the concepts of BxSIe/BxSIo ByStar takes those software universalities to service and content universalities
-     which then result in complete Content, Software, Service Continuity.
-     These involve Unified and coherent Abstractions of Information, Software, Platform and Service.
-
-*  [[elisp:(org-cycle)][| ]]  BxSe              ::   A ByStar Serviced Information Entity
-*  [[elisp:(org-cycle)][| ]]  BxIe              ::   A ByStar Information Entity -- (projects, sw)  [[elisp:(org-cycle)][| ]]
-*  [[elisp:(org-cycle)][| ]]  BxE Attributes    ::   Attributes: Sovereignty/Privacy/Access/Modifyability/Exposition [[elisp:(org-cycle)][| ]]
-*  [[elisp:(org-cycle)][| ]]  BxE Sovereignty   ::   Sovereignty: Autonomus/Controlled/Federated/Collaborative/Central/Anonymous  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Sovereignty  ::  Autonomous   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Sovereignty  ::  Controlled   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Sovereignty  ::  Anonymous   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Sovereignty  ::  Collaborative   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Sovereignty  ::  Federated   [[elisp:(org-cycle)][| ]]    
-**  [[elisp:(org-cycle)][| ]]  BxE Sovereignty  ::  Central   [[elisp:(org-cycle)][| ]]
-*  [[elisp:(org-cycle)][| ]]  BxE Privacy       ::   Privacy: Public/Limited/ExternalConfidential/ClientConfiential/ClusterConfidential/PersonalConfidential  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Privacy      ::  Public   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Privacy      ::  Limited   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Privacy      ::  ExternalConfidential  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Privacy      ::  ClientConfidential  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Privacy      ::  ClusterConfidential  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Privacy      ::  PersonalConfidential  [[elisp:(org-cycle)][| ]]
-*  [[elisp:(org-cycle)][| ]]  BxE Access        ::   Access: Public/Group/Owner  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Access       ::  Public   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Access       ::  Group   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Access       ::  Owner  [[elisp:(org-cycle)][| ]]
-*  [[elisp:(org-cycle)][| ]]  BxE Modifyability ::   Modifyability: None/Read/Write  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Modification ::  None   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Modification ::  Read-Only   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Modification ::  Write   [[elisp:(org-cycle)][| ]]
-*  [[elisp:(org-cycle)][| ]]  BxE Exposition    ::   Exposition Intent: Publish/UnPublish/Repress  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Exposition   ::  Publish  -- Ours  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Exposition   ::  UnPublish -- Ours  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Exposition   ::  RePublish -- Not Ours  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Exposition   ::  UnRePublish -- Not Ours  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Exposition   ::  Repress -- Subject to Copyright Limitations  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxE Exposition   ::  Private   [[elisp:(org-cycle)][| ]]
-*  [[elisp:(org-cycle)][| ]]  BxE Types         ::   Types: Identified-Individual/Id-Organization/Project/Internal  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxIo Internal    ::  BxIo.Internal.BxSite   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxIo Internal    ::  BxIo.Internal.District   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxIo Internal    ::  BxIo.Internal.BxPlatformCharacter   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxSo WebSite     ::  BxSo.WebSite.BxName   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxSo WebSite     ::  BxSo.WebSite.BxMemory   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxSo Individual  ::  BxSo.Individual.Identified (Autonomous/Controlled)   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxSo Individual  ::  BxSo.Individual.UnIdentified (Controlled)   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxSo Individual  ::  BxSo.Individual.Anonymous (Anonymous)   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxSo Organization::  BxSo.Org.Identified (Autonomous/Controlled)   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxSo Organization::  BxSo.Org.UnIdentified (Controlled)   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxSo Organization::  BxSo.Org.Anonymous (Anonymous)   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxIo Project     ::  BxIo.Project.Standalone (Controlled) -- Generic Data  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxIo Project     ::  BxIo.Project.Colaborative (Controlled)   [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  BxIo Usage       ::  BxIo.User.Standalone (Controlled) -- Users and User Environments  [[elisp:(org-cycle)][| ]]
-*      ================
-*  [[elisp:(beginning-of-buffer)][Top]] ################ [[elisp:(delete-other-windows)][(1)]]            *BxSIo, BxSIe -- Directory Hierarch and Types (Autonomus/Controlled)*
-*  [[elisp:(org-cycle)][| ]]  BxO             ::   A ByStar-Object (BxObject, BxO) is either a BxSo or a BxIo (Previously biso) [[elisp:(org-cycle)][| ]]
-*  [[elisp:(org-cycle)][| ]]  BxSo            ::   BxSIe-Oid, BxSIo-DN, BxSIo-Id (biid)  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  A  BxSIe Registration Request Package (BxSIoRRP (BIRRP)) -- *Previously BARC* is created.
-***  [[elisp:(org-cycle)][| ]]  BIRRP includes BxSIo-Type and Autonomous Entity Information  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  For controlled BxSIe Registration involves: BxSIe Autonomous Entity Identifier + BxSIo-Type
-***  Purpose of BxSIe is autorative naming of its corresponding BxSIo.
-**  [[elisp:(org-cycle)][| ]]  Based on BIRRP, at Registration (BxCentral for Autonomous Entities), the BxSIe-Oid is created.
-**  [[elisp:(org-cycle)][| ]]  The BxSIe-Oid is included in a BxSIe-Oid-Pkg (BxISe) -- *Previously RBAE*
-**  [[elisp:(org-cycle)][| ]]  The BxISe -Oid-Pkg can then be used in any BxSIo-Generator-BxPlatform to create a BxSIo/Principal-BxSIo
-**      The BxSIo is in form of a Unix Account. The created BxSIo-Id is the unix Account and its content.
-**      BxSIo-DN is BxPlatform + BxSIo-Id
-**      ============
-**      BxSIe-Oid Information is Replecated in BxSIo (in ~bxIso/iseOid). A BxSIo includes the BxSIe-OId-Pkg.
-**      Upon Creation of BxSIo, the BxSIe-OId-Pkg (in BxCentral or its registrar) points to BxSIo-DN.
-**      ============
-**  [[elisp:(org-cycle)][| ]]  BxSIe/BxSIo Naming/Numbering  ::  Terminology   [[elisp:(org-cycle)][| ]]
-***  [[elisp:(org-cycle)][| ]]  BxSIe-oid    ::   Pure Number Form   [[elisp:(org-cycle)][| ]]
-***  [[elisp:(org-cycle)][| ]]  BxSIe-DN     ::   A DN maping onto oid   [[elisp:(org-cycle)][| ]]
-***  [[elisp:(org-cycle)][| ]]  BxSIo-Id     ::   The Unix UserId (uid)   [[elisp:(org-cycle)][| ]]
-***  [[elisp:(org-cycle)][| ]]  BxSIo-DN     ::   BxPlatform + BxSIo-Id   [[elisp:(org-cycle)][| ]]
-***  [[elisp:(org-cycle)][| ]]  BxSIo-Type   ::   An hierarchical enumerated type (An oid) that defines capabilities of BxSIo [[elisp:(org-cycle)][| ]]
-*  [[elisp:(org-cycle)][| ]]  BxIo            ::   Bx Info Object
-* TODO [[file:/lcnt/lgpc/bystar/permanent/general/bxRefModelEnFa/artPresBodyEnFa.tex::Xref-BxISo-Replication][artPresBodyEnFa BxISo Structure]]   --- This is now ahead of the document -- The two need to be updated.
-*  [[elisp:(org-cycle)][| ]]  bxoId            ::   BxObject Id which is same as the uid of BxO Account  [[elisp:(org-cycle)][| ]]
-*  [[elisp:(org-cycle)][| ]]  ~BxO/            ::   BxObject Directory Base And Hierarchy  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  ~/bxsie(bxie)  ::   BxSIe -- Copy Of The Registrar's SIe  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  ~/bxsio(bxio)  ::   BxSIo -- This iso info on this bxp -- passwd, keys, relations, other bxps  [[elisp:(org-cycle)][| ]]
-*** ~/bxsio/rel/master           # Relations
-*** ~/bxsio/rel/controlled
-*** ~/bxsio/pkcs
-**  [[elisp:(org-cycle)][| ]]  ~/so           ::   Service Object Components/Structure [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  ~/so/cap       ::   Service Capabilities Demanded From BxPlatform  [[elisp:(org-cycle)][| ]]
-   Based on specification of ~/so/cap, initial values for ~/so/sr can be auto generated.
-   ~/so/cap/mail/full  ~/so/cap/plone3/basic 
-**  [[elisp:(org-cycle)][| ]]  ~/so/sr        ::   Service Realizations  [[elisp:(org-cycle)][| ]]
-   The structure is ~/sr -- Service Realizations, followed by ~/sr/capability, followed by instance
-***   ~/so/sr/apache2/git     # Web Authenticated
-***   ~/so/sr/apache2/web     # Ordinary plain html web server
-****  ~/so/sr/apache2/web/srAgent.sh -- /libre/ByStar/InitialTemplates/iso/sr/common/srAgent.sh
-***   ~/so/sr/apache2/web2    # 2nd Ordinary plain html web server
-***   ~/so/sr/plone3/bxMain   # BxSIo's primary Plone3 Site
-**  [[elisp:(org-cycle)][| ]]  ~/so/svcPars   ::   Service Param  [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  ~/io           ::   Information Objects Components/Structure [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  ~/io/lcnt      ::   Content Generation and Publication [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  ~/io/mailing   ::   Mailings [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  ~/io/names     ::   Names [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  ~/io/a/0       ::   Any Info (Projects, etc) [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  ~/ue           ::   User Environments  --  [[file:/lcnt/lgpc/bystar/permanent/general/bxRefModelEnFa/artPresBodyEnFa.tex::Xref-BxISo-ue][artPresBodyEnFa BxISo/ue]] [[elisp:(org-cycle)][| ]]
-*** ~/ue/bin  ~/ue/elisp
-**  [[elisp:(org-cycle)][| ]]  ~/ue/blee/org  ::   User Environments  --  ~/ue/playLists -- bxPanels(ActiveDocs), dotBbdb, org, [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  ~/ue/bxp/bue0  ::   Customization for this ISo on specific bxps (residentMsMTA vs remoteMs) [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  ~/bxp          ::   NO-VC -- Things specific to this instance of ISo on this BxP (var,tmp)-- Not this Iso [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  ~/bxp/tmp      ::   NO-VC --  ~/bxp/var ~/bxp/tmp ~/bxp/logs ~/bxp/control [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  ~/bxp/control  ::   NO-VC --  ~/bxp/var ~/bxp/tmp ~/bxp/logs ~/bxp/control [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  ~/bxp/pkcs?    ::   NO-VC --  ~/bxp/var ~/bxp/tmp ~/bxp/logs ~/bxp/control [[elisp:(org-cycle)][| ]]
-
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Panel Tree Navigation" :anchor "panelTreeNav" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Panel Tree Navigation:* |]] <<panelTreeNav>>   [[elisp:(org-shifttab)][<)]] E|
@@ -626,7 +393,6 @@
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/_nodeBase_")][@ =bxeAndBxo= @]]    ::  Node: /bxeAndBxo/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/disks/_nodeBase_")][@ =disks= @]]    ::  Node: /disks/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/groupedComponents/_nodeBase_")][@ =groupedComponents= @]]    ::  Node: /groupedComponents/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/multimedia/_nodeBase_")][@ =multimedia= @]]    ::  Node: /multimedia/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/platform/_nodeBase_")][@ =platform= @]]    ::  Node: /platform/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/ppMachine/_nodeBase_")][@ =ppMachine= @]]    ::  Node: /ppMachine/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/projs/_nodeBase_")][@ =projs= @]]    ::  Node: /projs/
@@ -636,7 +402,7 @@
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/_nodeBase_")][@ =virtualization= @]]    ::  Node: /virtualization/
 ** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~bxeAndBxo~>> ~nil:~ :inDblock 
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/_nodeBase_")][@ =core= @]]    ::  Node: /core/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos")][@ *bisos* @]]    ::  Leaf: /bisos/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/_nodeBase_")][@ =bisos= @]]    ::  Node: /bisos/
 ** [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
@@ -650,7 +416,12 @@
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Notes, Ideas, Tasks, Agenda" :anchor "Tasks"
 ** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
-*** TODO Some Idea
+*** TODO Change name  of subBxe to bxeTree
+    SCHEDULED: <2020-12-17 Thu>
+*** TODO add bxeTree/progenitor as parent of this bxo
+*** TODO What is bxeTree/bxeDesc for?
+*** TODO When Realizing a BxE Add this BxE to the parent's bxeTree
+    SCHEDULED: <2020-12-17 Thu>
 ####+BEGIN: blee:bxPanel:evolutionMaintainers
 ** [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolutionMaintainers)][dbf]]
 ** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>  

@@ -41,9 +41,9 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-physicalPlatformBisosProvision
 afterBaseSteps
 credentialsReset
+physicalPlatformBisosProvision
 "
 # }}} DBLOCK-leavesList
 ####+END:
@@ -57,8 +57,8 @@ _CommentEnd_
 # {{{ DBLOCK-nodesList
 nodesList="
 distros
-provisionSelections
 _nodeBase_
+provisionSelections
 "
 # }}} DBLOCK-nodesList
 ####+END:

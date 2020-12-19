@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedBleePanelProc.sh]] | 
 "
 FILE="
-*  /This File/ :: /bisos/panels/bisos/core/adoptedComponents/vmHost/vagrant/baseBuild/bleePanelProc.sh 
+*  /This File/ :: /bisos/panels/bisos/core/virtualization/vagrant/baseBuild/bleePanelProc.sh 
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedBleePanelProc.sh -l $0 "$@" 

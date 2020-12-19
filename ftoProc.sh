@@ -65,7 +65,6 @@ _nodeBase_
 bxeAndBxo
 sync
 baseDirs
-multimedia
 virtualization
 bootstrap
 ppMachine

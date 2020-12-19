@@ -97,9 +97,9 @@
 ####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "Status" :command "sudo gitlab-ctl status" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Status/ :: [[elisp:(lsip-local-run-command "sudo gitlab-ctl status")][sudo gitlab-ctl status]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Web Interface Activities" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Web Interface Activities -- Root -- passwd" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Web Interface Activities:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Web Interface Activities -- Root -- passwd:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
 ** Set Root Password -- http://localhost   -- root -- get.In.(9.7).gitlab...CE

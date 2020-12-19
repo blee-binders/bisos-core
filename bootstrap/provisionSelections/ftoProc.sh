@@ -42,8 +42,8 @@ _CommentEnd_
 # {{{ DBLOCK-leavesList
 leavesList="
 guestChars
-kvmHosting
 sysChars
+kvmHosting
 "
 # }}} DBLOCK-leavesList
 ####+END:

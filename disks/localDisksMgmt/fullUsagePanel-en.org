@@ -162,6 +162,13 @@
 ** File Sys -ext4 --- Label data1 (But no name)
 ** Then Mount FS
 ** 
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "GUI Partition A Disk -- Format -- Create File Sys" :anchor "" :extraInfo "/usr/bin/gnome-disks &"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *GUI Partition A Disk -- Format -- Create File Sys:* |]]  /usr/bin/gnome-disks &  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "GUI Start" :command "/usr/bin/gnome-disks &" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /GUI Start/ :: [[elisp:(lsip-local-run-command "/usr/bin/gnome-disks &")][/usr/bin/gnome-disks &]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Diagnose And Repair A Damaged Disk" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Diagnose And Repair A Damaged Disk:* |]]    [[elisp:(org-shifttab)][<)]] E|
