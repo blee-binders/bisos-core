@@ -48,6 +48,7 @@ bxie
 bxoManagement
 bxse
 bxeRealization
+bxce
 "
 # }}} DBLOCK-leavesList
 ####+END:
