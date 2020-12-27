@@ -3,7 +3,7 @@
 *  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
 **  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]] 
-**  This File :: *= /bisos/panels/bisos/core/virtualization/vagrant/_nodeBase_/fullUsagePanel-en.org =* 
+**  This File :: *= /bisos/panels/bisos-core/virtualization/vagrant/_nodeBase_/fullUsagePanel-en.org =* 
 *  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
 **  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
 **  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
@@ -11,17 +11,17 @@
 ####+END
 ####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
 * [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
-*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: core/virtualization -- vagrant~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: bisos-core/virtualization -- vagrant~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
 * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
-*   =Decedent Panels=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/vagrant/baseBuild")][baseBuild]] *|* 
-*   =Sibling Panels=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/hostFirmware")][hostFirmware]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/kvm")][kvm]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/legacy-virsh")][legacy-virsh]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/legacy-vmware")][legacy-vmware]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/libvirt/_nodeBase_")][ =libvirt= ]] *|* 
-*   =Sibling Panels=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/vagrant/_nodeBase_")][ =vagrant= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/virsh")][virsh]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/virtualbox")][virtualbox]] *|* 
-*   =Ancestor Panles=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/_nodeBase_")][ =virtualization= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/_nodeBase_")][ =core= ]] *|* 
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/vagrant/baseBuild")][baseBuild]] *|* 
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/hostFirmware")][hostFirmware]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/kvm")][kvm]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/legacy-virsh")][legacy-virsh]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/legacy-vmware")][legacy-vmware]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/libvirt/_nodeBase_")][ =libvirt= ]] *|* 
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/vagrant/_nodeBase_")][ =vagrant= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/virsh")][virsh]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/virtualbox")][virtualbox]] *|* 
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/_nodeBase_")][ =virtualization= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* 
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
@@ -48,7 +48,7 @@
 ####+END
 ####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "vagrant --version"  :results t :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "vagrant --version")][vagrant --version]] *|*  == *|*    |
-Last Executed at: 202012-19-18:17:01  by: bystar on: intra-XPS-8900
+Last Executed at: 202012-23-19:37:49  by: bystar on: intra-XPS-8900
 ----------------------------
 Vagrant 2.2.6
 
@@ -66,19 +66,19 @@ Vagrant 2.2.6
 ####+END
 ####+BEGIN: blee:bxPanel:linedTreeNavigator :model "auto" :outLevel 2
 ** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~vagrant~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/vagrant/baseBuild")][@ *baseBuild* @]]    ::  Leaf: /baseBuild/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/vagrant/baseBuild")][@ *baseBuild* @]]    ::  Leaf: /baseBuild/
 ** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~vagrant~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/hostFirmware")][@ *hostFirmware* @]]    ::  Leaf: /hostFirmware/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/kvm")][@ *kvm* @]]    ::  Leaf: /kvm/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/legacy-virsh")][@ *legacy-virsh* @]]    ::  Leaf: /legacy-virsh/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/legacy-vmware")][@ *legacy-vmware* @]]    ::  Leaf: /legacy-vmware/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/libvirt/_nodeBase_")][@ =libvirt= @]]    ::  Node: /libvirt/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/vagrant/_nodeBase_")][@ =vagrant= @]]    ::  Node: /vagrant/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/virsh")][@ *virsh* @]]    ::  Leaf: /virsh/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/virtualbox")][@ *virtualbox* @]]    ::  Leaf: /virtualbox/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/hostFirmware")][@ *hostFirmware* @]]    ::  Leaf: /hostFirmware/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/kvm")][@ *kvm* @]]    ::  Leaf: /kvm/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/legacy-virsh")][@ *legacy-virsh* @]]    ::  Leaf: /legacy-virsh/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/legacy-vmware")][@ *legacy-vmware* @]]    ::  Leaf: /legacy-vmware/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/libvirt/_nodeBase_")][@ =libvirt= @]]    ::  Node: /libvirt/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/vagrant/_nodeBase_")][@ =vagrant= @]]    ::  Node: /vagrant/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/virsh")][@ *virsh* @]]    ::  Leaf: /virsh/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/virtualbox")][@ *virtualbox* @]]    ::  Leaf: /virtualbox/
 ** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~vagrant~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/virtualization/_nodeBase_")][@ =virtualization= @]]    ::  Node: /virtualization/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/_nodeBase_")][@ =core= @]]    ::  Node: /core/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/_nodeBase_")][@ =virtualization= @]]    ::  Node: /virtualization/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/_nodeBase_")][@ =bisos-core= @]]    ::  Node: /bisos-core/
 ** [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:separator :outLevel 1

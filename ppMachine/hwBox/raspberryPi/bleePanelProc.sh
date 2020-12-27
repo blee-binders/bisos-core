@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedBleePanelProc.sh]] | 
 "
 FILE="
-*  /This File/ :: /bisos/panels/bisos/core/ppMachine/hwBox/raspberryPi/bleePanelProc.sh 
+*  /This File/ :: /bisos/panels/bisos-core/ppMachine/hwBox/raspberryPi/bleePanelProc.sh 
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedBleePanelProc.sh -l $0 "$@" 

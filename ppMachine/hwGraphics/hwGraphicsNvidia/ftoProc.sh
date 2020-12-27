@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] | 
 "
 FILE="
-*  /This File/ :: /bisos/panels/bisos/core/ppMachine/hwGraphics/hwGraphicsNvidia/ftoProc.sh 
+*  /This File/ :: /bisos/panels/bisos-core/ppMachine/hwGraphics/hwGraphicsNvidia/ftoProc.sh 
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@" 
