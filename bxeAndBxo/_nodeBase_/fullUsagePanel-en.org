@@ -18,7 +18,7 @@
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
-*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxce")][bxce]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxeManagement")][bxeManagement]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxeRealization")][bxeRealization]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxie")][bxie]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxoConstruction")][bxoConstruction]] *|* 
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxce")][bxce]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxeManagement")][bxeManagement]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxeRealization")][bxeRealization]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxie/_nodeBase_")][ =bxie= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxoConstruction")][bxoConstruction]] *|* 
 *   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxoManagement")][bxoManagement]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxre")][bxre]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxse")][bxse]] *|* 
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/adoptedComponents/_nodeBase_")][ =adoptedComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/baseDirs/_nodeBase_")][ =baseDirs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bisosAccts")][bisosAccts]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/_nodeBase_")][ =bootstrap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/_nodeBase_")][ =bxeAndBxo= ]] *|* 
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/disks/_nodeBase_")][ =disks= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/groupedComponents/_nodeBase_")][ =groupedComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/platform/_nodeBase_")][ =platform= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/ppMachine/_nodeBase_")][ =ppMachine= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/projs/_nodeBase_")][ =projs= ]] *|* 
@@ -29,10 +29,26 @@
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** Scope of this panel is overall design of BxE Realization, BxO Activation and BxO Materialization.
+** It includes the following concepts and facilities, BxE Registrars, BxdDescription, BxE Provisioning,
+** etc
+** 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "BxE Registration, Realization, Activation, Materialization" :anchor "" :extraInfo ""
 ** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 ** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /BxE Registration, Realization, Activation, Materialization:/ |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
+#+caption: BxE and BxO Transtion
+| Input | Process         | Result | Description        | BISOS Ptr | Comments                          |
+|-------+-----------------+--------+--------------------+-----------+-----------------------------------|
+| U-BxE | Specification   | U-BxE  | ancesstors & type  | BxE Desc  | Params to cmnd line               |
+| U-BxE | Registration    | BxE    | uniq OID & RDN     | BxE-Desc  |                                   |
+| BXE   | Realization     | RBxE   | BxE-Repo-Acct      | bxoId     | Creates rbxe, etc repos           |
+| RBXE  | Activation      | BxO    | bxo acct with rbxe | bxoId     | git clones into bxo acct          |
+| BxO   | Cultivation     | BxO    | git push and pulls | bxoId     | git distributed devel             |
+| BxO   | Materialization | M-BxO  | new entities       | svcs      | materialized container, svcs, etc |
+| M-BxO | Admin & Usage   | M-BxO  | use of svcs        | svcs      |                                   |
+|-------+-----------------+--------+--------------------+-----------+-----------------------------------|
+
 *** 
 *** BxE Registration     -- Creates A BxE-Desc -- Uniq OID and RDN
 *** BxE Relization       -- Creates A BxE-Repo-Acct at the GitServer -- Creates rbxe, bxeTree and mapFiles repos
@@ -381,7 +397,7 @@
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxce")][@ *bxce* @]]    ::  Leaf: /bxce/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxeManagement")][@ *bxeManagement* @]]    ::  Leaf: /bxeManagement/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxeRealization")][@ *bxeRealization* @]]    ::  Leaf: /bxeRealization/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxie")][@ *bxie* @]]    ::  Leaf: /bxie/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxie/_nodeBase_")][@ =bxie= @]]    ::  Node: /bxie/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxoConstruction")][@ *bxoConstruction* @]]    ::  Leaf: /bxoConstruction/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxoManagement")][@ *bxoManagement* @]]    ::  Leaf: /bxoManagement/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxre")][@ *bxre* @]]    ::  Leaf: /bxre/
