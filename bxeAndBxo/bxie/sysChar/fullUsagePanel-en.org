@@ -38,6 +38,7 @@ it should be re-oriented towards sysChar based materialization of guest images.
 - /bisos/git/auth/bxRepos/bisos-pip/bootstrap/dev/bin/bxHostGenGuestKvm.sh
   =Bash -- Uses preseeds to generate KVMs -- predates vagrant=
 - /bisos/git/auth/bxRepos/bisos-pip/bootstrap/dev/bin/bxHostGenGuestVagrant
+  /bisos/core/bpip/bin//bxHostGenGuestVagrant
   =Python -- Creates Vagrant files -- Can be adopted to use aip_vagrantBaseBoxes instead of bootstrap/dev=
 
 
@@ -56,6 +57,17 @@ When bxieSysChar is materialized as a BxCO-PureSys, a VM is created based on the
 - Pointer to a list of bxso (service objects)
 - Character of the system -- What software should be loaded, what BxOs should be activated,
       and running of specified list of bxso-s.
+
+SysChar full bootstraping (both virtual and physical) follow these steps:
+
+1) Generic BxO Container Creation
+2) Identified BxO Container Creation -- BxO-Container taken from SysChar
+3) Install bootable services based on Service-BxO
+
+A given SysChar can apply to a list of BxO-Containers.
+In such a case, -p bxoId=SysChar -p container=bxoContainer.
+Each sysChar has a default BxO-Container specification which is in effect when -p container
+has not been specified.
 
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Related Chained Panels" :anchor "" :extraInfo ""

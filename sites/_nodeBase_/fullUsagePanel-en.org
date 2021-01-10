@@ -31,7 +31,7 @@
 ** 
 ** After Initial Install Of BISOS, sites need to be setup.
 ** Two situations exists. 1) Initial Setup  -- 2) Re-Use 
-** 
+** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Initial Setup" :anchor "" :extraInfo ""
 ** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 ** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Initial Setup:/ |]]    [[elisp:(org-shifttab)][<)]] E|

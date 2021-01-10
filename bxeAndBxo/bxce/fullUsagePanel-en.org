@@ -65,44 +65,82 @@
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ICM" :icmName "bxceProvision.sh" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ICM/ :: [[elisp:(lsip-local-run-command "bxceProvision.sh -i examples")][bxceProvision.sh]]  [[elisp:(lsip-local-run-command "bxceProvision.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxceProvision.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar Exposed Container Entity" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar VmHost Container Entity" :anchor "vmhc" :extraInfo "Host only, Never guest"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStar Exposed Container Entity:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStar VmHost Container Entity:* |]] <<vmhc>> Host only, Never guest  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** 
+** VmHost Containers are never a guest. The name prefix is vmhc (Virtual Machine Hosting Container).
+** B|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Cmnd" :icmName "bxceProvision.sh -i examplesBxContainerEntity vmHost all essentials" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "bxceProvision.sh -i examplesBxContainerEntity vmHost all essentials")][bxceProvision.sh -i examplesBxContainerEntity vmHost all essentials]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar Exposed Container Entity" :anchor "bpec-bacs" :extraInfo "Public internet visible"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStar Exposed Container Entity:* |]] <<bpec-bacs>> Public internet visible  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** 
+** Exposed-Containers are publicly exposed to the internet.
+** The old name prefix is bacs (ByStar Account Container System).
+** The new name prefix is:  bpec (ByStar Public Exposure Container) 
+** B|
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Cmnd" :icmName "bxceProvision.sh -i examplesBxContainerEntity exposed all essentials" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "bxceProvision.sh -i examplesBxContainerEntity exposed all essentials")][bxceProvision.sh -i examplesBxContainerEntity exposed all essentials]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar Perimeter Container Entity" :anchor "" :extraInfo "DMZ -- NOTYET"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar Perimeter Container Entity" :anchor "bpsc" :extraInfo "Aka: DMZ"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStar Perimeter Container Entity:* |]]  DMZ -- NOTYET  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStar Perimeter Container Entity:* |]] <<bpsc>> Aka: DMZ  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** TODO Needs to be added.
-   SCHEDULED: <2020-12-26 Sat>
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar Intra Container Entity" :anchor "" :extraInfo ""
+** 
+** Perimeter-Containers are reachable by publicly Exposed-Containers. But are not publicly exposed.
+** The new name prefix is:  bpsc (ByStar Perimeter Services Container) 
+** B|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Cmnd" :icmName "bxceProvision.sh -i examplesBxContainerEntity perimeter all essentials" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "bxceProvision.sh -i examplesBxContainerEntity perimeter all essentials")][bxceProvision.sh -i examplesBxContainerEntity perimeter all essentials]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar (Private) Intra Container Entity" :anchor "bipc-bisp" :extraInfo "VM-Guests, Media, Kodi"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStar Intra Container Entity:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStar (Private) Intra Container Entity:* |]] <<bipc-bisp>> VM-Guests, Media, Kodi  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** 
+** Intra-Containers are not reachable by any Exposed-Containers or Perimeter-Containers.
+** The old name prefix is bisp (ByStar Intranet Services Platform).
+** The new name prefix is:  bipc (ByStar Intranet Private Container) 
+** B|
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Cmnd" :icmName "bxceProvision.sh -i examplesBxContainerEntity intra all essentials" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "bxceProvision.sh -i examplesBxContainerEntity intra all essentials")][bxceProvision.sh -i examplesBxContainerEntity intra all essentials]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar Usage Container Entity" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar Usage Container Entity" :anchor "bluc-bue" :extraInfo "Laptops"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStar Usage Container Entity:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStar Usage Container Entity:* |]] <<bluc-bue>> Laptops  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** 
+** Usage-Containers are not reachable by any Exposed-Containers or Perimeter-Containers.
+** The old name prefix is bue (ByStar Usage Entity).
+** The new name prefix is:  bluc (ByStar Linux Usage Container) 
+** B|
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Cmnd" :icmName "bxceProvision.sh -i examplesBxContainerEntity usage all essentials" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "bxceProvision.sh -i examplesBxContainerEntity usage all essentials")][bxceProvision.sh -i examplesBxContainerEntity usage all essentials]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar Development Container Entity" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar Development Container Entity" :anchor "bdc" :extraInfo "Domain Faking"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStar Development Container Entity:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStar Development Container Entity:* |]] <<bdc>> Domain Faking  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** 
+** Development-Containers are not reachable by any Exposed-Containers or Perimeter-Containers.
+** The name prefix is:  bdc (ByStar Development Container) 
+** B|
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Cmnd" :icmName "bxceProvision.sh -i examplesBxContainerEntity dev all essentials" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "bxceProvision.sh -i examplesBxContainerEntity dev all essentials")][bxceProvision.sh -i examplesBxContainerEntity dev all essentials]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar Android Container Entity" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar Android Container Entity" :anchor "bauc" :extraInfo "Android Usage Env"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStar Android Container Entity:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStar Android Container Entity:* |]] <<bauc>> Android Usage Env  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** 
+** Usage-Containers are not reachable by any Exposed-Containers or Perimeter-Containers.
+** The name prefix is:  bauc (ByStar Android Usage Container) 
+** B|
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Cmnd" :icmName "bxceProvision.sh -i examplesBxContainerEntity android all essentials" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "bxceProvision.sh -i examplesBxContainerEntity android all essentials")][bxceProvision.sh -i examplesBxContainerEntity android all essentials]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
@@ -110,19 +148,9 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _ByStar System Character_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar System Character Information Entity" :anchor "" :extraInfo "~sc-name"
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStar System Character Information Entity:* |]]  ~sc-name  [[elisp:(org-shifttab)][<)]] E|
-####+END
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ICM" :icmName "bxioSysChar.sh" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ICM/ :: [[elisp:(lsip-local-run-command "bxioSysChar.sh -i examples")][bxioSysChar.sh]]  [[elisp:(lsip-local-run-command "bxioSysChar.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxioSysChar.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
-####+END:
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Cmnd" :icmName "bxioSysChar.sh -p bxoId=pic_dnsServer -i vagrantFile_base" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "bxioSysChar.sh -p bxoId=pic_dnsServer -i vagrantFile_base")][bxioSysChar.sh -p bxoId=pic_dnsServer -i vagrantFile_base]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
-####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar System Character Type Information Entity" :anchor "" :extraInfo "~ct-name"
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStar System Character Type Information Entity:* |]]  ~ct-name  [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep t :outLevel 2 :model "auto" :foldDesc "ByStar SysChar (System Character)" :destDesc "SysChar Entity" :dest "../sysChar"
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxie/sysChar")][@ ~SysChar Entity~ @]]   ::  [[elisp:(org-cycle)][| /ByStar SysChar (System Character)/ |]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Panel Tree Navigation" :anchor "panelTreeNav" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 

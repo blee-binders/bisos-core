@@ -43,6 +43,7 @@
 * libvirt and kvm bins prep
 * vagrant bins prep
 * vagrant BaseBox preps
+* B| 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Base Box Construction" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Base Box Construction:* |]]    [[elisp:(org-shifttab)][<)]] E|

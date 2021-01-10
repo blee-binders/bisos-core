@@ -43,7 +43,10 @@ _CommentEnd_
 leavesList="
 afterBaseSteps
 credentialsReset
-physicalPlatformBisosProvision
+physicalPlatformProvision
+sysPlatformProvision
+siteGitServer
+virtualPlatformProvision
 "
 # }}} DBLOCK-leavesList
 ####+END:

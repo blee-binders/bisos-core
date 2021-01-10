@@ -27,7 +27,50 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
-** Overview Comes Here.
+** Step by step overview:
+
+Here are the steps that you need to go through to
+get a completely integrated virtualized
+environment.
+
+Host=Windows-10
+Guest=Ubuntu-20.04
+
+1) Download and install Virtualbox
+
+ https://www.virtualbox.org/wiki/Downloads
+
+ Choose the latest version
+
+2) Download Ubuntu 20.04 LTS Desktop amd64
+ https://ubuntu.com/download/desktop
+
+
+3) Create an UB Guest
+
+   - point to UB-20.04 image
+   - Choose 2 cpus
+   - choose 8 gig ram
+   - choose 200 gig disk
+
+   Make sure it runs. Don't worry about display
+   size yet.
+
+4) Add Linux Guest Editions
+
+ https://www.virtualbox.org/manual/ch04.html
+
+5) Make sure display at full screen is ideal
+   - Choose 1028 full hdmi
+   - Maximize and test multiple desktops
+   - test guest-host cut and paste
+
+6) Host-Guest Integration
+
+   - I'll give you more details for network, disk
+     integration between guest and host
+
+
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Panel Tree Navigation" :anchor "panelTreeNav" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
