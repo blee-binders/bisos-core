@@ -1,4 +1,10 @@
 * B|
+####+BEGIN: bxPanel:common/title-plus
+#+title: distros/distroPhysicalInstall
+#+roam_tags: leaf
+#+roam_key: bootstrap/distros/distroPhysicalInstall
+[[file:../_nodeBase_/fullUsagePanel-en.org][bootstrap/distros]]
+####+END
 ####+BEGIN: blee:bxPanel:topPanelControls
 *  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
@@ -28,20 +34,6 @@
 ** 
 ** Overview Comes Here.
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Panel Tree Navigation" :anchor "panelTreeNav" :extraInfo ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Panel Tree Navigation:* |]] <<panelTreeNav>>   [[elisp:(org-shifttab)][<)]] E|
-####+END
-####+BEGIN: blee:bxPanel:linedTreeNavigator :model "auto" :outLevel 2
-** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~distroPhysicalInstall~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/distros/distroImages")][@ *distroImages* @]]    ::  Leaf: /distroImages/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/distros/distroPhysicalInstall")][@ *distroPhysicalInstall* @]]    ::  Leaf: /distroPhysicalInstall/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/distros/serverToDesktop")][@ *serverToDesktop* @]]    ::  Leaf: /serverToDesktop/
-** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~distroPhysicalInstall~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/distros/_nodeBase_")][@ =distros= @]]    ::  Node: /distros/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/_nodeBase_")][@ =bootstrap= @]]    ::  Node: /bootstrap/
-** [[elisp:(org-shifttab)][<)]] E|
-####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Boot Media Creation" :anchor "" :extraInfo "usb-creator-gtk"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Boot Media Creation:* |]]  usb-creator-gtk  [[elisp:(org-shifttab)][<)]] E|
@@ -55,6 +47,8 @@
 ***      Boot Media CD Creation   ::  Startup Disk Creator   [[elisp:(lsip-local-run-command "/usr/bin/python3 /usr/bin/usb-creator-gtk")][/usr/bin/python3 /usr/bin/usb-creator-gtk]]
 ***  [[elisp:(org-cycle)][| ]]  Boot Media DVD Creation  ::  usb-creator-gtk Does Not work Use CD/DVD Creator  [[elisp:(org-cycle)][| ]]
      Drag and drop the .iso file -- Don't write as one file -- Write Content
+***      Debian gnome-multi-writer
+***      debian  cp x.iso /dev/yy ; sync 
 ***  [[elisp:(org-cycle)][| ]]  Boot From .iso file with existing GRUB  ::  https://help.ubuntu.com/community/Grub2/ISOBoot  [[elisp:(org-cycle)][| ]]
         1) sudo apt-get install grml-rescueboot
         2) Copy 32 bit or 64 bit os to target machine

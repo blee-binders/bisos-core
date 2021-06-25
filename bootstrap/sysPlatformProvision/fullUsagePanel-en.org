@@ -1,4 +1,10 @@
 * B|
+####+BEGIN: bxPanel:common/title-plus
+#+title: bootstrap/sysPlatformProvision
+#+roam_tags: leaf
+#+roam_key: bisos-core/bootstrap/sysPlatformProvision
+[[file:../_nodeBase_/fullUsagePanel-en.org][bisos-core/bootstrap]]
+####+END
 ####+BEGIN: blee:bxPanel:topPanelControls
 *  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
@@ -91,9 +97,47 @@ W: --force-yes is deprecated, use one of the options starting with --allow inste
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _BISOS Sys Base Provisioning_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "IntraUser: Getting The Default Python Pip" :anchor "" :extraInfo "sudo apt install python3-pip"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "IntraUser: Box Prep -- At Console" :anchor "" :extraInfo "Distro (Debian) Specific"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *IntraUser: Getting The Default Python Pip:* |]]  sudo apt install python3-pip  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *IntraUser: Box Prep -- At Console:* |]]  Distro (Debian) Specific  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** 
+** Add intra to sudoers
+** su -
+** echo intra ALL=\(ALL\) NOPASSWD: ALL >> /etc/sudoers
+** 
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "IntraUser: Box Setups" :anchor "" :extraInfo "Distro (Debian) Specific"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *IntraUser: Box Setups:* |]]  Distro (Debian) Specific  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? t :label "apt-sources.list setup" :command "echo grep -v cdrom ..." :comment "Needed only for Debian" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /apt-sources.list setup/ |]] :: [[elisp:(lsip-local-run-command "echo grep -v cdrom ...")][echo grep -v cdrom ...]] *|*  =Needed only for Debian= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+*** 
+*** su -
+*** cp -p /etc/apt/sources.list /etc/apt/sources.list.origw
+*** grep -v '^deb cdrom:' /etc/apt/sources.list > /tmp/sources.list
+*** mv /tmp/sources.list /etc/apt/sources.list
+*** apt-get update
+*** 
+*** or all on one line:
+*** cp -p /etc/apt/sources.list /etc/apt/sources.list.orig; grep -v '^deb cdrom:' /etc/apt/sources.list > /tmp/sources.list; mv /tmp/sources.list /etc/apt/sources.list; apt-get update
+*** 
+*** B|
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? t :label "Run commands below as su -" :command "su -" :comment "root for Debian -- intra for Ubuntu" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /Run commands below as su -/ |]] :: [[elisp:(lsip-local-run-command "su -")][su -]] *|*  =root for Debian -- intra for Ubuntu= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+*** 
+*** su -
+*** apt-get install -y emacs
+*** emacs -- shell in emacs
+*** apt-get install -y python3-pip # And rest as below
+*** or all in one line:
+*** apt-get install -y python3-pip; pip3 install --upgrade bisos.provision; provisionBisos.sh -h -v -n showRun -i sysBasePlatform
+*** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "IntraUser: Getting The Default Python Pip" :anchor "" :extraInfo "sudo apt-get install -y python3-pip"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *IntraUser: Getting The Default Python Pip:* |]]  sudo apt-get install -y python3-pip  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "bootstrap" :command "sudo apt-get install -y python3-pip" :comment "Produces py3 and pip3 (sys)" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bootstrap/ :: [[elisp:(lsip-local-run-command "sudo apt-get install -y python3-pip")][sudo apt-get install -y python3-pip]] *|*  =Produces py3 and pip3 (sys)= *|*    [[elisp:(org-shifttab)][<)]] E|
@@ -125,7 +169,7 @@ W: --force-yes is deprecated, use one of the options starting with --allow inste
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ByStarUser: ByStar Login And Blee Panel Access:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** 
+* 
 ** logout of intra user -- ssh exit
 ** login as bystar user -- ssh -X bystar@dest
 ** emacs-27 &
@@ -149,25 +193,6 @@ W: --force-yes is deprecated, use one of the options starting with --allow inste
 ####+END
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Panel Tree Navigation" :anchor "panelTreeNav" :extraInfo ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Panel Tree Navigation:* |]] <<panelTreeNav>>   [[elisp:(org-shifttab)][<)]] E|
-####+END
-####+BEGIN: blee:bxPanel:linedTreeNavigator :model "auto" :outLevel 2
-** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~sysPlatformProvision~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/afterBaseSteps")][@ *afterBaseSteps* @]]    ::  Leaf: /afterBaseSteps/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/credentialsReset")][@ *credentialsReset* @]]    ::  Leaf: /credentialsReset/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/distros/_nodeBase_")][@ =distros= @]]    ::  Node: /distros/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/physicalPlatformProvision")][@ *physicalPlatformProvision* @]]    ::  Leaf: /physicalPlatformProvision/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/provisionSelections/_nodeBase_")][@ =provisionSelections= @]]    ::  Node: /provisionSelections/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteGitServer")][@ *siteGitServer* @]]    ::  Leaf: /siteGitServer/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/sysPlatformProvision")][@ *sysPlatformProvision* @]]    ::  Leaf: /sysPlatformProvision/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/virtualPlatformProvision")][@ *virtualPlatformProvision* @]]    ::  Leaf: /virtualPlatformProvision/
-** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~sysPlatformProvision~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/_nodeBase_")][@ =bootstrap= @]]    ::  Node: /bootstrap/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/_nodeBase_")][@ =bisos-core= @]]    ::  Node: /bisos-core/
-** [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:evolution
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]

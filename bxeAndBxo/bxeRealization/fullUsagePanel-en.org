@@ -1,4 +1,10 @@
 * B|
+####+BEGIN: bxPanel:common/title-plus
+#+title: bxeAndBxo/bxeRealization
+#+roam_tags: leaf
+#+roam_key: bisos-core/bxeAndBxo/bxeRealization
+[[file:../_nodeBase_/fullUsagePanel-en.org][bisos-core/bxeAndBxo]]
+####+END
 ####+BEGIN: blee:bxPanel:topPanelControls
 *  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
@@ -18,8 +24,8 @@
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxce")][bxce]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxeManagement")][bxeManagement]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxeRealization")][bxeRealization]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxie/_nodeBase_")][ =bxie= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxoConstruction")][bxoConstruction]] *|* 
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxoManagement")][bxoManagement]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxre")][bxre]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxse")][bxse]] *|* 
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxce")][bxce]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxeManagement")][bxeManagement]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxeRealization")][bxeRealization]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxie/_nodeBase_")][ =bxie= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxoManagement")][bxoManagement]] *|* 
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxre")][bxre]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxse")][bxse]] *|* 
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/_nodeBase_")][ =bxeAndBxo= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* 
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
@@ -29,9 +35,9 @@
 ** 
 ** Realization And Provisioning menu offerings.
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Real Entity (BxRE) -- Realization And Provisioning" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Real Entity (BxRE) -- Realization And Provisioning" :anchor "" :extraInfo "bxreProvision.sh"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Real Entity (BxRE) -- Realization And Provisioning:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Real Entity (BxRE) -- Realization And Provisioning:* |]]  bxreProvision.sh  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxreProvision.sh" :comment "Create bxo/rbxe & git acct. Export init repos." :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxreProvision.sh -i examples")][bxreProvision.sh]]  [[elisp:(lsip-local-run-command "bxreProvision.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxreProvision.sh -i describe")][describe]] *|*  =Create bxo/rbxe & git acct. Export init repos.= *|*   [[elisp:(org-shifttab)][<)]] E|
@@ -45,9 +51,9 @@
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Sys" :icmName "bxreProvision.sh -i examplesBxRealEntity system startToPrivRealize all" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Sys/ :: [[elisp:(lsip-local-run-command "bxreProvision.sh -i examplesBxRealEntity system startToPrivRealize all")][bxreProvision.sh -i examplesBxRealEntity system startToPrivRealize all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Information Entity (BxIE) -- Realization And Provisioning" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Information Entity (BxIE) -- Realization And Provisioning" :anchor "" :extraInfo "bxieProvision.sh"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Information Entity (BxIE) -- Realization And Provisioning:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Information Entity (BxIE) -- Realization And Provisioning:* |]]  bxieProvision.sh  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxieProvision.sh" :comment "Create bxo/rbxe & git acct. Export init repos." :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxieProvision.sh -i examples")][bxieProvision.sh]]  [[elisp:(lsip-local-run-command "bxieProvision.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxieProvision.sh -i describe")][describe]] *|*  =Create bxo/rbxe & git acct. Export init repos.= *|*   [[elisp:(org-shifttab)][<)]] E|
@@ -73,9 +79,9 @@
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "virtGuest" :icmName "bxieProvision.sh -i examplesBxInfoEntity virtGuest startToPrivRealize all" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /virtGuest/ :: [[elisp:(lsip-local-run-command "bxieProvision.sh -i examplesBxInfoEntity virtGuest startToPrivRealize all")][bxieProvision.sh -i examplesBxInfoEntity virtGuest startToPrivRealize all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Service Entity (BxSE) -- Realization And Provisioning" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Service Entity (BxSE) -- Realization And Provisioning" :anchor "" :extraInfo "bxseProvision.sh"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Service Entity (BxSE) -- Realization And Provisioning:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Service Entity (BxSE) -- Realization And Provisioning:* |]]  bxseProvision.sh  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxseProvision.sh" :comment "Create bxo/rbxe & git acct. Export init repos." :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxseProvision.sh -i examples")][bxseProvision.sh]]  [[elisp:(lsip-local-run-command "bxseProvision.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxseProvision.sh -i describe")][describe]] *|*  =Create bxo/rbxe & git acct. Export init repos.= *|*   [[elisp:(org-shifttab)][<)]] E|
@@ -86,25 +92,13 @@
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "BySmb" :icmName "bxseProvision.sh -i examplesBxServiceEntity bysmb startToPrivRealize all" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /BySmb/ :: [[elisp:(lsip-local-run-command "bxseProvision.sh -i examplesBxServiceEntity bysmb startToPrivRealize all")][bxseProvision.sh -i examplesBxServiceEntity bysmb startToPrivRealize all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Panel Tree Navigation" :anchor "panelTreeNav" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Materialization Entity (BxME) -- Realization & Provisioning" :anchor "" :extraInfo "NOTYET bxmeProvision.sh"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Panel Tree Navigation:* |]] <<panelTreeNav>>   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Materialization Entity (BxME) -- Realization & Provisioning:* |]]  NOTYET bxmeProvision.sh  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:linedTreeNavigator :model "auto" :outLevel 2
-** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~bxeRealization~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxce")][@ *bxce* @]]    ::  Leaf: /bxce/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxeManagement")][@ *bxeManagement* @]]    ::  Leaf: /bxeManagement/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxeRealization")][@ *bxeRealization* @]]    ::  Leaf: /bxeRealization/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxie/_nodeBase_")][@ =bxie= @]]    ::  Node: /bxie/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxoConstruction")][@ *bxoConstruction* @]]    ::  Leaf: /bxoConstruction/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxoManagement")][@ *bxoManagement* @]]    ::  Leaf: /bxoManagement/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxre")][@ *bxre* @]]    ::  Leaf: /bxre/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/bxse")][@ *bxse* @]]    ::  Leaf: /bxse/
-** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~bxeRealization~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/_nodeBase_")][@ =bxeAndBxo= @]]    ::  Node: /bxeAndBxo/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/_nodeBase_")][@ =bisos-core= @]]    ::  Node: /bisos-core/
-** [[elisp:(org-shifttab)][<)]] E|
-####+END
+** NOTYET
+** Creation starts with siteBxmoCreate.sh  siteBxmoMaterialize.sh
+** 
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END

@@ -1,4 +1,10 @@
 * B|
+####+BEGIN: bxPanel:common/title-plus
+#+title: dell/hwBoxDellXps8900
+#+roam_tags: leaf
+#+roam_key: hwBox/dell/hwBoxDellXps8900
+[[file:../_nodeBase_/fullUsagePanel-en.org][hwBox/dell]]
+####+END
 ####+BEGIN: blee:bxPanel:topPanelControls
 *  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
@@ -40,9 +46,9 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _Installation Peculiarities_: |]]  Problems  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Ubuntu Install 1604 1804 2004 Pecularities" :anchor "" :extraInfo "Problems"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Ubuntu Install 1604 1804 2004 Deb-11 Pecularities" :anchor "" :extraInfo "Problems"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Ubuntu Install 1604 1804 2004 Pecularities:* |]]  Problems  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Ubuntu Install 1604 1804 2004 Deb-11 Pecularities:* |]]  Problems  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 The installation progresses and then the system freezes.
 
@@ -76,31 +82,63 @@ After a while we run out of disk space and the install freezes.
        before "---" and after "quiet splash".
      F10 to boot
 *** Start Ubuntu Installation
-*** Go Through The Installation, But do not reboot
-*** Edit /etc/default/grub
-    4) After you complete your installation, you can mount your hard
-       disk (simply by double clicking on the hard-disk) and go to the
-       /media/ubuntu/<somenumber/etc/default/grub file.
-    Get a Terminal
-    BX: mount /dev/sdc2 /mnt
-    BX: apt-get install emacs
-    Edit  /etc/default/grub file with:
-    GRUB_CMDLINE_LINUX_DEFAULT="quiet splash pcie_aspm=off" and edit the line
-*** Edit /boot/grub/grub.cfg*** Edit /*** Edit /boot/grub/grub.cfg
-    5) copy and paste the above command in the grub.cfg file located
-       at /media/ubuntu/<somenumber>/boot/grub/ (if you don't have
-       one, just create a grub folder inside the /boot of your
-       hard-disk and create a grub.cfg file. I have copied the
-       /boot/grub/grub.cfg file located on the live CD to
-       /media/ubuntu/<somenumber>/boot/grub/ and edited it). This is
-       very important if you are NOT making your system dual boot
-       (i.e. a plain ubuntu installation). Changing the grub.cfg file
-       allows you to log-in your system after a system restart.
-    s/$vt_handoff/$vt_handoff pcie_aspm=off
-
-    There will be 3 occurences.
-*** update-grub" (after system restart)
-    6) Final step is to run "sudo update-grub" (after system restart).
+*** Go Through The Installation until the end
+*** 
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "First Ubuntu Boot Instructions" :anchor "" :extraInfo "ub-2004"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /First Debian Boot Instructions:/ |]]  deb-11  [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** After Linux Boots at Prompt
+     e for edit
+     3rd line edit
+     write "pcie_aspm=off"
+       before "---" and after "quiet".
+     F10 to boot
+**** You now have plenty of time as error messages are not being generated
+*** Login as intra
+*** Edit  /etc/default/grub file with:
+    GRUB_CMDLINE_LINUX_DEFAULT="quiet splash pcie_aspm=off"
+*** sudo update-grub
+*** reboot
+*** After clean boot verify that dmesg is clean
+*** After clean boot verify that /var/log/syslog is not seeing the messages.
+*** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Debian 11 Workarounds" :anchor "" :extraInfo "Solutions"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Debian 11 Workarounds:* |]]  Solutions  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Initial Debian Installation Instructions" :anchor "" :extraInfo "deb-11"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Initial Debian Installation Instructions:/ |]]  deb-11  [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** BIOS -- Legacy Boot
+**** This is different from UBUNTU
+**** F2
+**** Disable UEFI Security 
+**** Disable UEFI 
+**** Enable Legacy
+*** Boot From USB -- F12
+**** Boot from USB Legacy -- Not USB UEFI -- _IMPORTANT_
+**** Select Graphical Install -- There are no edit features in Legacy
+*** Start Debian Installation and Be As FAST As You Can
+**** So that log files don't exhaust disk
+**** Don't select graphical to be faster. We'll tasksel later
+**** 
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "First Debian Boot Instructions" :anchor "" :extraInfo "deb-11"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /First Debian Boot Instructions:/ |]]  deb-11  [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** After Linux Boots at Prompt
+     e for edit
+     3rd line edit
+     write "pcie_aspm=off"
+       before "---" and after "quiet".
+     F10 to boot
+**** You now have plenty of time as error messages are not being generated
+*** Login as intra
+*** su 
+*** As root /etc/default/grub file with:
+    GRUB_CMDLINE_LINUX_DEFAULT="quiet pcie_aspm=off"
+*** sudo update-grub
+*** reboot
+*** After clean boot -- sudo dmesg
 *** After clean boot verify that /var/log/syslog is not seeing the messages.
 *** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Historic Notes" :anchor "" :extraInfo ""
@@ -181,26 +219,6 @@ Re: Black Screen on Install (15.04 & 15.10) Dell XPS 8900
 *** nvidia-352 (Perhaps)
     7) As mentioned in the above posts "sudo apt-get install nvidia-352" helped me to resolve the text breaks on the screen.
 
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Panel Tree Navigation" :anchor "panelTreeNav" :extraInfo ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Panel Tree Navigation:* |]] <<panelTreeNav>>   [[elisp:(org-shifttab)][<)]] E|
-####+END
-####+BEGIN: blee:bxPanel:linedTreeNavigator :model "auto" :outLevel 2
-** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~hwBoxDellXps8900~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/ppMachine/hwBox/dell/hwBoxDellR-Series")][@ *hwBoxDellR-Series* @]]    ::  Leaf: /hwBoxDellR-Series/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/ppMachine/hwBox/dell/hwBoxDellR310")][@ *hwBoxDellR310* @]]    ::  Leaf: /hwBoxDellR310/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/ppMachine/hwBox/dell/hwBoxDellR320")][@ *hwBoxDellR320* @]]    ::  Leaf: /hwBoxDellR320/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/ppMachine/hwBox/dell/hwBoxDellR420")][@ *hwBoxDellR420* @]]    ::  Leaf: /hwBoxDellR420/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/ppMachine/hwBox/dell/hwBoxDellR510")][@ *hwBoxDellR510* @]]    ::  Leaf: /hwBoxDellR510/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/ppMachine/hwBox/dell/hwBoxDellR610")][@ *hwBoxDellR610* @]]    ::  Leaf: /hwBoxDellR610/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/ppMachine/hwBox/dell/hwBoxDellR710")][@ *hwBoxDellR710* @]]    ::  Leaf: /hwBoxDellR710/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/ppMachine/hwBox/dell/hwBoxDellStudio")][@ *hwBoxDellStudio* @]]    ::  Leaf: /hwBoxDellStudio/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/ppMachine/hwBox/dell/hwBoxDellXps8900")][@ *hwBoxDellXps8900* @]]    ::  Leaf: /hwBoxDellXps8900/
-** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~hwBoxDellXps8900~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/ppMachine/hwBox/dell/_nodeBase_")][@ =dell= @]]    ::  Node: /dell/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/ppMachine/hwBox/_nodeBase_")][@ =hwBox= @]]    ::  Node: /hwBox/
-** [[elisp:(org-shifttab)][<)]] E|
-####+END
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
