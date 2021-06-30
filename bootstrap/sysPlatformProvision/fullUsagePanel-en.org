@@ -93,6 +93,29 @@ W: --force-yes is deprecated, use one of the options starting with --allow inste
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "System Platform BISOS Provisioning" :dest "/bisos/panels/bisos-core/bootstrap/sysPlatformProvision"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/sysPlatformProvision")][@ ~System Platform BISOS Provisioning~ @]]   ::  [[elisp:(org-cycle)][| /sysPlatformProvision/ |]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Chromebook Sys Base Provisioning" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _Chromebook Sys Base Provisioning_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "DefaultUser: Box Prep -- At Console" :anchor "" :extraInfo "Distro (Debian 10 -- 2021) Specific"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *DefaultUser: Box Prep -- At Console:* |]]  Distro (Debian 10 -- 2021) Specific  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** 
+** DefaultUser is essentially same as intra in chromebook slash android.
+** 
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ssh as bystar" :anchor "" :extraInfo "Distro (Debian 10 -- 2021) Specific"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ssh as bystar:* |]]  Distro (Debian 10 -- 2021) Specific  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** 
+** TODO Capture all details. During install automate as much as possible
+** TODO Port forward 3333 for sshd
+** TODO mv /etc/ssh/sshd/dontRun to dontRun.orig
+** TODO edit sshd.config from Port 22 to Port 3333
+** TODO Restart sshd
+** ssh -X -p 3333 bystar@localhost
+** 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "BISOS Sys Base Provisioning" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _BISOS Sys Base Provisioning_: |]]    [[elisp:(org-shifttab)][<)]] E|
