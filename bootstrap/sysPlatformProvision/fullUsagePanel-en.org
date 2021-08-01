@@ -7,6 +7,7 @@
 ####+END
 ####+BEGIN: blee:bxPanel:topPanelControls
 *  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
 **  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
 **  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]] 
 **  This File :: *= /bisos/panels/bisos-core/bootstrap/sysPlatformProvision/fullUsagePanel-en.org =* 
@@ -116,9 +117,9 @@ W: --force-yes is deprecated, use one of the options starting with --allow inste
 ** TODO Restart sshd -- sudo ssservice sshd restart
 ** ssh -X -p 3333 bystar@localhost
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "BISOS Sys Base Provisioning" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "BISOS Sys Base Provisioning" :anchor "" :extraInfo "Manual -- Prior To Site"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _BISOS Sys Base Provisioning_: |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _BISOS Sys Base Provisioning_: |]]  Manual -- Prior To Site  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "IntraUser: Box Prep -- At Console" :anchor "" :extraInfo "Distro (Debian) Specific"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
@@ -198,22 +199,48 @@ W: --force-yes is deprecated, use one of the options starting with --allow inste
 ** emacs-27 &
 ** blee-Panels
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "sysCharDeploy.sh" :anchor "" :extraInfo "Automated BISOS Sys Base Provisioning"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "sysCharBoxMaterialize.sh" :anchor "" :extraInfo "On Manager & Target -- Assigned & New Box"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _sysCharDeploy.sh_: |]]  Automated BISOS Sys Base Provisioning  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _sysCharBoxMaterialize.sh_: |]]  On Manager & Target -- Assigned & New Box  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 0 :sep nil :folding? nil :label "intro" :icmName "sysCharDeploy.sh" :comment "Allows you to edit" :afterComment "-- tailor command line"
- [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /intro/ :: [[elisp:(lsip-local-run-command "sysCharDeploy.sh -i examples")][sysCharDeploy.sh]]  [[elisp:(lsip-local-run-command "sysCharDeploy.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "sysCharDeploy.sh -i describe")][describe]] *|*  =Allows you to edit= *|*  -- tailor command line [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "setCurs" :icmName "echo bisosCurrentsManage.sh -i setParam curTargetBox 192.168.0.xx" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /setCurs/ :: [[elisp:(lsip-local-run-command "echo bisosCurrentsManage.sh -i setParam curTargetBox 192.168.0.xx")][echo bisosCurrentsManage.sh -i setParam curTargetBox 192.168.0.xx]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 0 :sep nil :folding? nil :label "Select" :icmName "echo bisosCurrentsManage.sh -i setParam curTargetBox 192.168.0.xx" :comment "" :afterComment ""
- [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Select/ :: [[elisp:(lsip-local-run-command "echo bisosCurrentsManage.sh -i setParam curTargetBox 192.168.0.xx")][echo bisosCurrentsManage.sh -i setParam curTargetBox 192.168.0.xx]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "shIcm" :icmName "sysCharBoxMaterialize.sh" :comment "Builds on sysCharDeploy.sh" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /shIcm/ :: [[elisp:(lsip-local-run-command "sysCharBoxMaterialize.sh -i examples")][sysCharBoxMaterialize.sh]]  [[elisp:(lsip-local-run-command "sysCharBoxMaterialize.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "sysCharBoxMaterialize.sh -i describe")][describe]] *|*  =Builds on sysCharDeploy.sh= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 0 :sep nil :folding? nil :label "Select" :icmName "echo sysCharDeploy.sh -h -v -n showRun -p targetName=192.168.0.xx -i fullUpdate" :comment "" :afterComment ""
- [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Select/ :: [[elisp:(lsip-local-run-command "echo sysCharDeploy.sh -h -v -n showRun -p targetName=192.168.0.xx -i fullUpdate")][echo sysCharDeploy.sh -h -v -n showRun -p targetName=192.168.0.xx -i fullUpdate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "shIcm" :icmName "sysCharDeploy.sh" :comment "Commands for On Manager and On Target" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /shIcm/ :: [[elisp:(lsip-local-run-command "sysCharDeploy.sh -i examples")][sysCharDeploy.sh]]  [[elisp:(lsip-local-run-command "sysCharDeploy.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "sysCharDeploy.sh -i describe")][describe]] *|*  =Commands for On Manager and On Target= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "BISOS Provisioning Selections" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "New Box Realize On Manager" :anchor "" :extraInfo "On Manager -- BISOS-Base New-UnAssigned Box"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _BISOS Provisioning Selections_: |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _New Box Realize On Manager_: |]]  On Manager -- BISOS-Base New-UnAssigned Box  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep t :folding? nil :label "Cmd" :icmName "sysCharDeploy.sh -h -v -n showRun -p targetName=curTargetBox -i boxSiteBasePlatform" :comment "" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "sysCharDeploy.sh -h -v -n showRun -p targetName=curTargetBox -i boxSiteBasePlatform")][sysCharDeploy.sh -h -v -n showRun -p targetName=curTargetBox -i boxSiteBasePlatform]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "New Box Realize On Target" :anchor "" :extraInfo "On Target -- BISOS-Base New-UnAssigned Box"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _New Box Realize On Target_: |]]  On Target -- BISOS-Base New-UnAssigned Box  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep t :folding? nil :label "SelCmd" :icmName "echo ssh -X 192.168.0.xx" :comment "ssh to target" :afterComment "then run below cmds"
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /SelCmd/ :: [[elisp:(lsip-local-run-command "echo ssh -X 192.168.0.xx")][echo ssh -X 192.168.0.xx]] *|*  =ssh to target= *|*  then run below cmds  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "SelCmd" :icmName "echo sysCharDeploy.sh -p model=Pure -p abode=Mobile -p function=LinuxU -i boxRealizeOrActivateOnTarget" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /SelCmd/ :: [[elisp:(lsip-local-run-command "echo sysCharDeploy.sh -p model=Pure -p abode=Mobile -p function=LinuxU -i boxRealizeOrActivateOnTarget")][echo sysCharDeploy.sh -p model=Pure -p abode=Mobile -p function=LinuxU -i boxRealizeOrActivateOnTarget]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Full Existing Box Activation" :anchor "" :extraInfo "On Manager Beginning-to-End"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _Full Existing Box Activation_: |]]  On Manager Beginning-to-End  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Select" :icmName "echo sysCharDeploy.sh -h -v -n showRun -p targetName=curTargetBox -i boxFullActivate" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Select/ :: [[elisp:(lsip-local-run-command "echo sysCharDeploy.sh -h -v -n showRun -p targetName=curTargetBox -i boxFullActivate")][echo sysCharDeploy.sh -h -v -n showRun -p targetName=curTargetBox -i boxFullActivate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "BISOS Provisioning Selections" :anchor "" :extraInfo "To Be Obsoleted Perhaps"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _BISOS Provisioning Selections_: |]]  To Be Obsoleted Perhaps  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BleePanel: Configure BISOS Platform" :anchor "" :extraInfo "Chain to panel"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
