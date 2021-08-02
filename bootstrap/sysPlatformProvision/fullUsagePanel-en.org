@@ -200,6 +200,9 @@ W: --force-yes is deprecated, use one of the options starting with --allow inste
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "setCurs" :icmName "echo bisosCurrentsManage.sh -i setParam curTargetBox 192.168.0.xx" :comment "" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /setCurs/ :: [[elisp:(lsip-local-run-command "echo bisosCurrentsManage.sh -i setParam curTargetBox 192.168.0.xx")][echo bisosCurrentsManage.sh -i setParam curTargetBox 192.168.0.xx]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "showCurs" :icmName "cat /bisos/var/currents" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /showCurs/ :: [[elisp:(lsip-local-run-command "cat /bisos/var/currents")][cat /bisos/var/currents]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "shIcm" :icmName "sysCharBoxMaterialize.sh" :comment "Builds on sysCharDeploy.sh" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /shIcm/ :: [[elisp:(lsip-local-run-command "sysCharBoxMaterialize.sh -i examples")][sysCharBoxMaterialize.sh]]  [[elisp:(lsip-local-run-command "sysCharBoxMaterialize.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "sysCharBoxMaterialize.sh -i describe")][describe]] *|*  =Builds on sysCharDeploy.sh= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
