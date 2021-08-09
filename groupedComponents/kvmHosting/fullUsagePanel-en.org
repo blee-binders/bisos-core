@@ -32,23 +32,48 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
-** Overview Comes Here.
+** Top entry point is "bsipProvision.sh  -i kvmHosting_provisionSetup" -- Layering is as follows:
+***   kvmHosting_provisionSetup
+****  fgcKvmHostingSw.sh -i  fullUpdate
+***** lcaKvmBinsPrep.sh
+***** lcaVagrantsBinsPrep.sh
+****  fgcKvmHostingSvc.sh -i  fullUpdate
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Provision To KVM Hosting" :anchor "" :extraInfo "Includes BxIo" 
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "ICMs And Design Overview" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Provision To KVM Hosting:* |]]  Includes BxIo  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _ICMs And Design Overview_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "ICM Intro" :icmName "bsipProvision.sh" :comment "" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ICM Intro/ :: [[elisp:(lsip-local-run-command "bsipProvision.sh -i examples")][bsipProvision.sh]]  [[elisp:(lsip-local-run-command "bsipProvision.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bsipProvision.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "ShIcm" :icmName "bsipProvision.sh" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bsipProvision.sh -i examples")][bsipProvision.sh]]  [[elisp:(lsip-local-run-command "bsipProvision.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bsipProvision.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "ICM Cmnd" :icmName "bsipProvision.sh -h -v -n showRun -i kvmHosting_provisionSetup" :comment "" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ICM Cmnd/ :: [[elisp:(lsip-local-run-command "bsipProvision.sh -h -v -n showRun -i kvmHosting_provisionSetup")][bsipProvision.sh -h -v -n showRun -i kvmHosting_provisionSetup]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "ShIcm" :icmName "fgcKvmHostingSw.sh" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "fgcKvmHostingSw.sh -i examples")][fgcKvmHostingSw.sh]]  [[elisp:(lsip-local-run-command "fgcKvmHostingSw.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "fgcKvmHostingSw.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "libvirtd" :command "systemctl status libvirtd" :comment " " :afterComment " "
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /libvirtd/ :: [[elisp:(lsip-local-run-command "systemctl status libvirtd")][systemctl status libvirtd]] *|*  = = *|*     [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "ShIcm" :icmName "fgcKvmHostingSvc.sh" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "fgcKvmHostingSvc.sh -i examples")][fgcKvmHostingSvc.sh]]  [[elisp:(lsip-local-run-command "fgcKvmHostingSvc.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "fgcKvmHostingSvc.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "groups" :command "groups | grep kvm | grep libvirt" :comment " " :afterComment " "
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /groups/ :: [[elisp:(lsip-local-run-command "groups | grep kvm | grep libvirt")][groups | grep kvm | grep libvirt]] *|*  = = *|*     [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "ShIcm" :icmName "lcaKvmBinsPrep.sh" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "lcaKvmBinsPrep.sh -i examples")][lcaKvmBinsPrep.sh]]  [[elisp:(lsip-local-run-command "lcaKvmBinsPrep.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "lcaKvmBinsPrep.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "ShIcm" :icmName "lcaVagrantBinsPrep.sh" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "lcaVagrantBinsPrep.sh -i examples")][lcaVagrantBinsPrep.sh]]  [[elisp:(lsip-local-run-command "lcaVagrantBinsPrep.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "lcaVagrantBinsPrep.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Provision To KVM Hosting" :anchor "" :extraInfo "And Verify" 
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Provision To KVM Hosting:* |]]  And Verify  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep t :folding? t :label "IcmCmd" :icmName "bsipProvision.sh -h -v -n showRun -i kvmHosting_provisionSetup" :comment "" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /IcmCmd/ |]] :: [[elisp:(lsip-local-run-command "bsipProvision.sh -h -v -n showRun -i kvmHosting_provisionSetup")][bsipProvision.sh -h -v -n showRun -i kvmHosting_provisionSetup]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep nil :folding? nil :label "libvirtd" :command "systemctl status libvirtd" :comment " " :afterComment " "
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /libvirtd/ :: [[elisp:(lsip-local-run-command "systemctl status libvirtd")][systemctl status libvirtd]] *|*  = = *|*     [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep nil :folding? nil :label "groups" :command "groups | grep kvm | grep libvirt" :comment " " :afterComment " "
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /groups/ :: [[elisp:(lsip-local-run-command "groups | grep kvm | grep libvirt")][groups | grep kvm | grep libvirt]] *|*  = = *|*     [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep nil :folding? nil :label "gui" :command "virt-manager" :comment " " :afterComment " "
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /gui/ :: [[elisp:(lsip-local-run-command "virt-manager")][virt-manager]] *|*  = = *|*     [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
