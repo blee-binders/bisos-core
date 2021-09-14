@@ -13,13 +13,13 @@ __copying__="
 
 ####+BEGIN: bx:bsip:bash:seed-spec :types "seedFtoCommon.sh"
 SEED="
-*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] | 
+*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] |
 "
 FILE="
-*  /This File/ :: /bisos/git/auth/bxRepos/blee-binders/bisos-core/ppMachine/hwBox/dell/ftoProc.sh 
+*  /This File/ :: /bisos/git/auth/bxRepos/blee-binders/bisos-core/ppMachine/hwBox/dell/ftoProc.sh
 "
 if [ "${loadFiles}" == "" ] ; then
-    /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@" 
+    /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@"
     exit $?
 fi
 ####+END:
@@ -41,6 +41,15 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
+hwBoxDellXps8900
+hwBoxDellR710
+hwBoxDellR320
+hwBoxDellR310
+hwBoxDellR420
+hwBoxDellR610
+hwBoxDellR510
+hwBoxDellR-Series
+hwBoxDellStudio
 "
 # }}} DBLOCK-leavesList
 ####+END:
