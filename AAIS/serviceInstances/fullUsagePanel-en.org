@@ -29,11 +29,21 @@
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/AAIS/_nodeBase_")][ =AAIS= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/_nodeBase_")][ =bisos-core= ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Autonomy Assertable Service Instances: AASI Overview" :anchor "Panel"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Autonomy Assertable Service Instances: AASI Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** 
-** Overview Comes Here.
+** -
+** siId is in the form of a path within a BPO.
+** AAIS-BPO SI Repos are either: PrimSvcProv or VirDomSvcProv
+** VirDomSvcProv is one of: apache2, qmail
+** VirDomSvcType of VirDomSvcProv_Apache2 correspond to some PrimSvcProv
+** VirDomPrimSvc corresponds to a PrimSvcProv/SvcInst
+** PrimSvcProv is one of: plone3, geneweb, djbdns
+** SvcInst of PrimSvcProv_Plone3 can be: main friend
+** --
+** siId :: VirDomSvcProv/VirDomSvcType/SvcInst  apache2/plone3/main
+** siId :: PrimSvcProv/SvcInst
+**
 ** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/

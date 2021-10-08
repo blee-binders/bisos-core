@@ -32,12 +32,12 @@
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "AAIS Overview" :anchor "Panel"
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *AAIS Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "AAIS (Automony Assertible Internet services) Overview" :anchor "Panel"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *AAIS (Automony Assertible Internet services) Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** 
+**
 ** AAIS is layered in 3 parts.
-** =AAIS-Platform= :: /bisos/var/aaisPlatform
+** =AAIS-Platform= :: /bisos/platform
 ** =AAIS-BPOs= :: Activated AAIS-BPOs
 ** =aaSis= :: Service instaces of an AAIS-BPO.
 **
@@ -50,15 +50,23 @@ The ~bpo/live/si/plone3 dir contains -- user, passwd
 ** Concept: *Target -- As Live Or Here*
 Each AAIS-BPO has a var/target base.
 var/target/targetMode is a FP. It is either "live" or "here"
-var/target/selected -- Mirrors ~bpo/live structure reflecting targetMode
+var/target/cur -- Mirrors ~bpo/live structure reflecting targetMode
 **
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "AAIS Model (Automony Assertible Internet services)" :anchor "anchor" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Design And Next Steps" :anchor "anchor" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _AAIS Model (Automony Assertible Internet services)_: |]] <<anchor>>   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Design And Next Steps:* |]] <<anchor>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** -
-** AAIS
+** TODO Create /bisos/platform as symlink to /bisos/var/platform
+** TODO Create /bisos/platform/FPs/sysBpoId  /bisos/platform/FPs/guestBpoId
+** TODO Create /bisos/platform/plone3/usrName /bisos/platform/plone3/passwd In Plone3 Deployment
+** TODO Create aaisLive.py -- Creates Repo -- containerBpoId, ip-addr
+** TODO Create aaisTarget.py -- Creates ~bpo/var/target/targetMode
+** TODO Create aaisCredentials.py - Creates Repo - FPs: mainDomainBase aaisAccessName aaisAccessPasswd
+** TODO Create aaSiCommonBasesPrep.py -- Based on marmeAcctsManage.py
+** TODO Create aaSiCommonBasesPrep.py -- Based on marmeAcctsManage.py
+** -
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "AAIS ICMs" :anchor "anchor" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
@@ -87,6 +95,29 @@ var/target/selected -- Mirrors ~bpo/live structure reflecting targetMode
 ** B|
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? t :label "ShIcm" :icmName "bssApache2Manage.sh" :comment "Bx Services Specifications" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ShIcm/ |]] :: [[elisp:(lsip-local-run-command "bssApache2Manage.sh -i examples")][bssApache2Manage.sh]]  [[elisp:(lsip-local-run-command "bssApache2Manage.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bssApache2Manage.sh -i describe")][describe]] *|*  =Bx Services Specifications= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+** -
+** B|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? t :label "PyIcm" :icmName "aaisBpoManage.py" :comment "Perhaps rename to aaisInfo.py" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /PyIcm/ |]] :: [[elisp:(lsip-local-run-command "aaisBpoManage.py -i examples")][aaisBpoManage.py]]  [[elisp:(lsip-local-run-command "aaisBpoManage.py -i visit")][visit]]  [[elisp:(lsip-local-run-command "aaisBpoManage.py -i describe")][describe]] *|*  =Perhaps rename to aaisInfo.py= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+** -
+**
+** B|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? t :label "PyIcm" :icmName "aaisCredentials.py" :comment "Write / Read Credentials FPs" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /PyIcm/ |]] :: [[elisp:(lsip-local-run-command "aaisCredentials.py -i examples")][aaisCredentials.py]]  [[elisp:(lsip-local-run-command "aaisCredentials.py -i visit")][visit]]  [[elisp:(lsip-local-run-command "aaisCredentials.py -i describe")][describe]] *|*  =Write / Read Credentials FPs= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+** -
+**
+** B|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? t :label "PyIcm" :icmName "aaisLive.py" :comment "Write / Read Live FPs" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /PyIcm/ |]] :: [[elisp:(lsip-local-run-command "aaisLive.py -i examples")][aaisLive.py]]  [[elisp:(lsip-local-run-command "aaisLive.py -i visit")][visit]]  [[elisp:(lsip-local-run-command "aaisLive.py -i describe")][describe]] *|*  =Write / Read Live FPs= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+** -
+**
+** B|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? t :label "PyIcm" :icmName "aaisTarget.py" :comment "Write / Read Target FPs" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /PyIcm/ |]] :: [[elisp:(lsip-local-run-command "aaisTarget.py -i examples")][aaisTarget.py]]  [[elisp:(lsip-local-run-command "aaisTarget.py -i visit")][visit]]  [[elisp:(lsip-local-run-command "aaisTarget.py -i describe")][describe]] *|*  =Write / Read Target FPs= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** -
 **
