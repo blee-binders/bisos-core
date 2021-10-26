@@ -40,27 +40,27 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Bxo Management -- Resulting In BxO:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep nil :folding? t :label "ShLib" :fileName "/bisos/core/bsip/bin/bxo_lib.sh" :comment ""  :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ShLib/ |]] :: [[elisp:(find-file "/bisos/core/bsip/bin/bxo_lib.sh")][/bisos/core/bsip/bin/bxo_lib.sh]] || [[elisp:(find-file-other-window "/bisos/core/bsip/bin/bxo_lib.sh")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep nil :folding? t :label "ShLib" :fileName "/bisos/core/bsip/bin/bpo_lib.sh" :comment ""  :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ShLib/ |]] :: [[elisp:(find-file "/bisos/core/bsip/bin/bpo_lib.sh")][/bisos/core/bsip/bin/bpo_lib.sh]] || [[elisp:(find-file-other-window "/bisos/core/bsip/bin/bpo_lib.sh")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxoManage.sh" :comment "Create bxo acct. Importd repos." :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxoManage.sh -i examples")][bxoManage.sh]]  [[elisp:(lsip-local-run-command "bxoManage.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxoManage.sh -i describe")][describe]] *|*  =Create bxo acct. Importd repos.= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bpoManage.sh" :comment "Create bxo acct. Importd repos." :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bpoManage.sh -i examples")][bpoManage.sh]]  [[elisp:(lsip-local-run-command "bpoManage.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bpoManage.sh -i describe")][describe]] *|*  =Create bxo acct. Importd repos.= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BxO Reports" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BpO Reports" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BxO Reports:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BpO Reports:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep nil :folding? t :label "ShLib" :fileName "/bisos/core/bsip/bin/bxioCommon_lib.sh" :comment ""  :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ShLib/ |]] :: [[elisp:(find-file "/bisos/core/bsip/bin/bxioCommon_lib.sh")][/bisos/core/bsip/bin/bxioCommon_lib.sh]] || [[elisp:(find-file-other-window "/bisos/core/bsip/bin/bxioCommon_lib.sh")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxoReports.sh" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxoReports.sh -i examples")][bxoReports.sh]]  [[elisp:(lsip-local-run-command "bxoReports.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxoReports.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bpoReports.sh" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bpoReports.sh -i examples")][bpoReports.sh]]  [[elisp:(lsip-local-run-command "bpoReports.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bpoReports.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "ShCmnd" :icmName "bxoAcctManage.sh -i bxoIdsList" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShCmnd/ :: [[elisp:(lsip-local-run-command "bxoAcctManage.sh -i bxoIdsList")][bxoAcctManage.sh -i bxoIdsList]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "ShCmnd" :icmName "bpoAcctManage.sh -i bxoIdsList" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShCmnd/ :: [[elisp:(lsip-local-run-command "bpoAcctManage.sh -i bxoIdsList")][bpoAcctManage.sh -i bxoIdsList]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "ShCmnd" :icmName "bxoAcctManage.sh -i bxoAcctsList" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShCmnd/ :: [[elisp:(lsip-local-run-command "bxoAcctManage.sh -i bxoAcctsList")][bxoAcctManage.sh -i bxoAcctsList]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "ShCmnd" :icmName "bpoAcctManage.sh -i bxoAcctsList" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShCmnd/ :: [[elisp:(lsip-local-run-command "bpoAcctManage.sh -i bxoAcctsList")][bpoAcctManage.sh -i bxoAcctsList]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BxIO Management" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
