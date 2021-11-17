@@ -77,6 +77,12 @@
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "project" :icmName "bxieProvision.sh -i examplesBxInfoEntity project startToPrivRealize all" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /project/ :: [[elisp:(lsip-local-run-command "bxieProvision.sh -i examplesBxInfoEntity project startToPrivRealize all")][bxieProvision.sh -i examplesBxInfoEntity project startToPrivRealize all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "lcnt" :icmName "echo NOTYET, For now a project" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /lcnt/ :: [[elisp:(lsip-local-run-command "echo NOTYET, For now a project")][echo NOTYET, For now a project]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "pyPip" :icmName "echo NOTYET, For now a project" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /pyPip/ :: [[elisp:(lsip-local-run-command "echo NOTYET, For now a project")][echo NOTYET, For now a project]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "virtGuest" :icmName "bxieProvision.sh -i examplesBxInfoEntity virtGuest startToPrivRealize all" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /virtGuest/ :: [[elisp:(lsip-local-run-command "bxieProvision.sh -i examplesBxInfoEntity virtGuest startToPrivRealize all")][bxieProvision.sh -i examplesBxInfoEntity virtGuest startToPrivRealize all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
