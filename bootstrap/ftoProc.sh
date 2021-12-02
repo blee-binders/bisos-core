@@ -64,6 +64,7 @@ _CommentEnd_
 # {{{ DBLOCK-nodesList
 nodesList="
 _nodeBase_
+configuredBisosPlatform
 distros
 provisionSelections
 "

@@ -55,7 +55,7 @@
 ####+END
 ####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "vagrant --version"  :results t :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "vagrant --version")][vagrant --version]] *|*  == *|*    |
-Last Executed at: 202109-05-04:26:56  by: bystar on: VAG-deb11-15-PML-1006
+Last Executed at: 202112-02-04:45:32  by: bystar on: VAG-deb11-15-PML-1006
 ----------------------------
 /bin/bash: line 1: vagrant: command not found
 

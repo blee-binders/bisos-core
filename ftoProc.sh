@@ -64,9 +64,9 @@ ppMachine
 adoptedComponents
 disks
 groupedComponents
-AABIS
 sync
 platform
+PALS
 bootstrap
 bxeAndBxo
 baseDirs
