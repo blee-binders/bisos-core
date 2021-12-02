@@ -120,8 +120,32 @@ var/target/cur -- Mirrors ~bpo/live structure reflecting targetMode
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /PyIcm/ |]] :: [[elisp:(lsip-local-run-command "palsTarget.py -i examples")][palsTarget.py]]  [[elisp:(lsip-local-run-command "palsTarget.py -i visit")][visit]]  [[elisp:(lsip-local-run-command "palsTarget.py -i describe")][describe]] *|*  =Write / Read Target FPs= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** -
-**
+** +
 ** B|
+####+BEGIN: blee:panel:file:text/intro :outLevel 1 :sep t :folding t :fileName "/bisos/bsip/bin/aaisByStarAssign_lib.sh" :comment ""  :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/bsip/bin/aaisByStarAssign_lib.sh")][/bisos/bsip/bin/aaisByStarAssign_lib.sh]] || [[elisp:(find-file-other-window "/bisos/bsip/bin/aaisByStarAssign_lib.sh")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:file:text/intro :outLevel 1 :sep t :folding t :fileName "/bisos/bsip/bin/aaisByStarRealize_lib.sh" :comment ""  :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/bsip/bin/aaisByStarRealize_lib.sh")][/bisos/bsip/bin/aaisByStarRealize_lib.sh]] || [[elisp:(find-file-other-window "/bisos/bsip/bin/aaisByStarRealize_lib.sh")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "ShIcm" :icmName "aaisByStarAssign.sh" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "aaisByStarAssign.sh -i examples")][aaisByStarAssign.sh]]  [[elisp:(lsip-local-run-command "aaisByStarAssign.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "aaisByStarAssign.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "ShIcm" :icmName "aaisByStarRealize.sh" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "aaisByStarRealize.sh -i examples")][aaisByStarRealize.sh]]  [[elisp:(lsip-local-run-command "aaisByStarRealize.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "aaisByStarRealize.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "ShIcm" :icmName "aaisByNameRealize.sh" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "aaisByNameRealize.sh -i examples")][aaisByNameRealize.sh]]  [[elisp:(lsip-local-run-command "aaisByNameRealize.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "aaisByNameRealize.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "UsgAcct Associate" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _UsgAcct Associate_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "usgAaisManage.sh  -h -v -n showRun -i usgEnvWithAaisBynameAssociate" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "usgAaisManage.sh  -h -v -n showRun -i usgEnvWithAaisBynameAssociate")][usgAaisManage.sh  -h -v -n showRun -i usgEnvWithAaisBynameAssociate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
