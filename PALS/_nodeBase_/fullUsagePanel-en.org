@@ -72,14 +72,14 @@ var/target/cur -- Mirrors ~bpo/live structure reflecting targetMode
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _PALS ICMs_: |]] <<anchor>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep t :folding? t :label "ShIcm" :icmName "aabsAssign.sh" :comment "" :afterComment ""
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep t :folding? t :label "ShIcm" :icmName "palsAssign.sh" :comment "" :afterComment ""
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ShIcm/ |]] :: [[elisp:(lsip-local-run-command "aabsAssign.sh -i examples")][aabsAssign.sh]]  [[elisp:(lsip-local-run-command "aabsAssign.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "aabsAssign.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ShIcm/ |]] :: [[elisp:(lsip-local-run-command "palsAssign.sh -i examples")][palsAssign.sh]]  [[elisp:(lsip-local-run-command "palsAssign.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "palsAssign.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** -
 ** B|
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? t :label "ShIcm" :icmName "palsRealizationFPs.sh" :comment "" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ShIcm/ |]] :: [[elisp:(lsip-local-run-command "palsRealizationFPs.sh -i examples")][palsRealizationFPs.sh]]  [[elisp:(lsip-local-run-command "palsRealizationFPs.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "palsRealizationFPs.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ShIcm/ |]] :: [[elisp:(lsip-local-run-command "palsRealizationFPs.sh -i examples")][palsRealiczationFPs.sh]]  [[elisp:(lsip-local-run-command "palsRealizationFPs.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "palsRealizationFPs.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** -
 ** B|
@@ -122,15 +122,15 @@ var/target/cur -- Mirrors ~bpo/live structure reflecting targetMode
 ** -
 ** +
 ** B|
-####+BEGIN: blee:panel:file:text/intro :outLevel 1 :sep t :folding t :fileName "/bisos/bsip/bin/aaisByStarAssign_lib.sh" :comment ""  :afterComment ""
+####+BEGIN: blee:panel:file:text/intro :outLevel 1 :sep t :folding t :fileName "/bisos/pals/bin/palsByStarAssign_lib.sh" :comment ""  :afterComment ""
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/bsip/bin/aaisByStarAssign_lib.sh")][/bisos/bsip/bin/aaisByStarAssign_lib.sh]] || [[elisp:(find-file-other-window "/bisos/bsip/bin/aaisByStarAssign_lib.sh")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/pals/bin/palsByStarAssign_lib.sh")][/bisos/pals/bin/palsByStarAssign_lib.sh]] || [[elisp:(find-file-other-window "/bisos/pals/bin/palsByStarAssign_lib.sh")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:file:text/intro :outLevel 1 :sep t :folding t :fileName "/bisos/bsip/bin/aaisByStarRealize_lib.sh" :comment ""  :afterComment ""
+####+BEGIN: blee:panel:file:text/intro :outLevel 1 :sep t :folding t :fileName "/bisos/pals/bin/palsByStarRealize_lib.sh" :comment ""  :afterComment ""
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/bsip/bin/aaisByStarRealize_lib.sh")][/bisos/bsip/bin/aaisByStarRealize_lib.sh]] || [[elisp:(find-file-other-window "/bisos/bsip/bin/aaisByStarRealize_lib.sh")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/pals/bin/palsByStarRealize_lib.sh")][/bisos/pals/bin/palsByStarRealize_lib.sh]] || [[elisp:(find-file-other-window "/bisos/pals/bin/palsByStarRealize_lib.sh")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "ShIcm" :icmName "aaisByStarAssign.sh" :comment "" :afterComment ""
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "ShIcm" :icmName "palsByStarAssign.sh" :comment "" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "aaisByStarAssign.sh -i examples")][aaisByStarAssign.sh]]  [[elisp:(lsip-local-run-command "aaisByStarAssign.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "aaisByStarAssign.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "ShIcm" :icmName "aaisByStarRealize.sh" :comment "" :afterComment ""
@@ -143,12 +143,15 @@ var/target/cur -- Mirrors ~bpo/live structure reflecting targetMode
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _UsgAcct Associate_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "usgAaisManage.sh  -h -v -n showRun -i usgEnvWithAaisBynameAssociate" :comment "" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "usgAaisManage.sh  -h -v -n showRun -i usgEnvWithAaisBynameAssociate")][usgAaisManage.sh  -h -v -n showRun -i usgEnvWithAaisBynameAssociate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? t :label "Cmd" :icmName "usgAaisManage.sh  -h -v -n showRun -i usgEnvWithAaisBynameAssociate" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /Cmd/ |]] :: [[elisp:(lsip-local-run-command "usgAaisManage.sh  -h -v -n showRun -i usgEnvWithAaisBynameAssociate")][usgAaisManage.sh  -h -v -n showRun -i usgEnvWithAaisBynameAssociate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
+** +
+**
+** B|
 ####+BEGIN: blee:bxPanel:evolution
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
