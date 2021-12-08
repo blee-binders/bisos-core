@@ -41,7 +41,12 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
+realize-New
 serviceInstances
+bpoBases
+palsReports
+liveTargets
+activate-Existing
 "
 # }}} DBLOCK-leavesList
 ####+END:
