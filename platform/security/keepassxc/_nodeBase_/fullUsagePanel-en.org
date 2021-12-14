@@ -50,7 +50,7 @@
 ** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 ** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /keepassxc Firefox Integration:/ |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-*** 
+*** +_
 *** Use the icon in the top bar.
 *** Connect as needed
 *** Enter on each site with the top bar icon
@@ -59,7 +59,10 @@
 ** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 ** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /keepassxc Chrome Integration:/ |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-*** 
+*** +
+*** Install: settings -> extenstions + Menu on top left + open chrome web store (left buttom)
+*** Install: KeePassXC-Browser
+*** ----
 *** Use the icon "extension" in the top bar. Then pin the keepassxc icon.
 *** Connect as needed
 *** Enter on each site with the top bar icon
