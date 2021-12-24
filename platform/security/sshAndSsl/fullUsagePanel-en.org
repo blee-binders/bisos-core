@@ -33,8 +33,38 @@
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** 
-** Overview Comes Here.
+** +
+** All things related to SSH.
+** TODO Git rid of /bisos/panels/bisos-core/adoptedComponents/sys/ssh -- bring it here if needed.
+** Pointer: https://www.ssh.com/academy/ssh/copy-id
+** Pointer: https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Debugging And Permissions" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Debugging And Permissions:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "server logs" :command "journalctl _COMM=sshd" :comment "Server can say why it failed" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /server logs/ :: [[elisp:(lsip-local-run-command "journalctl _COMM=sshd")][journalctl _COMM=sshd]] *|*  =Server says why it failed= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "client info" :command "echo ssh -vvv gitSh_serverName" :comment "Client side extra info" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /client info/ :: [[elisp:(lsip-local-run-command "echo ssh -vvv gitSh_serverName")][echo ssh -vvv gitSh_serverName]] *|*  =Client side extra info= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Permissions" :anchor "" :extraInfo "Often a problem"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Permissions:/ |]]  Often a problem  [[elisp:(org-shifttab)][<)]] E|
+####+END
+SSH doesn’t like it if your home or ~/.ssh directories have group write permissions. Your home directory should be writable only by you, ~/.ssh should be 700, and authorized_keys should be 600 :
+
+chmod go-w /home/user
+chmod 700 /home/user/.ssh
+chmod 600 /home/user/.ssh/authorized_keys
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS Facilities And Pointers" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BISOS Facilities And Pointers:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO Create an entry for each -- lcaSshAdmin.sh, usgBpoSshCustomManage.sh, usgBpoSshManage.sh
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Copying Public Keys" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/

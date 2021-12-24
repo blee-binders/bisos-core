@@ -1,11 +1,10 @@
-
+* B|
 ####+BEGIN: bxPanel:common/title-plus
 #+title: bisos-core/platform
 #+roam_tags: branch
 #+roam_key: blee-binders/bisos-core/platform
 [[roam:blee-binders/bisos-core]]
 ####+END
-* B|
 ####+BEGIN: blee:bxPanel:topPanelControls
 *  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
