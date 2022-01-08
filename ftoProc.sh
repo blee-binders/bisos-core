@@ -68,6 +68,7 @@ sync
 platform
 PALS
 bootstrap
+PyFwrk
 bxeAndBxo
 baseDirs
 projs

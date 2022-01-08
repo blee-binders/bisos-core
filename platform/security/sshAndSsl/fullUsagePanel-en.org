@@ -44,7 +44,7 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Debugging And Permissions:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "server logs" :command "journalctl _COMM=sshd" :comment "Server can say why it failed" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /server logs/ :: [[elisp:(lsip-local-run-command "journalctl _COMM=sshd")][journalctl _COMM=sshd]] *|*  =Server says why it failed= *|*    [[elisp:(org-shifttab)][<)]] E|
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /server logs/ :: [[elisp:(lsip-local-run-command "journalctl _COMM=sshd")][journalctl _COMM=sshd]] *|*  =Server can say why it failed= *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "client info" :command "echo ssh -vvv gitSh_serverName" :comment "Client side extra info" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /client info/ :: [[elisp:(lsip-local-run-command "echo ssh -vvv gitSh_serverName")][echo ssh -vvv gitSh_serverName]] *|*  =Client side extra info= *|*    [[elisp:(org-shifttab)][<)]] E|
