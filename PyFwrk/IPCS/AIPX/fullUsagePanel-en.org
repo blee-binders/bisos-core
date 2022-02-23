@@ -34,7 +34,7 @@
 ####+END
 ** +
 ** Audit-Trailed Invoke-Perform Local Execution.
-** Any IPMC can be run under aipx. Inputs and outputs are recorded.
+** Any IPCM can be run under aipx. Inputs and outputs are recorded.
 ** Scope of this is the library and faciities that can then be used by GIPCS.
 ** TODO Add to this, sections for ipcm-s and ipcm-libs.
 ** B|
