@@ -126,6 +126,10 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _Related Chained Panels_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep t :outLevel 2 :model "auto" :foldDesc "Synchroniztion Of Github and BxO Repos" :destDesc "Synchroniztion" :dest "/bisos/git/auth/bxRepos/blee-binders/bisos-core/sync/_nodeBase_"
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/sync/_nodeBase_")][@ ~Synchroniztion~ @]]   ::  [[elisp:(org-cycle)][| /Synchroniztion Of Github and BxO Repos/ |]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep t :outLevel 2 :model "auto" :foldDesc "Gitlab Python-API and bxoGitlab.py" :destDesc "Gitlab API" :dest "/bisos/panels/bisos-core/adoptedComponents/vc/gitlab/gitlab-api"
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/adoptedComponents/vc/gitlab/gitlab-api")][@ ~Gitlab API~ @]]   ::  [[elisp:(org-cycle)][| /Gitlab Python-API and bxoGitlab.py/ |]]  [[elisp:(org-shifttab)][<)]] E|

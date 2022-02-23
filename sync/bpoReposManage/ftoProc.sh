@@ -11,19 +11,18 @@ __copying__="
 
 ####+END:
 
-####+BEGIN: bx:bsip:bash:seed-spec :types "seedBleePanelProc.sh"
+####+BEGIN: bx:bsip:bash:seed-spec :types  "seedFtoCommon.sh"
 SEED="
-*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedBleePanelProc.sh]] |
+*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] |
 "
 FILE="
-*  /This File/ :: /bisos/git/auth/bxRepos/blee-binders/bisos-core/sync/githubSync/bleePanelProc.sh
+*  /This File/ :: /bisos/git/auth/bxRepos/blee-binders/bisos-core/sync/bpoReposManage/ftoProc.sh
 "
 if [ "${loadFiles}" == "" ] ; then
-    /bisos/core/bsip/bin/seedBleePanelProc.sh -l $0 "$@"
+    /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@"
     exit $?
 fi
 ####+END:
-
 
 
 _CommentBegin_
@@ -33,29 +32,17 @@ _CommentEnd_
 function examplesHookPost {
     cat  << _EOF_
 $( examplesSeperatorTopLabel "EXTENSION EXAMPLES" )
-_EOF_
-
-    # templatesEvolution
-    
-    return
-}
-
-
-
-function templatesEvolution {
-    cat  << _EOF_
-$( examplesSeperatorSection "ftoProc.sh -- Templates Evolution" )
-diff ./ftoProc.sh  /bisos/apps/defaults/update/fto/start/commonProc/anyFtoItem/ftoProcNode.sh
-cp ./ftoProc.sh  /bisos/apps/defaults/update/fto/start/commonProc/anyFtoItem/ftoProcNode.sh
-cp /bisos/apps/defaults/update/fto/start/commonProc/anyFtoItem/ftoProcNode.sh ./ftoProc.sh  
+$( examplesSeperatorSection "commonProc.sh -- Templates Evolution" )
+diff ./commonProc.sh  /bisos/apps/defaults/start/fto/commonProc/anyFtoItem/commonProcLeaf.sh
+cp  ./commonProc.sh  /bisos/apps/defaults/start/fto/commonProc/anyFtoItem/commonProcLeaf.sh
+cp /bisos/apps/defaults/start/fto/commonProc/anyFtoItem/commonProcLeaf.sh ./commonProc.sh  
 $( examplesSeperatorSection "commonPanel.org -- Templates Evolution" )
-diff ./Panel.org  /bisos/apps/defaults/start/fto/commonProc/anyFtoItem/mainPanel.org
-cp ./Panel.org /bisos/apps/defaults/start/fto/commonProc/anyFtoItem/mainPanel.org
-cp /bisos/apps/defaults/start/fto/commonProc/anyFtoItem/mainPanel.org ./Panel.org
+diff ./commonPanel.org  /bisos/apps/defaults/start/fto/commonProc/anyFtoItem/commonPanel.org
+cp ./commonPanel.org /bisos/apps/defaults/start/fto/commonProc/anyFtoItem/commonPanel.org
+cp /bisos/apps/defaults/start/fto/commonProc/anyFtoItem/commonPanel.org ./commonPanel.org
 _EOF_
  return
 }
-
 
 
 ####+BEGIN: bx:dblock:bash:end-of-file :types ""
