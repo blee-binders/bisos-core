@@ -57,6 +57,15 @@
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bxeAndBxo/_nodeBase_")][@ ~BxE And BxO Management~ @]]   ::  [[elisp:(org-cycle)][| /BxE and BxO Management/ |]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Detect Newly Added Repos" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Detect Newly Added Repos_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+* Run bisosBaseDirs.sh -h -v -n showRun -p vcMode=anon -i bxGitReposBasesReClone /bisos/git/anon
+* Then Run: bisosBaseDirs.sh -h -v -n showRun -i detectNewlyAddedRepos
+* Then add detected repos: /bisos/git/auth/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py
+* Then upgrade the common package at pypi.
+* B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
