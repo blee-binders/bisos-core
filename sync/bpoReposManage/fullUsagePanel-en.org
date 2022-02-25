@@ -46,11 +46,11 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Realted ICMs Introductions_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? t :label "ICM" :icmName "bpoReposManage.sh" :comment "Push / Pull BPO Repos" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ICM/ |]] :: [[elisp:(lsip-local-run-command "bpoReposManage.sh -i examples")][bpoReposManage.sh]]  [[elisp:(lsip-local-run-command "bpoReposManage.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bpoReposManage.sh -i describe")][describe]] *|*  =Push / Pull BPO Repos= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? t :label "ICM" :icmName "bpoReposManage.sh" :comment "Push / Pull BPO Repos" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ICM/ |]] :: [[elisp:(lsip-local-run-command "bpoReposManage.sh -i examples")][bpoReposManage.sh]]  [[elisp:(lsip-local-run-command "bpoReposManage.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bpoReposManage.sh -i describe")][describe]] *|*  =Push / Pull BPO Repos= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? t :label "ICM" :icmName "bpoReports.sh" :comment "Reports of current BPOs" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ICM/ |]] :: [[elisp:(lsip-local-run-command "bpoReports.sh -i examples")][bpoReports.sh]]  [[elisp:(lsip-local-run-command "bpoReports.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bpoReports.sh -i describe")][describe]] *|*  =Reports of current BPOs= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? t :label "ICM" :icmName "bpoReports.sh" :comment "Reports of current BPOs" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ICM/ |]] :: [[elisp:(lsip-local-run-command "bpoReports.sh -i examples")][bpoReports.sh]]  [[elisp:(lsip-local-run-command "bpoReports.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bpoReports.sh -i describe")][describe]] *|*  =Reports of current BPOs= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "All Repos Of All BPOs on This Container" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
