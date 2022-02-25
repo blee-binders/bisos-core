@@ -61,6 +61,17 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Detect Newly Added Repos_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "ReClone" :icmName "bisosBaseDirs.sh -h -v -n showRun -p vcMode=anon -i bxGitReposBasesReClone /bisos/git/anon" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ReClone/ :: [[elisp:(lsip-local-run-command "bisosBaseDirs.sh -h -v -n showRun -p vcMode=anon -i bxGitReposBasesReClone /bisos/git/anon")][bisosBaseDirs.sh -h -v -n showRun -p vcMode=anon -i bxGitReposBasesReClone /bisos/git/anon]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Detect" :icmName "bisosBaseDirs.sh -h -v -n showRun -i detectNewlyAddedRepos" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Detect/ :: [[elisp:(lsip-local-run-command "bisosBaseDirs.sh -h -v -n showRun -i detectNewlyAddedRepos")][bisosBaseDirs.sh -h -v -n showRun -i detectNewlyAddedRepos]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:file:text/intro :outLevel 1 :sep t :folding nil :fileName "/bisos/git/auth/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py" :comment ""  :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/git/auth/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py")][/bisos/git/auth/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py]] || [[elisp:(find-file-other-window "/bisos/git/auth/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
 * Run bisosBaseDirs.sh -h -v -n showRun -p vcMode=anon -i bxGitReposBasesReClone /bisos/git/anon
 * Then Run: bisosBaseDirs.sh -h -v -n showRun -i detectNewlyAddedRepos
 * Then add detected repos: /bisos/git/auth/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py
