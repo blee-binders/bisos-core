@@ -71,10 +71,6 @@
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/git/auth/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py")][/bisos/git/auth/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py]] || [[elisp:(find-file-other-window "/bisos/git/auth/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-
-* Run bisosBaseDirs.sh -h -v -n showRun -p vcMode=anon -i bxGitReposBasesReClone /bisos/git/anon
-* Then Run: bisosBaseDirs.sh -h -v -n showRun -i detectNewlyAddedRepos
-* Then add detected repos: /bisos/git/auth/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py
 * Then upgrade the common package at pypi.
 * B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
