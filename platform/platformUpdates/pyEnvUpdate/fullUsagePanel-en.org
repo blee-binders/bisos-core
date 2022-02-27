@@ -39,8 +39,8 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Related Panels (Chain To)_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "Distro Updates" :dest "/bisos/panels/bisos-core/platform/platformUpdates/distroUpdate/_nodeBase_/"
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/platform/platformUpdates/distroUpdate/_nodeBase_/")][@ ~Distro Updates~ @]]   ::  [[elisp:(org-cycle)][| /distroUpdate/ |]]  [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "Git Synchronizations" :dest "/bisos/git/auth/bxRepos/blee-binders/bisos-core/sync/_nodeBase_/"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/sync/_nodeBase_/")][@ ~Git Synchronizations~ @]]   ::  [[elisp:(org-cycle)][| /sync/ |]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Realted ICMs Introductions" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
@@ -52,18 +52,21 @@
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? t :label "ICM" :icmName "bisosPyVenvSetup.sh" :comment "Python Virtenv Setup" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ICM/ |]] :: [[elisp:(lsip-local-run-command "bisosPyVenvSetup.sh -i examples")][bisosPyVenvSetup.sh]]  [[elisp:(lsip-local-run-command "bisosPyVenvSetup.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bisosPyVenvSetup.sh -i describe")][describe]] *|*  =Python Virtenv Setup= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Interim Update BISOS" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Interim PIP Install Updates" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Interim Update BISOS_: |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Interim PIP Install Updates_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "UnDev" :icmName "bisosUpdateInterim.sh -h -v -n showRun -i venvPy3Dev_stash" :comment " deactivte development environment" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /UnDev/ :: [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -h -v -n showRun -i venvPy3Dev_stash")][bisosUpdateInterim.sh -h -v -n showRun -i venvPy3Dev_stash]] *|*  = deactivte development environment= *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "PipUpgrade" :icmName "bisosUpdateInterim.sh -h -v -n showRun -i pipUnDevAndUpgrades" :comment " deactivte development environment" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /PipUpgrade/ :: [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -h -v -n showRun -i pipUnDevAndUpgrades")][bisosUpdateInterim.sh -h -v -n showRun -i pipUnDevAndUpgrades]] *|*  = deactivte development environment= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "PipUpgrade" :icmName "bisosUpdateInterim.sh -h -v -n showRun -i pipUnDevAndUpgrades" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /PipUpgrade/ :: [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -h -v -n showRun -i pipUnDevAndUpgrades")][bisosUpdateInterim.sh -h -v -n showRun -i pipUnDevAndUpgrades]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "UnDev" :icmName "bisosUpdateInterim.sh -h -v -n showRun -i missingPipInstall" :comment " deactivte development environment" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /UnDev/ :: [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -h -v -n showRun -i missingPipInstall")][bisosUpdateInterim.sh -h -v -n showRun -i missingPipInstall]] *|*  = deactivte development environment= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Missing" :icmName "bisosUpdateInterim.sh -h -v -n showRun -i missingPipInstall" :comment "Install Missing" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Missing/ :: [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -h -v -n showRun -i missingPipInstall")][bisosUpdateInterim.sh -h -v -n showRun -i missingPipInstall]] *|*  =Install Missing= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "List" :icmName "bisosPyVenvSetup.sh -h -v -n showRun -f -i venvDo py3 pip list" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /List/ :: [[elisp:(lsip-local-run-command "bisosPyVenvSetup.sh -h -v -n showRun -f -i venvDo py3 pip list")][bisosPyVenvSetup.sh -h -v -n showRun -f -i venvDo py3 pip list]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/

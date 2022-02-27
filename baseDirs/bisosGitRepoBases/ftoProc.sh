@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] |
 "
 FILE="
-*  /This File/ :: /bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/ftoProc.sh
+*  /This File/ :: /bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/bisosGitRepoBases/ftoProc.sh
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@"
@@ -41,13 +41,6 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-bisosBaseDirs
-districtBaseDirs
-BxU
-siteBaseDirs
-BxIso
-uniformBaseDirs
-bisosGitRepoBases
 "
 # }}} DBLOCK-leavesList
 ####+END:
@@ -64,7 +57,6 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-_nodeBase_
 "
 # }}} DBLOCK-nodesList
 ####+END:

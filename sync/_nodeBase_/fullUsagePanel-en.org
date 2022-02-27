@@ -57,8 +57,10 @@
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bxeAndBxo/_nodeBase_")][@ ~BxE And BxO Management~ @]]   ::  [[elisp:(org-cycle)][| /BxE and BxO Management/ |]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "Platform Updates" :destDesc "Distro and pyEnv Updates" :dest "/bisos/git/auth/bxRepos/blee-binders/bisos-core/platform/platformUpdates/_nodeBase_"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/platform/platformUpdates/_nodeBase_")][@ ~Distro and pyEnv Updates~ @]]   ::  [[elisp:(org-cycle)][| /Platform Updates/ |]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
 * NOTYET dirBases
-* NOTYET platform updates
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Detect Newly Added Repos" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Detect Newly Added Repos_: |]]    [[elisp:(org-shifttab)][<)]] E|
@@ -73,7 +75,7 @@
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/git/auth/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py")][/bisos/git/auth/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py]] || [[elisp:(find-file-other-window "/bisos/git/auth/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-* Then upgrade the common package at pypi.
+* Then upgrade the common package at pypi in /bisos/git/auth/bxRepos/bisos-pip/common/py3.
 * B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
