@@ -57,9 +57,9 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
+GIPCS-Inv
 _nodeBase_
 GIPCS-Perf
-GIPCS-Inv
 "
 # }}} DBLOCK-nodesList
 ####+END:

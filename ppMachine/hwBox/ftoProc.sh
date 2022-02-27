@@ -58,9 +58,9 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-_nodeBase_
-asus
 raspberryPi
+asus
+_nodeBase_
 dell
 "
 # }}} DBLOCK-nodesList

@@ -42,9 +42,9 @@ _CommentEnd_
 # {{{ DBLOCK-leavesList
 leavesList="
 kvmHosting
-bxioContainer
-gitlabServer
 bxsoContainer
+gitlabServer
+bxioContainer
 "
 # }}} DBLOCK-leavesList
 ####+END:

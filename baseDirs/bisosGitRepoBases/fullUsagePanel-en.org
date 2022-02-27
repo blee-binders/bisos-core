@@ -46,6 +46,9 @@
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "BISOS Provioning Model" :dest "/bisos/panels/bisos-model/bisosProvisioning"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-model/bisosProvisioning")][@ ~BISOS Provioning Model~ @]]   ::  [[elisp:(org-cycle)][| /bisosProvisioning/ |]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "Platform Updates" :dest "/bisos/git/auth/bxRepos/blee-binders/bisos-core/platform/platformUpdates/_nodeBase_"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/platform/platformUpdates/_nodeBase_")][@ ~Platform Updates~ @]]   ::  [[elisp:(org-cycle)][| /platformUpdates/ |]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "BISOS Base Dirs" :dest "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/bisosBaseDirs"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/bisosBaseDirs")][@ ~BISOS Base Dirs~ @]]   ::  [[elisp:(org-cycle)][| /bisosBaseDirs/ |]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END

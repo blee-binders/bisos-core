@@ -41,12 +41,12 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-virsh
-legacy-virsh
+legacy-vmware
 virtualbox
 kvm
+legacy-virsh
+virsh
 hostFirmware
-legacy-vmware
 "
 # }}} DBLOCK-leavesList
 ####+END:

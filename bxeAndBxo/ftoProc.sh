@@ -41,14 +41,14 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-usgBpos
-bxoManagement
-bxce
 bxeRealization
-bxre
+bxoManagement
+bxoConstruction
 bxeManagement
 bxse
-bxoConstruction
+bxce
+bxre
+usgBpos
 "
 # }}} DBLOCK-leavesList
 ####+END:

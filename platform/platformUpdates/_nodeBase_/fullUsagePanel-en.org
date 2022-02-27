@@ -41,7 +41,7 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Related Panels (Chain To)_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "Git Synchronizations" :dest "/bisos/git/auth/bxRepos/blee-binders/bisos-core/sync/_nodeBase_/"
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/sync/_nodeBase_/")][@ ~Git Synchronizations~ @]]   ::  [[elisp:(org-cycle)][| /sync/ |]]  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/sync/_nodeBase_/")][@ ~Git Repo Synchronizations~ @]]   ::  [[elisp:(org-cycle)][| /sync/ |]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "BISOS Git Repo Bases" :dest "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/bisosGitRepoBases/"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/bisosGitRepoBases/")][@ ~BISOS Git Repo Bases~ @]]   ::  [[elisp:(org-cycle)][| /bisosGitRepoBases/ |]]  [[elisp:(org-shifttab)][<)]] E|
@@ -54,8 +54,8 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Realted ICMs Introductions_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? t :label "ICM" :icmName "bisosUpdateInterim.sh" :comment "Interim Update BISOS" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ICM/ |]] :: [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -i examples")][bisosUpdateInterim.sh]]  [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -i describe")][describe]] *|*  =Interim Update BISOS= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "ICM" :icmName "bisosUpdateInterim.sh" :comment "Interim Update BISOS" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ICM/ :: [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -i examples")][bisosUpdateInterim.sh]]  [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -i describe")][describe]] *|*  =Interim Update BISOS= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Step-By-Step -- Interim BISOS Updates" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
@@ -68,14 +68,27 @@
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /PipUpgrades/ :: [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -h -v -n showRun -i pipUnDevAndUpgrades")][bisosUpdateInterim.sh -h -v -n showRun -i pipUnDevAndUpgrades]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 *        _WARNING_:   *Capture All Gits Before BasesReNew*
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "BasesRenew" :icmName "bisosUpdateInterim.sh -h -v -n showRun -i bisosBasesReClone" :comment "" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /BasesRenew/ :: [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -h -v -n showRun -i bisosBasesReClone")][bisosUpdateInterim.sh -h -v -n showRun -i bisosBasesReClone]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? t :label "BasesRenew" :icmName "bisosUpdateInterim.sh -h -v -n showRun -i bisosBasesReClone" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /BasesRenew/ |]] :: [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -h -v -n showRun -i bisosBasesReClone")][bisosUpdateInterim.sh -h -v -n showRun -i bisosBasesReClone]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
+** +
+** bisosUpdateInterim.sh -i bisosBasesReClone runs usg-niche.sh and setups github keys etc
+** When all of that is already set, you can just run:
+** /bxo/r3/iso/piu_xx/sys/bin/bisosBaseDirs-niche.sh -n showRun -v -h -i sysSetup
+** TODO To solve this in general we can have something like:
+** realmRun -p realm=usg  bisosBaseDirs-niche.sh -n showRun -v -h -i sysSetup
+** B|
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "BleeRebuild" :icmName "bisosUpdateInterim.sh -h -v -n showRun -i bleeUpgrade" :comment "" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /BleeRebuild/ :: [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -h -v -n showRun -i bleeUpgrade")][bisosUpdateInterim.sh -h -v -n showRun -i bleeUpgrade]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "UsgEnvRenew" :icmName "bisosUpdateInterim.sh -h -v -n showRun -i bashRcVerify" :comment "" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /UsgEnvRenew/ :: [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -h -v -n showRun -i bashRcVerify")][bisosUpdateInterim.sh -h -v -n showRun -i bashRcVerify]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Refresh-List" :icmName "bx-gitRepos -i cachedLsRefresh" :comment "Once" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Refresh-List/ :: [[elisp:(lsip-local-run-command "bx-gitRepos -i cachedLsRefresh")][bx-gitRepos -i cachedLsRefresh]] *|*  =Once= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Refresh-List" :icmName "bx-gitRepos -p vcMode=anon -i cachedLsRefresh" :comment "Once" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Refresh-List/ :: [[elisp:(lsip-local-run-command "bx-gitRepos -p vcMode=anon -i cachedLsRefresh")][bx-gitRepos -p vcMode=anon -i cachedLsRefresh]] *|*  =Once= *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Full Update -- Interim BISOS Updates" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
