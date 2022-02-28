@@ -113,7 +113,7 @@ W: --force-yes is deprecated, use one of the options starting with --allow inste
 ** TODO Port forward 3333 for sshd
 ** TODO mv /etc/ssh/sshd/dontRun to dontRun.orig
 ** TODO edit sshd.config from Port 22 to Port 3333
-** TODO Restart sshd -- sudo ssservice sshd restart
+** TODO Restart sshd -- sudo service sshd restart
 ** ssh -X -p 3333 bystar@localhost
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "BISOS Sys Base Provisioning" :anchor "" :extraInfo "Manual -- Prior To Site"
