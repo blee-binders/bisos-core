@@ -84,6 +84,9 @@
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "UsgEnvRenew" :icmName "bisosUpdateInterim.sh -h -v -n showRun -i bashRcVerify" :comment "" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /UsgEnvRenew/ :: [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -h -v -n showRun -i bashRcVerify")][bisosUpdateInterim.sh -h -v -n showRun -i bashRcVerify]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "UsgEnvRenew" :icmName "bisosUpdateInterim.sh -h -v -n showRun -f -i bashRcVerify" :comment "force" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /UsgEnvRenew/ :: [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -h -v -n showRun -f -i bashRcVerify")][bisosUpdateInterim.sh -h -v -n showRun -f -i bashRcVerify]] *|*  =force= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Refresh-List" :icmName "bx-gitRepos -i cachedLsRefresh" :comment "Once" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Refresh-List/ :: [[elisp:(lsip-local-run-command "bx-gitRepos -i cachedLsRefresh")][bx-gitRepos -i cachedLsRefresh]] *|*  =Once= *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
