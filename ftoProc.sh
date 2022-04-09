@@ -58,22 +58,22 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-_nodeBase_
-sites
-ppMachine
-adoptedComponents
-disks
-groupedComponents
-sync
-platform
-PALS
+virtualization
 bootstrap
 PyFwrk
 bxeAndBxo
-baseDirs
 projs
+sync
+platform
+PALS
+_nodeBase_
+baseDirs
+disks
+groupedComponents
+sites
+adoptedComponents
+ppMachine
 registrations
-virtualization
 "
 # }}} DBLOCK-nodesList
 ####+END:

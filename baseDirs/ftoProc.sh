@@ -41,12 +41,13 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-BxU
-BxIso
 bisosBaseDirs
 districtBaseDirs
-uniformBaseDirs
+BxU
 siteBaseDirs
+BxIso
+uniformBaseDirs
+bisosGitRepoBases
 "
 # }}} DBLOCK-leavesList
 ####+END:

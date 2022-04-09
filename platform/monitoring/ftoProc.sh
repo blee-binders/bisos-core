@@ -41,12 +41,12 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-processes
+memory
 disks
+processes
+system
 network
 cpus
-system
-memory
 "
 # }}} DBLOCK-leavesList
 ####+END:

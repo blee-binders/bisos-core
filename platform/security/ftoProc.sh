@@ -41,8 +41,8 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-firewall
 sshAndSsl
+firewall
 keyrings
 kleopatra
 "
@@ -61,9 +61,9 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
+gpg
 _nodeBase_
 keepassxc
-gpg
 "
 # }}} DBLOCK-nodesList
 ####+END:

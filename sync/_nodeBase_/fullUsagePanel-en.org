@@ -57,15 +57,53 @@
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bxeAndBxo/_nodeBase_")][@ ~BxE And BxO Management~ @]]   ::  [[elisp:(org-cycle)][| /BxE and BxO Management/ |]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "Platform Updates" :destDesc "Distro and pyEnv Updates" :dest "/bisos/git/auth/bxRepos/blee-binders/bisos-core/platform/platformUpdates/_nodeBase_"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/platform/platformUpdates/_nodeBase_")][@ ~Distro and pyEnv Updates~ @]]   ::  [[elisp:(org-cycle)][| /Platform Updates/ |]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
+* NOTYET dirBases
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Detect Newly Added Repos" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Detect Newly Added Repos_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-* Run bisosBaseDirs.sh -h -v -n showRun -p vcMode=anon -i bxGitReposBasesReClone /bisos/git/anon
-* Then Run: bisosBaseDirs.sh -h -v -n showRun -i detectNewlyAddedRepos
-* Then add detected repos: /bisos/git/auth/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py
-* Then upgrade the common package at pypi.
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "ReClone" :icmName "bisosBaseDirs.sh -h -v -n showRun -p vcMode=anon -i bxGitReposBasesReClone /bisos/git/anon" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ReClone/ :: [[elisp:(lsip-local-run-command "bisosBaseDirs.sh -h -v -n showRun -p vcMode=anon -i bxGitReposBasesReClone /bisos/git/anon")][bisosBaseDirs.sh -h -v -n showRun -p vcMode=anon -i bxGitReposBasesReClone /bisos/git/anon]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Detect" :icmName "bisosBaseDirs.sh -h -v -n showRun -i detectNewlyAddedRepos" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Detect/ :: [[elisp:(lsip-local-run-command "bisosBaseDirs.sh -h -v -n showRun -i detectNewlyAddedRepos")][bisosBaseDirs.sh -h -v -n showRun -i detectNewlyAddedRepos]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:file:text/intro :outLevel 1 :sep t :folding nil :fileName "/bisos/git/auth/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py" :comment ""  :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/git/auth/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py")][/bisos/git/auth/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py]] || [[elisp:(find-file-other-window "/bisos/git/auth/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+* Then upgrade the common package at pypi in /bisos/git/auth/bxRepos/bisos-pip/common/py3.
 * B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Pull All BISOS Repos" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _Pull All BISOS Repos_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Pull" :icmName "bx-gitRepos -i cachedLs | bx-gitRepos -i gitRemPull" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Pull/ :: [[elisp:(lsip-local-run-command "bx-gitRepos -i cachedLs | bx-gitRepos -i gitRemPull")][bx-gitRepos -i cachedLs | bx-gitRepos -i gitRemPull]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Pull" :icmName "bx-gitRepos -p vcMode=anon -i cachedLs | bx-gitRepos -i gitRemPull" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Pull/ :: [[elisp:(lsip-local-run-command "bx-gitRepos -p vcMode=anon -i cachedLs | bx-gitRepos -i gitRemPull")][bx-gitRepos -p vcMode=anon -i cachedLs | bx-gitRepos -i gitRemPull]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Push All BISOS Repos" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _Push All BISOS Repos_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Update-Push" :icmName "bx-gitRepos -i cachedLs | bx-gitRepos -i addCommitPush all" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Update-Push/ :: [[elisp:(lsip-local-run-command "bx-gitRepos -i cachedLs | bx-gitRepos -i addCommitPush all")][bx-gitRepos -i cachedLs | bx-gitRepos -i addCommitPush all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Refresh Cached Repos Lists" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Refresh Cached Repos Lists_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Refresh-List" :icmName "bx-gitRepos -i cachedLsRefresh" :comment "Once" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Refresh-List/ :: [[elisp:(lsip-local-run-command "bx-gitRepos -i cachedLsRefresh")][bx-gitRepos -i cachedLsRefresh]] *|*  =Once= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Refresh-List" :icmName "bx-gitRepos -p vcMode=anon -i cachedLsRefresh" :comment "Once" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Refresh-List/ :: [[elisp:(lsip-local-run-command "bx-gitRepos -p vcMode=anon -i cachedLsRefresh")][bx-gitRepos -p vcMode=anon -i cachedLsRefresh]] *|*  =Once= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END

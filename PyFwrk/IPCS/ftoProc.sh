@@ -58,9 +58,9 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
+metaROSE
 _nodeBase_
 GIPCS
-metaROSE
 Bash-ICM
 IPCM
 "

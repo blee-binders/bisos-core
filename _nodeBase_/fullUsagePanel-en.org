@@ -43,7 +43,7 @@
 ** goes where?
 ** B|
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* TODO NOTYET Pointer To BISOS Document Goes Here
+* TODO NOTYET Pointer To BISOS Document Goes Here And Here is a an edit.
   SCHEDULED: <2020-12-07 Mon>
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/

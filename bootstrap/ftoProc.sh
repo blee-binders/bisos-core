@@ -42,11 +42,10 @@ _CommentEnd_
 # {{{ DBLOCK-leavesList
 leavesList="
 virtualPlatformProvision
-afterBaseSteps
-sysPlatformProvision
 credentialsReset
-physicalPlatformProvision
 siteGitServer
+physicalPlatformProvision
+afterBaseSteps
 "
 # }}} DBLOCK-leavesList
 ####+END:
@@ -63,9 +62,9 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-_nodeBase_
-configuredBisosPlatform
+sysPlatformProvision
 distros
+_nodeBase_
 provisionSelections
 "
 # }}} DBLOCK-nodesList

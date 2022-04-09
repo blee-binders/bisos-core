@@ -58,9 +58,9 @@ _CommentEnd_
 # {{{ DBLOCK-nodesList
 nodesList="
 _nodeBase_
+gitlab
 gitolite
 github
-gitlab
 "
 # }}} DBLOCK-nodesList
 ####+END:

@@ -25,13 +25,13 @@
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/BxIso")][BxIso]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/BxU")][BxU]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/bisosBaseDirs")][bisosBaseDirs]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/districtBaseDirs")][districtBaseDirs]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/siteBaseDirs")][siteBaseDirs]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/uniformBaseDirs")][uniformBaseDirs]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/BxIso")][BxIso]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/BxU")][BxU]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/bisosBaseDirs")][bisosBaseDirs]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/bisosGitRepoBases")][bisosGitRepoBases]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/districtBaseDirs")][districtBaseDirs]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/siteBaseDirs")][siteBaseDirs]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/uniformBaseDirs")][uniformBaseDirs]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/_nodeBase_")][ =baseDirs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/_nodeBase_")][ =bisos-core= ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
 ** See also bootstrap and provioning.
@@ -41,71 +41,62 @@
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Related Chained Panels" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _Related Chained Panels_: |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Related Chained Panels_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "BISOS Provioning Model" :dest "/bisos/panels/bisos-model/bisosProvisioning"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-model/bisosProvisioning")][@ ~BISOS Provioning Model~ @]]   ::  [[elisp:(org-cycle)][| /bisosProvisioning/ |]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "ICMs -- This Platform Setting" :anchor "" :extraInfo ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _ICMs -- This Platform Setting_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "BISOS Git Repo Bases" :dest "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/bisosGitRepoBases"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/bisosGitRepoBases")][@ ~BISOS Git Repo Bases~ @]]   ::  [[elisp:(org-cycle)][| /bisosGitRepoBases/ |]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-**      BISOS Bases Initialization         ::   [[elisp:(find-file "/lcnt/lgpc/bystar/permanent/common/clips/bisosBasesInstall.tex")][bystar/permanent/common/clips/bisosBasesInstall.tex]]
-** 
-####+BEGIN: blee:panel:icm:py:intro :outLevel 2 :sep t :folding? nil :label "platform" :icmName "bx-platformInfoManage.py" :comment "" :afterComment ""
-** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /platform/ :: [[elisp:(lsip-local-run-command "bx-platformInfoManage.py -i examples")][bx-platformInfoManage.py]]  [[elisp:(lsip-local-run-command "bx-platformInfoManage.py -i visit")][visit]]  [[elisp:(lsip-local-run-command "bx-platformInfoManage.py -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Related ICM Introductions" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Related ICM Introductions_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+*     BISOS Bases Initialization    ::   [[elisp:(find-file "/lcnt/lgpc/bystar/permanent/common/clips/bisosBasesInstall.tex")][bystar/permanent/common/clips/bisosBasesInstall.tex]]
+####+BEGIN: blee:panel:icm:py:intro :outLevel 1 :sep t :folding? nil :label "platform" :icmName "bx-platformInfoManage.py" :comment "" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /platform/ :: [[elisp:(lsip-local-run-command "bx-platformInfoManage.py -i examples")][bx-platformInfoManage.py]]  [[elisp:(lsip-local-run-command "bx-platformInfoManage.py -i visit")][visit]]  [[elisp:(lsip-local-run-command "bx-platformInfoManage.py -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:py:cmnd :outLevel 2 :sep nil :folding? nil :label "platform" :icmName "bx-platformInfoManage.py -i pkgInfoParsGet" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /platform/ :: [[elisp:(lsip-local-run-command "bx-platformInfoManage.py -i pkgInfoParsGet")][bx-platformInfoManage.py -i pkgInfoParsGet]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:py:cmnd :outLevel 1 :sep nil :folding? nil :label "platform" :icmName "bx-platformInfoManage.py -i pkgInfoParsGet" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /platform/ :: [[elisp:(lsip-local-run-command "bx-platformInfoManage.py -i pkgInfoParsGet")][bx-platformInfoManage.py -i pkgInfoParsGet]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:py:intro :outLevel 2 :sep t :folding? nil :label "bases" :icmName "bx-bases" :comment "" :afterComment ""
-** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bases/ :: [[elisp:(lsip-local-run-command "bx-bases -i examples")][bx-bases]]  [[elisp:(lsip-local-run-command "bx-bases -i visit")][visit]]  [[elisp:(lsip-local-run-command "bx-bases -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:py:intro :outLevel 1 :sep nil :folding? nil :label "bases" :icmName "bx-bases" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bases/ :: [[elisp:(lsip-local-run-command "bx-bases -i examples")][bx-bases]]  [[elisp:(lsip-local-run-command "bx-bases -i visit")][visit]]  [[elisp:(lsip-local-run-command "bx-bases -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:py:cmnd :outLevel 2 :sep nil :folding? nil :label "bases" :icmName "bx-bases --pbdName=bisosRoot  -i pbdShow all" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bases/ :: [[elisp:(lsip-local-run-command "bx-bases --pbdName=bisosRoot  -i pbdShow all")][bx-bases --pbdName=bisosRoot  -i pbdShow all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:file:text/intro :outLevel 1 :sep nil :folding? t :label "text" :fileName "/bisos/git/bxRepos/bisos-pip/common/py2/bisos/common/bxpBaseDir.py" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /text/ |]] :: [[elisp:(find-file "/bisos/git/bxRepos/bisos-pip/common/py2/bisos/common/bxpBaseDir.py")][/bisos/git/bxRepos/bisos-pip/common/py2/bisos/common/bxpBaseDir.py]] || [[elisp:(find-file-other-window "/bisos/git/bxRepos/bisos-pip/common/py2/bisos/common/bxpBaseDir.py")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:py:cmnd :outLevel 2 :sep nil :folding? nil :label "bases" :icmName "bx-bases --pbdName=deRunRoot  -i pbdShow all" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bases/ :: [[elisp:(lsip-local-run-command "bx-bases --pbdName=deRunRoot  -i pbdShow all")][bx-bases --pbdName=deRunRoot  -i pbdShow all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:py:intro :outLevel 1 :sep nil :folding? nil :label "Py ICM" :icmName "bx-gitReposBases" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Py ICM/ :: [[elisp:(lsip-local-run-command "bx-gitReposBases -i examples")][bx-gitReposBases]]  [[elisp:(lsip-local-run-command "bx-gitReposBases -i visit")][visit]]  [[elisp:(lsip-local-run-command "bx-gitReposBases -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:py:cmnd :outLevel 2 :sep nil :folding? nil :label "bases" :icmName "bx-bases --pbdName=bxoRoot  -i pbdShow all" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bases/ :: [[elisp:(lsip-local-run-command "bx-bases --pbdName=bxoRoot  -i pbdShow all")][bx-bases --pbdName=bxoRoot  -i pbdShow all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "bx-bases pbdShow" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _bx-bases pbdShow_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:py:cmnd :outLevel 1 :sep nil :folding? nil :label "bases" :icmName "bx-bases --pbdName=bisosRoot  -i pbdShow all" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bases/ :: [[elisp:(lsip-local-run-command "bx-bases --pbdName=bisosRoot  -i pbdShow all")][bx-bases --pbdName=bisosRoot  -i pbdShow all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:py:cmnd :outLevel 2 :sep nil :folding? nil :label "bases" :icmName "bx-bases --pbdName=bleeRoot  -i pbdShow all" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bases/ :: [[elisp:(lsip-local-run-command "bx-bases --pbdName=bleeRoot  -i pbdShow all")][bx-bases --pbdName=bleeRoot  -i pbdShow all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:py:cmnd :outLevel 1 :sep nil :folding? nil :label "bases" :icmName "bx-bases --pbdName=deRunRoot  -i pbdShow all" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bases/ :: [[elisp:(lsip-local-run-command "bx-bases --pbdName=deRunRoot  -i pbdShow all")][bx-bases --pbdName=deRunRoot  -i pbdShow all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep nil :folding? t :label "text" :fileName "/bisos/git/bxRepos/bisos-pip/common/py2/bisos/common/bxpBaseDir.py" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /text/ |]] :: [[elisp:(find-file "/bisos/git/bxRepos/bisos-pip/common/py2/bisos/common/bxpBaseDir.py")][/bisos/git/bxRepos/bisos-pip/common/py2/bisos/common/bxpBaseDir.py]] || [[elisp:(find-file-other-window "/bisos/git/bxRepos/bisos-pip/common/py2/bisos/common/bxpBaseDir.py")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:py:cmnd :outLevel 1 :sep nil :folding? nil :label "bases" :icmName "bx-bases --pbdName=bxoRoot  -i pbdShow all" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bases/ :: [[elisp:(lsip-local-run-command "bx-bases --pbdName=bxoRoot  -i pbdShow all")][bx-bases --pbdName=bxoRoot  -i pbdShow all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:py:intro :outLevel 2 :sep t :folding? nil :label "Py ICM" :icmName "/bisos/venv/py2-bisos-3/bin/bx-gitReposBases" :comment "" :afterComment ""
-** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Py ICM/ :: [[elisp:(lsip-local-run-command "/bisos/venv/py2-bisos-3/bin/bx-gitReposBases -i examples")][/bisos/venv/py2-bisos-3/bin/bx-gitReposBases]]  [[elisp:(lsip-local-run-command "/bisos/venv/py2-bisos-3/bin/bx-gitReposBases -i visit")][visit]]  [[elisp:(lsip-local-run-command "/bisos/venv/py2-bisos-3/bin/bx-gitReposBases -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
-####+END:
-####+BEGIN: blee:panel:icm:py:intro :outLevel 2 :sep nil :folding? nil :label "Py ICM" :icmName "bx-gitReposBases" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Py ICM/ :: [[elisp:(lsip-local-run-command "bx-gitReposBases -i examples")][bx-gitReposBases]]  [[elisp:(lsip-local-run-command "bx-gitReposBases -i visit")][visit]]  [[elisp:(lsip-local-run-command "bx-gitReposBases -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
-####+END:
-####+BEGIN: blee:panel:icm:py:cmnd :outLevel 2 :sep nil :folding? nil :label "Py Cmnd" :icmName "bx-gitReposBases -v 20 --pbdName=bxReposRoot -i pbdShow all" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Py Cmnd/ :: [[elisp:(lsip-local-run-command "bx-gitReposBases -v 20 --pbdName=bxReposRoot -i pbdShow all")][bx-gitReposBases -v 20 --pbdName=bxReposRoot -i pbdShow all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
-####+END:
-####+BEGIN: blee:panel:icm:py:cmnd :outLevel 2 :sep nil :folding? nil :label "Py Cmnd" :icmName "bx-gitReposBases -v 20 --pbdName=extRepos -i pbdShow all" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Py Cmnd/ :: [[elisp:(lsip-local-run-command "bx-gitReposBases -v 20 --pbdName=extRepos -i pbdShow all")][bx-gitReposBases -v 20 --pbdName=extRepos -i pbdShow all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
-####+END:
-####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep nil :folding? t :label "text" :fileName "/bisos/git/bxRepos/bisos-pip/common/py2/bisos/common/baseDirBxRepos.py" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /text/ |]] :: [[elisp:(find-file "/bisos/git/bxRepos/bisos-pip/common/py2/bisos/common/baseDirBxRepos.py")][/bisos/git/bxRepos/bisos-pip/common/py2/bisos/common/baseDirBxRepos.py]] || [[elisp:(find-file-other-window "/bisos/git/bxRepos/bisos-pip/common/py2/bisos/common/baseDirBxRepos.py")][Visit In Other]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:py:cmnd :outLevel 1 :sep nil :folding? nil :label "bases" :icmName "bx-bases --pbdName=bleeRoot  -i pbdShow all" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bases/ :: [[elisp:(lsip-local-run-command "bx-bases --pbdName=bleeRoot  -i pbdShow all")][bx-bases --pbdName=bleeRoot  -i pbdShow all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "/bisos Structure" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _/bisos Structure_: |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _/bisos Structure_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "/bisos/git" :anchor "" :extraInfo "Base for BISOS related Git Repos"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| */bisos/git:* |]]  Base for BISOS related Git Repos  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| */bisos/git:* |]]  Base for BISOS related Git Repos  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "/bisos/git mkdirs and symlinks -- bases" :anchor "" :extraInfo "anon auth bxRepos etc"
 ** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| //bisos/git mkdirs and symlinks -- bases:/ |]]  anon auth bxRepos etc  [[elisp:(org-shifttab)][<)]] E|
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| //bisos/git mkdirs and symlinks -- bases:/ |]]  anon auth bxRepos etc  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 *** /bisos/git/anon
 *** /bisos/git/auth
@@ -114,7 +105,7 @@
 *** /bisos/git/anon/ext
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "/bisos/git/anon generated repos" :anchor "" :extraInfo "bx-repos"
 ** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| //bisos/git/anon generated repos:/ |]]  bx-repos  [[elisp:(org-shifttab)][<)]] E|
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| //bisos/git/anon generated repos:/ |]]  bx-repos  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:icm:py:intro :outLevel 3 :sep nil :folding? nil :label "Py ICM" :icmName "/bisos/venv/py2-bisos-3/bin/bx-gitReposBases" :comment "" :afterComment ""
 *** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Py ICM/ :: [[elisp:(lsip-local-run-command "/bisos/venv/py2-bisos-3/bin/bx-gitReposBases -i examples")][/bisos/venv/py2-bisos-3/bin/bx-gitReposBases]]  [[elisp:(lsip-local-run-command "/bisos/venv/py2-bisos-3/bin/bx-gitReposBases -i visit")][visit]]  [[elisp:(lsip-local-run-command "/bisos/venv/py2-bisos-3/bin/bx-gitReposBases -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
@@ -130,21 +121,21 @@
 ####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "/bisos/blee" :anchor "" :extraInfo "By* Libre-Halaal Emacs Environment"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| */bisos/blee:* |]]  By* Libre-Halaal Emacs Environment  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| */bisos/blee:* |]]  By* Libre-Halaal Emacs Environment  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:icm:py:cmnd :outLevel 2 :sep nil :folding? nil :label "Py Cmnd" :icmName "bx-bases -v 20 --baseDir=/bisos --pbdName=bleeRoot -i pbdUpdate all" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Py Cmnd/ :: [[elisp:(lsip-local-run-command "bx-bases -v 20 --baseDir=/bisos --pbdName=bleeRoot -i pbdUpdate all")][bx-bases -v 20 --baseDir=/bisos --pbdName=bleeRoot -i pbdUpdate all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "/bisos/bsip" :anchor "" :extraInfo "OBSOLTED -- ABSORBED in Core -- Bx Shell Integration Platform"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| */bisos/bsip:* |]]  OBSOLTED -- ABSORBED in Core -- Bx Shell Integration Platform  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| */bisos/bsip:* |]]  OBSOLTED -- ABSORBED in Core -- Bx Shell Integration Platform  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** Should symlink point to git repo that replaces */opt/public/osmt/bin
 ** */bisos/bsip/bx3*  -> */bisos/git/bxRepos/bisos/bsip-3*
 ** 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "/bisos/apps" :anchor "" :extraInfo "Bx Apps Supporting Files"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| */bisos/apps:* |]]  Bx Apps Supporting Files  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| */bisos/apps:* |]]  Bx Apps Supporting Files  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** For example:
 ** bxtex -> /bisos/git/bxRepos/bxlcnt/bxtex
@@ -152,7 +143,7 @@
 ** 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "/bisos/control" :anchor "" :extraInfo "control base for charachter BxIo-s"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| */bisos/control:* |]]  control base for charachter BxIo-s  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| */bisos/control:* |]]  control base for charachter BxIo-s  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
 ** */bisos/control/bisos/site/*
@@ -161,20 +152,20 @@
 ** 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "/bisos/dist" :anchor "" :extraInfo "OBSOLTED -- Renamed distro and absorbed in core -- This distro's info"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| */bisos/dist:* |]]  OBSOLTED -- Renamed distro and absorbed in core -- This distro's info  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| */bisos/dist:* |]]  OBSOLTED -- Renamed distro and absorbed in core -- This distro's info  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
 ** 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "/bisos/venv" :anchor "" :extraInfo "Python Virtual Env"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| */bisos/venv:* |]]  Python Virtual Env  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| */bisos/venv:* |]]  Python Virtual Env  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
 ** */bisos/venv/py2-bisos-3/*
 ** 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "/bisos/panels" :anchor "" :extraInfo "bxPanels"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| */bisos/panels:* |]]  bxPanels  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| */bisos/panels:* |]]  bxPanels  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
 ** TODO Automate git cloning and sym link creations
@@ -190,7 +181,7 @@
 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "/bisos/core" :anchor "" :extraInfo "And /bisos/core/bsip and bin lib"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| */bisos/core:* |]]  And /bisos/core/bsip and bin lib  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| */bisos/core:* |]]  And /bisos/core/bsip and bin lib  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
 ** */bisos/core/bsip*        | bin, lib, adopt | By* Shell Integration Platform
@@ -204,7 +195,7 @@
 ** |B
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "/bisos/var" :anchor "" :extraInfo "and /bisos/var/log"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| */bisos/var:* |]]  and /bisos/var/log  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| */bisos/var:* |]]  and /bisos/var/log  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
 ** */bisos/var/log*
@@ -213,19 +204,19 @@
 ** 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "/bisos/tmp" :anchor "" :extraInfo "and /bisos/tmp/core"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| */bisos/tmp:* |]]  and /bisos/tmp/core  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| */bisos/tmp:* |]]  and /bisos/tmp/core  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "/bxo Structure" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _/bxo Structure_: |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _/bxo Structure_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** -
 ** TODO transition from /bxo/iso/name to /bpo/name
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "/de Structure" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _/de Structure_: |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _/de Structure_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** -
 ** /de/sys -- /de/sys/lcnt/ -- /de/sys/mail
@@ -237,7 +228,7 @@
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *Maintenance:* | ]]  [[elisp:(blee:menu-sel:agenda:popupMenu)][||Agenda]]  <<Evolution>>  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Notes, Ideas, Tasks, Agenda" :anchor "Tasks"
-** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 *** TODO Some Idea
 ####+BEGIN: blee:bxPanel:evolutionMaintainers

@@ -59,8 +59,8 @@ _CommentEnd_
 # {{{ DBLOCK-nodesList
 nodesList="
 privBposSync
-githubSync
 _nodeBase_
+githubSync
 "
 # }}} DBLOCK-nodesList
 ####+END:
