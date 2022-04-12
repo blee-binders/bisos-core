@@ -33,9 +33,13 @@
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** 
-** Overview Comes Here.
+** +
+** TODO Missing Installation Instructions
 ** B|
+####+BEGIN: blee:panel:unix:cmndIntro :outLevel 1 :sep t :folding? nil :label "Cmnd" :command "sudo apt-get install keepassxc" :comment "Installation" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "sudo apt-get install keepassxc")][sudo apt-get install keepassxc]] *|*  =Installation= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:panel:unix:cmndIntro :outLevel 1 :sep nil :folding? nil :label "Cmnd" :command "keepassxc-cli" :comment "Commands" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "keepassxc-cli")][keepassxc-cli]] *|*  =Commands= *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
@@ -88,6 +92,9 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _BISOS Vault Usage Design_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep nil :folding? nil :label "Ex" :command "ln -s  /bxo/iso/pip_ramz/keepassxc/Passwords.kdbx  ~/Passwords.kdbx" :comment "Use Common Secrets" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Ex/ :: [[elisp:(lsip-local-run-command "ln -s  /bxo/iso/pip_ramz/keepassxc/Passwords.kdbx  ~/Passwords.kdbx")][ln -s  /bxo/iso/pip_ramz/keepassxc/Passwords.kdbx  ~/Passwords.kdbx]] *|*  =Use Common Secrets= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep nil :folding? nil :label "Ex" :command "echo XXX | /bin/keepassxc-cli  ls --recursive ~/Passwords.kdbx" :comment "Example" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Ex/ :: [[elisp:(lsip-local-run-command "echo XXX | /bin/keepassxc-cli  ls --recursive ~/Passwords.kdbx")][echo XXX | /bin/keepassxc-cli  ls --recursive ~/Passwords.kdbx]] *|*  =Example= *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
