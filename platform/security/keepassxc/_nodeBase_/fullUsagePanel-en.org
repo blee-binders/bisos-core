@@ -46,9 +46,29 @@
 ####+BEGIN: blee:panel:unix:cmndIntro :outLevel 1 :sep nil :folding? nil :label "Gui" :command "keepassxc &" :comment "Launch" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Gui/ :: [[elisp:(lsip-local-run-command "keepassxc &")][keepassxc &]] *|*  =Launch= *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Browsers Integration" :anchor "anchor" :extraInfo "extraInfo"
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Browsers Integration:* |]] <<anchor>> extraInfo  [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BinsPreps --- Installation" :anchor "anchor" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BinsPreps --- Installation:* |]] <<anchor>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO Need to create lcaKeepassBinsPrep.sh
+** basic apt-get on deb 11 as of 20220411 gets 2.6.2
+** 2.6.2 works fine with firefox but not with chrome
+** 2.6.6 exists as .deb and works fine with chrome but is inconsistent with Deb 11
+** Never use keepassx. Always use keepassxc.
+** sudo apt-get install keepassxc # installs 2.6.2
+** wget http://ftp.us.debian.org/debian/pool/main/k/keepassxc/keepassxc_2.6.6+dfsg.1-1_amd64.deb # this is 2.6.6 from bookworm
+** sudo dpkg -i keepassxc_2.6.6+dfsg.1-1_amd64.deb # creates the bins but is inconsitent
+** sudo cp -p /bin/keepassxc /bin/keepassxc-266
+** sudo cp -p /usr/bin/keepassxc /usr/bin/keepassxc-266
+** sudo apt-get remove keepassxc
+** sudo apt-get install keepassxc # installs 2.6.2
+** We can now run keepassxc-266 which connects to browser plugins
+**
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Browsers Integration" :anchor "anchor" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Browsers Integration:* |]] <<anchor>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "keepassxc Firefox Integration" :anchor "" :extraInfo ""
 ** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 

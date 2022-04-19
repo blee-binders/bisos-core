@@ -33,7 +33,11 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** Scope of this panel is ICMs related to managing bpo reps.
+** Scope of this panel is ICMs related to managing bpo repos.
+** Common Sync Steps:
+** 1) Magit All BPO Repos   "[[elisp:(popup-menu (symbol-value (apps:magit:bposMenu|define)))][ _||Magit BPOs Menu_ ]]"
+** 2) Pull ALL BxOs on This Container
+** 3) addCommitPush ALL BxOs on This Container
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Related Panels (Chain To)" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
@@ -60,7 +64,7 @@
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Pull/ :: [[elisp:(lsip-local-run-command "bpoAcctManage.sh -i bpoIdsList | bpoReposManage.sh -i bxoReposPathList | bx-gitRepos -i gitRemPull")][bpoAcctManage.sh -i bpoIdsList | bpoReposManage.sh -i bxoReposPathList | bx-gitRepos -i gitRemPull]] *|*  =Pull ALL BxOs on This Container= *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "AddCommitPush" :icmName "bpoAcctManage.sh -i bpoIdsList | bpoReposManage.sh -i bxoReposPathList | bx-gitRepos -i addCommitPush all" :comment "ALL BxOs on This Container" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /AddCommitPush/ :: [[elisp:(lsip-local-run-command "bpoAcctManage.sh -i bpoIdsList | bpoReposManage.sh -i bxoReposPathList | bx-gitRepos -i addCommitPush all")][bpoAcctManage.sh -i bpoIdsList | bpoReposManage.sh -i bxoReposPathList | bx-gitRepos -i addCommitPush all]] *|*  =ALL BxOs on This Container= *|*    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /AddCommitPush/ :: [[elisp:(lsip-local-run-command "bpoAcctManage.sh -i bpoIdsList | bpoReposManage.sh -i bxoReposPathList | bx-gitRepos -i addCommitPush all")][bpoAcctManage.sh -i bpoIdsList | bpoReposManage.sh -i bxoReposPathList | bx-gitRepos -i addCommitPush all]] *|* addCommitPush =ALL BxOs on This Container= *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Status Loc Rem" :icmName "bpoAcctManage.sh -i bpoIdsList | bpoReposManage.sh -i bxoReposPathList | bx-gitRepos -i status loc rem" :comment "" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Status Loc Rem/ :: [[elisp:(lsip-local-run-command "bpoAcctManage.sh -i bpoIdsList | bpoReposManage.sh -i bxoReposPathList | bx-gitRepos -i status loc rem")][bpoAcctManage.sh -i bpoIdsList | bpoReposManage.sh -i bxoReposPathList | bx-gitRepos -i status loc rem]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|

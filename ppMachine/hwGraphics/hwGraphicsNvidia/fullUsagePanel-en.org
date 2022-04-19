@@ -32,8 +32,22 @@
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** 
-** Overview Comes Here.
+** +
+** NVIDIA drivers are needed Dell XPS --- Without these drivers you get intermittent crashes.
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "NVIDIA Driver Installation" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *NVIDIA Driver Installation:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "2022-04" :command "lspci | egrep 'VGA|NVIDIA'" :comment "Make sure we have NVIDIA" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /2022-04/ :: [[elisp:(lsip-local-run-command "lspci | egrep 'VGA|NVIDIA'")][lspci | egrep 'VGA|NVIDIA']] *|*  =Make sure we have NVIDIA= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "2022-04" :command "sudo apt install nvidia-detect" :comment "Make sure we have NVIDIA" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /2022-04/ :: [[elisp:(lsip-local-run-command "sudo apt install nvidia-detect")][sudo apt install nvidia-detect]] *|*  =Make sure we have NVIDIA= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "2022-04" :command "sudo apt install nvidia-driver" :comment "Make sure we have NVIDIA" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /2022-04/ :: [[elisp:(lsip-local-run-command "sudo apt install nvidia-driver")][sudo apt install nvidia-driver]] *|*  =Make sure we have NVIDIA= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+** Then Reboot
 ** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
