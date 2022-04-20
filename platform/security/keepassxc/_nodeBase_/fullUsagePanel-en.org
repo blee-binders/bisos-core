@@ -63,8 +63,11 @@
 ** sudo cp -p /usr/bin/keepassxc /usr/bin/keepassxc-266
 ** sudo apt-get remove keepassxc
 ** sudo apt-get install keepassxc # installs 2.6.2
-** We can now run keepassxc-266 which connects to browser plugins
-**
+** sudo mv /bin/keepassxc /bin/keepassxc-262
+** sudo mv /usr/bin/keepassxc /usr/bin/keepassxc-262
+** sudo ln -s /bin/keepassxc-266 /bin/keepassxc
+** sudo ln -s /usr/bin/keepassxc-266 /usr/bin/keepassxc
+** We can now run keepassxc which connects to browser plugins
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Browsers Integration" :anchor "anchor" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
