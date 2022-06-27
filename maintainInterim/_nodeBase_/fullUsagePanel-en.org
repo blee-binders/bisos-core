@@ -47,34 +47,73 @@
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Site Update/ :: [[elisp:(lsip-local-run-command "siteMaintaineInterim.sh -i examples")][siteMaintaineInterim.sh]]  [[elisp:(lsip-local-run-command "siteMaintaineInterim.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "siteMaintaineInterim.sh -i describe")][describe]] *|*  =Update Site in interim= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Full Actions" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Full Actions:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** bisosUpdateInterim.sh -h -v -n showRun -i fullUpdate # Run all the full ICMs
+** bisosUpdateInterim.sh -h -v -n showRun -i fullUpgrades # pip and apt
+** bisosUpdateInterim.sh -h -v -n showRun -i fullMissingUpdate  # missingPipInstals and missingAptPkgsInstall
+** bisosUpdateInterim.sh -h -v -n showRun -i fullBisosBasesUpdate # ReClone and GitPull
+** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Apt Upgrades Plus Missing" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Apt Upgrades Plus Missing:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** +
+** bisosUpdateInterim.sh -h -v -n showRun -i aptUpgrades    # apt-get -y upgrade
+** bisosUpdateInterim.sh -h -v -n showRun -i missingAptPkgsInstall  # apt-s needed for recent features
+** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Python And Pip Update And New Installs" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Python And Pip Update And New Installs:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** +
+** bisosUpdateInterim.sh -h -v -n showRun -i venvPy3Dev_stash # deactivte development environment
+** bisosUpdateInterim.sh -h -v -n showRun -i pipUnDevAndUpgrades
+** bisosUpdateInterim.sh -h -v -n showRun -i missingPipInstall
+** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Bisos Git Repos Update And Add new Ones" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Bisos Git Repos Update And Add new Ones:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** +
+** bisosUpdateInterim.sh -h -v -n showRun -i bisosBasesReClone  # with cntnrDevel.sh
+** bisosUpdateInterim.sh -h -v -n showRun -f -i bisosBasesReClone  # forceMode with cntnrDevel.sh
+** bisosUpdateInterim.sh -h -v -n showRun -i bisosBasesPull  # with bx-gitRepos
+ B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS Bases And Symlinks Updates" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS Bases And Symlinks Updates:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** +
+** bisosUpdateInterim.sh -h -v -n showRun -i bisosBasesReDirAndReLink # with bx-bases
+** bisosUpdateInterim.sh -h -v -n showRun -i missingBxRepos # not in bx-bases yet -- Very temporary
+** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Blee Updates And Rebuilds" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Blee Updates And Rebuilds:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** +
+** bisosUpdateInterim.sh -h -v -n showRun -i bleeUpgrade # bleeDoomsManage.sh -i reBuild + blee -i chemacs2FullUpdate
+** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Usage Environment Updates" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Usage Environment Updates:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** +
+** bisosUpdateInterim.sh -h -v -n showRun -i bashRcVerify
+** bisosUpdateInterim.sh -h -v -n showRun -f -i bashRcVerify  # forceMode updates
+** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Side Environments Adition And Deletions" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Side Environments Adition And Deletions:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** +
+** bisosUpdateInterim.sh -h -v -n showRun -i libreInfoBaseAndInitialTemplates # Bring over /libre/ByStar panels
+** bisosUpdateInterim.sh -h -v -n showRun -i optPublicOsmt # Bring over
+** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
