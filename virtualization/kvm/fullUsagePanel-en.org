@@ -58,6 +58,13 @@
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Admin Cmnd" :icmName "lcaKvmAdmin.sh -v -n showRun -i fullUpdate" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Admin Cmnd/ :: [[elisp:(lsip-local-run-command "lcaKvmAdmin.sh -v -n showRun -i fullUpdate")][lcaKvmAdmin.sh -v -n showRun -i fullUpdate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep t :folding? t :label "On Host: KVM Virtual Manager" :icmName "virt-manager" :comment "" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /On Host: KVM Virtual Manager/ |]] :: [[elisp:(lsip-local-run-command "virt-manager")][virt-manager]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+** +
+** May take sometime to come up. Be Patient.
+** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
