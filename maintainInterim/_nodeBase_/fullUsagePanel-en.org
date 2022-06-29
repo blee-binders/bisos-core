@@ -47,6 +47,38 @@
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Site Update/ :: [[elisp:(lsip-local-run-command "siteMaintaineInterim.sh -i examples")][siteMaintaineInterim.sh]]  [[elisp:(lsip-local-run-command "siteMaintaineInterim.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "siteMaintaineInterim.sh -i describe")][describe]] *|*  =Update Site in interim= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Source Updating Process" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Source Updating Process_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Update Process for bx-gitReposBases" :anchor "" :extraInfo "baseDirBxRepos.py"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Update Process for bx-gitReposBases:* |]]  baseDirBxRepos.py  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep t :folding nil :fileName "/bisos/git/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py" :comment "Add New Repos Here"  :afterComment ""
+** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/git/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py")][baseDirBxRepos.py]] || [[elisp:(find-file-other-window "/bisos/git/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBxRepos.py")][Visit In Other]] *|*  =Add New Repos Here= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Update Process for bx-bases" :anchor "" :extraInfo "baseDirBisos.py"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Update Process for bx-bases:* |]]  baseDirBisos.py  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep t :folding nil :fileName "/bisos/git/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBisos.py" :comment "Add New BaseDirs Here"  :afterComment ""
+** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/git/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBisos.py")][baseDirBisos.py]] || [[elisp:(find-file-other-window "/bisos/git/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBisos.py")][Visit In Other]] *|*  =Add New BaseDirs Here= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep t :folding nil :fileName "/bisos/git/bxRepos/bisos-pip/common/py3/bisos/common/bxpBaseDir.py" :comment "Add New BaseDirs Here"  :afterComment ""
+** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/git/bxRepos/bisos-pip/common/py3/bisos/common/bxpBaseDir.py")][bxpBaseDir.py]] || [[elisp:(find-file-other-window "/bisos/git/bxRepos/bisos-pip/common/py3/bisos/common/bxpBaseDir.py")][Visit In Other]] *|*  =Add New BaseDirs Here= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "bisosUpdateInterim.sh" :anchor "" :extraInfo "Target Executions"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _bisosUpdateInterim.sh_: |]]  Target Executions  [[elisp:(org-shifttab)][<)]] E|
+####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Full Actions" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Full Actions:* |]]    [[elisp:(org-shifttab)][<)]] E|
