@@ -66,13 +66,13 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Update Process for bx-bases:* |]]  baseDirBisos.py  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep t :folding nil :fileName "/bisos/git/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBisos.py" :comment "Add New BaseDirs Here"  :afterComment ""
-** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/git/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBisos.py")][baseDirBisos.py]] || [[elisp:(find-file-other-window "/bisos/git/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBisos.py")][Visit In Other]] *|*  =Add New BaseDirs Here= *|*   [[elisp:(org-shifttab)][<)]] E|
-####+END:
 ####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep t :folding nil :fileName "/bisos/git/bxRepos/bisos-pip/common/py3/bisos/common/bxpBaseDir.py" :comment "Add New BaseDirs Here"  :afterComment ""
 ** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/git/bxRepos/bisos-pip/common/py3/bisos/common/bxpBaseDir.py")][bxpBaseDir.py]] || [[elisp:(find-file-other-window "/bisos/git/bxRepos/bisos-pip/common/py3/bisos/common/bxpBaseDir.py")][Visit In Other]] *|*  =Add New BaseDirs Here= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep t :folding nil :fileName "/bisos/git/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBisos.py" :comment "Is there anything relevant here?"  :afterComment ""
+** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/git/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBisos.py")][baseDirBisos.py]] || [[elisp:(find-file-other-window "/bisos/git/bxRepos/bisos-pip/common/py3/bisos/common/baseDirBisos.py")][Visit In Other]] *|*  =Is there anything relevant here?= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "bisosUpdateInterim.sh" :anchor "" :extraInfo "Target Executions"
@@ -88,6 +88,12 @@
 ** bisosUpdateInterim.sh -h -v -n showRun -i fullUpgrades # pip and apt
 ** bisosUpdateInterim.sh -h -v -n showRun -i fullMissingUpdate  # missingPipInstals and missingAptPkgsInstall
 ** bisosUpdateInterim.sh -h -v -n showRun -i fullBisosBasesUpdate # ReClone and GitPull
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "bsip pull and latest emacs builds" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *bsip pull and latest emacs builds:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Apt Upgrades Plus Missing" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
@@ -145,6 +151,17 @@
 ** +
 ** bisosUpdateInterim.sh -h -v -n showRun -i libreInfoBaseAndInitialTemplates # Bring over /libre/ByStar panels
 ** bisosUpdateInterim.sh -h -v -n showRun -i optPublicOsmt # Bring over
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Refresh Container Databases" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Refresh Container Databases_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "github and bpo-s repos lists" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *github and bpo-s repos lists:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Locate the commands --- NOTYET
 ** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
