@@ -41,9 +41,6 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-fileParameters
-fileTreeObject-FTO
-fileVariables
 "
 # }}} DBLOCK-leavesList
 ####+END:
@@ -60,7 +57,9 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
+bisos-pip
 _nodeBase_
+PyGit
 IPCS
 "
 # }}} DBLOCK-nodesList

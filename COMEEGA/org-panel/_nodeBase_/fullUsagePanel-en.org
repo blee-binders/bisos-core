@@ -16,10 +16,10 @@
 **  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
 **  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]  E|
 ####+END
-####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto" :subTitle "BISOS COMEEGA Programming (All Langs)"
+####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto" :subTitle "BISOS COMEEGA Org-Panel Authorship"
 * [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 *   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: bisos-core/COMEEGA -- org-panel~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
-*                                       ~BISOS COMEEGA Programming (All Langs)~
+*                                        ~BISOS COMEEGA Org-Panel Authorship~
 * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
@@ -37,28 +37,11 @@
 ** +
 ** Overview Comes Here.
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS COMEEGA General Programming File structure" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS COMEEGA Org-Panel File Genres" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS COMEEGA General Programming File structure:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS COMEEGA Org-Panel File Genres:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** 1) hashBang line, language parameters
-** 2) Summary Line --- in org-mode including fileGenre
-** 3) File Proclamations Dblock --- Copyleft, in COMEEGA  ---  b:file/proclamations
-** 4) File Particulars Dblock --- Author, version, etc --- b:file/particulars
-** 5) Description Dblock + Description --- link-to--panels b:file/description
-** 6) Org-Top-Controls Dblock ---- Controls, VC   b:file/orgTopControls
-** 7) Language Workbench   b:<language>/workBench
-** 8-N) Module Sections --- based on fileCat
-** N) File endOfFile Dblock  b:file/endOfFile
-** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS COMEEGA Programming File Genres" :anchor "" :extraInfo ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS COMEEGA Programming File Genres:* |]]    [[elisp:(org-shifttab)][<)]] E|
-####+END
-** +
-** Concept of BISOS COMEEGA Programming File Genres is that of file module that fits an expected pattern.
-** These are language specific. Refer to each langauge.
 ** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
