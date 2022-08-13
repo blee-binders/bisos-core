@@ -42,16 +42,21 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Layering Of BISOS packages:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-| L-Nu | Layer Name                      | bisos Packages      | Comments               |
-|------+---------------------------------+---------------------+------------------------|
-|    1 | General Purpose CS Development  | .cs .io .bpf .crypt | Before BPO Abstraction |
-|    2 | Site Creation And Management    | .bx-bases           | Bootstrapping          |
-|    3 | BPO (By* Portable service)      | .bpo                |                        |
-|    4 | Containers                      | .cntnr              |                        |
-|    4 | AAS (Abstracted App Svcs)       | .marmee             |                        |
-|    5 | PALS (Possession Assertible LS) | .pals               |                        |
-|    6 | BAS (ByStar App Svcs)           | .lcnt               |                        |
-|------+---------------------------------+---------------------+------------------------|
+| L-Nu | Layer Name                      | bisos Packages      | Comments                  |
+|------+---------------------------------+---------------------+---------------------------|
+|    1 | General Purpose CS Development  | .cs .io .bpf .crypt | Before BPO Abstraction    |
+|    2 | Platform Bootstrapping          |                     | facter comes here         |
+|    3 | BSO (By* Standalone Objs)       | .bpo                |                           |
+|    4 | Stand Alone Applications        | .marmee .lcnt       | AAS (Abstracted App Svcs) |
+|------+---------------------------------+---------------------+---------------------------|
+|    5 | Site Creation                   | .bx-bases           | Bootstrapping             |
+|    6 | BPO (By* Portable service)      | .bpo                |                           |
+|    7 | Containers                      | .cntnr              |                           |
+|    8 | Site Management                 |                     | BPOs management           |
+|    9 | PALS (Possession Assertible LS) | .pals               |                           |
+|   10 | PALS Management                 |                     |                           |
+|   11 | BAS (ByStar App Svcs)           | .lcnt  .marmee      |                           |
+|------+---------------------------------+---------------------+---------------------------|
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "General Purpose CS Framework" :anchor "L-1" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
