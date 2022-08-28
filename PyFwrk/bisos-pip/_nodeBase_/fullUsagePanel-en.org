@@ -31,37 +31,42 @@
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/PyFwrk/_nodeBase_")][ =PyFwrk= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview And TODOs" :anchor "Panel"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview And TODOs:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** Scope of this panel is bisos Python Development and bisos pip packages.
+** TODO Add transit and examples as new modules.
+SCHEDULED: <2022-08-28 Sun>
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Conceptual Layering Of BISOS Packages" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Conceptual Layering Of BISOS Packages:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-|    L-Nu | Layer Name                      | bisos Packages      | Comments                          |
-|---------+---------------------------------+---------------------+-----------------------------------|
-|     *L-1* | Blee COMEEGA                    |                     |                                   |
-|     L-2 | General Purpose CS Development  | .cs .io .bpf .crypt | Before BPO Abstraction            |
-|   /L-2.1/ | BISOS Python Framework          | .bpf                | Based on Expectation Complete Ops |
-| =L-2.1.1= | Operations                      |                     |                                   |
-|   /L-2.1/ | Command Servicess               | .cs{.Cmnd}          | Based on Expectation Complete Ops |
-|       2 | Platform Bootstrapping          |                     | facter comes here                 |
-|       3 | BSO/BPO (By* Standalone Objs)   | .bpo                |                                   |
-|       3 | BSO/BPO Based Virtualization    |                     |                                   |
-|       4 | Stand Alone Applications        | .marmee .lcnt       | AAS (Abstracted App Svcs)         |
-|---------+---------------------------------+---------------------+-----------------------------------|
-|       5 | Site Creation                   | .bx-bases           | Bootstrapping                     |
-|       6 | BPO (By* Portable service)      | .bpo                |                                   |
-|       7 | Containers                      | .cntnr              |                                   |
-|       8 | Site Management                 |                     | BPOs management                   |
-|       9 | PALS (Possession Assertible LS) | .pals               |                                   |
-|      10 | PALS Management                 |                     |                                   |
-|      11 | BAS (ByStar App Svcs)           | .lcnt  .marmee      |                                   |
-|---------+---------------------------------+---------------------+-----------------------------------|
+| L-Nu      | Layer Name                      | bisos Packages      | Comments                            |
+|-----------+---------------------------------+---------------------+-------------------------------------|
+| *L-1*       | *Basic Blee (COMEEGA)*            |                     | No BPOs --- Basic BSOs              |
+| *L-2*       | *General Purpose CS Development*  | .cs .io .bpf .crypt | Before BPO Abstraction              |
+| /L-2.1/     | /Input-Output Logging And Errs/   | .io                 |                                     |
+| /L-2.1.2/   | BISOS Python Framework          | .bpf                | Framework cover for many facilities |
+| =L-2.1.2.1= | Operations                      |                     |                                     |
+| /L-2.2/     | Command Servicess               | .cs{.Cmnd}          | Based on Expectation Complete Ops   |
+| *L-3*       | Platform Bootstrapping          | bx-bases            | facter comes here                   |
+| *L-4*       | BSO/BPO (By* Static Objs)       | .bpo (as bso)       | By* Static Objs                     |
+| /L-4.1/     | /crypt(vault, gpg, fps/           | .crypt              | BPO based vault,gpg and filePars    |
+| *L-5*       | BSO/BPO Based Virtualization    |                     |                                     |
+| *L-6*       | Stand Alone Applications        | .marmee .lcnt       | AAS (Abstracted App Svcs)           |
+|-----------+---------------------------------+---------------------+-------------------------------------|
+| *L-7*       | *Site Creation*                   |                     | Bootstrapping                       |
+| *L-8*       | *BPO (ByStar Portable service)*   | .bpo                | By* Portable Objs                   |
+| *L-9*       | *Containers*                      | .cntnr              |                                     |
+| *L-10*      | *Blee*                            |                     | Full Blee                           |
+| *L-11*      | *Site Management*                 |                     | BPOs management                     |
+| *L-12*      | PALS (Possession Assertible LS) | .pals               |                                     |
+| *L-13*      | PALS Management                 |                     |                                     |
+| *L-14*      | BAS (ByStar App Svcs)           | .lcnt  .marmee      |                                     |
+|-----------+---------------------------------+---------------------+-------------------------------------|
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Deployment Order" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
@@ -70,15 +75,16 @@
 ** +
 | O-Nu | Layer Name                 | Initial Script | Comments           |
 |------+----------------------------+----------------+--------------------|
-|    1 | Standalone Container       |                |                    |
-|    1 | Virtualization setup       |                |                    |
-|    2 | Site Creation              |                | Registrars, Gitlab |
-|    3 | Hosting Container Creation |                |                    |
-|    3 | Guest Container Creation   |                |                    |
-|    4 | Pure Container Creation    |                |                    |
+| O-1  | Standalone Container       |                |                    |
+| O-2  | Virtualization setup       |                |                    |
+| O-3  | Site Creation              |                | Registrars, Gitlab |
+| O-4  | Hosting Container Creation |                |                    |
+| O-5  | Guest Container Creation   |                |                    |
+| O-6  | Pure Container Creation    |                |                    |
 |------+----------------------------+----------------+--------------------|
-|    5 | PALS Deployment            |                |                    |
+| O-7  | PALS Deployment            |                |                    |
 |------+----------------------------+----------------+--------------------|
+#+TBLFM:
 ** B|
 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "General Purpose CS Framework" :anchor "L-1" :extraInfo ""
