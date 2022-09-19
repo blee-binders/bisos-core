@@ -50,15 +50,87 @@
 ####+END
 ** +
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "CsParam (param.py), FileParam (fp.py), fpIf.py, FpCsParam" :anchor "" :extraInfo "Config Management Design"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *CsParam (param.py), FileParam (fp.py), fpIf.py, FpCsParam:* |]]  Config Management Design  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** CsParam-s and FileParam-s are independent concepts which can be combined.
+** ------ ~CsParam~-s b.cs.param.CsParam --------
+** Map to argparse.
+** Are of two types: 1) CsSysParams, 2) CsCmndParams.
+** CsSysParams apply to CsMain and can control behaviour of any Cmnd. Examples are --verbose
+** CsCmndParams apply to Cmnd classes.
+** CsParams can be hierarchical -- Not implemeted yet. For example --if:lan:ipAddr=xx
+** ------ ~FileParam~-s b.fp --------
+** A fpBase+fpName+fto+fpEncType+fpValue+fpAttrs
+** fpBase: is a fileSysBasePath.
+** fpName: is at fileSysBasePath/fpName
+** fto: Every fileSysBasePath/fpName is a File-Tree-Object
+** fpEncType: clearText or encripted
+** fpValue: current value of fpName
+** fpAttrs: other fileVariables in fpName directory related to it. description, limitation
+** ------ ~FpCsParam~-s b.fpIf.FpCsParam --------** ------ FpCsParam-s b.fpIf.FpCsParam --------
+** FpCsParam is a subClass of CsParam-s
+** FpCsParam has a fileParam attribute as an instance of FileParam
+** ------ ~FpCsBase~ b.fpIf.FpCsBase Abstract Class --------
+** Combines  fpsBase+FpCsParam-definitions+fps_manifest
+** Instantiated with fpsBase
+** is also a FILE_TreeObject
+** Includes fps_manifest.
+** fps_manifest is a dict with key as FpCsParam-name and value as either "param" or "base"
+** When fps_manifest indicates that FpCsParam-name is a base, points to FpCsSubBase
+** Params of FpCsSubBase are accessed with get/set/fetch  using subBase:subSubBase cmnd args syntax
+** ------ Usage Of FpCsBase Abstract Class For ~Configuration And Secrets Management~ --------
+** SubClass FpCsBase in your own context. Add, custom base selection machinary
+** Map custom base selection machinary to fpsBasePath in combination with cls name and use fpIf cmnds.
+** Create additional SubClass FpCsBase as subBases and chain them together.
+** Manage the parameters with -i setParam subBase:subSubBase:paramName=paramValue syntax perhaps all in one place
+** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Document Plan" :anchor "" :extraInfo "Python Command Services"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Document Plan:* |]]  Python Command Services  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** Python Command Services -- Based On The Model Of Expectation-Complete-Operations
+** Python Command Services -- A Framework For Abstraction Of Expectation-Complete-Operations
 ** Package it with existing docs. Other Doc being:
 ** metaROS (Remote Operations Services) --- Models, Strategies And Tools
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Services -- Remote Operation" :anchor "" :extraInfo "rpyc"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Services -- Remote Operation_: |]]  rpyc  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Python Command Services -- A Framework For Abstraction Of Expectation-Complete-Operations
+** Package it with existing docs. Other Doc being:
+** metaROS (Remote Operations Services) --- Models, Strategies And Tools
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ROSAP Path Structure" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *ROSAP Path Structure:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+Base For File parameters
+
+|-------------------------+-----------+---------------+-----------------------------------------|
+| Rel Base Path           | Purpose   | Example       | Comments                                |
+|-------------------------+-----------+---------------+-----------------------------------------|
+| /bisos/var/cs/ro/sap    | Path Base |               | Outside of BISOS,  /var/bisos/cs/ro/sap |
+| rosmu (cs main module)  | Selector  | csExamples.cs | Any registered cs                       |
+| perfName                | Selector  | PML-1006      | In BISOS, container name                |
+| rosmuSel                |           | default       | Other instance of rosmu on performer    |
+|-------------------------+-----------+---------------+-----------------------------------------|
+
+List of File Parameters
+
+|--------------------+-------------+-------------+----------------------------------------------------------|
+| FileParameter Name | Typing      |     Example | Comments                                                 |
+|--------------------+-------------+-------------+----------------------------------------------------------|
+| perfIpAddr         | IP-Addr     |   127.0.0.1 | In BISOS, container                                      |
+| perfPortNu         | integer     |      100001 | /bisos/control/services -- corresponding to rosmu/csMain |
+| accessControl      | placeholder | placeholder | placeholder                                              |
+|--------------------+-------------+-------------+----------------------------------------------------------|
+
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END

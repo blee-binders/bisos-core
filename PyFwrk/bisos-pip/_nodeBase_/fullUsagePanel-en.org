@@ -38,6 +38,8 @@
 ** Scope of this panel is bisos Python Development and bisos pip packages.
 ** TODO Add transit and examples as new modules.
 SCHEDULED: <2022-08-28 Sun>
+** TODO In paralell with bisos-pip create a CS-ModulesDev panel.
+SCHEDULED: <2022-08-28 Sun>
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Conceptual Layering Of BISOS Packages" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
