@@ -35,7 +35,7 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** Overview Comes Here.
+** Scope is Cmnd-s Cmnd-Svcs, Params, Args, Inputs.
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "CS Exposed Name Spaces" :anchor "" :extraInfo "cs.Cmnd, cs.main. cs.examples."
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
@@ -50,18 +50,59 @@
 ####+END
 ** +
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Types Of Cmnds Inputs" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Types Of Cmnds Inputs:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** cmndParams:
+** cmndArgs:
+** stdIn:
+** pyPars: (PyInvokations)
+** rtInv:
+** cmndOutcome: Perhaps as outcome of a previous operation
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Cmnd Invokation Origins" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Cmnd Invokation Origins:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** A Cmnd can be invoked (originated) from any of the following sources:
+** 1) Direct invocation executes within the process of the invoker.
+** 2) Remote invocation results in remote-execution.
+** 3) Remote performance.
+** ---------
+** 1.A) Direct Bash/CLI/Command-Line:
+*** From cs.main.xx
+*** rtInv:
+*** cmndOutcome: blank or previous inv
+*** pars, args and stdin
+** 1.B) Direct  Py Invokation:
+*** From A function: with fresh rtInv and fresh cmndOutcome
+*** From A Cmnd: with existing rtInv and existing cmndOutcome
+** 2.A) Remote Bash/CLI/Command-Line: Based on specified SAP
+*** From cs.main.yy
+*** rtInv:
+*** cmndOutcome: blank or previous inv
+*** pars, args and stdin
+** 2.B) Remote Py Invokation:
+*** From A function: with fresh rtInv and fresh cmndOutcome
+*** From A Cmnd: with existing rtInv and existing cmndOutcome
+** 3.A) Remote Performance
+*** Similar to 1.A) but when pars,args, stdin is received through RPyC
+** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "CsParam (param.py), FileParam (fp.py), fpIf.py, FpCsParam" :anchor "" :extraInfo "Config Management Design"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *CsParam (param.py), FileParam (fp.py), fpIf.py, FpCsParam:* |]]  Config Management Design  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** CsParam-s and FileParam-s are independent concepts which can be combined.
-** ------ ~CsParam~-s b.cs.param.CsParam --------
+** ------ ~CmndParam~-s b.cs.param.CmndParam --------
 ** Map to argparse.
 ** Are of two types: 1) CsSysParams, 2) CsCmndParams.
 ** CsSysParams apply to CsMain and can control behaviour of any Cmnd. Examples are --verbose
 ** CsCmndParams apply to Cmnd classes.
-** CsParams can be hierarchical -- Not implemeted yet. For example --if:lan:ipAddr=xx
+** CmndParams can be hierarchical -- Not implemeted yet. Not sure if we should implement  --if:lan:ipAddr=xx
 ** ------ ~FileParam~-s b.fp --------
 ** A fpBase+fpName+fto+fpEncType+fpValue+fpAttrs
 ** fpBase: is a fileSysBasePath.
@@ -71,14 +112,15 @@
 ** fpValue: current value of fpName
 ** fpAttrs: other fileVariables in fpName directory related to it. description, limitation
 ** ------ ~FpCsParam~-s b.fpIf.FpCsParam --------** ------ FpCsParam-s b.fpIf.FpCsParam --------
-** FpCsParam is a subClass of CsParam-s
-** FpCsParam has a fileParam attribute as an instance of FileParam
-** ------ ~FpCsBase~ b.fpIf.FpCsBase Abstract Class --------
+** FpCsParam is a Class of pointing to FileParam an d
+** FpCsParam has a fileParam attribute as an instance of FileParam and a cmndParam as instance of CmndParam
+** fps_manifestDict points to FpCsParam.
+** ------ ~FpCmndParamsBase~ b.fpIf.FpCsBase Abstract Class --------
 ** Combines  fpsBase+FpCsParam-definitions+fps_manifest
 ** Instantiated with fpsBase
 ** is also a FILE_TreeObject
 ** Includes fps_manifest.
-** fps_manifest is a dict with key as FpCsParam-name and value as either "param" or "base"
+** fps_manifest is a dict with key as FpCsParam-name and value as either "FpCsParam" or "base"
 ** When fps_manifest indicates that FpCsParam-name is a base, points to FpCsSubBase
 ** Params of FpCsSubBase are accessed with get/set/fetch  using subBase:subSubBase cmnd args syntax
 ** ------ Usage Of FpCsBase Abstract Class For ~Configuration And Secrets Management~ --------
@@ -112,24 +154,29 @@
 
 Base For File parameters
 
-|-------------------------+-----------+---------------+-----------------------------------------|
-| Rel Base Path           | Purpose   | Example       | Comments                                |
-|-------------------------+-----------+---------------+-----------------------------------------|
-| /bisos/var/cs/ro/sap    | Path Base |               | Outside of BISOS,  /var/bisos/cs/ro/sap |
-| rosmu (cs main module)  | Selector  | csExamples.cs | Any registered cs                       |
-| perfName                | Selector  | PML-1006      | In BISOS, container name                |
-| rosmuSel                |           | default       | Other instance of rosmu on performer    |
-|-------------------------+-----------+---------------+-----------------------------------------|
+|------------------------+-----------+---------------+-----------------------------------------|
+| Rel Base Path          | Purpose   | Example       | Comments                                |
+|------------------------+-----------+---------------+-----------------------------------------|
+| /bisos/var/cs/ro/sap   | Path Base |               | Outside of BISOS,  /var/bisos/cs/ro/sap |
+| rosmu (cs main module) | Selector  | csExamples.cs | Any registered cs                       |
+| perfName               | Selector  | PML-1006      | In BISOS, container name                |
+| perfModel              | Selector  | rpyc          | model of performer -- later Swager
+| rosmuSel               |           | default       | Other instance of rosmu on performer    |
+|------------------------+-----------+---------------+-----------------------------------------|
 
 List of File Parameters
 
-|--------------------+-------------+-------------+----------------------------------------------------------|
-| FileParameter Name | Typing      |     Example | Comments                                                 |
-|--------------------+-------------+-------------+----------------------------------------------------------|
-| perfIpAddr         | IP-Addr     |   127.0.0.1 | In BISOS, container                                      |
-| perfPortNu         | integer     |      100001 | /bisos/control/services -- corresponding to rosmu/csMain |
-| accessControl      | placeholder | placeholder | placeholder                                              |
-|--------------------+-------------+-------------+----------------------------------------------------------|
+|--------------------+-------------+---------------+----------------------------------------------------------|
+| FileParameter Name | Typing      | Example       | Comments                                                 |
+|--------------------+-------------+---------------+----------------------------------------------------------|
+| perfIpAddr         | IP-Addr     | 127.0.0.1     | In BISOS, container                                      |
+| perfPortNu         | integer     | 100001        | /bisos/control/services -- corresponding to rosmu/csMain |
+| accessControl      | placeholder | placeholder   | placeholder                                              |
+| perfModel          | string      | rpyc          | in 2022, rpyc is you only choice                         |
+| perfName           | string      | PML-1006      | See above                                                |
+| rosmu              | string      | csExamples.cs | See above                                                |
+| rosmuSel           | string      | default       | See above                                                |
+|--------------------+-------------+---------------+----------------------------------------------------------|
 
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/

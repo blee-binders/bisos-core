@@ -34,12 +34,13 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>> And Architecture  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** Scope of bisos.crypt is bpoCrypt.py bpoVault.py  bpoGpg.py bpoSym.py
+** Scope of bisos.crypt is  bpoVault.py  bpoGpg.py bpoSym.py
 ** Each BPO has a ~vault repo~  (bpo/vault) and a ~secrets~ (bpo/secrets) repo.
 ** Within bpo/vaults are series of keepass databases. The bpo/vaults/bisos is one such such database.
 ** bpo/vaults/bisos  is created when not there. bpo/vaults/bisos  password is kept outside of this platform.
 ** bpo/vaults/bisos  password is encrypted with bpo/gpgKeys/bisos/vault key.
 ** Encrypted password for bpo/vaults/bisos is kept in bpo/ramz/vaults-bisos.gpg
+** --- Encrypted File Parameters ---
 ** fpsGpGId is stored in fpsVault.
 ** fpsSymCipherKey is created based on fpsSymClearKey (perhaps based on a secret convention)
 ** fpsSymCipherKey is stored in fpsVault.
@@ -93,6 +94,10 @@
 ####+BEGIN: blee:panel:icm:py:intro :outLevel 1 :sep nil :folding? nil :label "cs" :icmName "bpo-vault.cs" :comment "Setting it up and store/retreive" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /cs/ :: [[elisp:(lsip-local-run-command "bpo-vault.cs -i examples")][bpo-vault.cs]]  [[elisp:(lsip-local-run-command "bpo-vault.cs -i visit")][visit]]  [[elisp:(lsip-local-run-command "bpo-vault.cs -i describe")][describe]] *|*  =Setting it up and store/retreive= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
+####+BEGIN: blee:panel:icm:py:cmnd :outLevel 2 :sep nil :folding? nil :label "CS" :icmName "bpo-vault.cs --bpoId=piu_mbFullUsage --vault=fpsVault --passwd=prompt  -i vaultEntryRead fpsKey" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /CS/ :: [[elisp:(lsip-local-run-command "bpo-vault.cs --bpoId=piu_mbFullUsage --vault=fpsVault --passwd=prompt  -i vaultEntryRead fpsKey")][bpo-vault.cs --bpoId=piu_mbFullUsage --vault=fpsVault --passwd=prompt  -i vaultEntryRead fpsKey]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "bisos.crypt.bpoGpg" :anchor "anchor" :extraInfo "using gpg"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _bisos.crypt.bpoGpg_: |]] <<anchor>> using gpg  [[elisp:(org-shifttab)][<)]] E|
