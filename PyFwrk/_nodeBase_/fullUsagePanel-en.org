@@ -45,6 +45,11 @@
 ** TODO dblock of icm:py3:cmnd:classHead with :comment "" should invoke self.cmndDocStrShort(f"""
 ** TODO All of bisos.icm should be absorbed in bisos.bpf
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Link to Relevant Parts Of 120033 And Figure" :anchor "Panel"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Link to Relevant Parts Of 120033 And Figure:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
