@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] |
 "
 FILE="
-*  /This File/ :: /bisos/git/auth/bxRepos/blee-binders/bisos-core/bootstrap/distros/ftoProc.sh
+*  /This File/ :: /bisos/panels/bisos-core/bootstrap/distros/ftoProc.sh
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@"
@@ -41,8 +41,11 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
+distroPhysicalBoot
 distroImages
+distroPostInstall
 distroPhysicalInstall
+distroMediaCreation
 serverToDesktop
 "
 # }}} DBLOCK-leavesList
