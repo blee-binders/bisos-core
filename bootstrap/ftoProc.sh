@@ -44,7 +44,6 @@ leavesList="
 virtualPlatformProvision
 credentialsReset
 siteGitServer
-physicalPlatformProvision
 afterBaseSteps
 bootstrapModel
 "
@@ -63,6 +62,7 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
+hardwareBox
 sysPlatformProvision
 siteRegContainer
 distros

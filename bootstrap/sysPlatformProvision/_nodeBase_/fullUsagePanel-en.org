@@ -25,9 +25,8 @@
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
-*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/sysPlatformProvision/BlankBox/_nodeBase_")][ =BlankBox= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/sysPlatformProvision/chromeOsDebian/_nodeBase_")][ =chromeOsDebian= ]] *|*
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/afterBaseSteps")][afterBaseSteps]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/bootstrapModel")][bootstrapModel]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/credentialsReset")][credentialsReset]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/distros/_nodeBase_")][ =distros= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/physicalPlatformProvision")][physicalPlatformProvision]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/afterBaseSteps")][afterBaseSteps]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/bootstrapModel")][bootstrapModel]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/credentialsReset")][credentialsReset]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/distros/_nodeBase_")][ =distros= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/hardwareBox/_nodeBase_")][ =hardwareBox= ]] *|*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/provisionSelections/_nodeBase_")][ =provisionSelections= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteAssignBox/_nodeBase_")][ =siteAssignBox= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteAssignContainer/_nodeBase_")][ =siteAssignContainer= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteAssignNets/_nodeBase_")][ =siteAssignNets= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteGitServer")][siteGitServer]] *|*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteRegBox/_nodeBase_")][ =siteRegBox= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteRegContainer/_nodeBase_")][ =siteRegContainer= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteRegNets/_nodeBase_")][ =siteRegNets= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/sysPlatformProvision/_nodeBase_")][ =sysPlatformProvision= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/virtualPlatformProvision")][virtualPlatformProvision]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bootstrap/_nodeBase_")][ =bootstrap= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
@@ -39,19 +38,22 @@
 ** +
 ** Install Initial BISOS sysBasePlatform and continue from there
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Provisioning Model (Chain To)" :anchor "" :extraInfo ""
+* +
+* TODO  2 Steps   --- 1) Creates "Base BISOS Platform"  --- 2) Creates Configured BISOS Platform
+* TODO  Capture concept of configuration based on base platform
+* -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Related Sites (Chain To)" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Provisioning Model (Chain To)_: |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Related Sites (Chain To)_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep t :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "BISOS Bootstrap Model" :dest "//bisos/panels/bisos-core/bootstrap/bootstrapModel/"
-* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "Bootstrap Development" :dest "/bisos/panels/development/bisos-dev/bootstrapDev/_nodeBase_"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/bootstrapDev/_nodeBase_")][@ ~Bootstrap Development~ @]]  [[elisp:(org-cycle)][| *=* |]] :: /Agenda/ <<bootstrapDev>> [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "BISOS Bootstrap Model" :dest "//bisos/panels/bisos-core/bootstrap/bootstrapModel/"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bootstrap/bootstrapModel/")][@ ~BISOS Bootstrap Model~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<bootstrapModel>> [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "Bootstrap Provioning Top Node" :dest "/bisos/panels/bisos-core/bootstrap/_nodeBase_"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/_nodeBase_")][@ ~Bootstrap Provioning Top Node~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<bootstrap>> [[elisp:(org-shifttab)][<)]] E|
-####+END
-####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "Physical Platform BISOS Provisioning" :dest "/bisos/panels/bisos-core/bootstrap/physicalPlatformProvision"
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/physicalPlatformProvision")][@ ~Physical Platform BISOS Provisioning~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<physicalPlatformProvision>> [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "Virtual Platform BISOS Provisioning" :dest "/bisos/panels/bisos-core/bootstrap/virtualPlatformProvision"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/virtualPlatformProvision")][@ ~Virtual Platform BISOS Provisioning~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<virtualPlatformProvision>> [[elisp:(org-shifttab)][<)]] E|
@@ -59,6 +61,85 @@
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "System Platform BISOS Provisioning" :dest "//bisos/panels/bisos-core/bootstrap/sysPlatformProvision/_nodeBase_/"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bootstrap/sysPlatformProvision/_nodeBase_/")][@ ~System Platform BISOS Provisioning~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<sysPlatformProvision>> [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Box, System, Platform and Container Definition" :anchor "BoxSysPlatConfTable" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Box, System, Platform and Container Definition_: |]] <<BoxSysPlatConfTable>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+|--------------------------+-----------------------------------------------------------------------------------|
+| Name                     | Definition                                                                        |
+|--------------------------+-----------------------------------------------------------------------------------|
+| <<BlankBox>>             | Computer hardware capable of receiving [[Debian-OS]]                                  |
+| <<Debian-OS>>            | Debian image availabe through debian.org                                          |
+| <<DebianSys>>            | Debian-OS insatlled on [[BlankBox]] + adjusted to not suspend, etc.                   |
+| <<PrepedDebianSys>>      | [[DebianSys]]  + intra in sudoers +  /etc/apt/sources sans cdrom,                     |
+| <<ChromeOsDeb>>          | The virgin Debian OS VM of ChromeBook                                             |
+| <<AndroidBox>>           | A virgin Android Phone or ChromeBook                                              |
+| <<Raw-BISOS>>            | BISOS Software                                                                    |
+| <<Raw-Blee>>             | Blee Software                                                                     |
+| <<Raw-Platform>>         | A [[PrepedDebianSys]] loaded & configured with [[Raw-BISOS]] software & [[Raw-Blee]] software |
+| <<WithBootstrapPanels>>  | Use Blee Bootstrap Panels of [[Raw-Platform]] to choose next steps.                   |
+| <<WithSiteCreatePanels>> | Use Blee SiteCreation Panles of [[Raw-Platform]] to build a site                      |
+| <<Stable-Platform>>      | A [[Raw-Platform]] with software as read-only public git repos.                       |
+| <<Devel-Platform>>       | A [[Raw-Platform]] with software as read-write (developer) public git repos.          |
+| <<Reg-Platform>>         | A [[Raw-Platform]] which has been registered as a Box in Site                         |
+| <<BSO-Container>>        |                                                                                   |
+| <<Pure-Container>>       |                                                                                   |
+| <<Host-Container>>       |                                                                                   |
+| <<Guest-Container>>      |                                                                                   |
+|--------------------------+-----------------------------------------------------------------------------------|
+
+
+** +
+** All "Start State" labels are defined in [[file:/bisos/panels/bisos-core/modelAndTerminology/_nodeBase_/fullUsagePanel-en.org::Systems Terminology]]
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Bootstrappings:: System To Container Evolution Table" :anchor "SysToCntnrEvolTable" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Bootstrappings:: System To Container Evolution Table_: |]] <<SysToCntnrEvolTable>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+|----------------------+-------------------+-------------------------------+-----------------+----------------|
+| Start State          | Environment       | Transition Process            | End State       | Comments       |
+|----------------------+-------------------+-------------------------------+-----------------+----------------|
+| [[BlankBox]]             | No Media          | bootstrap->distros->noMedia   | [[DebianSys]]       | Manual         |
+| [[BlankBox]]             | Media Available   | bootstrap->distros->withMedia | [[DebianSys]]       | Manual         |
+|----------------------+-------------------+-------------------------------+-----------------+----------------|
+| [[DebianSys]]            | Any/All           | [[DebianSys→PrepedDebianSys]]     | [[PrepedDebianSys]] | Manual         |
+|----------------------+-------------------+-------------------------------+-----------------+----------------|
+| [[PrepedDebianSys]]      | No-Site - Deb11   | [[PrepedDeb11Sys→RawPlatform]]    | [[Raw-Platform]]    | Manual         |
+| [[PrepedDebianSys]]      | No-Site - Deb12   | [[PrepedDeb12Sys→RawPlatform]]    | [[Raw-Platform]]    | Manual         |
+|----------------------+-------------------+-------------------------------+-----------------+----------------|
+| [[WithSiteCreatePanels]] | No-Site           | [[WithSiteCreatePanels→Site]]     | Sited           | Blee Panels    |
+| =====================  | =================   | ==============================  | ================  |                |
+| [[PrepedDebianSys]]      | Sited             | [[sysChar -i rawPlatform]]        | [[Raw-Platform]]    | Manager        |
+| [[PrepedDebianSys]]      | Sited             | [[sysChar -i rawDev]]             | [[Devel-Platform]]  | Manager        |
+| [[PrepedDebianSys]]      | Sited             | [[sysChar -i regPlatform]]        | [[Reg-Platform]]    | Manager        |
+|----------------------+-------------------+-------------------------------+-----------------+----------------|
+| [[ChromeOsDeb]]          | Sited             | Place Holder                  |                 |                |
+|----------------------+-------------------+-------------------------------+-----------------+----------------|
+| [[AndroidBox]]           | Sited             | Place Holder                  |                 |                |
+| =====================  | =================   | ==============================  | ================  |                |
+| [[WithBootstrapPanels]]  | Sited             | [[WithBootstrapPanels→Cntnr]]     | Any Cntnr Below |                |
+|----------------------+-------------------+-------------------------------+-----------------+----------------|
+| [[Devel-Platform]]       | Sited             | [[DevelPlatform→StablePlatform]]  | [[Stable-Platform]] | anon git repos |
+| [[Stable-Platform]]      | Sited             | [[StablePlatform→DevelPlatform]]  | [[Devel-Platform]]  | auth git repos |
+| [[Raw-Platform]]         | Sited and No-Site | [[RawPlatform→PrepedDebianSys]]   | [[PrepedDebianSys]] | Undo all       |
+|----------------------+-------------------+-------------------------------+-----------------+----------------|
+| [[Raw-Platform]]         | Sited             | Platform Site Registration    | [[Reg-Platform]]    |                |
+|----------------------+-------------------+-------------------------------+-----------------+----------------|
+| [[Reg-Platform]]         | Existing Char     |                               |                 |                |
+|----------------------+-------------------+-------------------------------+-----------------+----------------|
+| [[BSO-Container]]        | Existing Char     |                               |                 |                |
+|----------------------+-------------------+-------------------------------+-----------------+----------------|
+| [[Pure-Container]]       | Existing Char     |                               |                 |                |
+|----------------------+-------------------+-------------------------------+-----------------+----------------|
+| [[Host-Container]]       | Existing Char     |                               |                 |                |
+|----------------------+-------------------+-------------------------------+-----------------+----------------|
+| [[Guest-Container]]      | Existing Char     |                               |                 |                |
+|----------------------+-------------------+-------------------------------+-----------------+----------------|
+
+
+
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "BISOS Sys Base Provisioning" :anchor "" :extraInfo "Manual -- Prior To Site"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _BISOS Sys Base Provisioning_: |]]  Manual -- Prior To Site  [[elisp:(org-shifttab)][<)]] E|
@@ -66,6 +147,9 @@
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep t :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "Distro Booting and Installation" :dest "/bisos/panels/bisos-core/bootstrap/distros/_nodeBase_/"
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/distros/_nodeBase_/")][@ ~Distro Booting and Installation~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<distros>> [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "=" :anchor "DebianSys→PrepedDebianSys" :extraInfo "intra sudoers + /etc/apt/sources.list"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *=:* |]] <<DebianSys→PrepedDebianSys>> intra sudoers + /etc/apt/sources.list  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "IntraUser: Box Prep -- At Console" :anchor "" :extraInfo "Distro (Debian) Specific"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *IntraUser: Box Prep -- At Console:* |]]  Distro (Debian) Specific  [[elisp:(org-shifttab)][<)]] E|
@@ -103,6 +187,9 @@
 *** or all in one line:
 *** apt-get install -y python3-pip; pip3 install --upgrade bisos.provision; provisionBisos.sh -h -v -n showRun -i sysBasePlatform
 *** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "=" :anchor "PrepedDeb11Sys→RawPlatform" :extraInfo "python3-pip+pip-install+provisionBisos.sh"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *=:* |]] <<PrepedDeb11Sys→RawPlatform>> python3-pip+pip-install+provisionBisos.sh  [[elisp:(org-shifttab)][<)]] E|
+####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "IntraUser: Getting The Default Python Pip" :anchor "" :extraInfo "sudo apt-get install -y python3-pip"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *IntraUser: Getting The Default Python Pip:* |]]  sudo apt-get install -y python3-pip  [[elisp:(org-shifttab)][<)]] E|
 ####+END
@@ -118,6 +205,25 @@
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "IntraUser: Run bisos-provision" :anchor "" :extraInfo "/usr/local/bin/provisionBisos.sh"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *IntraUser: Run bisos-provision:* |]]  /usr/local/bin/provisionBisos.sh  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "=" :anchor "PrepedDeb12Sys→RawPlatform" :extraInfo "python3-pip+pip-install+provisionBisos.sh"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *=:* |]] <<PrepedDeb12Sys→RawPlatform>> python3-pip+pip-install+provisionBisos.sh  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "IntraUser: Install pipx" :anchor "" :extraInfo "sudo apt-get install -y pipx"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *IntraUser: Install pipx:* |]]  sudo apt-get install -y pipx  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "bootstrap" :command "sudo apt-get install -y python3-p" :comment "Produces py3 and pip3 (sys)" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bootstrap/ :: [[elisp:(lsip-local-run-command "sudo apt-get install -y python3-p")][sudo apt-get install -y python3-p]] *|*  =Produces py3 and pip3 (sys)= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "IntraUser: Obatining bisos.provison pip pkg" :anchor "" :extraInfo "sudo pip3 install --upgrade bisos.provision"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *IntraUser: Obatining bisos.provison pip pkg:* |]]  sudo pip3 install --upgrade bisos.provision  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "bootstrap" :command "sudo pip3 install --upgrade bisos.provision" :comment "Produces provisionBisos.sh" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bootstrap/ :: [[elisp:(lsip-local-run-command "sudo pip3 install --upgrade bisos.provision")][sudo pip3 install --upgrade bisos.provision]] *|*  =Produces provisionBisos.sh= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "IntraUser: Run bisos-provision" :anchor "" :extraInfo "/usr/local/bin/provisionBisos.sh"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *IntraUser: Run bisos-provision:* |]]  /usr/local/bin/provisionBisos.sh  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
 ####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "bootstrap" :command "provisionBisos.sh" :comment "To get a menu" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bootstrap/ :: [[elisp:(lsip-local-run-command "provisionBisos.sh")][provisionBisos.sh]] *|*  =To get a menu= *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
@@ -130,23 +236,9 @@
 ####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "bootstrap" :command "echo provisionBisos.sh -h -v -n showRun -i sysBasePlatform" :comment "First Target" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /bootstrap/ :: [[elisp:(lsip-local-run-command "echo provisionBisos.sh -h -v -n showRun -i sysBasePlatform")][echo provisionBisos.sh -h -v -n showRun -i sysBasePlatform]] *|*  =First Target= *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "ByStarUser: ByStar Login And Blee Panel Access" :anchor "" :extraInfo ""
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *ByStarUser: ByStar Login And Blee Panel Access:* |]]    [[elisp:(org-shifttab)][<)]] E|
-####+END
-** +
-** logout of intra user -- ssh exit
-** login as bystar user -- ssh -X bystar@dest
-** emacs-27 &
-** blee-Panels
-** -B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "As box00_bystar: Next Assign Box" :anchor "" :extraInfo ""
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *As box00_bystar: Next Assign Box:* |]]    [[elisp:(org-shifttab)][<)]] E|
-####+END
-** +
-** -B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Container Box ICMs" :anchor "" :extraInfo "On Manager & Target -- Assigned & New Box"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Container Bootstrap ICMs and CSs" :anchor "" :extraInfo "On Manager & Target -- Assigned & New Box"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Container Box ICMs_: |]]  On Manager & Target -- Assigned & New Box  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Container Bootstrap ICMs and CSs_: |]]  On Manager & Target -- Assigned & New Box  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "setCurs" :icmName "echo bisosCurrentsManage.sh -i setParam curTargetBox 192.168.0.xx" :comment "" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /setCurs/ :: [[elisp:(lsip-local-run-command "echo bisosCurrentsManage.sh -i setParam curTargetBox 192.168.0.xx")][echo bisosCurrentsManage.sh -i setParam curTargetBox 192.168.0.xx]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
@@ -163,6 +255,56 @@
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "shIcm" :icmName "sysCharDevel.sh" :comment "Switch to development mode" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /shIcm/ :: [[elisp:(lsip-local-run-command "sysCharDevel.sh -i examples")][sysCharDevel.sh]]  [[elisp:(lsip-local-run-command "sysCharDevel.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "sysCharDevel.sh -i describe")][describe]] *|*  =Switch to development mode= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Platform and Container Development" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Platform and Container Development_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "=" :anchor "RawPlatform→PrepedDebianSys" :extraInfo "Undo Everything (for regression)"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *=:* |]] <<RawPlatform→PrepedDebianSys>> Undo Everything (for regression)  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO Command to run comes here.
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "=" :anchor "DevelPlatform→StablePlatform" :extraInfo "pnl::development->bisos-core->howToBecomeDeveloper"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *=:* |]] <<DevelPlatform→StablePlatform>> pnl::development->bisos-core->howToBecomeDeveloper  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+**  [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/howToBecomeDeveloper")][howToBecomeDeveloper]]
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "=" :anchor "StablePlatform→DevelPlatform" :extraInfo "pnl::development->bisos-core->howToBecomeDeveloper"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *=:* |]] <<StablePlatform→DevelPlatform>> pnl::development->bisos-core->howToBecomeDeveloper  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+**  [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/howToBecomeDeveloper")][howToBecomeDeveloper]]
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "With Panles Evolution of Platforms To Containers" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _With Panles Evolution of Platforms To Containers_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "=" :anchor "RawPlatform→WithSiteCreatePanels" :extraInfo "With Blee Panels, Construct Site"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *=:* |]] <<RawPlatform→WithSiteCreatePanels>> With Blee Panels, Construct Site  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "ByStarUser: ByStar Login And Blee Panel Access" :anchor "" :extraInfo ""
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *ByStarUser: ByStar Login And Blee Panel Access:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** logout of intra user -- ssh exit
+** login as bystar user -- ssh -X bystar@dest
+** emacs-27 &
+** blee-Panels
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "=" :anchor "WithSiteCreatePanels→Site" :extraInfo "pnl::bisos-core->bootstrap->site"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *=:* |]] <<WithSiteCreatePanels→Site>> pnl::bisos-core->bootstrap->site  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO recipe for site construction comes here.
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "=" :anchor "WithBootstrapPanels→Cntnr" :extraInfo "pnl::bisos-core->bootstrap"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *=:* |]] <<WithBootstrapPanels→Cntnr>> pnl::bisos-core->bootstrap  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO recipe for container construction comes here.
+** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "New Box Realize On Manager" :anchor "" :extraInfo "On Manager -- BISOS-Base New-UnAssigned Box"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _New Box Realize On Manager_: |]]  On Manager -- BISOS-Base New-UnAssigned Box  [[elisp:(org-shifttab)][<)]] E|
@@ -201,6 +343,11 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _BISOS Provisioning Selections_: |]]  To Be Obsoleted Perhaps  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "As box00_bystar: Next Assign Box" :anchor "" :extraInfo ""
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *As box00_bystar: Next Assign Box:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BleePanel: Configure BISOS Platform" :anchor "" :extraInfo "Chain to panel"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BleePanel: Configure BISOS Platform:* |]]  Chain to panel  [[elisp:(org-shifttab)][<)]] E|
@@ -211,7 +358,7 @@
 ** B|
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep t :outLevel 3 :model "auto" :foldDesc "auto" :destDesc "auto" :dest "/bisos/panels/bisos-core/bootstrap/configuredBisosPlatform"
 ** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/configuredBisosPlatform")][@ ~PROBLEM: Missing FV /bisos/panels/bisos-core/bootstrap/configuredBisosPlatform/destDesc~ @]]  [[elisp:(org-cycle)][| *=* |]] :: /Agenda/ <<PROBLEM: Missing FV /bisos/panels/bisos-core/bootstrap/configuredBisosPlatform/foldDesc>> [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/

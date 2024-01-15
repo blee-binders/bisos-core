@@ -25,7 +25,7 @@
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
-*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/afterBaseSteps")][afterBaseSteps]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/bootstrapModel")][bootstrapModel]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/credentialsReset")][credentialsReset]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/distros/_nodeBase_")][ =distros= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/physicalPlatformProvision")][physicalPlatformProvision]] *|*
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/afterBaseSteps")][afterBaseSteps]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/bootstrapModel/_nodeBase_")][ =bootstrapModel= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/credentialsReset")][credentialsReset]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/distros/_nodeBase_")][ =distros= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/hardwareBox/_nodeBase_")][ =hardwareBox= ]] *|*
 *   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/provisionSelections/_nodeBase_")][ =provisionSelections= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteAssignBox/_nodeBase_")][ =siteAssignBox= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteAssignContainer/_nodeBase_")][ =siteAssignContainer= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteAssignNets/_nodeBase_")][ =siteAssignNets= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteGitServer")][siteGitServer]] *|*
 *   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteRegBox/_nodeBase_")][ =siteRegBox= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteRegContainer/_nodeBase_")][ =siteRegContainer= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteRegNets/_nodeBase_")][ =siteRegNets= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/sysPlatformProvision/_nodeBase_")][ =sysPlatformProvision= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/virtualPlatformProvision")][virtualPlatformProvision]] *|*
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
@@ -56,49 +56,6 @@
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "BISOS Provioning Model" :dest "../bootstrapModel"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/bootstrapModel")][@ ~BISOS Provioning Model~ @]]  [[elisp:(org-cycle)][| *=* |]] :: /Agenda/ <<bootstrapModel>> [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Bootstrappings:: System To Container -- Evolution Table" :anchor "" :extraInfo ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Bootstrappings:: System To Container -- Evolution Table_: |]]    [[elisp:(org-shifttab)][<)]] E|
-####+END
-
-|---------------------+-----------------+------------------------------+-----------------+---------------------------|
-| Start State         | Environment     | Transition Process           | End State       | Comments                  |
-|---------------------+-----------------+------------------------------+-----------------+---------------------------|
-| <<BlankBox>>        | No Media        | [[Deb Distro Media Make & Inst]] | [[DebianBox]]       |                           |
-| <<BlankBox>>        | Media Available | [[Deb Distro Install]]           | [[DebianBox]]       | end: intra acct           |
-|---------------------+-----------------+------------------------------+-----------------+---------------------------|
-| <<DebianBox>>       | Any/All         | [[Deb Distro Post Install]]      | [[PrepedDebianBox]] | end: don't suspend        |
-|---------------------+-----------------+------------------------------+-----------------+---------------------------|
-| <<PrepedDebianBox>> | No-Site         | [[Obtain pipx bisos & install]]  | [[Raw-Platform]]    | end: box00 + bystar+ blee |
-| <<PrepedDebianBox>> | Sited           | [[sysChar -i rawPlatform]]       | [[Raw-Platform]]    | end: box00 + bystar+ blee |
-| <<PrepedDebianBox>> | Sited           | [[sysChar -i rawDev]]            | [[Dev-Platform]]    | end: box00 + bystar+ blee |
-| <<PrepedDebianBox>> | Sited           | [[sysChar -i regPlatform]]       | [[Reg-Platform]]    | end: box00 + bystar+ blee |
-|---------------------+-----------------+------------------------------+-----------------+---------------------------|
-| <<ChromeOsDeb>>     | Sited           |                              |                 |                           |
-|---------------------+-----------------+------------------------------+-----------------+---------------------------|
-| <<AndroidBox>>      | Sited           |                              |                 |                           |
-| ===================== | ================= | ============================== | ================  | ==========================  |
-| <<Raw-Platform>>    | Sited           | [[Platform Site Registion]]      | [[Reg-Platform]]    |                           |
-|---------------------+-----------------+------------------------------+-----------------+---------------------------|
-| <<Anon-Platform>>   | Sited           | [[Become A BISOS Developer]]     | [[Dev-Platform]]    | End: auth git repos       |
-| <<Dev-Platform>>    | Sited           | [[Anonymous BISOS Git Repos]]    | [[Anon-Platform]]   | End: anon git repos       |
-|---------------------+-----------------+------------------------------+-----------------+---------------------------|
-| <<Reg-Platform>>    | Existing Char   |                              |                 |                           |
-|---------------------+-----------------+------------------------------+-----------------+---------------------------|
-| <<BSO-Container>>   | Existing Char   |                              |                 |                           |
-|---------------------+-----------------+------------------------------+-----------------+---------------------------|
-| <<Pure-Container>>  | Existing Char   |                              |                 |                           |
-|---------------------+-----------------+------------------------------+-----------------+---------------------------|
-| <<Host-Container>>  | Existing Char   |                              |                 |                           |
-|---------------------+-----------------+------------------------------+-----------------+---------------------------|
-| <<Guest-Container>> | Existing Char   |                              |                 |                           |
-|---------------------+-----------------+------------------------------+-----------------+---------------------------|
-
-
-
-** +
-** All "Start State" labels are defined in [[file:/bisos/panels/bisos-core/modelAndTerminology/_nodeBase_/fullUsagePanel-en.org::Systems Terminology]]
-** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Deb Distro Media Create and Install" :anchor "Deb Distro Media Make & Inst" :extraInfo "Start: [[BlankBox]]"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Deb Distro Media Create and Install:* |]] <<Deb Distro Media Make & Inst>> Start: [[BlankBox]]  [[elisp:(org-shifttab)][<)]] E|
