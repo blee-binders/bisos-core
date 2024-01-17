@@ -1,0 +1,322 @@
+* B|
+####+BEGIN: bxPanel:common/title-plus
+#+title: bisos-core/modelAndTerminology
+#+roam_tags: branch
+#+roam_key: panels/bisos-core/modelAndTerminology
+[[roam:panels/bisos-core]]
+####+END
+####+BEGIN: blee:bxPanel:topPanelControls
+*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
+**  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
+**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
+**  This File :: *= /bisos/panels/bisos-core/modelAndTerminology/_nodeBase_/fullUsagePanel-en.org =*
+* /file-truename:/  /bisos/git/auth/bxRepos/blee-binders/bisos-core/modelAndTerminology/_nodeBase_/fullUsagePanel-en.org
+*  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
+**  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
+**  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
+**  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]  E|
+####+END
+####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: panels/bisos-core -- modelAndTerminology~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
+* +
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/modelAndTerminology/modelAndTerminology")][modelAndTerminology]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/modelAndTerminology/universalBisos")][universalBisos]] *|*
+*                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/BashIcmFwrk/_nodeBase_")][ =BashIcmFwrk= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PALS/_nodeBase_")][ =PALS= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/_nodeBase_")][ =PyCsFwrk= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/adoptedComponents/_nodeBase_")][ =adoptedComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/baseDirs/_nodeBase_")][ =baseDirs= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bisosAccts/_nodeBase_")][ =bisosAccts= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/_nodeBase_")][ =bootstrap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/_nodeBase_")][ =bxeAndBxo= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/disks/_nodeBase_")][ =disks= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/groupedComponents/_nodeBase_")][ =groupedComponents= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/maintainInterim/_nodeBase_")][ =maintainInterim= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/modelAndTerminology/_nodeBase_")][ =modelAndTerminology= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/platform/_nodeBase_")][ =platform= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/projs/_nodeBase_")][ =projs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/registrations/_nodeBase_")][ =registrations= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sites/_nodeBase_")][ =sites= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sync/_nodeBase_")][ =sync= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/_nodeBase_")][ =virtualization= ]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Overview" :anchor "Panel"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** ByStar Internet Service Operating System (BISOS)
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar DE As An Applied Math Theory" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *ByStar DE As An Applied Math Theory:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** In a sense, a digital ecosystem reflects specific arrangements of information and software and services.
+** It is probably possible to use applied math to define a digital ecosystem.
+** With ByStar in terms of formality of introduction of concepts and precision of the introduced vocabulary
+** our aim is to come as close to the style of applied math definition as possible.
+** ByStar DE exists in the  context of today's internet and FLOSS software technologies.
+** As necessary ByStar's use of these technologies is expressed in ByStar's context.
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "The Universal BISOS" :anchor "" :extraInfo "A Convivial Layer Over Unix"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *The Universal BISOS:* |]]  A Convivial Layer Over Unix  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Blee: A Unified Usage Environment" :anchor "" :extraInfo "/bisos/blee"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Blee: A Unified Usage Environment:/ |]]  /bisos/blee  [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** 
+*** Development Environment, Operations Management, Software-Service Integration, User Environment
+*** COMEEGA, Emacs-IDEs, Org-Mode
+*** 
+*** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Framework For Service Components Integration" :anchor "" :extraInfo "/bisos/core"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Framework For Service Components Integration:/ |]]  /bisos/core  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "BISOS Programming Languages And Paradigms" :anchor "" :extraInfo "Bash ICM, Py ICM and COMEEGA"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /BISOS Programming Languages And Paradigms:/ |]]  Bash ICM, Py ICM and COMEEGA  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Adopted Components" :anchor "" :extraInfo "/bisos/core"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Adopted Components:/ |]]  /bisos/core  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "BxE and BxO Paradigm" :anchor "" :extraInfo "/bxo/iso"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /BxE and BxO Paradigm:/ |]]  /bxo/iso  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Textual Content Creation And Self-Publication Facilities" :anchor "" :extraInfo "/lcnt"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Textual Content Creation And Self-Publication Facilities:/ |]]  /lcnt  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Multi-Media Content Creation And Self-Publication Facilities" :anchor "" :extraInfo "/lcnt"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Multi-Media Content Creation And Self-Publication Facilities:/ |]]  /lcnt  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Autonomous Services Extentions" :anchor "" :extraInfo "/bisos/ase"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Autonomous Services Extentions:/ |]]  /bisos/ase  [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** +
+*** ByName Autonomous Deligated 
+*** B| 
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "BISOS Capabilities Extentions" :anchor "" :extraInfo "/bisos/ce"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /BISOS Capabilities Extentions:/ |]]  /bisos/ce  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar Realms" :anchor "" :extraInfo "Place Holder -- For Now"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *ByStar Realms:* |]]  Place Holder -- For Now  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** ByStar Realms represent a strict hierarchy for inheritance and for gathering.
+ByStar Realms represent a strict hierarchy and order for specificcation and customization inheritance and for
+gathering.
+
+"collective"         ;; ByStar Digital Ecosystem
+"nation"
+"district"   ;; eg service provider
+"site"
+"projs"
+"platform"
+"user"
+** Within each of those a priority order number is at work
+** Realms apply to "gatherings" --- ByStar gatherings are:
+*** +
+*** bashrc (gathering)
+*** bleePanel (gathering)
+*** params (inherited)
+*** -
+** BPO Realm Base  --- ~bpo/realm/panel/~
+** Default BISOS Realms -- /bisos/git/bxRepos/bisos/gatherer
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "System, Platform, BpoContainer" :anchor "Systems Terminology" :extraInfo "BSOs vs BPOs (Static vs Portable)"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *System, Platform, BpoContainer:* |]] <<Systems Terminology>> BSOs vs BPOs (Static vs Portable)  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** A /Box/, is computer hardware without regard to its OS.
+** /BlankBox/:: A blank computer, capable of becomeing a DebianBox
+** /DebianBox/:: A computer loaded with Debian
+** /ChromeBox/:: A Google ChromeBook
+** /ChromeOsDeb::/ Debian VM in ChromeBox
+** /AndroidBox::/ An Android device (ChromeBook or Phone) capable of Termux and Emacs
+** A /System/, is a box plus an OS which can be of various types. A BISOS Sys, An Alien Sys or a Dedicated Sys
+** /<<BISOS-System>>/:: Any of: DebianBox, A ChromBox or an AndroidBox, which can become a Platform
+** /Alien System/:: A windows11, WinXp, etc
+** /Dedicated System/:: A printer, a scanner
+** /Unix System/: A computer loaded with Unix that is other than Debian
+** /<<Raw-Platform>>::/ A [[BISOS-System]] loaded with BISOS Software as box00-bystar. Not registered in a BISOS-Site.
+** /<<Reg-Platform>>::/ A [[Raw-Platform]]  registered in a BISOS-Site.
+** /<<Platform>>::/ is either of [[BSO-Platform]] or [[BPO-Container]]
+** /<<BSO-Platform>>::/ is Debian + BISOS Environment (basic accounts, groups, software) + Bootstraping BSO
+** BSO:: (BISOS Static Object) BPO without a git
+** Bootstraping BSO:: Initial BSOs intended to be replaced with BPOs after RimsCreation
+** Orphand BSO:: BSO's emulating BPOs for Facilities and Services
+** Orphan Platform:: Platform + Orphand BSOs
+** RimsCreation:: Process of Creating: Registrars, RimGitServer, Replacement of BSOs with BPOs
+** RimsResources:: Registrars, RimGitServer
+** /<<BPO-Container>>/ is Platform + BPOs (through BISOS-Site) -- See
+** ====
+** /Host/:: Qualifier for System in Virtialization host context
+** /Guest/:: Qualifier for System in Virtialization guest context
+** /Non-Virtualized/:: (/Pure/) Qualifier for System when not virtialized.
+** ====
+** /UsageEnvironmentPlatform/::
+** /ServiceEnvironmentPlatform/::
+** ====
+**  what are other names for computer
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS Platform Layerings" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS Platform Layerings:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** A)  Bootstrapping  /BSO-Platform/
+** B)  BISOS Basic Site Construction
+** C)  Pure and Host /BPO-Platform/ Factory
+** D)  Virtualization Foundation
+** E)  Virtualized BPO-Platform Factory
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS Usage Environment Layerings" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS Usage Environment Layerings:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS Service Environment Layerings" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS Service Environment Layerings:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar Network Abodes --- Rings, Edge and Rims --- Portable and Transferable" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *ByStar Network Abodes --- Rings, Edge and Rims --- Portable and Transferable:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Portability is movement of information  between BpoContainers and  is through BPOs.
+** Transferability is relocation of services between Rings, Between Rims and between Exposed Rim and Rings.
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PFC and PSC" :anchor "" :extraInfo "Portable Facilities/Services Capabilities"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PFC and PSC:* |]]  Portable Facilities/Services Capabilities  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Portable Facilities Capability  (PFC) = usage-BPO + Facility Software (Examples: MARMEE, LCNT)
+** --- Perhaps Not Needed separate from PALS -- Portable Service Capability (PSC) = paai-BPO + Service Software
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PALS and PAAI" :anchor "" :extraInfo "Possession Assertion Autonomous Identity"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PALS and PAAI:* |]]  Possession Assertion Autonomous Identity  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Possesion Assertable Libre-Halaal Service (PALS) = paai-BPO + Service Software + PAAI-Framework ()
+** Possesion Assertable Autonomous Identity (PAAI) = PAAI-Framework + domainName + registrations + PALSs
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISDF" :anchor "" :extraInfo "BISOS Development Framework"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISDF:* |]]  BISOS Development Framework  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+| Adopted Packages  | Label     | [[ignore][File]]  | [[ignore][Panel]] | Used For | Description                     |
+|-------------------+-----------+-------+-------+----------+---------------------------------|
+| deprecated        | org-begin |       |       |          | COMEEGA triggers                |
+| logging           | bpf.fv    | [[Path ][fv.py]] | [[Path ][fv.py]] | Many     | Simple configurations           |
+
+
+
+| Construct         | Label       | [[ignore][File]]   | [[ignore][Panel]]  | Used For | Description                        |
+|-------------------+-------------+--------+--------+----------+------------------------------------|
+| Org-Mode Comments | org-begin   |        |        |          | COMEEGA triggers                   |
+| File Variables    | bpf.fv      | [[Path ][fv.py]]  | [[Path ][fv.py]]  | Many     | Simple configurations              |
+| File Tree Objects | bpf.fto     | none   | none   | Common   | Auto walkthrough of leaf/branch    |
+| File Parameters   | bpf.fp      | none   | none   | Common   | Common configurations              |
+|-------------------+-------------+--------+--------+----------+------------------------------------|
+| Operation Outcome | OpOutcome   | none   | none   | Common   | Result + Error + Failure + Reports |
+| Operation         | Op          | none   | none   | Common   | Receives and Returns OpOutcome     |
+| Wrapped Operation | OpW         | none   | none   | Common   | An Operation invoked from a CS     |
+| Command Services  | CmndSvc     | none   | none   | Common   | Expecation Complete Operation      |
+| CS-Parameter      | CS_Param    | NOTYET | NOTYET | common   | Also maps to FPs                   |
+| CS-Args           | CS_args     |        |        |          | CS Args specification              |
+| CS-examples       | cs_examples |        |        |          |                                    |
+| CS-examples-niche | niche       |        |        |          |                                    |
+|-------------------+-------------+--------+--------+----------+------------------------------------|
+| Operation Outcome | LOG_        | none   | none   | Common   | Result + Error + Failure + Reports |
+| Operation Outcome | EH_         | none   | none   | Common   | Result + Error + Failure + Reports |
+| Operation Outcome | TM_         | none   | none   | Common   | Result + Error + Failure + Reports |
+| Operation Outcome | NOTE_       | none   | none   | Common   | Result + Error + Failure + Reports |
+|-------------------+-------------+--------+--------+----------+------------------------------------|
+| Currents          | cur         | none   | none   | Common   | Result + Error + Failure + Reports |
+| SubProc           | subProc     | none   | none   | Common   | Result + Error + Failure + Reports |
+| Directories       | bpf.dir     | none   | none   | Common   | Result + Error + Failure + Reports |
+| pyRunAs           | as_root_    | none   | none   | Common   | bpf.as_root_writeToFile            |
+|                   |             |        |        |          |                                    |
+
+** ~BISDF Key Concepts And Terminology~ (ByStar Internet Services Development Framework)
+** Typed Function   --- Programming Language Construct (typed args and typed return values)
+** Operation  --- (Arguments, Result, Error) A function that returns An OpOutcome and accepts an opOutcome as an argument and whose arguments are typed.
+** Operation opOutcome  --- Results, Status, Errors, Failures, Reports
+** Expectation-Complete-Operation --- An Operation capable of reporting all of its inputs and of its OpOutcome.
+Expectation-Complete-Operation can be invoked in such a way that they do not invoke the operation but that instead
+they report their expected parameters and their expected Outcome.
+** Command-Service --- An Expectation-Complete-Operation Which can be invoked as a command, a service or an operation.
+** A Command, is invocation of a Command-Service from the command line.
+** A Service Performer, is invocation of a Command-Service through Remote-Operations machinary
+** A Service Invoker, is invocation of a Command-Service that produces inputs for a Remote-Operations machinary and which then receives the Outcome.
+** An Expectation-Complete-Operation-User-Interface --- A User-Interface that through the use of Expectation-Complete-Operation
+can produce a generic but complete interface for invocation as a command or a service invoker.
+** Wrapped-Operations --- Operations invoked during the invokation of an Expectation-Complete-Operation.
+** ~BISDF Fundamental Constructs~ (ByStar Internet Services Development Framework)
+Bound to Python --- COMEEGA ---
+** Classes labeled as "Abstract" are to be sub-classed. They are Abstract and not usable as raw.
+** bisos-pip/bpf/op.py
+** -
+**      ============
+####+BEGIN: blee:bxPanel:separator :outLevel 1
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+####+END
+####+BEGIN: blee:bxPanel:evolution
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *Maintenance:* | ]]  [[elisp:(blee:menu-sel:agenda:popupMenu)][||Agenda]]  <<Evolution>>  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Notes, Ideas, Tasks, Agenda" :anchor "Tasks"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** TODO Some Idea
+####+BEGIN: blee:bxPanel:evolutionMaintainers
+** [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolutionMaintainers)][dbf]]
+** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>
+***  Problem Report                       ::   [[elisp:(find-file "")][Send debbug Email]]
+***  Maintainers                          ::   [[bbdb:Mohsen.*Banan]]  :: http://mohsen.1.banan.byname.net  E|
+####+END
+* B|
+####+BEGIN: blee:bxPanel:footerPanelControls
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+* /Footer Controls/ ::  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:footerOrgParams
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerOrgParams)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Org-Mode Local Params: =* | ]]
+#+STARTUP: overview
+#+STARTUP: lognotestate
+#+STARTUP: inlineimages
+#+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
+#+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
+#+CATEGORY: N:modelAndTerminology
+
+####+END
+####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerEmacsParams)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
+# Local Variables:
+# eval: (setq-local ~selectedSubject "noSubject")
+# eval: (setq-local ~primaryMajorMode 'org-mode)
+# eval: (setq-local ~blee:panelUpdater nil)
+# eval: (setq-local ~blee:dblockEnabler nil)
+# eval: (setq-local ~blee:dblockController "interactive")
+# eval: (img-link-overlays)
+# eval: (set-fill-column 115)
+# eval: (blee:fill-column-indicator/enable)
+# eval: (bx:load-file:ifOneExists "./panelActions.el")
+# End:
+
+####+END
