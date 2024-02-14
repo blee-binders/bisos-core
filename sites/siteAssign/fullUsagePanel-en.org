@@ -59,7 +59,7 @@
 ####+END:
 ####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "sudo dmidecode -s system-uuid" :results "all" :comment "When VM, you get Virtualization Tech" :afterComment "-- -s system-manufacturer"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "sudo dmidecode -s system-uuid")][sudo dmidecode -s system-uuid]] *|*  =When VM, you get Virtualization Tech= *|*  -- -s system-manufacturer  |
-Last Executed at: 202401-10-22:04:17  by: bystar on: PML-1006.intra
+Last Executed at: 202401-17-12:00:55  by: bystar on: PML-1006.intra
 ----------------------------
 4c4c4544-0034-3310-8051-b5c04f335832
 

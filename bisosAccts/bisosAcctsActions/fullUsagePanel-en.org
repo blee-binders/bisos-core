@@ -41,7 +41,7 @@
 ####+END
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep t :outLevel 2 :model "auto" :foldDesc "Model" :destDesc "Model And Concepts Of BISOS Accounts" :dest "/bisos/panels/bisos-model/bisosAccts"
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-model/bisosAccts")][@ ~Model And Concepts Of BISOS Accounts~ @]]  [[elisp:(org-cycle)][| *=* |]] :: /Agenda/ <<Model>> [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "BSIP ICMs And Libraries Introductions" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/

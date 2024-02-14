@@ -44,7 +44,7 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Related Panels (Chain To)_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "Become a Github BISOS Developer" :dest "/bisos/panels/bisos-dev/howToBecomeDeveloper"
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-dev/howToBecomeDeveloper")][@ ~Become a Github BISOS Developer~ @]]  [[elisp:(org-cycle)][| *=* |]] :: /Agenda/ <<PROBLEM: Missing FV /bisos/panels/bisos-dev/howToBecomeDeveloper/foldDesc>> [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Realted ICMs Introductions" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/

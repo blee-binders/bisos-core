@@ -36,6 +36,24 @@
 ** +
 ** Overview Comes Here.
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Concept of XXX" :anchor "conceptOfXXX" :extraInfo "YYY"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Concept of XXX:* |]] <<conceptOfXXX>> YYY  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "CS Introductions" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _CS Introductions_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:py:intro :outLevel 1 :sep nil :folding? nil :label "PyCS" :icmName "csSiteRegBox.cs" :comment "RO Service Invoke/Perform" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /PyCS/ :: [[elisp:(lsip-local-run-command "csSiteRegBox.cs -i examples")][csSiteRegBox.cs]]  [[elisp:(lsip-local-run-command "csSiteRegBox.cs -i visit")][visit]]  [[elisp:(lsip-local-run-command "csSiteRegBox.cs -i describe")][describe]] *|*  =RO Service Invoke/Perform= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Common Usage" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Common Usage_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:py:cmnd :outLevel 1 :sep nil :folding? nil :label "Direct" :icmName "csSiteRegBox.cs -v 30 -i perf_boxesList" :comment "Can take some time to run" :afterComment "Be patient"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Direct/ :: [[elisp:(lsip-local-run-command "csSiteRegBox.cs -v 30 -i perf_boxesList")][csSiteRegBox.cs -v 30 -i perf_boxesList]] *|*  =Can take some time to run= *|*  Be patient  [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END

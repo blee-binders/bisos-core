@@ -26,9 +26,8 @@
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/afterBaseSteps")][afterBaseSteps]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/bootstrapModel")][bootstrapModel]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/credentialsReset")][credentialsReset]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/distros/_nodeBase_")][ =distros= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/hardwareBox/_nodeBase_")][ =hardwareBox= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/provisionSelections/_nodeBase_")][ =provisionSelections= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteAssignBox/_nodeBase_")][ =siteAssignBox= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteAssignContainer/_nodeBase_")][ =siteAssignContainer= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteAssignNets/_nodeBase_")][ =siteAssignNets= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteGitServer")][siteGitServer]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteRegBox/_nodeBase_")][ =siteRegBox= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteRegContainer/_nodeBase_")][ =siteRegContainer= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteRegNets/_nodeBase_")][ =siteRegNets= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/sysPlatformProvision/_nodeBase_")][ =sysPlatformProvision= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/virtualPlatformProvision")][virtualPlatformProvision]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/afterBaseSteps")][afterBaseSteps]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/bootstrapModel/_nodeBase_")][ =bootstrapModel= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/credentialsReset")][credentialsReset]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/distros/_nodeBase_")][ =distros= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/hardwareBox/_nodeBase_")][ =hardwareBox= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/provisionSelections/_nodeBase_")][ =provisionSelections= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/registrations/_nodeBase_")][ = /<registrations>/ = ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteGitServer")][siteGitServer]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/sysPlatformProvision/_nodeBase_")][ =sysPlatformProvision= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/virtualPlatformProvision")][virtualPlatformProvision]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bootstrap/_nodeBase_")][ =bootstrap= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
@@ -39,6 +38,7 @@
 ** Install Initial BISOS sysBasePlatform and continue from there
 ** B|
 * +
+* Rename to SysCharEvolution
 * TODO  2 Steps   --- 1) Creates "Base BISOS Platform"  --- 2) Creates Configured BISOS Platform
 * TODO  Capture concept of configuration based on base platform
 * -B|
@@ -61,7 +61,46 @@
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "System Platform BISOS Provisioning" :dest "//bisos/panels/bisos-core/bootstrap/sysPlatformProvision/_nodeBase_/"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bootstrap/sysPlatformProvision/_nodeBase_/")][@ ~System Platform BISOS Provisioning~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<sysPlatformProvision>> [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Box, System, Platform and Container Definition" :anchor "BoxSysPlatConfTable" :extraInfo ""
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "user" :icmName "sysCharRawDeploy.sh" :comment "" :afterComment "<<sysCharRawDeploy.sh>> [[sysCharRawDeploy]]"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /user/ :: [[elisp:(lsip-local-run-command "sysCharRawDeploy.sh -i examples")][sysCharRawDeploy.sh]]  [[elisp:(lsip-local-run-command "sysCharRawDeploy.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "sysCharRawDeploy.sh -i describe")][describe]] *|*  == *|*  <<sysCharRawDeploy.sh>> [[sysCharRawDeploy]] [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "user" :icmName "sysCharBoxDeploy.sh" :comment "Reged Container" :afterComment "<<sysCharBoxDeploy.sh>>"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /user/ :: [[elisp:(lsip-local-run-command "sysCharBoxDeploy.sh -i examples")][sysCharBoxDeploy.sh]]  [[elisp:(lsip-local-run-command "sysCharBoxDeploy.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "sysCharBoxDeploy.sh -i describe")][describe]] *|*  =Reged Container= *|*  <<sysCharBoxDeploy.sh>> [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "user" :icmName "sysCharBoxDeploy.sh" :comment "Reged Container" :afterComment "<<sysCharBoxDeploy.sh>>"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /user/ :: [[elisp:(lsip-local-run-command "sysCharBoxDeploy.sh -i examples")][sysCharBoxDeploy.sh]]  [[elisp:(lsip-local-run-command "sysCharBoxDeploy.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "sysCharBoxDeploy.sh -i describe")][describe]] *|*  =Reged Container= *|*  <<sysCharBoxDeploy.sh>> [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "sysChar ICM/CS Facilities Table" :anchor "sysCharFacilities" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _sysChar ICM/CS Facilities Table_: |]] <<sysCharFacilities>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
+| Name                        | Link | User     | Comments                                                                              |
+|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
+| <<sysCharDeployRaw>>        | [[sysCharRawDeploy.sh][🔗]]   | Lcl+Mngr | Produces: [[RawPlatform]]  ( Common [[Raw-BISOS]] + [[Raw-Blee]] )                                |
+| <<sysCharDeployBox>>        | [[sysCharBoxDeploy.sh][🔗]]   | Lcl+Mngr | Produces: *Realized*  [[RegPlatform]] (sysChar-bpoId)                                     |
+| <<sysCharDeployBox>>        | [[sysCharBoxDeploy.sh][🔗]]   | Lcl+Mngr | Produces: *Materialized*  [[RegPlatform]] (identity Assigned)                             |
+|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
+| <<sysCharMaterializeBox>>   |      | Local    | Convenience Layer for *Box* Materialization                                           |
+| <<sysCharMaterializeGuest>> |      | Local    | Primary Layer for *Guest* Materialization                                             |
+|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
+| <<sysCharRealize>>          |      | infra    | Registers and Creates sysCharBpo                                                      |
+| <<sysCharActivate>>         |      | infra    | Activates an existing sysCharBpo (re-creation and mgmt)                               |
+| <<sysCharIdentity>>         |      | infra    | Materializes identity based on sysCharBpo                                             |
+| <<sysCharPreps>>            |      | infra    | Prepares a *HOST* for guest creation (vagrants)                                       |
+|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
+| KVM                         |      |          | NOTYET, KVM Panel                                                                     |
+| Vagrant                     |      |          | [[file:/bisos/panels/bisos-core/virtualization/vagrant/_nodeBase_/fullUsagePanel-en.org]] |
+|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
+
+
+** +
+** All "Start State" labels are defined in [[file:/bisos/panels/bisos-core/modelAndTerminology/_nodeBase_/fullUsagePanel-en.org::Systems Terminology]]
+** -B|
+##+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Box, System, Platform and Container Definition" :anchor "BoxSysPlatConfTable" :extraInfo ""
+
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Box, System, Platform and Container Definition_: |]] <<BoxSysPlatConfTable>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
@@ -83,7 +122,6 @@
 | <<Stable-Platform>>      | A [[Raw-Platform]] with software as read-only public git repos.                       |
 | <<Devel-Platform>>       | A [[Raw-Platform]] with software as read-write (developer) public git repos.          |
 | <<Reg-Platform>>         | A [[Raw-Platform]] which has been registered as a Box in Site                         |
-| <<BSO-Container>>        |                                                                                   |
 | <<Pure-Container>>       |                                                                                   |
 | <<Host-Container>>       |                                                                                   |
 | <<Guest-Container>>      |                                                                                   |
@@ -93,9 +131,10 @@
 ** +
 ** All "Start State" labels are defined in [[file:/bisos/panels/bisos-core/modelAndTerminology/_nodeBase_/fullUsagePanel-en.org::Systems Terminology]]
 ** -B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Bootstrappings:: System To Container Evolution Table" :anchor "SysToCntnrEvolTable" :extraInfo ""
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Genesis:: System To Container Evolution Model Table" :anchor "SysToCntnrEvolTable" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Bootstrappings:: System To Container Evolution Table_: |]] <<SysToCntnrEvolTable>>   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Genesis:: System To Container Evolution Model Table_: |]] <<SysToCntnrEvolTable>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 
 |----------------------+-------------------+-------------------------------+-----------------+----------------|
@@ -127,11 +166,10 @@
 |----------------------+-------------------+-------------------------------+-----------------+----------------|
 | [[Raw-Platform]]         | Sited             | Platform Site Registration    | [[Reg-Platform]]    |                |
 |----------------------+-------------------+-------------------------------+-----------------+----------------|
-| [[Reg-Platform]]         | Existing Char     |                               |                 |                |
+| [[Reg-Platform]]         | Existing Char     | fgcKvmHostingSw.sh            | [[Pure-Container]]  | Box Based      |
+| [[Reg-Platform]]         | Existing Char     | fgcKvmHostingSw.sh            | [[Host-Container]]  | Box Based      |
 |----------------------+-------------------+-------------------------------+-----------------+----------------|
-| [[BSO-Container]]        | Existing Char     |                               |                 |                |
-|----------------------+-------------------+-------------------------------+-----------------+----------------|
-| [[Pure-Container]]       | Existing Char     |                               |                 |                |
+| [[Pure-Container]]       | Existing Char     |                               | FunctionsReady  | Preped         |
 |----------------------+-------------------+-------------------------------+-----------------+----------------|
 | [[Host-Container]]       | Existing Char     |                               |                 |                |
 |----------------------+-------------------+-------------------------------+-----------------+----------------|
@@ -309,15 +347,18 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _New Box Realize On Manager_: |]]  On Manager -- BISOS-Base New-UnAssigned Box  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** +
+** Do not build on Target other than for development. Always us "On Manager"
+** -B|
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep t :folding? nil :label "Cmd" :icmName "sysCharDeploy.sh -h -v -n showRun -p targetName=curTargetBox -i boxSiteBasePlatform" :comment "" :afterComment ""
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "sysCharDeploy.sh -h -v -n showRun -p targetName=curTargetBox -i boxSiteBasePlatform")][sysCharDeploy.sh -h -v -n showRun -p targetName=curTargetBox -i boxSiteBasePlatform]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "New Box Realize On Target" :anchor "" :extraInfo "On Target -- BISOS-Base New-UnAssigned Box"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "New Box ~(DEVELOPMENT ONLY)~ Realize On Target" :anchor "" :extraInfo "On Target -- BISOS-Base New-UnAssigned Box"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _New Box Realize On Target_: |]]  On Target -- BISOS-Base New-UnAssigned Box  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _New Box ~(DEVELOPMENT ONLY)~ Realize On Target_: |]]  On Target -- BISOS-Base New-UnAssigned Box  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep t :folding? nil :label "SelCmd" :icmName "echo ssh -X 192.168.0.xx" :comment "ssh to target" :afterComment "then run below cmds"
+w####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep t :folding? nil :label "SelCmd" :icmName "echo ssh -X 192.168.0.xx" :comment "ssh to target" :afterComment "then run below cmds"
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /SelCmd/ :: [[elisp:(lsip-local-run-command "echo ssh -X 192.168.0.xx")][echo ssh -X 192.168.0.xx]] *|*  =ssh to target= *|*  then run below cmds  [[elisp:(org-shifttab)][<)]] E|
 ####+END:

@@ -58,7 +58,6 @@ _CommentEnd_
 # {{{ DBLOCK-nodesList
 nodesList="
 _nodeBase_
-bisos.gmail-oauth2-facilities
 bisos.qmail
 bisos.lcnt
 bisos.marmee

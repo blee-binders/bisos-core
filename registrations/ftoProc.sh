@@ -57,7 +57,9 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
+pip-bisos.siteRegistrars
 _nodeBase_
+pip-bisos.regfps
 "
 # }}} DBLOCK-nodesList
 ####+END:

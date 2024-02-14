@@ -44,7 +44,7 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Related Chained Panels_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "BISOS Provioning Model" :dest "/bisos/panels/bisos-model/bisosProvisioning"
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-model/bisosProvisioning")][@ ~BISOS Provioning Model~ @]]  [[elisp:(org-cycle)][| *=* |]] :: /Agenda/ <<PROBLEM: Missing FV /bisos/panels/bisos-model/bisosProvisioning/foldDesc>> [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "BISOS Git Repo Bases" :dest "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/bisosGitRepoBases"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/baseDirs/bisosGitRepoBases")][@ ~BISOS Git Repo Bases~ @]]  [[elisp:(org-cycle)][| *=* |]] :: /Agenda/ <<bisosGitRepoBases>> [[elisp:(org-shifttab)][<)]] E|

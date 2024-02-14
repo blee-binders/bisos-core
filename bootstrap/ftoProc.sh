@@ -45,7 +45,6 @@ virtualPlatformProvision
 credentialsReset
 siteGitServer
 afterBaseSteps
-bootstrapModel
 "
 # }}} DBLOCK-leavesList
 ####+END:
@@ -64,15 +63,11 @@ _CommentEnd_
 nodesList="
 hardwareBox
 sysPlatformProvision
-siteRegContainer
 distros
-siteAssignBox
-siteRegBox
 _nodeBase_
 provisionSelections
-siteAssignContainer
-siteAssignNets
-siteRegNets
+bootstrapModel
+registrations
 "
 # }}} DBLOCK-nodesList
 ####+END:

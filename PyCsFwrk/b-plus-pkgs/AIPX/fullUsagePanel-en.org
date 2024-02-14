@@ -26,7 +26,7 @@
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/b-plus-pkgs/AIPX")][AIPX]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/b-plus-pkgs/bisos.crypt/_nodeBase_")][ =bisos.crypt= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/b-plus-pkgs/bisos.currents/_nodeBase_")][ =bisos.currents= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/b-plus-pkgs/AIPX")][AIPX]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/b-plus-pkgs/bisos.crypt/_nodeBase_")][ = /<bisos.crypt>/ = ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/b-plus-pkgs/bisos.currents/_nodeBase_")][ = /<bisos.currents>/ = ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/PyCsFwrk/b-plus-pkgs/AIPX")][AIPX]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/PyCsFwrk/b-plus-pkgs/_nodeBase_")][ =b-plus-pkgs= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/PyCsFwrk/_nodeBase_")][ =PyCsFwrk= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|*
 *   /Ancestors/  :: [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|

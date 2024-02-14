@@ -38,6 +38,22 @@
 ** 
 ** Overview Comes Here.
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Vagrant Facilities" :anchor "vagrantFacilities" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Vagrant Facilities_: |]] <<vagrantFacilities>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+|-----------------------------+------+----------+-----------------------------------------------------------|
+| Name                        | Link | User     | Comments                                                  |
+|-----------------------------+------+----------+-----------------------------------------------------------|
+| <<sysCharDeployRaw>>        | [[sysCharRawDeploy.sh][🔗]]   | Lcl+Mngr | Produces: [[RawPlatform]]  ( Common [[Raw-BISOS]] + [[Raw-Blee]] )    |
+|-----------------------------+------+----------+-----------------------------------------------------------|
+| <<lcaVagrantBinsPrep>>      |      | Ran By?  | Installs Vagrant and Packer                               |
+| <<lcaVagrantBoxBuild>>      |      |          | Uses Packer to  Build Boxes                               |
+| <<lcaVagrantManager>>       |      |          | Common raw vagrant commands                               |
+| <<lcaVagrantBoxRun>>        |      |          | For known boxes, creates basic images.                    |
+|-----------------------------+------+----------+-----------------------------------------------------------|
+
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Vagrant Installations" :anchor "" :extraInfo "BinsPrep -- Linux and Windows"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Vagrant Installations:* |]]  BinsPrep -- Linux and Windows  [[elisp:(org-shifttab)][<)]] E|
@@ -56,7 +72,7 @@
 ####+END
 ####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "vagrant --version"  :results t :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "vagrant --version")][vagrant --version]] *|*  == *|*    |
-Last Executed at: 202401-10-22:10:43  by: bystar on: PML-1006.intra
+Last Executed at: 202401-17-12:03:58  by: bystar on: PML-1006.intra
 ----------------------------
 Vagrant 2.4.0
 

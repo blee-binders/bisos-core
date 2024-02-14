@@ -41,7 +41,7 @@
 ** B|
 ####+BEGIN: blee:bxPanel:runResult :outLevel 1 :command "find .. -type f -print | egrep fullUsagePanel-en.org$"  :results "stdout" :comment "List Of Panels" :afterComment "-- In case it has not been updates here"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "find .. -type f -print | egrep fullUsagePanel-en.org$")][find .. -type f -print | egrep fullUsagePanel-en.org$]] *|*  =List Of Panels= *|*  -- In case it has not been updates here  |
-Last Executed at: 202401-14-12:40:01  by: bystar on: PML-1006.intra
+Last Executed at: 202401-17-11:42:50  by: bystar on: PML-1006.intra
 ----------------------------
 ../ChromBook/_nodeBase_/fullUsagePanel-en.org
 ../raspberryPi/3b/absorb-fullUsagePanel-en.org

@@ -25,6 +25,7 @@
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/registrations/pip-bisos.regfps/_nodeBase_")][ = /<pip-bisos.regfps>/ = ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/registrations/pip-bisos.siteRegistrars/_nodeBase_")][ = /<pip-bisos.siteRegistrars>/ = ]] *|*
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/BashIcmFwrk/_nodeBase_")][ =BashIcmFwrk= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PALS/_nodeBase_")][ =PALS= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/_nodeBase_")][ =PyCsFwrk= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/adoptedComponents/_nodeBase_")][ =adoptedComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/baseDirs/_nodeBase_")][ =baseDirs= ]] *|*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bisosAccts/_nodeBase_")][ =bisosAccts= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/_nodeBase_")][ =bootstrap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/_nodeBase_")][ =bxeAndBxo= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/disks/_nodeBase_")][ =disks= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/groupedComponents/_nodeBase_")][ =groupedComponents= ]] *|*
@@ -36,9 +37,17 @@
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** 
-** Overview Comes Here.
+** +
+** Scope of this panel is the model and concept of Registrars in BISOS and ByStar.
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "pip-bisos.regfps" :anchor "" :extraInfo "Registrars Based On File Parameters"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *pip-bisos.regfps:* |]]  Registrars Based On File Parameters  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "pip-bisos.siteRegistrars" :anchor "" :extraInfo "Site Registrars for: Container and Box"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *pip-bisos.siteRegistrars:* |]]  Site Registrars for: Container and Box  [[elisp:(org-shifttab)][<)]] E|
+####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Design Overview: ICMs And Libraries Introductions" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Design Overview: ICMs And Libraries Introductions_: |]]    [[elisp:(org-shifttab)][<)]] E|
@@ -46,13 +55,12 @@
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bxioRegistrar.sh" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bxioRegistrar.sh -i examples")][bxioRegistrar.sh]]  [[elisp:(lsip-local-run-command "bxioRegistrar.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bxioRegistrar.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "registrarCentralBxe.sh" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "registrarCentralBxe.sh -i examples")][registrarCentralBxe.sh]]  [[elisp:(lsip-local-run-command "registrarCentralBxe.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "registrarCentralBxe.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "registrarCentralBxe.sh" :comment "NOTYET" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "registrarCentralBxe.sh -i examples")][registrarCentralBxe.sh]]  [[elisp:(lsip-local-run-command "registrarCentralBxe.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "registrarCentralBxe.sh -i describe")][describe]] *|*  =NOTYET= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "registrarPrivBxe.sh" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "registrarPrivBxe.sh -i examples")][registrarPrivBxe.sh]]  [[elisp:(lsip-local-run-command "registrarPrivBxe.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "registrarPrivBxe.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
