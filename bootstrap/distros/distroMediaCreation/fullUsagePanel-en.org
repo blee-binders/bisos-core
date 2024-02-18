@@ -59,15 +59,45 @@
 	4) sudo update-grub
 	5) Reboot and select in grub
 ***      Boot Media VMware        ::
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Debian USB Boot Media Creation" :anchor "usb-media-create" :extraInfo "Using gnome-disks"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Gui Debian USB Boot Media Creation" :anchor "usb-media-create" :extraInfo "Using gnome-disks"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Debian USB Boot Media Creation:* |]] <<usb-media-create>> Using gnome-disks  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Gui Debian USB Boot Media Creation:* |]] <<usb-media-create>> Using gnome-disks  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** sudo apt-get install gnome-disk-utility
 ** Run gnome-disks
 ** Go to the disk and use restore from file. Select the .iso file.
 ** -B|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "User" :icmName "sudo apt-get install gnome-disk-utility" :comment "Install" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /User/ :: [[elisp:(lsip-local-run-command "sudo apt-get install gnome-disk-utility")][sudo apt-get install gnome-disk-utility]] *|*  =Install= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "User" :icmName "gnome-disks" :comment "Go to disk; use 'Restore Disk Image'" :afterComment "Select .iso file"
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /User/ :: [[elisp:(lsip-local-run-command "gnome-disks")][gnome-disks]] *|*  =Go to disk; use 'Restore Disk Image'= *|*  Select .iso file  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Command Line Debian USB Boot Media Creation" :anchor "cmndline-usb-media-create" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Command Line Debian USB Boot Media Creation:* |]] <<cmndline-usb-media-create>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** With dd -- make sure you sync.
+** On Dell R710 had difficulty with read of deb12. Switched from USB3 (blue) to older USB2 (red). Improved.
+** -B|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "User" :icmName "echo sudo dd bs=4M if=$HOME/Downloads/debian-12.5.0-amd64-DVD-1.iso of=/dev/disk/by-id/usb-SanDisk_Cruzer_20051942411DCFF05DFA-0:0 conv=fsync oflag=sync status=progress" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /User/ :: [[elisp:(lsip-local-run-command "echo sudo dd bs=4M if=$HOME/Downloads/debian-12.5.0-amd64-DVD-1.iso of=/dev/disk/by-id/usb-SanDisk_Cruzer_20051942411DCFF05DFA-0:0 conv=fsync oflag=sync status=progress")][echo sudo dd bs=4M if=$HOME/Downloads/debian-12.5.0-amd64-DVD-1.iso of=/dev/disk/by-id/usb-SanDisk_Cruzer_20051942411DCFF05DFA-0:0 conv=fsync oflag=sync status=progress]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "DVD Boot Media Creation" :anchor "" :extraInfo "Debian 12"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *DVD Boot Media Creation:* |]]  Debian 12  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Some older (Dell R710) machines won't work relaiablly with USB. A DVD works fine.
+** -B|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Root" :icmName "sudo apt-get install xorriso" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Root/ :: [[elisp:(lsip-local-run-command "sudo apt-get install xorriso")][sudo apt-get install xorriso]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "User-Edit" :icmName "echo xorriso -as cdrecord -v dev=/dev/sr0 -dao ~/debian-12.5.0-amd64-DVD-1.iso" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /User-Edit/ :: [[elisp:(lsip-local-run-command "echo xorriso -as cdrecord -v dev=/dev/sr0 -dao ~/debian-12.5.0-amd64-DVD-1.iso")][echo xorriso -as cdrecord -v dev=/dev/sr0 -dao ~/debian-12.5.0-amd64-DVD-1.iso]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END

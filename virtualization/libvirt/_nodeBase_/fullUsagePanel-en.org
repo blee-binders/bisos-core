@@ -1,4 +1,4 @@
-* B|
+ * B|
 ####+BEGIN: bxPanel:common/title-plus
 #+title: virtualization/libvirt
 #+roam_tags: branch
