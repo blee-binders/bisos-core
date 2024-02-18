@@ -43,9 +43,9 @@ _CommentEnd_
 leavesList="
 distroPhysicalBoot
 distroImages
-distroPostInstall
 distroPhysicalInstall
 distroMediaCreation
+distroPostInstall
 serverToDesktop
 "
 # }}} DBLOCK-leavesList

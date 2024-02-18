@@ -57,9 +57,9 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-chromeOsDebian
-BlankBox
 _nodeBase_
+BlankBox
+chromeOsDebian
 "
 # }}} DBLOCK-nodesList
 ####+END:

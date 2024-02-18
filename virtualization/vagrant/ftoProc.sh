@@ -41,7 +41,9 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-baseBuild
+lcaVagrantBoxRun.sh
+lcaVagrantBinsPrep.sh
+lcaVagrantBoxBuild.sh
 "
 # }}} DBLOCK-leavesList
 ####+END:

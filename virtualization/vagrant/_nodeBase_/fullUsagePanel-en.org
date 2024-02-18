@@ -25,7 +25,7 @@
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
-*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/vagrant/baseBuild")][baseBuild]] *|*
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/vagrant/lcaVagrantBinsPrep.sh")][lcaVagrantBinsPrep.sh]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/vagrant/lcaVagrantBoxBuild.sh")][lcaVagrantBoxBuild.sh]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/vagrant/lcaVagrantBoxRun.sh")][lcaVagrantBoxRun.sh]] *|*
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/hostFirmware")][hostFirmware]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/kvm")][kvm]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/legacy-virsh")][legacy-virsh]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/legacy-vmware")][legacy-vmware]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/libvirt/_nodeBase_")][ =libvirt= ]] *|*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/vagrant/_nodeBase_")][ =vagrant= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/virsh")][virsh]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/virtualbox")][virtualbox]] *|*
@@ -35,16 +35,25 @@
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** 
+** +
 ** Overview Comes Here.
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Vagrant Facilities" :anchor "vagrantFacilities" :extraInfo ""
+* +
+* TODO Capture this someplace: packer hcl2_upgrade -output-file=file_name.pkr.hcl file_name.pkr.json
+* TODO Capture https://vagrant-libvirt.github.io/vagrant-libvirt/installation.html
+* TODO Capture Below:  sudo apt-get purge vagrant-libvirt
+sudo apt-mark hold vagrant-libvirt
+sudo apt-get install -y qemu libvirt-daemon-system libvirt-dev ebtables libguestfs-tools
+sudo apt-get install -y vagrant ruby-fog-libvirt
+vagrant plugin install vagrant-libvirt
+* -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Vagrant Facilities (Tabular)" :anchor "vagrantFacilities" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Vagrant Facilities_: |]] <<vagrantFacilities>>   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Vagrant Facilities (Tabular)_: |]] <<vagrantFacilities>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 
 |-----------------------------+------+----------+-----------------------------------------------------------|
-| Name                        | Link | User     | Comments                                                  |
+| Name                        | Link | Used By  | Comments                                                  |
 |-----------------------------+------+----------+-----------------------------------------------------------|
 | <<sysCharDeployRaw>>        | [[sysCharRawDeploy.sh][🔗]]   | Lcl+Mngr | Produces: [[RawPlatform]]  ( Common [[Raw-BISOS]] + [[Raw-Blee]] )    |
 |-----------------------------+------+----------+-----------------------------------------------------------|
@@ -58,8 +67,6 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Vagrant Installations:* |]]  BinsPrep -- Linux and Windows  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-**  [[elisp:(org-cycle)][| ]]  Windows      ::  /Download:/       https://www.NOTYET [[elisp:(org-cycle)][| ]]
-**  [[elisp:(org-cycle)][| ]]  Linux        ::  /Download:/       https://www.NOTYET [[elisp:(org-cycle)][| ]]
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "BinsPrep ICM" :icmName "lcaVagrantBinsPrep.sh" :comment "Upstream DebPkg" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /BinsPrep ICM/ :: [[elisp:(lsip-local-run-command "lcaVagrantBinsPrep.sh -i examples")][lcaVagrantBinsPrep.sh]]  [[elisp:(lsip-local-run-command "lcaVagrantBinsPrep.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "lcaVagrantBinsPrep.sh -i describe")][describe]] *|*  =Upstream DebPkg= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
@@ -72,9 +79,45 @@
 ####+END
 ####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "vagrant --version"  :results t :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "vagrant --version")][vagrant --version]] *|*  == *|*    |
-Last Executed at: 202401-17-12:03:58  by: bystar on: PML-1006.intra
+Last Executed at: 202402-13-23:46:27  by: bystar on: HSS-1006
 ----------------------------
-Vagrant 2.4.0
+Vagrant 2.4.1
+
+** [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "vagrant plugin list"  :results t :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "vagrant plugin list")][vagrant plugin list]] *|*  == *|*    |
+Last Executed at: 202402-13-23:46:27  by: bystar on: HSS-1006
+----------------------------
+vagrant-libvirt (0.12.2, global)
+
+** [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "vagrant box list"  :results t :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "vagrant box list")][vagrant box list]] *|*  == *|*    |
+Last Executed at: 202402-13-23:46:29  by: bystar on: HSS-1006
+----------------------------
+bxDistro/debian-11.0.0/desktop (libvirt, 0)
+bxDistro/debian-12.4.0/desktop (libvirt, 0)
+generic/debian10               (libvirt, 4.3.12, (amd64))
+
+** [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "vagrant global-status"  :results t :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "vagrant global-status")][vagrant global-status]] *|*  == *|*    |
+Last Executed at: 202402-13-23:46:30  by: bystar on: HSS-1006
+----------------------------
+id       name         provider state   directory
+--------------------------------------------------------------------------------------------------
+a6be573  VAG-deb11_-2 libvirt running /var/bisos/bpoId/pmp_HSS-1006/vagrantBase/pmp_VAG-deb11_/2
+
+The above shows information about all known Vagrant environments
+on this machine. This data is cached and may not be completely
+up-to-date (use "vagrant global-status --prune" to prune invalid
+entries). To interact with any of the machines, you can go to that
+directory and run Vagrant, or you can use the ID directly with
+Vagrant commands from any directory. For example:
+"vagrant destroy 1a2b3c4d"
 
 ** [[elisp:(org-shifttab)][<)]] E|
 ####+END:
@@ -90,9 +133,18 @@ Vagrant 2.4.0
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Manage Cmnd" :icmName "ip addr show dev virbr1" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Manage Cmnd/ :: [[elisp:(lsip-local-run-command "ip addr show dev virbr1")][ip addr show dev virbr1]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Manage Cmnd" :icmName "virsh list" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Manage Cmnd/ :: [[elisp:(lsip-local-run-command "virsh list")][virsh list]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "sudo virsh list --all"  :results t :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "sudo virsh list --all")][sudo virsh list --all]] *|*  == *|*    |
+Last Executed at: 202402-13-23:46:32  by: bystar on: HSS-1006
+----------------------------
+ Id   Name              State
+---------------------------------
+ 2    bxoVAG-deb11_-2   running
+
+
+** [[elisp:(org-shifttab)][<)]] E|
 ####+END:
+
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END

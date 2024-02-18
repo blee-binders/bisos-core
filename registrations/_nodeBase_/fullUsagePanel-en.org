@@ -1,16 +1,16 @@
 * B|
 ####+BEGIN: bxPanel:common/title-plus
-#+title: bisos-core/registrations
+#+title: bootstrap/registrations
 #+roam_tags: branch
-#+roam_key: panels/bisos-core/registrations
-[[roam:panels/bisos-core]]
+#+roam_key: bisos-core/bootstrap/registrations
+[[roam:bisos-core/bootstrap]]
 ####+END
 ####+BEGIN: blee:bxPanel:topPanelControls
 *  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
 **  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
 **  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
-**  This File :: *= /bisos/panels/bisos-core/registrations/_nodeBase_/fullUsagePanel-en.org =*
+**  This File :: *= /bisos/panels/bisos-core/bootstrap/registrations/_nodeBase_/fullUsagePanel-en.org =*
 * /file-truename:/  /bisos/git/auth/bxRepos/blee-binders/bisos-core/registrations/_nodeBase_/fullUsagePanel-en.org
 *  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
 **  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
@@ -19,19 +19,18 @@
 ####+END
 ####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
 * [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: panels/bisos-core -- registrations~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: bisos-core/bootstrap -- registrations~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
 * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
-*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/registrations/pip-bisos.regfps/_nodeBase_")][ = /<pip-bisos.regfps>/ = ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/registrations/pip-bisos.siteRegistrars/_nodeBase_")][ = /<pip-bisos.siteRegistrars>/ = ]] *|*
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/registrations/pip-bisos.regfps/_nodeBase_")][ = /<pip-bisos.regfps>/ = ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/registrations/pip-bisos.siteRegistrars/_nodeBase_")][ = /<pip-bisos.siteRegistrars>/ = ]] *|*
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/BashIcmFwrk/_nodeBase_")][ =BashIcmFwrk= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PALS/_nodeBase_")][ =PALS= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/_nodeBase_")][ =PyCsFwrk= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/adoptedComponents/_nodeBase_")][ =adoptedComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/baseDirs/_nodeBase_")][ =baseDirs= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bisosAccts/_nodeBase_")][ =bisosAccts= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/_nodeBase_")][ =bootstrap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/_nodeBase_")][ =bxeAndBxo= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/disks/_nodeBase_")][ =disks= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/groupedComponents/_nodeBase_")][ =groupedComponents= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/maintainInterim/_nodeBase_")][ =maintainInterim= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/modelAndTerminology/_nodeBase_")][ =modelAndTerminology= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/platform/_nodeBase_")][ =platform= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/projs/_nodeBase_")][ =projs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/registrations/_nodeBase_")][ =registrations= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sites/_nodeBase_")][ =sites= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sync/_nodeBase_")][ =sync= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/_nodeBase_")][ =virtualization= ]] *|*
-*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/afterBaseSteps")][afterBaseSteps]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/bootstrapModel/_nodeBase_")][ =bootstrapModel= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/credentialsReset")][credentialsReset]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/distros/_nodeBase_")][ =distros= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/hardwareBox/_nodeBase_")][ =hardwareBox= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/provisionSelections/_nodeBase_")][ =provisionSelections= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/registrations/_nodeBase_")][ = /<registrations>/ = ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteGenesis/_nodeBase_")][ =siteGenesis= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/siteGitServer")][siteGitServer]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/sysChar-Box-Provision/_nodeBase_")][ =sysChar-Box-Provision= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/sysChar-Guest-Provision")][sysChar-Guest-Provision]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bootstrap/_nodeBase_")][ =bootstrap= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"

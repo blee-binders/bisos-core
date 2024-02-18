@@ -58,12 +58,12 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
+_nodeBase_
+asus
+samsung
 ChromBook
 raspberryPi
-asus
-_nodeBase_
 dell
-samsung
 "
 # }}} DBLOCK-nodesList
 ####+END:

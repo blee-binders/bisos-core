@@ -41,27 +41,27 @@
 ** B|
 ####+BEGIN: blee:bxPanel:runResult :outLevel 1 :command "find .. -type f -print | egrep fullUsagePanel-en.org$"  :results "stdout" :comment "List Of Panels" :afterComment "-- In case it has not been updates here"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "find .. -type f -print | egrep fullUsagePanel-en.org$")][find .. -type f -print | egrep fullUsagePanel-en.org$]] *|*  =List Of Panels= *|*  -- In case it has not been updates here  |
-Last Executed at: 202401-17-11:42:50  by: bystar on: PML-1006.intra
+Last Executed at: 202402-14-11:41:37  by: bystar on: HSS-1006
 ----------------------------
+../_nodeBase_/fullUsagePanel-en.org
+../asus/_nodeBase_/fullUsagePanel-en.org
+../asus/hwBoxAsusT100/fullUsagePanel-en.org
+../samsung/_nodeBase_/fullUsagePanel-en.org
 ../ChromBook/_nodeBase_/fullUsagePanel-en.org
+../raspberryPi/_nodeBase_/fullUsagePanel-en.org
 ../raspberryPi/3b/absorb-fullUsagePanel-en.org
 ../raspberryPi/3b/fullUsagePanel-en.org
-../raspberryPi/_nodeBase_/fullUsagePanel-en.org
-../asus/hwBoxAsusT100/fullUsagePanel-en.org
-../asus/_nodeBase_/fullUsagePanel-en.org
-../_nodeBase_/fullUsagePanel-en.org
-../common/fullUsagePanel-en.org
-../dell/hwBoxDellR320/fullUsagePanel-en.org
-../dell/hwBoxDellStudio/fullUsagePanel-en.org
-../dell/hwBoxDellR420/fullUsagePanel-en.org
-../dell/hwBoxDellR610/fullUsagePanel-en.org
 ../dell/_nodeBase_/fullUsagePanel-en.org
-../dell/hwBoxDellR510/fullUsagePanel-en.org
+../dell/hwBoxDellR420/fullUsagePanel-en.org
 ../dell/hwBoxDellR710/fullUsagePanel-en.org
 ../dell/hwBoxDellR-Series/fullUsagePanel-en.org
-../dell/hwBoxDellXps8900/fullUsagePanel-en.org
+../dell/hwBoxDellR610/fullUsagePanel-en.org
 ../dell/hwBoxDellR310/fullUsagePanel-en.org
-../samsung/_nodeBase_/fullUsagePanel-en.org
+../dell/hwBoxDellR510/fullUsagePanel-en.org
+../dell/hwBoxDellStudio/fullUsagePanel-en.org
+../dell/hwBoxDellR320/fullUsagePanel-en.org
+../dell/hwBoxDellXps8900/fullUsagePanel-en.org
+../common/fullUsagePanel-en.org
 
 * [[elisp:(org-shifttab)][<)]] E|
 ####+END:

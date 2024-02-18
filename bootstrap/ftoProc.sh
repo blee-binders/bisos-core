@@ -41,10 +41,10 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-virtualPlatformProvision
 credentialsReset
-siteGitServer
 afterBaseSteps
+siteGitServer
+sysChar-Guest-Provision
 "
 # }}} DBLOCK-leavesList
 ####+END:
@@ -61,13 +61,14 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-hardwareBox
-sysPlatformProvision
-distros
 _nodeBase_
+hardwareBox
 provisionSelections
-bootstrapModel
 registrations
+sysChar-Box-Provision
+distros
+bootstrapModel
+siteGenesis
 "
 # }}} DBLOCK-nodesList
 ####+END:
