@@ -25,7 +25,7 @@
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
-*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/BashIcmFwrk/Bash-ICM/GIPCS/_nodeBase_")][ =GIPCS= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/BashIcmFwrk/Bash-ICM/ICM/_nodeBase_")][ =ICM= ]] *|*
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/BashIcmFwrk/Bash-ICM/BISOS-ICM/_nodeBase_")][ =BISOS-ICM= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/BashIcmFwrk/Bash-ICM/SelfConatineed-ICM/_nodeBase_")][ =SelfConatineed-ICM= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/BashIcmFwrk/Bash-ICM/SelfReliant-ICM/_nodeBase_")][ =SelfReliant-ICM= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/BashIcmFwrk/Bash-ICM/Standalone-ICM/_nodeBase_")][ =Standalone-ICM= ]] *|*
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/BashIcmFwrk/Bash-ICM/_nodeBase_")][ =Bash-ICM= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/BashIcmFwrk/_nodeBase_")][ =BashIcmFwrk= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
@@ -37,6 +37,55 @@
 ** +
 ** Overview Comes Here.
 ** B|
+* +
+* ICM Types: SelfContained-ICM, Standalone-ICM, SelfReliant-ICM, BISOS-ICM
+* -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Table of ICM Types and Usages" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Table of ICM Types and Usages:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+|-------------------+-------------+----------------------------------+----------------------------------------|
+| ICM-Type          | scope       | Example                          | Usage and Comments                     |
+|-------------------+-------------+----------------------------------+----------------------------------------|
+| SelfContained-ICM | SingleFile  | genesis/start/raw-bisos.sh       | Top level for bootstraping             |
+|-------------------+-------------+----------------------------------+----------------------------------------|
+| Standalone-ICM    | 2/more file | pipx bisos.provision             | When pip or git are available, no libs |
+|-------------------+-------------+----------------------------------+----------------------------------------|
+| SelfReliant-ICM   | files+libs  | git clone bxGenesis/provisioners | When git is available, libs, data      |
+|-------------------+-------------+----------------------------------+----------------------------------------|
+| BISOS-ICM         | ecosystem   | /bisos/core/bsip/bin             | Many seed derivatives                  |
+|-------------------+-------------+----------------------------------+----------------------------------------|
+| Grouped-BISOS-ICM | ecosystem   | /bisos/core/asc/bin              | Groups of ICM in addition to bsip/bin  |
+|-------------------+-------------+----------------------------------+----------------------------------------|
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Keeping ICM Seeds Consistent" :anchor "" :extraInfo "Keep Primaries, Masters, Originals in Sync"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Keeping ICM Seeds Consistent:* |]]  Keep Primaries, Masters, Originals in Sync  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** SelfContained-ICM  :: /bisos/git/bxRepos/bxGenesis/start/selfContainedIcm.bash
+** Standalone-ICM     :: /bisos/git/bxRepos/bisos-pip/provision/py3/bin/seedIcmStandalone.bash
+** SelfReliant-ICM    :: /bisos/git/bxRepos/bxGenesis/provisioners/bin/seedIcmSelfReliant.bash
+** BISOS-ICM          :: /bisos/core/bsip/bin/seedActions.bash
+** -B|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep t :folding? nil :label "intro" :icmName "bisosDevSyncIcmTypes.sh" :comment "" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /intro/ :: [[elisp:(lsip-local-run-command "bisosDevSyncIcmTypes.sh -i examples")][bisosDevSyncIcmTypes.sh]]  [[elisp:(lsip-local-run-command "bisosDevSyncIcmTypes.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bisosDevSyncIcmTypes.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1 :sep t :command "bisosDevSyncIcmTypes.sh -i list"  :results "stdout" :comment "" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "bisosDevSyncIcmTypes.sh -i list")][bisosDevSyncIcmTypes.sh -i list]] *|*  == *|*    |
+Last Executed at: 202402-18-18:26:03  by: bystar on: PML-1006.intra
+----------------------------
+-rwxr-xr-x 1 bystar bisos 46276 Feb 18 17:17 /bisos/git/bxRepos/bxGenesis/start/selfContainedIcm.bash
+-rwxrwxr-x 1 bystar bisos 33422 Jan 16 16:46 /bisos/git/bxRepos/bisos-pip/provision/py3/bin/seedIcmStandalone.bash
+-rwxrwxr-x 1 bystar bisos 32793 Jan 16 16:46 /bisos/git/bxRepos/bxGenesis/provisioners/bin/seedIcmSelfReliant.bash
+-rwxrwxr-x 1 bystar bisos 11784 Jan 15 18:17 /bisos/core/bsip/bin/seedActions.bash
+
+* [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END

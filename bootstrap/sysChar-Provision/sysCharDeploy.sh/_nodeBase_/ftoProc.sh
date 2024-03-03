@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] |
 "
 FILE="
-*  /This File/ :: /bisos/panels/bisos-core/BashIcmFwrk/Bash-ICM/ICM/_nodeBase_/ftoProc.sh
+*  /This File/ :: /bisos/panels/bisos-core/bootstrap/sysChar-Provision/sysCharDeploy.sh/_nodeBase_/ftoProc.sh
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@"

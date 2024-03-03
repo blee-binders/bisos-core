@@ -45,12 +45,42 @@
 ** TODO Test out blee-polymode against latest modules.
 ** TODO docString of icm.Cmnd should always use: self.cmndDocStr(f"""\
 ** TODO dblock of icm:py3:cmnd:classHead with :comment "" should invoke self.cmndDocStrShort(f"""
-** TODO All of bisos.icm should be absorbed in bisos.bpf
+** TODO All of bisos.icm should be absorbed in bisos.b
+SCHEDULED: <2024-02-21 Wed>
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Link to Relevant Parts Of 120033 And Figure" :anchor "Panel"
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Link to Relevant Parts Of 120033 And Figure:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PyCS Framework Model and Terminology of Executables " :anchor "PyCS-Model"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PyCS Framework Model and Terminology of Executables :* |]] <<PyCS-Model>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** Purpose of PyCS Framework is to build on Python to consistently
+- produce executables
+- manage execution
+- track
+** Executables are of 3 types:
+- Commands   xx.cs
+- Performer Remote Operations Services  svcPerfXxx.cs
+- Invoker Remote Operations Services  svcInvXxx.cs
+** PyCS Framework and BISOS
+- PyCS with FBSOs (Foreign Static Objects)  (Marmee and siteRegistrars)
+- Native BSOs (BSO)  bpoPubGithubManage.sh /bisos/admin/bso/
+- BPOs --- Everything
+** Foreign Static Objects
+- Allow for use of many PyCS BISOS capabilities outside of BISOS
+- Anywhere on file system fbso="basePath"
+- In basePath/fbsoId.fp/value -- get the equivalent of bpoId.
+- In basePath/siteRegistrar/runEnv  create runEnv ./control/regBoxRepo.fp
+- svcPerfSiteRegistrar.cs  --fbso=basePath --runEnvRel=siteRegistrar/runEnv --svcName=svcSiteRegistrars -i csPerformer
+- If no /bisos/var  then create ~/bisos/var  to be used for sapCreate
+- _End Goal_ :: Have a template for ROs that can run without /bisos
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Link to Relevant Parts Of 120033 And Figure" :anchor "PyCS-Architecture"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Link to Relevant Parts Of 120033 And Figure:* |]] <<PyCS-Architecture>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO Bring over text and figure.
+SCHEDULED: <2024-02-21 Wed>
 ** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/

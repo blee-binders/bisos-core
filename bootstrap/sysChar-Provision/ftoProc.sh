@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] |
 "
 FILE="
-*  /This File/ :: /bisos/panels/bisos-core/bootstrap/sysChar-Box-Provision/ftoProc.sh
+*  /This File/ :: /bisos/panels/bisos-core/bootstrap/sysChar-Provision/ftoProc.sh
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@"
@@ -57,7 +57,10 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
+sysCharRealize.sh
+sysCharDeploy.sh
 _nodeBase_
+noSite-Raw-Bisos
 "
 # }}} DBLOCK-nodesList
 ####+END:

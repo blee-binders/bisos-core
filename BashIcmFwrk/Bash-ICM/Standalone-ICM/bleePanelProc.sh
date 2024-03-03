@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedBleePanelProc.sh]] |
 "
 FILE="
-*  /This File/ :: /bisos/panels/bisos-core/BashIcmFwrk/Bash-ICM/ICM/bleePanelProc.sh
+*  /This File/ :: /bisos/panels/bisos-core/BashIcmFwrk/Bash-ICM/Standalone-ICM/bleePanelProc.sh
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedBleePanelProc.sh -l $0 "$@"

@@ -57,9 +57,11 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
+Standalone-ICM
+SelfReliant-ICM
 _nodeBase_
-GIPCS
-ICM
+SelfConatineed-ICM
+BISOS-ICM
 "
 # }}} DBLOCK-nodesList
 ####+END:

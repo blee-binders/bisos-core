@@ -1,4 +1,4 @@
-* B|
+t* B|
 ####+BEGIN: bxPanel:common/title-plus
 #+title: PALS/liveTargets
 #+roam_tags: leaf
