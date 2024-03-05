@@ -101,7 +101,9 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Apt Upgrades Plus Missing:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** bisosUpdateInterim.sh -h -v -n showRun -i aptUpgrades    # apt-get -y upgrade
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Sudo" :icmName "bisosUpdateInterim.sh -h -v -n showRun -i aptUpgrades" :comment "apt-get -y upgrade" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Sudo/ :: [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -h -v -n showRun -i aptUpgrades")][bisosUpdateInterim.sh -h -v -n showRun -i aptUpgrades]] *|*  =apt-get -y upgrade= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ** bisosUpdateInterim.sh -h -v -n showRun -i missingAptPkgsInstall  # apt-s needed for recent features
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Python And Pip Update And New Installs" :anchor "" :extraInfo ""
@@ -120,7 +122,10 @@
 ** +
 ** bisosUpdateInterim.sh -h -v -n showRun -i bisosBasesReClone  # with cntnrDevel.sh
 ** bisosUpdateInterim.sh -h -v -n showRun -f -i bisosBasesReClone  # forceMode with cntnrDevel.sh
-** bisosUpdateInterim.sh -h -v -n showRun -i bisosBasesPull  # with bx-gitRepos
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "U" :icmName "bisosUpdateInterim.sh -h -v -n showRun -i bisosBasesPull" :comment "with bx-gitRepos" :afterComment "Review Logs"
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /U/ :: [[elisp:(lsip-local-run-command "bisosUpdateInterim.sh -h -v -n showRun -i bisosBasesPull")][bisosUpdateInterim.sh -h -v -n showRun -i bisosBasesPull]] *|*  =with bx-gitRepos= *|*  Review Logs  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
  B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS Bases And Symlinks Updates" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
