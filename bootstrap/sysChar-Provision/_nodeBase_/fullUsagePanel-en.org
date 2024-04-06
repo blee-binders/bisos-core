@@ -46,7 +46,7 @@
 2) Manager:  /L-1/ Fom FreshDebian to UnsitedBisos  -- verification of bxGenesis/start/unsited-bisos.sh
 3) Manager/Target: /L-2/ To SitedContainer
 3.1) Manager/Target: /L-2/ To SitedDevContainer  -- For Development
-3.2) Manager/Target: /L-2/ containerBoxAscertain  (New Box or Existing Box)
+vagrant plugin install vagrant-libvirt3.2) Manager/Target: /L-2/ containerBoxAscertain  (New Box or Existing Box)
 4) ~New Box~ (Un-Registered Box)
 4.1) Target: /L-3/ Assign BoxName, ContainerCharType and from FreshDebian to Realize
 4.2) Target: /L-4/ Assign BoxName, ContainerCharType and from FreshDebian to Materialize
@@ -94,7 +94,7 @@
 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Provisionings 6 Layers" :anchor "ProvisioningsLayers" :extraInfo "  /::Table::/"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Provisionings 5 Layers_: |]] <<ProvisioningsLayers>>   /::Table::/  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Provisionings 6 Layers_: |]] <<ProvisioningsLayers>>   /::Table::/  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 
 |-------------+-----------------------+--------------------------+---------------------------------------------|
@@ -107,7 +107,7 @@
 | <<Layer 2>> | SitedContainer        | [[Sited-Container]]          | SiteBpo is activated on Container           |
 |             |                       |                          | Development BPO can be materialized         |
 |-------------+-----------------------+--------------------------+---------------------------------------------|
-| <<Layer 3>> | CharedContainer       |                          | Reified -- Reg+Realized or Activated        |
+| <<Layer 3>> | ReifiedContainer      |                          | Reified -- Reg+Realized or Activated        |
 |             |                       |                          | containerChar Bpo is reified                |
 |-------------+-----------------------+--------------------------+---------------------------------------------|
 | <<Layer 4>> | ComposedContainer     |                          | cntnrChar is further configured             |
@@ -277,6 +277,54 @@ Definition of concepts
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "shIcm" :icmName "sysCharDevel.sh" :comment "Switch to development mode" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /shIcm/ :: [[elisp:(lsip-local-run-command "sysCharDevel.sh -i examples")][sysCharDevel.sh]]  [[elisp:(lsip-local-run-command "sysCharDevel.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "sysCharDevel.sh -i describe")][describe]] *|*  =Switch to development mode= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Sited: New and Existing Box -- New and Existing VM" :anchor "NewAndExistingBoxAndVm" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Sited: New and Existing Box -- New and Existing VM_: |]] <<NewAndExistingBoxAndVm>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "New Box" :anchor "" :extraInfo "Manager+Target -- Developer and Production"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *New Box:* |]]  Manager+Target -- Developer and Production  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** 1) ~On Manager:~ sysCharDeploy.sh  l1l2_sitedDevContainer #
+*** +
+*** sysCharDeploy.sh -h -v -n showRun -p targetName="192.168.0.47" -i l1l2_sitedDevContainer # OnManager
+***  Should not prompt: bx-gitReposBases -v 20 --baseDir=/bisos/git/auth --pbdName=bxReposCollection --vcMode=auth --gitLabel=mb1_github -i pbdUpdate all
+*** -
+** 1) ~On Manager:~ l1l2-sitedDevBisos
+** 2) ~On Manager:~ xterm & emacs
+** 2) ~On Manager:~ Verify Unassisgned Box
+** 2) /On Traget:/ Verify Unassisgned Box
+** 4) /On Traget:/ L3 Realize
+** 5) /On Traget:/ L5 Materialize
+** 3) /On Traget:/ Box Assign and Update
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "Existing Box" :anchor "" :extraInfo "Manager-- Developer and Production"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Existing Box:* |]]  Manager-- Developer and Production  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** 1) ~On Manager:~ l1l5_materialize
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "New VM" :anchor "" :extraInfo "Developer and Production"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *New VM:* |]]  ~sysChar-Guest-Provision~  Developer and Production  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** 1) ~On Host:~
+** 2) ~On Host:~
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "Existing VM" :anchor "" :extraInfo "Developer and Production"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Existing VM:* |]]  ~sysChar-Guest-Provision~ Developer and Production  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** 1) ~On Host:~
+** 2) ~On Host:~
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "Generic VM" :anchor "" :extraInfo "Developer and Production"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Generic VM:* |]]  Developer and Production  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** 1) ~On Host:~
+** 2) ~On Host:~
+** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "*L1* FreshDebian  to Unsited Bisos" :anchor "FreshDebian→UnsitedBisos" :extraInfo "  /::Layer 1::/  "
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _*L1* FreshDebian  to Unsited Bisos_: |]] <<FreshDebian→UnsitedBisos>>   /::Layer 1::/    [[elisp:(org-shifttab)][<)]] E|
@@ -354,9 +402,9 @@ Definition of concepts
 ** Also convays developer BPO
 ** DevelBpo can be materialized
 ** -B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "*L3* Chared Container" :anchor "CharedContainer" :extraInfo " /::Layer 3::/ "
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "*L3* Reified Container" :anchor "ReifiedContainer" :extraInfo " /::Layer 3::/ "
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _*L3* Chared Container_: |]] <<CharedContainer>>  /::Layer 3::/   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _*L3* Reified Container_: |]] <<ReifiedContainer>>  /::Layer 3::/   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "New Box Realize On Manager" :anchor "" :extraInfo "On Manager -- BISOS-Base New-UnAssigned Box"
@@ -396,11 +444,18 @@ w####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep t :folding? nil :label "S
 ** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "sysCharDevel.sh -h -v -n showRun -i bisosDevBxo_fullSetup")][sysCharDevel.sh -h -v -n showRun -i bisosDevBxo_fullSetup]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "*L4* Materialized Container" :anchor "MaterializedContainer" :extraInfo " /::Layer 4::/ "
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "*L4* Composed Container" :anchor "ComposedContainer" :extraInfo " /::Layer 4::/ "
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _*L4* Materialized Container_: |]] <<MaterializedContainer>>  /::Layer 4::/   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _*L4* Composed Container_: |]] <<ComposedContainer>>  /::Layer 4::/   [[elisp:(org-shifttab)][<)]] E|
 ####+END
-
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "*L5* Materialized Container" :anchor "MaterializedContainer" :extraInfo " /::Layer 5::/ "
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _*L5* Materialized Container_: |]] <<MaterializedContainer>>  /::Layer 5::/   [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "*L6* Stationed Container" :anchor "StationedContainer" :extraInfo " /::Layer 5::/ "
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _*L6* Stationed Container_: |]] <<StationedContainer>>  /::Layer 5::/   [[elisp:(org-shifttab)][<)]] E|
+####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "With Panles Evolution of Platforms To Containers" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _With Panles Evolution of Platforms To Containers_: |]]    [[elisp:(org-shifttab)][<)]] E|
