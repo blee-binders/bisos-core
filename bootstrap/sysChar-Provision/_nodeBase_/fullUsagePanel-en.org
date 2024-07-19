@@ -285,10 +285,20 @@ Definition of concepts
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *New Box:* |]]  Manager+Target -- Developer and Production  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** 1) ~On Manager:~ sysCharDeploy.sh  l1l2_sitedDevContainer #
+** 1) ~On Manager:~ sysCharBoxDeploy.sh  l2_sitedDevContainer #
 *** +
-*** sysCharDeploy.sh -h -v -n showRun -p targetName="192.168.0.47" -i l1l2_sitedDevContainer # OnManager
+*** sysCharBoxDeploy.sh -h -v -n showRun -p targetName="192.168.0.xx" -i l2_sitedDevContainer # OnManage
+*** TODO <2024-07-17 Wed 21:44> Will because of initial addition of git hub prompt as below:
 ***  Should not prompt: bx-gitReposBases -v 20 --baseDir=/bisos/git/auth --pbdName=bxReposCollection --vcMode=auth --gitLabel=mb1_github -i pbdUpdate all
+*** Interim Solution: Run the above command and respond to prompt
+*** Re-Run: sysCharBoxDeploy.sh -h -v -n showRun -p targetName="192.168.0.xx" -i l2_sitedDevContainer
+*** Then Re-Run: bx-gitReposBases -v 20 --baseDir=/bisos/git/auth --pbdName=bxReposCollection --vcMode=auth --gitLabel=mb1_github -i pbdUpdate all
+*** And Re-Run: bx-gitReposBases -v 20 --baseDir="/bisos/git/auth/bxRepos" --pbdName="bxReposRoot" --vcMode="auth" --gitLabel="mb1_githu"  -i pbdUpdate all
+*** Now you can run blee and move to layer-3.
+*** In /bisos/venv/py3/dev-bisos3/lib/python3.11/site-packages
+ln -s /bisos/git/auth/bxRepos/bisos-pip/namespace/py3/bisos
+*** pip install black pygit2
+*** May seem to fail svcInvSiteRegBox.cs  -i thisBox_assign  -- But is assigned verify with svcInvSiteRegBox.cs  -i thisBox_findNu
 *** -
 ** 1) ~On Manager:~ l1l2-sitedDevBisos
 ** 2) ~On Manager:~ xterm & emacs
