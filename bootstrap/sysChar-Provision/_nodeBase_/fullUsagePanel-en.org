@@ -348,17 +348,17 @@ ln -s /bisos/git/auth/bxRepos/bisos-pip/namespace/py3/bisos
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "Manager" :anchor "bisosUnsitedDeploy.sh -i fullUpdate" :extraInfo "Sited-FreshDebian→UnsitedBisos"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Manager:* |]] <<bisosUnsitedDeploy.sh -i fullUpdate>> Sited-FreshDebian→UnsitedBisos  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Manager" :icmName "echo bisosUnsitedDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i fullUpdate" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Manager/ :: [[elisp:(lsip-local-run-command "echo bisosUnsitedDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i fullUpdate")][echo bisosUnsitedDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i fullUpdate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+unsitedBisosDeploy.sh####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Manager" :icmName "echo unsitedBisosDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i l1_fullUpdate" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Manager/ :: [[elisp:(lsip-local-run-command "echo unsitedBisosDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i l1_fullUpdate")][echo unsitedBisosDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i l1_fullUpdate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** +
 ** TODO bisosUnsitedDeploy.sh -i xxx --- To be Tested And also Undo
 ** -B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "Manager" :anchor "bisosUnsitedDeploy-DeBisosIfy" :extraInfo "bisosUnsitedDeploy.sh -i deBisosIfy"
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Manager:* |]] <<bisosUnsitedDeploy-DeBisosIfy>> bisosUnsitedDeploy.sh -i deBisosIfy  [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "Manager" :anchor "unsitedBisosDeploy.sh-L1-DeBisosIfy" :extraInfo "unsitedBisosDeploy.sh -i l1_deBisosIfy"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Manager:* |]] <<unsitedBisosDeploy.sh-L1-DeBisosIfy>> unsitedBisosDeploy.sh -i l1_deBisosIfy  [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Manager" :icmName "echo bisosUnsitedDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i deBisosIfy" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Manager/ :: [[elisp:(lsip-local-run-command "echo bisosUnsitedDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i deBisosIfy")][echo bisosUnsitedDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i deBisosIfy]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Manager" :icmName "echo unsitedBisosDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i l1_deBisosIfy" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Manager/ :: [[elisp:(lsip-local-run-command "echo unsitedBisosDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i l1_deBisosIfy")][echo unsitedBisosDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i l1_deBisosIfy]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** +
 ** TODO bisosUnsitedDeploy.sh -i xxx --- To be Tested And also Undo
