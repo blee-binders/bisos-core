@@ -97,29 +97,29 @@ vagrant plugin install vagrant-libvirt3.2) Manager/Target: /L-2/ containerBoxAsc
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Provisionings 6 Layers_: |]] <<ProvisioningsLayers>>   /::Table::/  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 
-|-------------+-----------------------+--------------------------+---------------------------------------------|
-| Layering    | Name                  | Link                     | Comments                                    |
-|-------------+-----------------------+--------------------------+---------------------------------------------|
-| <<Layer 0>> | FreshDebian           |                          | Fresh Debian Distro                         |
-|-------------+-----------------------+--------------------------+---------------------------------------------|
-| <<Layer 1>> | UnsitedBisos          | [[FreshDebian→UnsitedBisos]] | Debian SW + BISOS + Blee                    |
-|-------------+-----------------------+--------------------------+---------------------------------------------|
-| <<Layer 2>> | SitedContainer        | [[Sited-Container]]          | SiteBpo is activated on Container           |
-|             |                       |                          | Development BPO can be materialized         |
-|-------------+-----------------------+--------------------------+---------------------------------------------|
-| <<Layer 3>> | ReifiedContainer      |                          | Reified -- Reg+Realized or Activated        |
-|             |                       |                          | containerChar Bpo is reified                |
-|-------------+-----------------------+--------------------------+---------------------------------------------|
-| <<Layer 4>> | ComposedContainer     |                          | cntnrChar is further configured             |
-|             |                       |                          | svcBpos are reified.                        |
-|-------------+-----------------------+--------------------------+---------------------------------------------|
-| <<Layer 5>> | MaterializedContainer |                          | Host: vag boxes, and generic guests created |
-|             |                       |                          | Pure: sys/bin/extensions                    |
-|             |                       |                          | Guest: Vag file created, img created.       |
-|-------------+-----------------------+--------------------------+---------------------------------------------|
-| <<Layer 6>> | StationedContainer    |                          | Host: Sealed                                |
-|             |                       |                          | Guest: img stationed on host. ReMatrialized |
-|-------------+-----------------------+--------------------------+---------------------------------------------|
+|-------------+------------------------+--------------------------+---------------------------------------------|
+| Layering    | Name                   | Link                     | Comments                                    |
+|-------------+------------------------+--------------------------+---------------------------------------------|
+| <<Layer 0>> | FreshDebian            |                          | Fresh Debian Distro                         |
+|-------------+------------------------+--------------------------+---------------------------------------------|
+| <<Layer 1>> | UnsitedBisos/raw-bisos | [[FreshDebian→UnsitedBisos]] | Debian SW + BISOS + Blee                    |
+|-------------+------------------------+--------------------------+---------------------------------------------|
+| <<Layer 2>> | SitedContainer         | [[Sited-Container]]          | SiteBpo is activated on Container           |
+|             |                        |                          | Development BPO can be materialized         |
+|-------------+------------------------+--------------------------+---------------------------------------------|
+| <<Layer 3>> | ReifiedContainer       | [[ReifiedContainer]]         | Reified -- Reg+Realized or Activated        |
+|             |                        |                          | containerChar Bpo is reified                |
+|-------------+------------------------+--------------------------+---------------------------------------------|
+| <<Layer 4>> | ComposedContainer      | [[ComposedContainer]]        | cntnrChar is further configured             |
+|             |                        |                          | svcBpos are reified.                        |
+|-------------+------------------------+--------------------------+---------------------------------------------|
+| <<Layer 5>> | MaterializedContainer  | [[MaterializedContainer]]    | Host: vag boxes, and generic guests created |
+|             |                        |                          | Pure: sys/bin/extensions                    |
+|             |                        |                          | Guest: Vag file created, img created.       |
+|-------------+------------------------+--------------------------+---------------------------------------------|
+| <<Layer 6>> | StationedContainer     | [[StationedContainer]]       | Host: Sealed                                |
+|             |                        |                          | Guest: img stationed on host. ReMatrialized |
+|-------------+------------------------+--------------------------+---------------------------------------------|
 
 
 
@@ -168,7 +168,7 @@ Definition of concepts
 |--------------------------+-------------------------------------------------------------------------------------------|
 | <<BlankBox>>             | Computer hardware capable of receiving [[Debian-OS]]                                          |
 | <<Debian-OS>>            | Debian image availabe through debian.org                                                  |
-| <<DebianSys>>            | [[[[Debian-OS]]  + [[BlankBox]]                                                                   |
+| <<DebianSys>>            | [[Debian-OS]]  + [[BlankBox]]                                                                     |
 | <<FreshDebian>>          | Debian-OS insatlled on [[BlankBox]] + adjusted to not suspend, etc + sshd                     |
 | <<ChromeOsDeb>>          | The virgin Debian OS VM of ChromeBook                                                     |
 | <<AndroidBox>>           | A virgin Android Phone or ChromeBook                                                      |
