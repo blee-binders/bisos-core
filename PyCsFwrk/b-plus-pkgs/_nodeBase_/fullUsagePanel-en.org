@@ -42,9 +42,9 @@ SCHEDULED: <2022-08-28 Sun>
 ** TODO In paralell with bisos-pip create a CS-ModulesDev panel.
 SCHEDULED: <2022-08-28 Sun>
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Conceptual Layering Of BISOS Packages" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Conceptual Layering Of BISOS Packages" :anchor "" :extraInfo "TABULAR"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Conceptual Layering Of BISOS Packages:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Conceptual Layering Of BISOS Packages:* |]]  TABULAR  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 | L-Nu      | Layer Name                      | bisos Packages    | Comments                            |
@@ -89,7 +89,64 @@ SCHEDULED: <2022-08-28 Sun>
 |------+----------------------------+----------------+--------------------|
 #+TBLFM:
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PyCS Foundation/Platform -- BISDF" :anchor "" :extraInfo "TABULAR BISOS Development Framework"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PyCS Foundation/Platform -- BISDF:* |]]  TABULAR BISOS Development Framework  [[elisp:(org-shifttab)][<)]] E|
+####+END
 
+| Adopted Packages  | Label     | [[ignore][File]]  | [[ignore][Panel]] | Used For | Description                     |
+|-------------------+-----------+-------+-------+----------+---------------------------------|
+| deprecated        | org-begin |       |       |          | COMEEGA triggers                |
+| logging           | bpf.fv    | [[Path ][fv.py]] | [[Path ][fv.py]] | Many     | Simple configurations           |
+
+
+
+| Construct         | Label       | [[ignore][File]]   | [[ignore][Panel]]  | Used For | Description                        |
+|-------------------+-------------+--------+--------+----------+------------------------------------|
+| Org-Mode Comments | org-begin   |        |        |          | COMEEGA triggers                   |
+| File Variables    | bpf.fv      | [[Path ][fv.py]]  | [[Path ][fv.py]]  | Many     | Simple configurations              |
+| File Tree Objects | bpf.fto     | none   | none   | Common   | Auto walkthrough of leaf/branch    |
+| File Parameters   | bpf.fp      | none   | none   | Common   | Common configurations              |
+|-------------------+-------------+--------+--------+----------+------------------------------------|
+| Operation Outcome | OpOutcome   | none   | none   | Common   | Result + Error + Failure + Reports |
+| Operation         | Op          | none   | none   | Common   | Receives and Returns OpOutcome     |
+| Wrapped Operation | OpW         | none   | none   | Common   | An Operation invoked from a CS     |
+| Command Services  | CmndSvc     | none   | none   | Common   | Expecation Complete Operation      |
+| CS-Parameter      | CS_Param    | NOTYET | NOTYET | common   | Also maps to FPs                   |
+| CS-Args           | CS_args     |        |        |          | CS Args specification              |
+| CS-examples       | cs_examples |        |        |          |                                    |
+| CS-examples-niche | niche       |        |        |          |                                    |
+|-------------------+-------------+--------+--------+----------+------------------------------------|
+| Operation Outcome | LOG_        | none   | none   | Common   | Result + Error + Failure + Reports |
+| Operation Outcome | EH_         | none   | none   | Common   | Result + Error + Failure + Reports |
+| Operation Outcome | TM_         | none   | none   | Common   | Result + Error + Failure + Reports |
+| Operation Outcome | NOTE_       | none   | none   | Common   | Result + Error + Failure + Reports |
+|-------------------+-------------+--------+--------+----------+------------------------------------|
+| Currents          | cur         | none   | none   | Common   | Result + Error + Failure + Reports |
+| SubProc           | subProc     | none   | none   | Common   | Result + Error + Failure + Reports |
+| Directories       | bpf.dir     | none   | none   | Common   | Result + Error + Failure + Reports |
+| pyRunAs           | as_root_    | none   | none   | Common   | bpf.as_root_writeToFile            |
+|                   |             |        |        |          |                                    |
+
+** ~BISDF Key Concepts And Terminology~ (ByStar Internet Services Development Framework)
+** Typed Function   --- Programming Language Construct (typed args and typed return values)
+** Operation  --- (Arguments, Result, Error) A function that returns An OpOutcome and accepts an opOutcome as an argument and whose arguments are typed.
+** Operation opOutcome  --- Results, Status, Errors, Failures, Reports
+** Expectation-Complete-Operation --- An Operation capable of reporting all of its inputs and of its OpOutcome.
+Expectation-Complete-Operation can be invoked in such a way that they do not invoke the operation but that instead
+they report their expected parameters and their expected Outcome.
+** Command-Service --- An Expectation-Complete-Operation Which can be invoked as a command, a service or an operation.
+** A Command, is invocation of a Command-Service from the command line.
+** A Service Performer, is invocation of a Command-Service through Remote-Operations machinary
+** A Service Invoker, is invocation of a Command-Service that produces inputs for a Remote-Operations machinary and which then receives the Outcome.
+** An Expectation-Complete-Operation-User-Interface --- A User-Interface that through the use of Expectation-Complete-Operation
+can produce a generic but complete interface for invocation as a command or a service invoker.
+** Wrapped-Operations --- Operations invoked during the invokation of an Expectation-Complete-Operation.
+** ~BISDF Fundamental Constructs~ (ByStar Internet Services Development Framework)
+Bound to Python --- COMEEGA ---
+** Classes labeled as "Abstract" are to be sub-classed. They are Abstract and not usable as raw.
+** bisos-pip/bpf/op.py
+** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "General Purpose CS Framework" :anchor "L-1" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *General Purpose CS Framework:* |]] <<L-1>>   [[elisp:(org-shifttab)][<)]] E|
