@@ -110,7 +110,7 @@
 ByStar Realms represent a strict hierarchy and order for specificcation and customization inheritance and for
 gathering.
 
-"collective"         ;; ByStar Digital Ecosystem
+"collective" ;;  ByStar Digital Ecosystem --  A Collective is a community with a special purpose
 "nation"
 "district"   ;; eg service provider
 "site"

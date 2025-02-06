@@ -33,9 +33,9 @@
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/BashIcmFwrk/_nodeBase_")][ =BashIcmFwrk= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PALS/_nodeBase_")][ =PALS= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/_nodeBase_")][ =PyCsFwrk= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/adoptedComponents/_nodeBase_")][ =adoptedComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/baseDirs/_nodeBase_")][ =baseDirs= ]] *|*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bisos-dev/_nodeBase_")][ = /<bisos-dev>/ = ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bisos-evolution/_nodeBase_")][ = /<bisos-evolution>/ = ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bisos-pip/_nodeBase_")][ =bisos-pip= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bisosAccts/_nodeBase_")][ =bisosAccts= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/_nodeBase_")][ =bootstrap= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/_nodeBase_")][ =bxeAndBxo= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/disks/_nodeBase_")][ =disks= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/groupedComponents/_nodeBase_")][ =groupedComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/maintainInterim/_nodeBase_")][ =maintainInterim= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/modelAndTerminology/_nodeBase_")][ =modelAndTerminology= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/platform/_nodeBase_")][ =platform= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/projs/_nodeBase_")][ =projs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/registrations/_nodeBase_")][ =registrations= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sites/_nodeBase_")][ =sites= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sync/_nodeBase_")][ =sync= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/_nodeBase_")][ =virtualization= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/_nodeBase_")][ =bxeAndBxo= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/capability/_nodeBase_")][ =capability= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/disks/_nodeBase_")][ =disks= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/groupedComponents/_nodeBase_")][ =groupedComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/maintainInterim/_nodeBase_")][ =maintainInterim= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/modelAndTerminology/_nodeBase_")][ =modelAndTerminology= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/platform/_nodeBase_")][ =platform= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/projs/_nodeBase_")][ =projs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/registrations/_nodeBase_")][ =registrations= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sites/_nodeBase_")][ =sites= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sync/_nodeBase_")][ =sync= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/_nodeBase_")][ =virtualization= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
@@ -60,45 +60,53 @@
 | Pkg Name             | Pkg Code | Panels |   PYPI | Functional | StdAlone | Old ICM | Comments                      |    |
 |                      | Status   | Status | Latest | Status     | Deps     |         |                               |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.b              | Mdrn     | Mdrn   |   0.45 |            |          |         | <2025-01-22 Wed 18:50>        |    |
+| bisos.b              | Mdrn+    | Mdrn   |   0.47 |            |          |         | PyCs-Foundation               |    |
+|                      |          |        |        |            |          |         | <2025-01-26 Sun 14:18>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.facter         | Mdrn     | Good   |   0.98 |            | Bplayer  |         | Used as Exemplar              |    |
+| bisos.pycs           | Mdrn+    | Mdrn   |   0.22 |            |          |         | PyCs-FrameWork+-Py Packaging  |    |
+|                      |          |        |        |            |          |         | <2025-01-26 Sun 13:48>        |    |
+|----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
+| bisos.facter         | Mdrn+    | Good   |   0.99 |            | Bplayer  |         | Used as Exemplar              |    |
 |                      |          |        |        |            |          |         | <2025-01-23 Thu 14:43>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.capability     | Latest   | Good   |        |            |          |         |                               |    |
+| bisos.capability     | Mdrn+    | Good   |   0.11 |            |          |         | Capability Materialization    |    |
+|                      |          |        |        |            |          |         | <2025-01-26 Sun 13:55>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.siteRegistrars | Mdrn     | Mdrn   |   0.62 |            |          |         | RO service: box,container,net |    |
+| bisos.siteRegistrars | Mdrn+    | Mdrn   |   0.63 |            |          |         | RO service: box,container,net |    |
 |                      |          |        |        |            |          |         | Uses regFps.                  |    |
 |                      |          |        |        |            |          |         | <2025-01-23 Thu 16:24>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.debian         |          |        |   0.12 |            |          |         | Bx IF to Debian, sysd,        |    |
+| bisos.debian         | Mdrn+    | Mdrn   |   0.13 |            |          |         | Bx IF to Debian, sysd,        |    |
 |                      |          |        |        |            |          |         | <2025-01-23 Thu 16:55>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.usgAcct        |          |        |   0.22 |            |          |         | manage tilda directorys       |    |
+| bisos.usgAcct        | Mdrn+    | ???    |   0.23 |            |          |         | manage tilda directorys       |    |
 |                      |          |        |        |            |          |         | <2025-01-23 Thu 16:55>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.basics         | Mdrn     | Inco   |   0.21 |            |          |         | pathPlus, pyRunAs             |    |
+| bisos.basics         | Mdrn+    | Inco   |   0.22 |            |          |         | pathPlus, pyRunAs             |    |
 |                      |          | plete  |        |            |          |         | <2025-01-22 Wed 20:50>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.binsprep       | Mdrn     | Mdrn   |    0.1 |            |          |         | Seed for apt-get,pip,pipx     |    |
+| bisos.common         | Mdrn+    | Inco   |   0.86 |            |          |         | GitBaseDirs                   |    |
+|                      |          | plete  |        |            |          |         | <2025-01-22 Wed 20:50>        |    |
+|----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
+| bisos.binsprep       | Mdrn+    | Mdrn   |   0.11 |            |          |         | Seed for apt-get,pip,pipx     |    |
+|                      |          |        |        |            |          |         | <2025-01-26 Sun 13:46>        |    |
+|----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
+| bisos.bpo            | Mdrn+    | Mdrn   |   0.42 |            |          |         | Bx Portable objects           |    |
 |                      |          |        |        |            |          |         | <2025-01-22 Wed 20:50>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.bpo            | Mdrn     | Mdrn   |   0.41 |            |          |         | Bx Portable objects           |    |
+| bisos.plas           | Mdrn+    | Mdrn   |   0.12 |            |          |         | Possession Assert lib Svcs    |    |
 |                      |          |        |        |            |          |         | <2025-01-22 Wed 20:50>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.plas           | Mdrn     | Mdrn   |   0.11 |            |          |         | Possession Assert lib Svcs    |    |
+| bisos.bxoGitlab      | Mdrn+    | Mdrn   |   0.22 |            |          |         | Bx Portable objects           | cc |
 |                      |          |        |        |            |          |         | <2025-01-22 Wed 20:50>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.bxoGitlab      | Mdrn     | Mdrn   |   0.21 |            |          |         | Bx Portable objects           | cc |
+| bisos.cmdb           | Mdrn+    | Mdrn   |   0.11 |            |          |         | Configuration Mgmt Data Base  | cc |
 |                      |          |        |        |            |          |         | <2025-01-22 Wed 20:50>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.cmdb           | Mdrn     | Mdrn   |    0.1 |            |          |         | Configuration Mgmt Data Base  | cc |
+| bisos.cntnr          | Mdrn+    | Mdrn   |   0.64 |            |          |         | Container / Platform          | cc |
 |                      |          |        |        |            |          |         | <2025-01-22 Wed 20:50>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.cntnr          | Mdrn     | Mdrn   |   0.63 |            |          |         | Container / Platform          | cc |
-|                      |          |        |        |            |          |         | <2025-01-22 Wed 20:50>        |    |
-|----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.platform       | Mdrn     | Mdrn   |   0.14 |            |          |         | Platform                      | cc |
+| bisos.platform       | Mdrn+    | Mdrn   |   0.15 |            |          |         | Platform                      | cc |
 |                      |          |        |        |            |          |         | <2025-01-22 Wed 20:50>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
 | bisos                | Special  | Mdrn   |   0.63 |            |          |         | Not Full Understood ??        | cc |
@@ -110,24 +118,36 @@
 | bisos.transit        | Defunct  | Ignore |     NA |            |          |         | GetRidOfIt. Already Absorbed  | cc |
 |                      |          |        |        |            |          |         | <2025-01-22 Wed 20:50>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.currents       | Mdrn     | Mdrn   |   0.63 |            |          |         | Duplicates .sh env            | cc |
+| bisos.currents       | Mdrn+    | Mdrn   |   0.64 |            |          |         | Duplicates .sh env            | cc |
 |                      |          |        |        |            |          |         | <2025-01-22 Wed 20:50>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.marmee         | Mdrn     | Mdrn   |   0.81 |            |          |         | Multi Acct Res Mail Env       | cc |
+| bisos.crypt          | Mdrn+    | Mdrn   |   0.11 |            |          |         | crypt for bpo                 | cc |
 |                      |          |        |        |            |          |         | <2025-01-22 Wed 20:50>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.qmail          | Mdrn     | Mdrn   |   0.21 |            |          |         | Qmail                         | cc |
+| bisos.marmee         | Mdrn+    | Mdrn   |   0.82 |            |          |         | Multi Acct Res Mail Env       | cc |
+|                      |          |        |        |            |          |         | <2025-01-22 Wed 20:50>        |    |
+|----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
+| bisos.qmail          | Mdrn+    | Mdrn   |   0.22 |            |          |         | Qmail                         | cc |
 |                      |          |        |        |            |          |         | <2025-01-22 Wed 20:50>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.regFps         | Mdrn     | Mdrn   |   0.21 |            |          |         | File based registrations.     |    |
+| bisos.regfps         | Mdrn+    | Mdrn   |   0.22 |            |          |         | File based registrations.     |    |
 |                      |          |        |        |            |          |         | Used by siteRegistrars.       |    |
 |                      |          |        |        |            |          |         | <2025-01-23 Thu 16:16>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
-| bisos.banna          | Mdrn     | Inco   |   0.31 |            |          |         | Bx Assign Name Num Authority  |    |
+| bisos.banna          | Mdrn+    | Inco   |   0.37 |            |          |         | Bx Assign Name Num Authority  |    |
 |                      |          | mplete |        |            |          |         | Should used regFps            |    |
 |                      |          |        |        |            |          |         | <2025-01-22 Wed 18:50>        |    |
 |----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
+|----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
+|----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
+| bisos.graphviz       | Mdrn+    | Good   |   0.22 |            |          |         | A seed for graphviz usage     |    |
+|                      |          |        |        |            |          |         | <2025-01-23 Thu 18:14>        |    |
+|----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
+| bisos.capability     | Mdrn+    | Good   |   0.12 |            |          |         | Cap Specification+Realization |    |
+|                      |          |        |        |            |          |         | <2025-01-23 Thu 18:22>        |    |
+|----------------------+----------+--------+--------+------------+----------+---------+-------------------------------+----|
+|                      |          |        |        |            |          |         |                               |    |
 
 
 
