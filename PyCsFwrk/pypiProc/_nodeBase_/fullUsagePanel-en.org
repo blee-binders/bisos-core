@@ -39,6 +39,9 @@
 ** Overview Comes Here.
 ** -B|
 * +
+* TODO take care of pipx of bisos.pycs
+* TODO In devel mode pip install build somewhere
+* TODO
 * -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Pip Install Editable" :anchor "" :extraInfo "https://setuptools.pypa.io/en/latest/userguide/development_mode.html"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
