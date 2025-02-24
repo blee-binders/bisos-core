@@ -25,7 +25,7 @@
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
-*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/capability/collectiveCapabilities/facterCapability/_nodeBase_")][ =facterCapability= ]] *|*
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/capability/collectiveCapabilities/facterCapability/_nodeBase_")][ = /<facterCapability>/ = ]] *|*
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/capability/bisos.capability/_nodeBase_")][ = /<bisos.capability>/ = ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/capability/collectiveCapabilities/_nodeBase_")][ =collectiveCapabilities= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/capability/conceptsAndTerminology/_nodeBase_")][ = /<conceptsAndTerminology>/ = ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/capability/paltformCapability/_nodeBase_")][ = /<paltformCapability>/ = ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/capability/siteCapabilities/_nodeBase_")][ =siteCapabilities= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/capability/_nodeBase_")][ =capability= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*

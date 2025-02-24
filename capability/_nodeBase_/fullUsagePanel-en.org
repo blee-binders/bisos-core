@@ -42,11 +42,63 @@
 ** Overview Comes Here.
 ** -B|
 * +
-* Collective Capabilities Realm Panel  --
+* Collective Capabilities Realm Panel  -- (Raw-BISOS + Fresh-Debian)
 * Site Capabilities Realm Panel     --
 * Private Capabilities Realm Panel  --
-* Blank Platform Capability Panel   --
-* Platform Capability Panel         --  file:/bisos/platform/panel/capability/_nodeBase_/fullUsagePanel-en.org
+* Raw-BISOS Platform Capability Panel   --
+* Fresh-Debian Capability Panel         --  file:/bisos/platform/panel/capability/_nodeBase_/fullUsagePanel-en.org
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Table of Available Capabilities" :anchor "" :extraInfo "TABULAR"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Table of Available Capabilities:* |]]  TABULAR  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+|-----------------+---------+------------+-------+-----------+---------------+---------|
+| Capability Name | Package | Type       | Realm | Mater     | Applicability | Comment |
+|                 |         |            |       | Stages    |               |         |
+|-----------------+---------+------------+-------+-----------+---------------+---------|
+|-----------------+---------+------------+-------+-----------+---------------+---------|
+| facter          | bisos.  | [[RO-CS-Gnrc]] | [[Coll]]  | [[Deb+Stub]]  | Any Pltfrm    |         |
+|                 | facter  |            |       | Raw-BISOS |               |         |
+|-----------------+---------+------------+-------+-----------+---------------+---------|
+| registrar       | bisos.  | [[RO-CS-Cust]] | Site  | [[S-BISOS]]   | SiteEsntl     |         |
+|                 | regxx   |            |       |           |               |         |
+|-----------------+---------+------------+-------+-----------+---------------+---------|
+| null            | capSpec | [[induct]]     | [[Coll]]  | [[FreshDeb]]  |               |         |
+|-----------------+---------+------------+-------+-----------+---------------+---------|
+| develEnv        | BSIP    | [[induct]]     | Site  | [[S-BISOS]]   | AnySited      |         |
+|-----------------+---------+------------+-------+-----------+---------------+---------|
+| NAT-Routrer     | siteBin | sysSysd    | Site  | [[S-BISOS]]   | SiteRouter    |         |
+|-----------------+---------+------------+-------+-----------+---------------+---------|
+| DHCP-Server     | siteBin | sysSysd    | Site  | [[S-BISOS]]   | SiteRouter    |         |
+|-----------------+---------+------------+-------+-----------+---------------+---------|
+| WifiApBridge    | siteBin | sysSysd    | Site  | [[S-BISOS]]   | SiteRouter    |         |
+|-----------------+---------+------------+-------+-----------+---------------+---------|
+| TinyDNS         | siteBin | sysSysd    | Site  | [[S-BISOS]]   | SiteRouter    |         |
+|-----------------+---------+------------+-------+-----------+---------------+---------|
+| Geneweb         | siteBin | sysSysd    | Site  | [[S-BISOS]]   | SiteRouter    |         |
+|-----------------+---------+------------+-------+-----------+---------------+---------|
+| MARMEE          | siteBin | sysSysd    | Site  | [[S-BISOS]]   | UsageEnv      |         |
+|-----------------+---------+------------+-------+-----------+---------------+---------|
+| LCNT-Base       | siteBin | sysSysd    | Site  | [[S-BISOS]]   | UsageEnv      |         |
+|-----------------+---------+------------+-------+-----------+---------------+---------|
+| LCNT-BPOs       | siteBin | sysSysd    | Site  | [[S-BISOS]]   | UsageEnv      |         |
+|-----------------+---------+------------+-------+-----------+---------------+---------|
+
+===========
+<Coll>>        :: Collective
+===========
+<<FreshDeb>>  :: Fresh Debian
+<<Deb+Stub>>  :: Fresh-Debian + BISOS-Stub
+<<S-BISOS>>   :: Sited-BISOS
+===========
+<<RO-CS-Gnrc>> :: RO CS Generic
+<<RO-CS-Cust>> :: RO CS Customized
+<<RunOnce>>    :: <<induct>>  Run one script once
+<<sysSysd>>    :: Run one script once
+==========
+<<SiteRouter>> ::
+
+
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
