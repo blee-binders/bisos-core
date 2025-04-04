@@ -30,8 +30,8 @@
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bxeAndBxo/bxce")][bxce]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bxeAndBxo/_nodeBase_")][ =bxeAndBxo= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel" :extraInfo "High Level Design"
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>> High Level Design  [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel" :extraInfo "High Level Design -- ByStar Container Entity"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>> High Level Design -- ByStar Container Entity  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
 ** Scope of this panel extends up to realization of ByStar Containers.
@@ -72,11 +72,18 @@
 ** *Design Decisions:* May be container entity types should just be Linux, Android, not all of below.
 ** 
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :sep t :outLevel 1 :title "Duplication With bisos-core/sysChar" :anchor "" :extraInfo "SysChar BPO Naming and Abbreviaition"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Duplication With bisos-core/sysChar:* |]]  SysChar BPO Naming and Abbreviaition  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** /bisos/git/auth/bxRepos/blee-binders/bisos-core/sysChar/_nodeBase_/fullUsagePanel-en.org has similar duplicates
+** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :sep t :outLevel 1 :title "Container Naming Conventions" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Container Naming Conventions:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** 
+** +
 ** 4 Parts of a container name: -- Model-Abode-Function-Nu
 ** 
 ** Container-Model, [HPV] is one of: 

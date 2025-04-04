@@ -1,0 +1,543 @@
+* B|
+####+BEGIN: bxPanel:common/title-plus
+#+title: sysChar/sysChar-Provision
+#+roam_tags: branch
+#+roam_key: bisos-core/sysChar/sysChar-Provision
+[[roam:bisos-core/sysChar]]
+####+END
+####+BEGIN: blee:bxPanel:topPanelControls
+*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
+**  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
+**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
+**  This File :: *= /bisos/panels/bisos-core/sysChar/sysChar-Provision/_nodeBase_/fullUsagePanel-en.org =*
+* /file-truename:/  /bisos/git/auth/bxRepos/blee-binders/bisos-core/sysChar/sysChar-Provision/_nodeBase_/fullUsagePanel-en.org
+*  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
+**  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
+**  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
+**  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]  E|
+####+END
+####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: bisos-core/sysChar -- sysChar-Provision~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
+* +
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sysChar/sysChar-Provision/bxRepos-bxGenesis-start")][bxRepos-bxGenesis-start]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sysChar/sysChar-Provision/noSite-Raw-Bisos/_nodeBase_")][ =noSite-Raw-Bisos= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sysChar/sysChar-Provision/sysCharDeploy.sh/_nodeBase_")][ =sysCharDeploy.sh= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sysChar/sysChar-Provision/sysCharRealize.sh/_nodeBase_")][ =sysCharRealize.sh= ]] *|*
+*                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sysChar/Generic-Guests/_nodeBase_")][ =Generic-Guests= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sysChar/Guest-Provision")][Guest-Provision]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sysChar/afterBaseSteps")][afterBaseSteps]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sysChar/provisionSelections/_nodeBase_")][ =provisionSelections= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sysChar/sysChar-Provision/_nodeBase_")][ =sysChar-Provision= ]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/sysChar/_nodeBase_")][ =sysChar= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview and Use Cases" :anchor "Panel" :extraInfo "  /::Under Construction::/"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview and Use Cases:* |]] <<Panel>>   /::Under Construction::/  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** The scope of SysCharProvision is Local-Box-Deployment, Manager-Box-Deployment
+** sysCharRealization or sysCharActivation and SysCharMaterializition.
+** The abstraction is called System-Character and not Container-Character (or Platform Character) becuase
+** it is traced back to BoxId. And boxId maps to system.
+** /Use Cases/
+1) Manager: /L-0/  obtaines BoxUniqId from FreshDebian
+2) Manager:  /L-1/ Fom FreshDebian to UnsitedBisos  -- verification of bxGenesis/start/unsited-bisos.sh
+3) Manager/Target: /L-2/ To SitedContainer
+3.1) Manager/Target: /L-2/ To SitedDevContainer  -- For Development
+vagrant plugin install vagrant-libvirt3.2) Manager/Target: /L-2/ containerBoxAscertain  (New Box or Existing Box)
+4) ~New Box~ (Un-Registered Box)
+4.1) Target: /L-3/ Assign BoxName, ContainerCharType and from FreshDebian to Realize
+4.2) Target: /L-4/ Assign BoxName, ContainerCharType and from FreshDebian to Materialize
+4.3) Target: /L-4/ Assign BoxName, ContainerCharType and from FreshDebian to DevMaterialize
+5) ~Existing Box~ (Previously Registed Box)
+5.1) Manager: /L-4/  From FreshDebian to Materialize
+5.2) Manager: /L-4/ From FreshDebian to DevMaterialize
+6) ~Virtualized~
+6.1) Target: /L-2/ + /L-4/ --- Vagrant's use of sysCharDeploy
+6.2) Manager/Target: sysCharBoxMaterialize invocation
+
+** -B|
+* +
+* TODO Add a regression tester, for DEV
+* TODO Add a regression tester for HOST
+* -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Related Sites (Chain To)" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Related Sites (Chain To)_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "Bootstrap Development" :dest "/bisos/panels/development/bisos-dev/bootstrapDev/_nodeBase_"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/bootstrapDev/_nodeBase_")][@ ~Bootstrap Development~ @]]  [[elisp:(org-cycle)][| *=* |]] :: /Agenda/ <<PROBLEM: Missing FV /bisos/panels/development/bisos-dev/bootstrapDev/_nodeBase_/foldDesc>> [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "BISOS Bootstrap Model" :dest "//bisos/panels/bisos-core/bootstrap/bootstrapModel/"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bootstrap/bootstrapModel/")][@ ~BISOS Bootstrap Model~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<bootstrapModel>> [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "Bootstrap Provioning Top Node" :dest "/bisos/panels/bisos-core/bootstrap/_nodeBase_"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/_nodeBase_")][@ ~Bootstrap Provioning Top Node~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<bootstrap>> [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "Virtual Platform BISOS Provisioning" :dest "/bisos/panels/bisos-core/bootstrap/virtualPlatformProvision"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/virtualPlatformProvision")][@ ~Virtual Platform BISOS Provisioning~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<PROBLEM: Missing FV /bisos/panels/bisos-core/bootstrap/virtualPlatformProvision/foldDesc>> [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "System Platform BISOS Provisioning" :dest "//bisos/panels/bisos-core/bootstrap/sysPlatformProvision/_nodeBase_/"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bootstrap/sysPlatformProvision/_nodeBase_/")][@ ~System Platform BISOS Provisioning~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<PROBLEM: Missing FV //bisos/panels/bisos-core/bootstrap/sysPlatformProvision/_nodeBase_/foldDesc>> [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "user" :icmName "sysCharUnsitedDeploy.sh" :comment "" :afterComment "<<sysCharUnsitedDeploy.sh>> [[sysCharUnsitedDeploy]]"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /user/ :: [[elisp:(lsip-local-run-command "sysCharUnsitedDeploy.sh -i examples")][sysCharUnsitedDeploy.sh]]  [[elisp:(lsip-local-run-command "sysCharUnsitedDeploy.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a sysCharUnsitedDeploy.sh")][which -a]]  [[elisp:(lsip-local-run-command "sysCharUnsitedDeploy.sh -i describe")][describe]] *|*  == *|*  <<sysCharUnsitedDeploy.sh>> [[sysCharUnsitedDeploy]] [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "user" :icmName "sysCharBoxDeploy.sh" :comment "Reged Container" :afterComment "<<sysCharBoxDeploy.sh>>"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /user/ :: [[elisp:(lsip-local-run-command "sysCharBoxDeploy.sh -i examples")][sysCharBoxDeploy.sh]]  [[elisp:(lsip-local-run-command "sysCharBoxDeploy.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a sysCharBoxDeploy.sh")][which -a]]  [[elisp:(lsip-local-run-command "sysCharBoxDeploy.sh -i describe")][describe]] *|*  =Reged Container= *|*  <<sysCharBoxDeploy.sh>> [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "user" :icmName "sysCharBoxDeploy.sh" :comment "Reged Container" :afterComment "<<sysCharBoxDeploy.sh>>"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /user/ :: [[elisp:(lsip-local-run-command "sysCharBoxDeploy.sh -i examples")][sysCharBoxDeploy.sh]]  [[elisp:(lsip-local-run-command "sysCharBoxDeploy.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a sysCharBoxDeploy.sh")][which -a]]  [[elisp:(lsip-local-run-command "sysCharBoxDeploy.sh -i describe")][describe]] *|*  =Reged Container= *|*  <<sysCharBoxDeploy.sh>> [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Provisionings 6 Layers" :anchor "ProvisioningsLayers" :extraInfo "  /::Table::/"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Provisionings 6 Layers_: |]] <<ProvisioningsLayers>>   /::Table::/  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+|-------------+------------------------+--------------------------+---------------------------------------------|
+| Layering    | Name                   | Link                     | Comments                                    |
+|-------------+------------------------+--------------------------+---------------------------------------------|
+| <<Layer 0>> | FreshDebian            |                          | Fresh Debian Distro                         |
+|-------------+------------------------+--------------------------+---------------------------------------------|
+| <<Layer 1>> | UnsitedBisos/raw-bisos | [[FreshDebian→UnsitedBisos]] | Debian SW + BISOS + Blee                    |
+|-------------+------------------------+--------------------------+---------------------------------------------|
+| <<Layer 2>> | SitedContainer         | [[Sited-Container]]          | SiteBpo is activated on Container           |
+|             |                        |                          | Development BPO can be materialized         |
+|-------------+------------------------+--------------------------+---------------------------------------------|
+| <<Layer 3>> | ReifiedContainer       | [[ReifiedContainer]]         | Reified -- Reg+Realized or Activated        |
+|             |                        |                          | containerChar Bpo is reified                |
+|-------------+------------------------+--------------------------+---------------------------------------------|
+| <<Layer 4>> | ComposedContainer      | [[ComposedContainer]]        | cntnrChar is further configured             |
+|             |                        |                          | svcBpos are reified.                        |
+|-------------+------------------------+--------------------------+---------------------------------------------|
+| <<Layer 5>> | MaterializedContainer  | [[MaterializedContainer]]    | Host: vag boxes, and generic guests created |
+|             |                        |                          | Pure: sys/bin/extensions                    |
+|             |                        |                          | Guest: Vag file created, img created.       |
+|-------------+------------------------+--------------------------+---------------------------------------------|
+| <<Layer 6>> | StationedContainer     | [[StationedContainer]]       | Host: Sealed                                |
+|             |                        |                          | Guest: img stationed on host. ReMatrialized |
+|-------------+------------------------+--------------------------+---------------------------------------------|
+
+
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "sysChar ICM/CS Facilities Table" :anchor "sysCharFacilities" :extraInfo "  /::Table::/"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _sysChar ICM/CS Facilities Table_: |]] <<sysCharFacilities>>   /::Table::/  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+List of ICMs.
+
+|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
+| Name                        | Link | User     | Comments                                                                              |
+|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
+| <<bisosUnsitedDeploy>>      | [[sysCharUnsitedDeploy.sh][🔗]]   | Manager  | Produces: [[UnsitedPlatform]]  ( Common [[Unsited-BISOS]] + [[Unsited-Blee]] )                    |
+| <<unsited-bisos>>           | [[sysCharUnsitedDeploy.sh][🔗]]   | Target   | Produces: [[UnsitedPlatform]]  ( Common [[Unsited-BISOS]] + [[Unsited-Blee]] )                    |
+|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
+| <<sysCharDeploy>>           | [[sysCharUnsitedDeploy.sh][🔗]]   | Lcl+Mngr | Produces: [[UnsitedPlatform]]  ( Common [[Unsited-BISOS]] + [[Unsited-Blee]] )                    |
+|                             | [[sysCharBoxDeploy.sh][🔗]]   | Lcl+Mngr | Produces: *Realized*  [[RegPlatform]] (sysChar-bpoId)                                       |
+|                             | [[sysCharBoxDeploy.sh][🔗]]   | Lcl+Mngr | Produces: *Materialized*  [[RegPlatform]] (identity Assigned)                               |
+|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
+| <<sysCharMaterializeBox>>   |      | Local    | Convenience Layer for *Box* Materialization                                             |
+| <<sysCharMaterializeGuest>> |      | Local    | Primary Layer for *Guest* Materialization                                               |
+|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
+| <<sysCharRealize>>          |      | infra    | Registers and Creates sysCharBpo                                                      |
+| <<sysCharActivate>>         |      | infra    | Activates an existing sysCharBpo (re-creation and mgmt)                               |
+| <<sysCharIdentity>>         |      | infra    | Materializes identity based on sysCharBpo                                             |
+| <<sysCharPreps>>            |      | infra    | Prepares a *HOST* for guest creation (vagrants)                                         |
+|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
+| KVM                         |      |          | NOTYET, KVM Panel                                                                     |
+| Vagrant                     |      |          | [[file:/bisos/panels/bisos-core/virtualization/vagrant/_nodeBase_/fullUsagePanel-en.org]] |
+|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
+
+
+** +
+** All "Start State" labels are defined in [[file:/bisos/panels/bisos-core/modelAndTerminology/_nodeBase_/fullUsagePanel-en.org::Systems Terminology]]
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Box, System, Platform and Container Definition" :anchor "BoxSysPlatConfTable" :extraInfo "  /::Table::/"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Box, System, Platform and Container Definition_: |]] <<BoxSysPlatConfTable>>   /::Table::/  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+Definition of concepts
+
+|--------------------------+-------------------------------------------------------------------------------------------|
+| Name                     | Definition                                                                                |
+|--------------------------+-------------------------------------------------------------------------------------------|
+| <<BlankBox>>             | Computer hardware capable of receiving [[Debian-OS]]                                          |
+| <<Debian-OS>>            | Debian image availabe through debian.org                                                  |
+| <<DebianSys>>            | [[Debian-OS]]  + [[BlankBox]]                                                                     |
+| <<FreshDebian>>          | Debian-OS insatlled on [[BlankBox]] + adjusted to not suspend, etc + sshd                     |
+| <<ChromeOsDeb>>          | The virgin Debian OS VM of ChromeBook                                                     |
+| <<AndroidBox>>           | A virgin Android Phone or ChromeBook                                                      |
+| <<Unsited-BISOS>>        | BISOS Software                                                                            |
+| <<Unsited-Blee>>         | Blee Software                                                                             |
+| <<Unsited-Platform>>     | A [[PrepedDebianSys]] loaded & configured with [[Unsited-BISOS]] software & [[Unsited-Blee]] software |
+| <<WithBootstrapPanels>>  | Use Blee Bootstrap Panels of [[Unsited-Platform]] to choose next steps.                       |
+| <<WithSiteCreatePanels>> | Use Blee SiteCreation Panles of [[Unsited-Platform]] to build a site                          |
+| <<Sited-Platform>>       | A UnsitedBisos Which has received siteBpos                                                |
+| <<Stable-Platform>>      | A [[Unsited-Platform]] with software as read-only public git repos.                           |
+| <<Devel-Platform>>       | A [[Unsited-Platform]] with software as read-write (developer) public git repos.              |
+| <<Reg-Platform>>         | A [[Unsited-Platform]] which has been registered as a Box in Site                             |
+| <<Pure-Container>>       |                                                                                           |
+| <<Host-Container>>       |                                                                                           |
+| <<Guest-Container>>      |                                                                                           |
+|--------------------------+-------------------------------------------------------------------------------------------|
+
+
+** +
+** All "Start State" labels are defined in [[file:/bisos/panels/bisos-core/modelAndTerminology/_nodeBase_/fullUsagePanel-en.org::Systems Terminology]]
+** -B|
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Genesis:: System To Container Evolution Model Table" :anchor "SysToCntnrEvolTable" :extraInfo "  /::Table::/"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Genesis:: System To Container Evolution Model Table_: |]] <<SysToCntnrEvolTable>>   /::Table::/  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+                              /FreshDebian/  ->->-> *UnsitedBisos* ->->->  /FreshDebian/
+
+|----------------------+-----------------+----------------------------------+--------------+----------------|
+| Start State          | Environment     | Transition Process               | End State    | Comments       |
+|----------------------+-----------------+----------------------------------+--------------+----------------|
+| [[BlankBox]]             | No Media        | bootstrap->distros->noMedia      | [[DebianSys]]    | Target-console |
+| [[BlankBox]]             | Media Available | bootstrap->distros->withMedia    | [[DebianSys]]    | Target-console |
+|----------------------+-----------------+----------------------------------+--------------+----------------|
+| [[DebianSys]]            | Any/All         | [[DebianSys→FreshDebian]]            | [[FreshDebian]]  | Target-console |
+|----------------------+-----------------+----------------------------------+--------------+----------------|
+| [[FreshDebian]]          | No-Site - Deb11 | [[FreshDebian→UnsitedBisos]]         | [[UnsitedBisos]] | Target         |
+| [[FreshDebian]]          | No-Site - Deb12 | [[FreshDebian→UnsitedBisos]]         | [[UnsitedBisos]] | Target         |
+|----------------------+-----------------+----------------------------------+--------------+----------------|
+| [[WithSiteCreatePanels]] | No-Site         | [[WithSiteCreatePanels→Site]]        | Sited        | Blee Panels    |
+| =====================  | ================  | ==============================     | =============  | ============     |
+| [[FreshDebian]]          | Sited-Manager   | [[bisosUnsitedDeploy -i fullUpdate]] | [[UnsitedBisos]] | Manager        |
+| [[UnsitedBisos]]         | Sited-Manager   | [[bisosUnsitedDeploy-DeBisosIfy]]    | [[FreshDebian]]  | Managr-UndoAll |
+| [[UnsitedBisos]]         | Target          | [[provisioner-DeBisosIfy]]           | [[FreshDebian]]  | Target-UndoAll |
+|----------------------+-----------------+----------------------------------+--------------+----------------|
+| [[ChromeOsDeb]]          | Sited           | Place Holder                     | [[UnsitedBisos]] | NOTYET         |
+|----------------------+-----------------+----------------------------------+--------------+----------------|
+| [[AndroidBox]]           | Sited           | Place Holder                     | [[UnsitedBisos]] | NOTYET         |
+|----------------------+-----------------+----------------------------------+--------------+----------------|
+
+
+      //UnsitedBisos// ->->->  *Stable-Sited-Platform* ->->-> ~Devel-Sited-Platform~ ->->-> *Stable-Sited-Platform*
+
+  |-----------------+---------+------------------------------+-----------------+----------------|
+  | Start State     | Env.    | Transition Process           | End State       | Comments       |
+  |-----------------+---------+------------------------------+-----------------+----------------|
+  | [[UnsitedBisos]]    | Target  | target-sitedPlatform_uppdate | [[Sited-Platform]]  | site BPOs      |
+  | [[UnsitedBisos]]    | Manager | manager-sitedPlatform_update | [[Sited-Platform]]  | site BPOs      |
+  | [[FreshDebian]]     | Manager |                              | [[Devel-Platform]]  | Manager        |
+  | [[FreshDebian]]     | Manager |                              | [[Devel-Platform]]  | Manager        |
+  |-----------------+---------+------------------------------+-----------------+----------------|
+  | [[Devel-Platform]]  | Target  | [[DevelPlatform→StablePlatform]] | [[Stable-Platform]] | anon git repos |
+  | [[Stable-Platform]] | Target  | [[StablePlatform→DevelPlatform]] | [[Devel-Platform]]  | auth git repos |
+  |-----------------+---------+------------------------------+-----------------+----------------|
+
+
+                      *Sited-Platform* ->->-> ~SysChared-Platform~ (Pure, Host, Guest)
+
+    |------------------+---------------+----------------------------+----------------+-----------|
+    | Start State      | Environment   | Transition Process         | End State      | Comments  |
+    |------------------+---------------+----------------------------+----------------+-----------|
+    | [[Unsited-Platform]] | Sited         | Platform Site Registration | [[Reg-Platform]]   |           |
+    | [[FreshDebian]]      | Sited         |                            | [[Reg-Platform]]   | Manager   |
+    |------------------+---------------+----------------------------+----------------+-----------|
+    | [[Reg-Platform]]     | Existing Char | fgcKvmHostingSw.sh         | [[Pure-Container]] | Box Based |
+    | [[Reg-Platform]]     | Existing Char | fgcKvmHostingSw.sh         | [[Host-Container]] | Box Based |
+    |------------------+---------------+----------------------------+----------------+-----------|
+    | [[Pure-Container]]   | Existing Char |                            | FunctionsReady | Preped    |
+    |------------------+---------------+----------------------------+----------------+-----------|
+    | [[Host-Container]]   | Existing Char |                            |                |           |
+    |------------------+---------------+----------------------------+----------------+-----------|
+    | [[Guest-Container]]  | Existing Char |                            |                |           |
+    |------------------+---------------+----------------------------+----------------+-----------|
+
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Container Bootstrap ICMs and CSs" :anchor "" :extraInfo "On Manager & Target -- Assigned & New Box"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Container Bootstrap ICMs and CSs_: |]]  On Manager & Target -- Assigned & New Box  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "setCurs" :icmName "echo bisosCurrentsManage.sh -i setParam curTargetBox 192.168.0.xx" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /setCurs/ :: [[elisp:(lsip-local-run-command "echo bisosCurrentsManage.sh -i setParam curTargetBox 192.168.0.xx")][echo bisosCurrentsManage.sh -i setParam curTargetBox 192.168.0.xx]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "showCurs" :icmName "cat /bisos/var/currents" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /showCurs/ :: [[elisp:(lsip-local-run-command "cat /bisos/var/currents")][cat /bisos/var/currents]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "showCurs" :icmName "cat /bisos/var/currents" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /showCurs/ :: [[elisp:(lsip-local-run-command "cat /bisos/var/currents")][cat /bisos/var/currents]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "shIcm" :icmName "sysCharBoxMaterialize.sh" :comment "Builds on sysCharDeploy.sh" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /shIcm/ :: [[elisp:(lsip-local-run-command "sysCharBoxMaterialize.sh -i examples")][sysCharBoxMaterialize.sh]]  [[elisp:(lsip-local-run-command "sysCharBoxMaterialize.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a sysCharBoxMaterialize.sh")][which -a]]  [[elisp:(lsip-local-run-command "sysCharBoxMaterialize.sh -i describe")][describe]] *|*  =Builds on sysCharDeploy.sh= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "shIcm" :icmName "sysCharDeploy.sh" :comment "Commands for On Manager and On Target" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /shIcm/ :: [[elisp:(lsip-local-run-command "sysCharDeploy.sh -i examples")][sysCharDeploy.sh]]  [[elisp:(lsip-local-run-command "sysCharDeploy.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a sysCharDeploy.sh")][which -a]]  [[elisp:(lsip-local-run-command "sysCharDeploy.sh -i describe")][describe]] *|*  =Commands for On Manager and On Target= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "shIcm" :icmName "sysCharDevel.sh" :comment "Switch to development mode" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /shIcm/ :: [[elisp:(lsip-local-run-command "sysCharDevel.sh -i examples")][sysCharDevel.sh]]  [[elisp:(lsip-local-run-command "sysCharDevel.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a sysCharDevel.sh")][which -a]]  [[elisp:(lsip-local-run-command "sysCharDevel.sh -i describe")][describe]] *|*  =Switch to development mode= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Sited: New and Existing Box -- New and Existing VM" :anchor "NewAndExistingBoxAndVm" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Sited: New and Existing Box -- New and Existing VM_: |]] <<NewAndExistingBoxAndVm>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "New Box" :anchor "" :extraInfo "Manager+Target -- Developer and Production"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *New Box:* |]]  Manager+Target -- Developer and Production  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** 1) ~On Manager:~ sysCharBoxDeploy.sh  l2_sitedDevContainer #
+*** +
+*** sysCharBoxDeploy.sh -h -v -n showRun -p targetName="192.168.0.xx" -i l2_sitedDevContainer # OnManage
+*** TODO <2024-07-17 Wed 21:44> Will because of initial addition of git hub prompt as below:
+***  Should not prompt: bx-gitReposBases -v 20 --baseDir=/bisos/git/auth --pbdName=bxReposCollection --vcMode=auth --gitLabel=mb1_github -i pbdUpdate all
+*** Interim Solution: Run the above command and respond to prompt
+*** Re-Run: sysCharBoxDeploy.sh -h -v -n showRun -p targetName="192.168.0.xx" -i l2_sitedDevContainer
+*** Then Re-Run: bx-gitReposBases -v 20 --baseDir=/bisos/git/auth --pbdName=bxReposCollection --vcMode=auth --gitLabel=mb1_github -i pbdUpdate all
+*** And Re-Run: bx-gitReposBases -v 20 --baseDir="/bisos/git/auth/bxRepos" --pbdName="bxReposRoot" --vcMode="auth" --gitLabel="mb1_githu"  -i pbdUpdate all
+*** Now you can run blee and move to layer-3.
+*** In /bisos/venv/py3/dev-bisos3/lib/python3.11/site-packages
+ln -s /bisos/git/auth/bxRepos/bisos-pip/namespace/py3/bisos
+*** pip install black pygit2
+*** May seem to fail svcInvSiteRegBox.cs  -i thisBox_assign  -- But is assigned verify with svcInvSiteRegBox.cs  -i thisBox_findNu
+*** -
+** 1) ~On Manager:~ l1l2-sitedDevBisos
+** 2) ~On Manager:~ xterm & emacs
+** 2) ~On Manager:~ Verify Unassisgned Box
+** 2) /On Traget:/ Verify Unassisgned Box
+** 4) /On Traget:/ L3 Realize
+** 5) /On Traget:/ L5 Materialize
+** 3) /On Traget:/ Box Assign and Update
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "Existing Box" :anchor "" :extraInfo "Manager-- Developer and Production"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Existing Box:* |]]  Manager-- Developer and Production  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** 1) ~On Manager:~ l1l5_materialize
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "New VM" :anchor "" :extraInfo "Developer and Production"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *New VM:* |]]  Developer and Production  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** 1) ~On Host:~
+** 2) ~On Host:~
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "Existing VM" :anchor "" :extraInfo "Developer and Production"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Existing VM:* |]]  Developer and Production  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** 1) ~On Host:~
+** 2) ~On Host:~
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "Generic VM" :anchor "" :extraInfo "Developer and Production"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Generic VM:* |]]  Developer and Production  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** 1) ~On Host:~
+** 2) ~On Host:~
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "*L1* FreshDebian  to Unsited Bisos" :anchor "FreshDebian→UnsitedBisos" :extraInfo "  /::Layer 1::/  "
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _*L1* FreshDebian  to Unsited Bisos_: |]] <<FreshDebian→UnsitedBisos>>   /::Layer 1::/    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "Target" :anchor "bxGenesis/start" :extraInfo " https://github.com/bxGenesis/start"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Target:* |]] <<bxGenesis/start>>  https://github.com/bxGenesis/start  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO Also point to Blee-Panel and Chapter in the book
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "Manager" :anchor "bisosUnsitedDeploy.sh -i fullUpdate" :extraInfo "Sited-FreshDebian→UnsitedBisos"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Manager:* |]] <<bisosUnsitedDeploy.sh -i fullUpdate>> Sited-FreshDebian→UnsitedBisos  [[elisp:(org-shifttab)][<)]] E|
+####+END
+unsitedBisosDeploy.sh####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Manager" :icmName "echo unsitedBisosDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i l1_fullUpdate" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Manager/ :: [[elisp:(lsip-local-run-command "echo unsitedBisosDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i l1_fullUpdate")][echo unsitedBisosDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i l1_fullUpdate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+** +
+** TODO bisosUnsitedDeploy.sh -i xxx --- To be Tested And also Undo
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "Manager" :anchor "unsitedBisosDeploy.sh-L1-DeBisosIfy" :extraInfo "unsitedBisosDeploy.sh -i l1_deBisosIfy"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Manager:* |]] <<unsitedBisosDeploy.sh-L1-DeBisosIfy>> unsitedBisosDeploy.sh -i l1_deBisosIfy  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Manager" :icmName "echo unsitedBisosDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i l1_deBisosIfy" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Manager/ :: [[elisp:(lsip-local-run-command "echo unsitedBisosDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i l1_deBisosIfy")][echo unsitedBisosDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i l1_deBisosIfy]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+** +
+** TODO bisosUnsitedDeploy.sh -i xxx --- To be Tested And also Undo
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "Target" :anchor "Provisioner-DeBisosIfy" :extraInfo "provisioner -i deBisosIfy"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Target:* |]] <<Provisioner-DeBisosIfy>> provisioner -i deBisosIfy  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Target" :icmName "DANGER /usr/local/bin/provisioner.sh -i deBisosIfy" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Target/ :: [[elisp:(lsip-local-run-command "DANGER /usr/local/bin/provisioner.sh -i deBisosIfy")][DANGER /usr/local/bin/provisioner.sh -i deBisosIfy]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+** +
+** TODO Test and Verify
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "*L2* Sited-Container and Development-Container" :anchor "Sited-Container" :extraInfo "  /::Layer 2::/  "
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _*L2* Sited-Container and Development-Container_: |]] <<Sited-Container>>   /::Layer 2::/    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "L2: Manager and Target" :anchor "bisosBasePlatform_fullUpdate" :extraInfo "UnsitedBisos→SitedBisos"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *L2: Manager and Target:* |]] <<bisosBasePlatform_fullUpdate>> UnsitedBisos→SitedBisos  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep t :folding? nil :label "L2: Manager" :icmName "echo sysCharDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i bisosBasePlatform_fullUpdate" :comment "" :afterComment ""
+** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /L2: Manager/ :: [[elisp:(lsip-local-run-command "echo sysCharDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i bisosBasePlatform_fullUpdate")][echo sysCharDeploy.sh -h -v -n showRun -p targetName=192.168.0.XX -i bisosBasePlatform_fullUpdate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+** +
+** siteBpo is activated in container
+** Also convays developer BPO
+** DevelBpo can be materialized
+** -B|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "L2: Target" :icmName "echo sysCharDeploy.sh -h -v -n showRun -i bisosBasePlatform_fullUpdate" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /L2: Target/ :: [[elisp:(lsip-local-run-command "echo sysCharDeploy.sh -h -v -n showRun -i bisosBasePlatform_fullUpdate")][echo sysCharDeploy.sh -h -v -n showRun -i bisosBasePlatform_fullUpdate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+** +
+** siteBpo is activated in container
+** Also convays developer BPO
+** DevelBpo can be materialized
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "L2.1: Target and Manager" :anchor "StablePlatform→DevelPlatform" :extraInfo "pnl::development->bisos-core->howToBecomeDeveloper"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *L2.1: Target and Manager:* |]] <<StablePlatform→DevelPlatform>> pnl::development->bisos-core->howToBecomeDeveloper  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/howToBecomeDeveloper")][howToBecomeDeveloper]]
+** cntnrDevel.sh -h -v -n showRun -i bisosDevBxo_fullSetup  # activate bisosDevBxoId and actuate it
+** -B|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "L2: Target" :icmName "echo sysCharDeploy.sh -h -v -n showRun -i bisosBasePlatform_fullUpdate" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /L2: Target/ :: [[elisp:(lsip-local-run-command "echo sysCharDeploy.sh -h -v -n showRun -i bisosBasePlatform_fullUpdate")][echo sysCharDeploy.sh -h -v -n showRun -i bisosBasePlatform_fullUpdate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+** +
+** siteBpo is activated in container
+** Also convays developer BPO
+** DevelBpo can be materialized
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "*L3* Reified Container" :anchor "ReifiedContainer" :extraInfo " /::Layer 3::/ "
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _*L3* Reified Container_: |]] <<ReifiedContainer>>  /::Layer 3::/   [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "New Box Realize On Manager" :anchor "" :extraInfo "On Manager -- BISOS-Base New-UnAssigned Box"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *New Box Realize On Manager:* |]]  On Manager -- BISOS-Base New-UnAssigned Box  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Do not build on Target other than for development. Always us "On Manager"
+** -B|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep t :folding? nil :label "Cmd" :icmName "sysCharDeploy.sh -h -v -n showRun -p targetName=curTargetBox -i boxSiteBasePlatform" :comment "" :afterComment ""
+** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "sysCharDeploy.sh -h -v -n showRun -p targetName=curTargetBox -i boxSiteBasePlatform")][sysCharDeploy.sh -h -v -n showRun -p targetName=curTargetBox -i boxSiteBasePlatform]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "New Box ~(DEVELOPMENT ONLY)~ Realize On Target" :anchor "" :extraInfo "On Target -- BISOS-Base New-UnAssigned Box"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *New Box ~(DEVELOPMENT ONLY)~ Realize On Target:* |]]  On Target -- BISOS-Base New-UnAssigned Box  [[elisp:(org-shifttab)][<)]] E|
+####+END
+w####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep t :folding? nil :label "SelCmd" :icmName "echo ssh -X 192.168.0.xx" :comment "ssh to target" :afterComment "then run below cmds"
+** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /SelCmd/ :: [[elisp:(lsip-local-run-command "echo ssh -X 192.168.0.xx")][echo ssh -X 192.168.0.xx]] *|*  =ssh to target= *|*  then run below cmds  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "SelCmd" :icmName "echo sysCharDeploy.sh -p model=Pure -p abode=Mobile -p function=LinuxU -i boxRealizeOrActivateOnTarget" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /SelCmd/ :: [[elisp:(lsip-local-run-command "echo sysCharDeploy.sh -p model=Pure -p abode=Mobile -p function=LinuxU -i boxRealizeOrActivateOnTarget")][echo sysCharDeploy.sh -p model=Pure -p abode=Mobile -p function=LinuxU -i boxRealizeOrActivateOnTarget]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep t :folding? nil :label "Cmd" :icmName "sysCharDevel.sh -h -v -n showRun -i bisosDevBxo_fullSetup" :comment "" :afterComment ""
+** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "sysCharDevel.sh -h -v -n showRun -i bisosDevBxo_fullSetup")][sysCharDevel.sh -h -v -n showRun -i bisosDevBxo_fullSetup]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Full Existing Box Activation" :anchor "" :extraInfo "On Manager Beginning-to-End"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Full Existing Box Activation:* |]]  On Manager Beginning-to-End  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "Cmd" :icmName "echo sysCharDeploy.sh -h -v -n showRun -p targetName=curTargetBox -i boxFullActivate" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "echo sysCharDeploy.sh -h -v -n showRun -p targetName=curTargetBox -i boxFullActivate")][echo sysCharDeploy.sh -h -v -n showRun -p targetName=curTargetBox -i boxFullActivate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep t :folding? nil :label "Cmd" :icmName "sysCharDevel.sh -h -v -n showRun -i bisosDevBxo_fullSetup" :comment "" :afterComment ""
+** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "sysCharDevel.sh -h -v -n showRun -i bisosDevBxo_fullSetup")][sysCharDevel.sh -h -v -n showRun -i bisosDevBxo_fullSetup]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "*L4* Composed Container" :anchor "ComposedContainer" :extraInfo " /::Layer 4::/ "
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _*L4* Composed Container_: |]] <<ComposedContainer>>  /::Layer 4::/   [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "*L5* Materialized Container" :anchor "MaterializedContainer" :extraInfo " /::Layer 5::/ "
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _*L5* Materialized Container_: |]] <<MaterializedContainer>>  /::Layer 5::/   [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "*L6* Stationed Container" :anchor "StationedContainer" :extraInfo " /::Layer 5::/ "
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _*L6* Stationed Container_: |]] <<StationedContainer>>  /::Layer 5::/   [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "With Panles Evolution of Platforms To Containers" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _With Panles Evolution of Platforms To Containers_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "=" :anchor "UnsitedPlatform→WithSiteCreatePanels" :extraInfo "With Blee Panels, Construct Site"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *=:* |]] <<UnsitedPlatform→WithSiteCreatePanels>> With Blee Panels, Construct Site  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "ByStarUser: ByStar Login And Blee Panel Access" :anchor "" :extraInfo ""
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *ByStarUser: ByStar Login And Blee Panel Access:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** logout of intra user -- ssh exit
+** login as bystar user -- ssh -X bystar@dest
+** emacs-28 &
+** blee-Panels
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "=" :anchor "WithSiteCreatePanels→Site" :extraInfo "pnl::bisos-core->bootstrap->site"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *=:* |]] <<WithSiteCreatePanels→Site>> pnl::bisos-core->bootstrap->site  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO recipe for site construction comes here.
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "=" :anchor "WithBootstrapPanels→Cntnr" :extraInfo "pnl::bisos-core->bootstrap"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *=:* |]] <<WithBootstrapPanels→Cntnr>> pnl::bisos-core->bootstrap  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO recipe for container construction comes here.
+** -B|
+####+BEGIN: blee:bxPanel:separator :outLevel 1
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+####+END
+####+BEGIN: blee:bxPanel:evolution
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *Maintenance:* | ]]  [[elisp:(blee:menu-sel:agenda:popupMenu)][||Agenda]]  <<Evolution>>  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Notes, Ideas, Tasks, Agenda" :anchor "Tasks"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** TODO Some Idea
+####+BEGIN: blee:bxPanel:evolutionMaintainers
+** [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolutionMaintainers)][dbf]]
+** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>
+***  Problem Report                       ::   [[elisp:(find-file "")][Send debbug Email]]
+***  Maintainers                          ::   [[bbdb:Mohsen.*Banan]]  :: http://mohsen.1.banan.byname.net  E|
+####+END
+* B|
+####+BEGIN: blee:bxPanel:footerPanelControls
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+* /Footer Controls/ ::  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:footerOrgParams
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Org-Mode Local Params: =* | ]]
+#+STARTUP: overview
+#+STARTUP: lognotestate
+#+STARTUP: inlineimages
+#+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
+#+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
+#+CATEGORY: N:sysChar-Provision
+
+####+END
+####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
+# Local Variables:
+# eval: (setq-local toc-org-max-depth 4)
+# eval: (setq-local ~selectedSubject "noSubject")
+# eval: (setq-local ~primaryMajorMode 'org-mode)
+# eval: (setq-local ~blee:panelUpdater nil)
+# eval: (setq-local ~blee:dblockEnabler nil)
+# eval: (setq-local ~blee:dblockController "interactive")
+# eval: (img-link-overlays)
+# eval: (set-fill-column 115)
+# eval: (blee:fill-column-indicator/enable)
+# eval: (bx:load-file:ifOneExists "./panelActions.el")
+# End:
+
+####+END

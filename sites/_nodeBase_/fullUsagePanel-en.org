@@ -25,51 +25,56 @@
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
-*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sites/siteAssign")][siteAssign]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sites/siteStorage/_nodeBase_")][ =siteStorage= ]] *|*
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sites/linkToSiteRealmPanels/_nodeBase_")][ = /<linkToSiteRealmPanels>/ = ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sites/siteAssign")][siteAssign]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sites/siteGenericVMsAndCaps/_nodeBase_")][ =siteGenericVMsAndCaps= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sites/siteStorage/_nodeBase_")][ =siteStorage= ]] *|*
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/BashIcmFwrk/_nodeBase_")][ =BashIcmFwrk= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PALS/_nodeBase_")][ =PALS= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/_nodeBase_")][ =PyCsFwrk= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/adoptedComponents/_nodeBase_")][ =adoptedComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/baseDirs/_nodeBase_")][ =baseDirs= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bisosAccts/_nodeBase_")][ =bisosAccts= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/_nodeBase_")][ =bootstrap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/_nodeBase_")][ =bxeAndBxo= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/disks/_nodeBase_")][ =disks= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/groupedComponents/_nodeBase_")][ =groupedComponents= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bisos-dev/_nodeBase_")][ = /<bisos-dev>/ = ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bisos-evolution/_nodeBase_")][ = /<bisos-evolution>/ = ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bisos-pip/_nodeBase_")][ =bisos-pip= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bisosAccts/_nodeBase_")][ =bisosAccts= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/_nodeBase_")][ =bootstrap= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/_nodeBase_")][ =bxeAndBxo= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/capability/_nodeBase_")][ =capability= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/disks/_nodeBase_")][ =disks= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/gitlabBpo/_nodeBase_")][ =gitlabBpo= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/groupedComponents/_nodeBase_")][ =groupedComponents= ]] *|*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/maintainInterim/_nodeBase_")][ =maintainInterim= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/modelAndTerminology/_nodeBase_")][ =modelAndTerminology= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/platform/_nodeBase_")][ =platform= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/projs/_nodeBase_")][ =projs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/registrations/_nodeBase_")][ =registrations= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sites/_nodeBase_")][ =sites= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sync/_nodeBase_")][ =sync= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/_nodeBase_")][ =virtualization= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sites/_nodeBase_")][ =sites= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sync/_nodeBase_")][ =sync= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sysChar/_nodeBase_")][ =sysChar= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/_nodeBase_")][ =virtualization= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel" :extraInfo "Initial Setup++"
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>> Initial Setup++  [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview -- Concepts and Model" :anchor "Panel" :extraInfo "Initial Setup++"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview -- Concepts and Model:* |]] <<Panel>> Initial Setup++  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** 
+** +
 ** After Initial Install Of BISOS, sites need to be setup.
-** Two situations exists. 1) Initial Setup  -- 2) Re-Use 
+** Two situations exists. 1) Initial Setup  -- 2) Re-Use
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Initial Setup" :anchor "" :extraInfo ""
-** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Initial Setup:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Initial Site Construction and Setup" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Initial Site Construction and Setup:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-*** 
-*** In Place: Basic BISOS
-*** In Place: bystar account (being used)
-*** 
-*** Create and Launch privGitServer (a gitlab instance) on your intranet
-***    Perhaps using siteGitServerManage.sh
-*** 
-*** Configure the privGitServer info including secretKey using 
-***       siteDefaultsManage.sh -h -v -n showRun -i default_gitServer
-*** 
-*** Use siteBxoDefaultSetup.sh to:
-***    - Create prs_bisos  --- As a default pseudo real system to be parrent of the rest
-***    - Create pir_privRegistrar  --- So that private bxe-s can be registered
-***    - Create pis_defaultSite  --- A default site for multi-system usage
-*** 
-*** 
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Use After Initial Setup" :anchor "" :extraInfo ""
-** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Use After Initial Setup:/ |]]    [[elisp:(org-shifttab)][<)]] E|
-####+END
-*** 
-**** 
-*** 
-** 
+** +
+** In Place: Basic BISOS
+** In Place: bystar account (being used)
+***
+** Create and Launch privGitServer (a gitlab instance) on your intranet
+**    Perhaps using siteGitServerManage.sh
+***
+** Configure the privGitServer info including secretKey using
+**       siteDefaultsManage.sh -h -v -n showRun -i default_gitServer
+***
+** Use siteBxoDefaultSetup.sh to:
+**    - Create prs_bisos  --- As a default pseudo real system to be parrent of the rest
+**    - Create pir_privRegistrar  --- So that private bxe-s can be registered
+**    - Create pis_defaultSite  --- A default site for multi-system usage
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Use of Site for Platform Reconstruction -- During Materialization" :anchor "" :extraInfo "After Initial Setup"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Use of Site for Platform Reconstruction -- During Materialization:* |]]  After Initial Setup  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** During materialization phase, start with address+credentials of *platfSiteBootstrap* = pis_defaultSite
+** ~HOST~:  address+credentials of platfSiteBootstrap comes from /bisos/var/sites/selected/platfSiteBootstrap_fps/
+** ~HOST~:  This address+credentials of siteBootstrap is the only info needed during materialization
+** ~pis_defaultSite~: has 2 fps repos 1) gitServerInfo  2) platfSitesActivate_fps
+** ~GUEST/TARGET~: Use address+credentials of **pltfSiteBootstrap** to scp into /tmp of  ~GUEST/TARGET~
+** ~GUEST/TARGET~: Create  links from /tmp/siteBootstrap  to /bisos/var/sites/selected
+** ~GUEST/TARGET~: Use /bisos/var/sites/selected/gitlabInfo  of siteBootstrap to bring in needed BPOs
+** ~GUEST/TARGET~: Bring in the real site and real platform BPOs. and adjust links
+** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Related Panels" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Related Panels_: |]]    [[elisp:(org-shifttab)][<)]] E|
