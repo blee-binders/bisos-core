@@ -36,10 +36,12 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** Overview Comes Here.
+** All things related to vagrant and packer and basebox-es
 ** B|
 * +
-* TODO Capture this someplace: packer hcl2_upgrade -output-file=file_name.pkr.hcl file_name.pkr.json
+* TODO Capture <2025-06-21 Sat 20:45>  https://github.com/alvistack/vagrant-debian/tree/master
+* TODO Capture <2025-06-21 Sat 20:43> https://github.com/rgl/debian-vagrant
+* TODO Capture json to hcl conversion someplace: packer hcl2_upgrade -output-file=file_name.pkr.hcl file_name.pkr.json
 * TODO Capture https://vagrant-libvirt.github.io/vagrant-libvirt/installation.html
 * TODO Capture Below:  sudo apt-get purge vagrant-libvirt
 sudo apt-mark hold vagrant-libvirt
