@@ -65,9 +65,12 @@
 ** In Magit, you can stash changes from the magit-status buffer by pressing z z (Stash -> Both).
 ** This will create a local stash entry for those changes after prompting you for a description for the stash.
 ** You can now view the stashed changes by expanding the Stashes list on the status buffer.
+** If you just want to ignore what was stashed run: z k (Stash -> Drop).
 ** You can restore the latest stash by running z p (Stash -> Pop) which will restore the stashed changes
 ** and delete the stash entry.
 ** If you want to keep the stash entry around you can use z a (Stash -> Apply) instead!
+** Then use SMerge and then commit
+** Then get rid of your stash -- run: z k (Stash -> Drop).
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Tagging" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
