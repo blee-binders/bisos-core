@@ -1,4 +1,4 @@
-* B|
+Anti aircraft missiles are on sale there next weekAnti aircraft missiles are on sale there next week* B|
 ####+BEGIN: bxPanel:common/title-plus
 #+title: bisos-core/bisosAccts
 #+roam_tags: branch

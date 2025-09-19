@@ -31,13 +31,30 @@
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/virtualization/_nodeBase_")][ =virtualization= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview and Use Cases" :anchor "Panel" :extraInfo "  /::Blank Starting Point::/"
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview and Use Cases:* |]] <<Panel>>   /::Blank Starting Point::/  [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview and Use Cases" :anchor "Panel" :extraInfo "  /::ByStar uses of Docker::/"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview and Use Cases:* |]] <<Panel>>   /::ByStar uses of Docker::/  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** Overview Comes Here.
+** For now the scope is two fold:
+** 1) Create a container into which we can vnc for development.
+** 2) Bring up services based on their bpo either with systemd or docker container. Generalize this.
 ** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "TODOs" :anchor "" :extraInfo "Planned Improvements"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *TODOs:* |]]  Planned Improvements  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO Put Docker on Laptop
+** TODO In installRawBisos bash ./raw-bisos.sh
+** TODO /de chmod 775 -- chown bisos:bisos
+** TODO Do a chown -R bystar:bystar /shuttle/this
+** TODO Add /shuttle/private
+** TODO Increase resolution of docker vnc
+**
+** -
 * +
+* DockerProc Pkg :: file:/bisos/git/bxRepos/bisos-pip/dockerProc/py3/panels/bisos.dockerProc/_nodeBase_/fullUsagePanel-en.org
+* Debian Docker BISOS Repo Object :: file:/bisos/git/bxRepos/bxObjects/bro_dockerfiles/README.org
 * -B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/

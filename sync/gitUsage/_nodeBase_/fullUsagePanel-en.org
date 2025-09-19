@@ -42,10 +42,10 @@
 ####+END
 ** +
 **  [[elisp:(org-cycle)][| ]]  Subject      ::   Initializing/Setting-Up Local Git |  [[elisp:(org-cycle)][| ]]
+***  git --no-pager config --list --global
 ***  [[elisp:(org-cycle)][| ]]  Subject     :: git config --global user.email "git@example.com" [[elisp:(org-cycle)][| ]]
 ***  [[elisp:(org-cycle)][| ]]  Subject     :: git config --global user.name "First Last" [[elisp:(org-cycle)][| ]]
 ***  [[elisp:(org-cycle)][| ]]  Subject     :: The above two needs to be automated based on BxSO [[elisp:(org-cycle)][| ]]
-
 **  [[elisp:(org-cycle)][| ]]  Subject      ::   Command Line:  [[elisp:(lsip-local-run-command "lcaGitManage.sh")][lcaGitManage.sh]] |  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(org-cycle)][| ]]  Subject      ::   Blee Git (MaGit)|  [[elisp:(org-cycle)][| ]]
 ***  [[elisp:(org-cycle)][| ]]  Subject     :: Blee Menu -- Sync (VC) Magit [[elisp:(org-cycle)][| ]]
