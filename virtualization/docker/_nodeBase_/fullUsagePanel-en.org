@@ -45,12 +45,12 @@
 ####+END
 ** +
 ** TODO Put Docker on Laptop
-** TODO In installRawBisos bash ./raw-bisos.sh
-** TODO /de chmod 775 -- chown bisos:bisos
-** TODO Do a chown -R bystar:bystar /shuttle/this
+** DONE In installRawBisos bash ./raw-bisos.sh
 ** TODO Add /shuttle/private
-** TODO Increase resolution of docker vnc
-**
+** DONE Increase resolution of docker vnc
+** TODO Add Good READMEs to bro_dockerfiles
+** TODO Re-Draw the picture in bisos bootstrap -- Add Docker and VMs Have VMs point back.
+** TODO Get rid of git hub setup in Dockerfile
 ** -
 * +
 * DockerProc Pkg :: file:/bisos/git/bxRepos/bisos-pip/dockerProc/py3/panels/bisos.dockerProc/_nodeBase_/fullUsagePanel-en.org

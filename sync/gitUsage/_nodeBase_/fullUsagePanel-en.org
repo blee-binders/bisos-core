@@ -26,7 +26,8 @@
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sync/bpoReposManage")][bpoReposManage]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sync/gitUsage/_nodeBase_")][ =gitUsage= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sync/githubSync/_nodeBase_")][ =githubSync= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sync/privBposSync/_nodeBase_")][ =privBposSync= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sync/bpoReposManage")][bpoReposManage]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sync/git-lfs/_nodeBase_")][ =git-lfs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sync/gitUsage/_nodeBase_")][ =gitUsage= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sync/githubSync/_nodeBase_")][ =githubSync= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sync/githubUsage/_nodeBase_")][ =githubUsage= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sync/privBposSync/_nodeBase_")][ =privBposSync= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/sync/_nodeBase_")][ =sync= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
@@ -102,7 +103,7 @@
 ** +
 **  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  Shell Window        ::  [[elisp:(lsip-local-run-command "pwd")][pwd]]
 **  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Git Global Config Information: =/ | ]]  |
-***  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command%20"git --no-pager config --global --list")][git --no-pager config --global --list]] [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command "git --no-pager config --global --list")][git --no-pager config --global --list]] [[elisp:(org-cycle)][| ]]
 **  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Git Global Initialization: =/ | ]]  |
 ***  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command "echo git config --global user.email email@example.com")][echo git config --global user.email email@example.com]]   [[elisp:(org-cycle)][| ]]
 ***  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command "echo git config --global user.name UserName")][echo git config --global user.name UserName]]   [[elisp:(org-cycle)][| ]]
@@ -113,7 +114,7 @@
 ***  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command "git init")][git init]]    # Creates An Empty Repo
 
 **  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Git REPO Config Information: =/ | ]]  |
-***  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command%20"git --no-pager config --list")][git --no-pager config --list]]  # Per Repo And Global Info  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command "git --no-pager config --list")][git --no-pager config --list]]  # Per Repo And Global Info  [[elisp:(org-cycle)][| ]]
 ***  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command "echo git config user.email email@example.com")][echo git config user.email email@example.com]] #  Per Repo NOT Global  [[elisp:(org-cycle)][| ]]
 ***  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command "echo git config user.name UserName")][echo git config user.name UserName]]  #  Per Repo NOT Global [[elisp:(org-cycle)][| ]]
 
@@ -168,11 +169,11 @@
 ** [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  Shell Window        ::  [[elisp:(lsip-local-run-command "pwd")][pwd]]
 **  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= List Existing Branches: =/ | ]]  |
 ***
-***  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command%20"git --no-pager branch --all")][git --no-pager branch --all]]           # List All Existing Branches [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command "git --no-pager branch --all")][git --no-pager branch --all]]           # List All Existing Branches [[elisp:(org-cycle)][| ]]
 ***
 ***  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command "echo git branch -r \\| grep -i BRANCH-NAME")][echo git branch -r \| grep -i BRANCH-NAME]]        # Look For A Specific Branch [[elisp:(org-cycle)][| ]]
 ***
-***  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command%20"git --no-pager branch")][git --no-pager branch]]           # List Selected Branches [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command "git --no-pager branch")][git --no-pager branch]]           # List Selected Branches [[elisp:(org-cycle)][| ]]
 ***
 **  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Creating A New Branch: =/ | ]]  |
 ***
@@ -182,9 +183,9 @@
 ***
 **  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Checking Out (Selecting) An Existing Branch: =/ | ]]  |
 ***
-***  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command%20"git --no-pager branch --all")][git --no-pager branch --all]]           # List All Existing Branches [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command "git --no-pager branch --all")][git --no-pager branch --all]]           # List All Existing Branches [[elisp:(org-cycle)][| ]]
 ***
-***  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command%20"git --no-pager branch")][git --no-pager branch]]           # List Selected Branches [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command "git --no-pager branch")][git --no-pager branch]]           # List Selected Branches [[elisp:(org-cycle)][| ]]
 ***
 ***  [[elisp:(org-cycle)][| ]]  EditableCmnd          ::  [[elisp:(lsip-local-run-command "echo git checkout BRANCH-NAME")][echo git checkout BRANCH-NAME]]    # Change Working Branch
 ***
@@ -226,7 +227,7 @@ git branch -r | grep mb | awk -F\/ '{ print "git push --delete " $1, $2 "; git b
 ####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "git rev-parse --git-dir"  :results "none" :comment "Shows the dot git directory for this repo" :afterComment "-- see --show-toplevel  as well"
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "git rev-parse --git-dir")][git rev-parse --git-dir]] ~||~  =Shows the dot git directory for this repo= -- see --show-toplevel  as well  [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-**  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command%20"git --no-pager branch -a")][git --no-pager branch -a]]        # List all existing branches  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command "git --no-pager branch -a")][git --no-pager branch -a]]        # List all existing branches  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command "git --no-pager branch")][git branch]]                       # Show current branch  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command "git --no-pager status")][git status]]                       # Show untracked files -- show if branch is up to date  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(org-cycle)][| ]]  Cmnd                  ::  [[elisp:(lsip-local-run-command "git --no-pager show")][git show]]                         # Show untracked files -- show if branch is up to date  [[elisp:(org-cycle)][| ]]

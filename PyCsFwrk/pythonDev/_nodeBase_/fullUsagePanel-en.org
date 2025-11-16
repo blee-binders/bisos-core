@@ -40,6 +40,65 @@ SCHEDULED: <2024-02-23 Fri>
 * Fixes Warnings in 3.11 -- https://packaging.python.org/en/latest/guides/packaging-namespace-packages/
 SCHEDULED: <2024-02-23 Fri>
 * -
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PyCS Files Types and Files Naming" :anchor "" :extraInfo "Bulleted and Tabular -- Maps to YASNIPETS"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PyCS Files Types and Files Naming:* |]]  Bulleted and Tabular -- Maps to YASNIPETS  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO [#A] Below Overlaps with b:py3:cs:file/dblockControls :classification "cs-mu" -- Revisit and complete
+SCHEDULED: <2025-11-01 Sat>
+** Broadly speaking, PyCS files are of of the following:
+*** +
+*** CSMU  -- main for CS Multi-Units -- Could be Packaged or Standalone. Could be Direct, RO, or Planted
+*** CSU   -- A CS Unit -- Always Packaged. -- Could be Generic or Specific
+*** PyCS Library  -- Includes No Cmnds and no Params. Classes and Functions and Operations
+*** Uploadable Modules -- Used by uploadAsCs
+*** External Files
+*** -
+
+Here it is in tabular form:
+
+|---------+---------------+---------+----------+---------+-------------+------------------------------|
+| General | Specific      | Pkging  | Summary  | snippet | Naming      | Comments                     |
+| Type    | Type          |         | Tag      |         |             |                              |
+|---------+---------------+---------+----------+---------+-------------+------------------------------|
+| CSMU    |               |         |          |         | xx.cs       | CS Multi-Units with main     |
+|---------+---------------+---------+----------+---------+-------------+------------------------------|
+|         | [[Pkg-Direct]]    | pip     | CmndSvc+ |         | Pkg, Direct | Examples only, no cmnds      |
+|         | [[Single-Direct]] | stndaln | CmndSvc+ |         | Single, Dir | params + cmnds + examples    |
+|         | [[Pkg-RO]]        | pip     | CmndSvc+ |         | Pkg, RO     |                              |
+|         | plntd-tmplt   | pip     | Planted+ |         | Template    | Planted include with seed    |
+|         | plntd-niched  | realmed | Planted+ |         | Niched      | Planted based on realms      |
+|         | plntd-spread  | spread  | Planted+ |         | Spread      | Placed in dir structure      |
+|---------+---------------+---------+----------+---------+-------------+------------------------------|
+| CSU     |               |         |          |         | xx_csu.py   | CS Units, Params + Cmnds     |
+|---------+---------------+---------+----------+---------+-------------+------------------------------|
+|         | Specific      | pip     | Cs-Unit+ |         | Specific    | Domain Specific Params+Cmnds |
+|         | Generic       | pip     | Cs-Unit+ |         | Generic     | General purpose Params+Cmnds |
+|---------+---------------+---------+----------+---------+-------------+------------------------------|
+| CsLib   |               |         |          |         |             | PyCs-Lib No Params, no Cmnds |
+|---------+---------------+---------+----------+---------+-------------+------------------------------|
+|         | PyCS-Lib      |         | PyCs-Lib |         |             | Classes, Functions and OPs   |
+|         | seed          |         |          |         | xx_seed.py  |                              |
+|---------+---------------+---------+----------+---------+-------------+------------------------------|
+| Upload  |               |         |          |         |             | Used by uploadAsCs           |
+|---------+---------------+---------+----------+---------+-------------+------------------------------|
+|         | Ext-UploadMod |         | N.A.     |         |             | External to PyCS             |
+|         | Cs-UploadMod  |         | Upload   |         |             | PyCS Aware                   |
+|---------+---------------+---------+----------+---------+-------------+------------------------------|
+| Ext     |               |         |          |         |             | Py mod developed by others   |
+|---------+---------------+---------+----------+---------+-------------+------------------------------|
+|         | External      |         | N.A.     |         |             | Unedited external files      |
+|---------+---------------+---------+----------+---------+-------------+------------------------------|
+
+
+** CSMU <<Pkg-Direct>> ::  CmndSvs: Packaged+Direct+Seeded+Uploadable
+
+** CSMU <<Single-Direct>> :: CmndSvc: Standalone+Direct  (Not Seeded, Not Uploadable)
+
+** CSMU <<Pkg-RO>>  ::  CmndSvc: Packaged+RO
+
+** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PyCS Multi-Unit Files Setup" :anchor "" :extraInfo "Starting Point and Transition"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PyCS Multi-Unit Files Setup:* |]]  Starting Point and Transition  [[elisp:(org-shifttab)][<)]] E|

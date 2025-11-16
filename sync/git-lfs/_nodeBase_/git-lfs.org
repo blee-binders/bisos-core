@@ -1,0 +1,217 @@
+#+title: RANA-NOTES/common/gitlab/lfs: Git-LFS (Large File Storage)
+#+DATE: <2024-02-19 Mon 16:27>
+#+AUTHOR: Mohsen BANAN
+#+OPTIONS: toc:4
+
+* Overview
+
+Notes relevant to Gitlab Git-LFS.
+
+Git-LFS (Large File Storage) is an extension that replaces large files with text pointers
+inside of Git, while storing the actual file contents on a remote server. This is essential
+for managing large binary files (>50MB) efficiently without bloating the repository.
+
+
+* Table of Contents     :TOC:
+- [[#overview][Overview]]
+- [[#git-servers-support][Git Servers Support]]
+- [[#linux-git-client-support][Linux Git Client Support]]
+- [[#windows-git-client-support][Windows Git Client Support]]
+- [[#setting-up-git-lfs][Setting up Git-LFS]]
+  - [[#initial-setup][Initial Setup]]
+  - [[#tracking-file-types][Tracking File Types]]
+  - [[#commit-configuration][Commit Configuration]]
+- [[#adding-large-files][Adding Large Files]]
+- [[#locking-git-lfs-files][Locking Git-LFS Files]]
+  - [[#lock-a-file][Lock a File]]
+  - [[#unlock-a-file][Unlock a File]]
+  - [[#view-all-locks][View All Locks]]
+  - [[#force-unlock][Force Unlock]]
+  - [[#enable-lockable-attribute][Enable Lockable Attribute]]
+- [[#verifying-and-managing-lfs-files][Verifying and Managing LFS Files]]
+
+* Git Servers Support
+
+Both Gitlab and Github support git-lfs.
+
+Git LFS is a Git extension that improves handling of large files by lazily downloading
+relevant versions during checkout, rather than during clone/fetch.
+
+That support is typically enabled by default on GitLab.
+It can be disabled at the project level if desired.
+
+For more information, see: https://docs.gitlab.com/topics/git/lfs
+
+* Linux Git Client Support
+
+On Debian/Ubuntu:
+
+#+begin_src bash
+sudo apt-get update
+sudo apt-get -y install git-lfs
+#+end_src
+
+On RHEL/CentOS:
+
+#+begin_src bash
+sudo yum install git-lfs
+#+end_src
+
+* Windows Git Client Support
+
+Download and install it from https://git-lfs.com.
+
+Note: Git for Windows typically includes Git-LFS in recent versions. Check if it's already
+installed by running 'git lfs version' in your terminal.
+
+* Setting up Git-LFS
+
+** Initial Setup
+
+In your repository, initialize Git-LFS (one-time setup per user):
+
+#+begin_src bash
+git lfs install
+#+end_src
+
+** Tracking File Types
+
+As a best practice, typically track files larger than 50MB with Git-LFS, or files that:
+- Are binary formats (cannot be merged with standard Git)
+- Change frequently but don't need version-by-version diffs
+- Would significantly slow down clone/fetch operations if stored in regular Git
+- Need file locking to prevent concurrent edits (e.g., PowerBI)
+
+Track specific file types to be managed by LFS:
+
+#+begin_src bash
+git lfs track "*.pbix"   # For PowerBI Files
+git lfs track "*.xlsx"   # For Excel Files
+git lfs track "*.psd"    # For Photoshop Files
+git lfs track "*.zip"    # For compressed archives
+#+end_src
+
+This updates the .gitattributes file.
+
+** Commit Configuration
+
+Now commit your .gitattributes changes:
+
+#+begin_src bash
+git add .gitattributes
+git commit -m "Added LFS tracking for large files"
+git push
+#+end_src
+
+* Adding Large Files
+
+Now you can add your large files and they will automatically be handled by LFS:
+
+#+begin_src bash
+git add your-large-file.pbix
+git commit -m "Add PowerBI report"
+git push
+#+end_src
+
+* Locking Git-LFS Files
+
+To avoid multiple people editing the same large file (like .pbix) at the same time,
+you can use file locking. This is especially important for binary files that cannot
+be merged automatically.
+
+** Lock a File
+
+#+begin_src bash
+git lfs lock path/to/file.pbix
+#+end_src
+
+This locks the file for editing by the current user.
+
+** Unlock a File
+
+#+begin_src bash
+git lfs unlock path/to/file.pbix
+#+end_src
+
+** View All Locks
+
+To see who has locked files:
+
+#+begin_src bash
+git lfs locks
+#+end_src
+
+** Force Unlock
+
+To force unlock a file (if the user who locked it is not available):
+
+#+begin_src bash
+git lfs unlock path/to/file.pbix --force
+#+end_src
+
+** Enable Lockable Attribute
+
+To make certain file types lockable by default, add to .gitattributes:
+
+#+begin_src bash
+*.pbix lockable
+*.psd lockable
+#+end_src
+
+* Verifying and Managing LFS Files
+
+Here are some commands to verify and manage LFS files:
+- List Tracked Files
+
+See which files are currently tracked by LFS:
+
+#+begin_src bash
+git lfs ls-files
+#+end_src
+
+- Check LFS Status
+
+View the status of LFS files:
+
+#+begin_src bash
+git lfs status
+#+end_src
+
+-  Verify LFS Pointers
+
+Ensure files are properly stored as LFS objects:
+
+#+begin_src bash
+git lfs ls-files -d
+#+end_src
+
+- Migrate Existing Files to LFS
+
+To migrate existing large files to LFS:
+
+#+begin_src bash
+# Track the file type
+git lfs track "*.pbix"
+
+# Migrate files from Git history to LFS
+git lfs migrate import --include="*.pbix"
+
+# Push the changes
+git push --force
+#+end_src
+
+- Fetch All LFS Objects
+
+Download all LFS objects for the current branch:
+
+#+begin_src bash
+git lfs fetch --all
+#+end_src
+
+- Prune Old LFS Objects
+
+Remove old LFS objects that are no longer referenced:
+
+#+begin_src bash
+git lfs prune
+#+end_src
