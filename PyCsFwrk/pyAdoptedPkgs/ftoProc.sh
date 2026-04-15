@@ -39,10 +39,8 @@ _CommentBegin_
 _CommentEnd_
 
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
-# {{{ DBLOCK-leavesList
 leavesList="
 "
-# }}} DBLOCK-leavesList
 ####+END:
 
 
@@ -55,13 +53,11 @@ _CommentEnd_
 #
 
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
-# {{{ DBLOCK-nodesList
 nodesList="
-_nodeBase_
 PyGit
 rpyc
+_nodeBase_
 "
-# }}} DBLOCK-nodesList
 ####+END:
 
 ####+BEGINNOT: bx:dblock:ploneProc:bash:nodesList :types ""

@@ -39,10 +39,8 @@ _CommentBegin_
 _CommentEnd_
 
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
-# {{{ DBLOCK-leavesList
 leavesList="
 "
-# }}} DBLOCK-leavesList
 ####+END:
 
 
@@ -55,16 +53,14 @@ _CommentEnd_
 #
 
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
-# {{{ DBLOCK-nodesList
 nodesList="
-bisos.bpoGitlab
-_nodeBase_
-gitlab
-pygit2
-unisos.gitlabApi
 github
+pygit2
+gitlab
+unisos.gitlabApi
+_nodeBase_
+bisos.bpoGitlab
 "
-# }}} DBLOCK-nodesList
 ####+END:
 
 ####+BEGINNOT: bx:dblock:ploneProc:bash:nodesList :types ""

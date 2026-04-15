@@ -39,11 +39,9 @@ _CommentBegin_
 _CommentEnd_
 
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
-# {{{ DBLOCK-leavesList
 leavesList="
 AIPX
 "
-# }}} DBLOCK-leavesList
 ####+END:
 
 
@@ -56,13 +54,11 @@ _CommentEnd_
 #
 
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
-# {{{ DBLOCK-nodesList
 nodesList="
-_nodeBase_
 bisos.currents
 bisos.crypt
+_nodeBase_
 "
-# }}} DBLOCK-nodesList
 ####+END:
 
 ####+BEGINNOT: bx:dblock:ploneProc:bash:nodesList :types ""

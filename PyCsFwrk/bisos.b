@@ -1,1 +1,1 @@
-/bisos/git/bxRepos/bisos-pip/b/py3/panels
+/bisos/git/bxRepos/bisos-pip/b/py3/panels/bisos.b

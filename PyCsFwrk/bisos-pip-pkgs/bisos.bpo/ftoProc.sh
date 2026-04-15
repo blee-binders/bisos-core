@@ -13,13 +13,13 @@ __copying__="
 
 ####+BEGIN: bx:bsip:bash:seed-spec :types "seedFtoCommon.sh"
 SEED="
-*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] | 
+*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] |
 "
 FILE="
-*  /This File/ :: /bisos/git/auth/bxRepos/blee-binders/bisos-core/PyCsFwrk/bisos-pip-pkgs/bisos.bpo/ftoProc.sh 
+*  /This File/ :: /bisos/panels/bisos-core/PyCsFwrk/bisos-pip-pkgs/bisos.bpo/ftoProc.sh
 "
 if [ "${loadFiles}" == "" ] ; then
-    /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@" 
+    /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@"
     exit $?
 fi
 ####+END:
@@ -39,10 +39,8 @@ _CommentBegin_
 _CommentEnd_
 
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
-# {{{ DBLOCK-leavesList
 leavesList="
 "
-# }}} DBLOCK-leavesList
 ####+END:
 
 
@@ -55,11 +53,9 @@ _CommentEnd_
 #
 
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
-# {{{ DBLOCK-nodesList
 nodesList="
 _nodeBase_
 "
-# }}} DBLOCK-nodesList
 ####+END:
 
 ####+BEGINNOT: bx:dblock:ploneProc:bash:nodesList :types ""

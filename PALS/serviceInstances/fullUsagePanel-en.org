@@ -49,25 +49,25 @@
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "List Enabled Services Of PALS-BPO" :anchor "" :extraInfo "palsBpoManage.py"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "List Enabled Services Of PALS-BPO" :anchor "" :extraInfo "palsBpoManage.cs"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *List Enabled Services Of PALS-BPO:* |]]  palsBpoManage.py  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *List Enabled Services Of PALS-BPO:* |]]  palsBpoManage.cs  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep t :folding? t :label "PyIcm" :icmName "palsBpoManage.py" :comment "" :afterComment ""
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep t :folding? t :label "PyIcm" :icmName "palsBpoManage.cs" :comment "" :afterComment ""
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /PyIcm/ |]] :: [[elisp:(lsip-local-run-command "palsBpoManage.py -i examples")][palsBpoManage.py]]  [[elisp:(lsip-local-run-command "palsBpoManage.py -i visit")][visit]]  [[elisp:(lsip-local-run-command "palsBpoManage.py -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /PyIcm/ |]] :: [[elisp:(lsip-local-run-command "palsBpoManage.cs -i examples")][palsBpoManage.cs]]  [[elisp:(lsip-local-run-command "palsBpoManage.cs -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a palsBpoManage.cs")][which -a]]  [[elisp:(lsip-local-run-command "palsBpoManage.cs -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** -
 ** B|
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep t :folding? t :label "pyCmd" :icmName "echo palsBpoManage.py --bpoId=pmi_ByD-100001 -i enabledSisInfo" comment "" :afterComment ""
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep t :folding? t :label "pyCmd" :icmName "echo palsBpoManage.cs --bpoId=pmi_ByD-100001 -i enabledSisInfo" comment "" :afterComment ""
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /pyCmd/ |]] :: [[elisp:(lsip-local-run-command "echo palsBpoManage.py --bpoId=pmi_ByD-100001 -i enabledSisInfo")][echo palsBpoManage.py --bpoId=pmi_ByD-100001 -i enabledSisInfo]] *|*    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /pyCmd/ |]] :: [[elisp:(lsip-local-run-command "echo palsBpoManage.cs --bpoId=pmi_ByD-100001 -i enabledSisInfo")][echo palsBpoManage.cs --bpoId=pmi_ByD-100001 -i enabledSisInfo]] *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** -
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PALS SIVD (Svc Inst Virt Dom) Apache2" :anchor "" :extraInfo "palsSivdApache2.py"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PALS SIVD (Svc Inst Virt Dom) Apache2" :anchor "" :extraInfo "palsSivdApache2.cs"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PALS SIVD (Svc Inst Virt Dom) Apache2:* |]]  palsSivdApache2.py  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PALS SIVD (Svc Inst Virt Dom) Apache2:* |]]  palsSivdApache2.cs  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep t :folding? t :label "PyIcm" :icmName "palsSivdApache2.py" :comment "" :afterComment ""
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
@@ -75,14 +75,14 @@
 ####+END:
 ** -
 ** B|
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep t :folding? t :label "pyCmd" :icmName "echo palsSivdApache2.py -v 20 --bpoId=pmi_ByD-100001 --sivd=apache2/plone3 -i svcExamples create" :comment "" :afterComment ""
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep t :folding? t :label "pyCmd" :icmName "echo palsSivdApache2.cs -v 20 --bpoId=pmi_ByD-100001 --sivd=apache2/plone3 -i svcExamples create" :comment "" :afterComment ""
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /pyCmd/ |]] :: [[elisp:(lsip-local-run-command "echo palsSivdApache2.py -v 20 --bpoId=pmi_ByD-100001 --sivd=apache2/plone3 -i svcExamples create")][echo palsSivdApache2.py -v 20 --bpoId=pmi_ByD-100001 --sivd=apache2/plone3 -i svcExamples create]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /pyCmd/ |]] :: [[elisp:(lsip-local-run-command "echo palsSivdApache2.cs -v 20 --bpoId=pmi_ByD-100001 --sivd=apache2/plone3 -i svcExamples create")][echo palsSivdApache2.cs -v 20 --bpoId=pmi_ByD-100001 --sivd=apache2/plone3 -i svcExamples create]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** -
 ** B|
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? t :label "pyCmd" :icmName "echo palsSivdApache2.py -v 20 --bpoId=pmi_ByD-100001 --sivd=apache2/www  -i svcExamples create" :comment "" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /pyCmd/ |]] :: [[elisp:(lsip-local-run-command "echo palsSivdApache2.py -v 20 --bpoId=pmi_ByD-100001 --sivd=apache2/www  -i svcExamples create")][echo palsSivdApache2.py -v 20 --bpoId=pmi_ByD-100001 --sivd=apache2/www  -i svcExamples create]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? t :label "pyCmd" :icmName "echo palsSivdApache2.cs -v 20 --bpoId=pmi_ByD-100001 --sivd=apache2/www  -i svcExamples create" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /pyCmd/ |]] :: [[elisp:(lsip-local-run-command "echo palsSivdApache2.cs -v 20 --bpoId=pmi_ByD-100001 --sivd=apache2/www  -i svcExamples create")][echo palsSivdApache2.cs -v 20 --bpoId=pmi_ByD-100001 --sivd=apache2/www  -i svcExamples create]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** -
 ** B|
@@ -90,15 +90,15 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PALS SI (Service Instances):* |]]  palsSiXxxx.py  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep t :folding? t :label "PyIcm" :icmName "palsSiPlone3.py" :comment "" :afterComment ""
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep t :folding? t :label "PyIcm" :icmName "palsSiPlone3.cs" :comment "" :afterComment ""
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /PyIcm/ |]] :: [[elisp:(lsip-local-run-command "palsSiPlone3.py -i examples")][palsSiPlone3.py]]  [[elisp:(lsip-local-run-command "palsSiPlone3.py -i visit")][visit]]  [[elisp:(lsip-local-run-command "palsSiPlone3.py -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /PyIcm/ |]] :: [[elisp:(lsip-local-run-command "palsSiPlone3.cs -i examples")][palsSiPlone3.cs]]  [[elisp:(lsip-local-run-command "palsSiPlone3.cs -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a palsSiPlone3.cs")][which -a]]  [[elisp:(lsip-local-run-command "palsSiPlone3.cs -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** -
 ** B|
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep t :folding? t :label "PyIcm" :icmName "palsSiGeneweb.py" :comment "" :afterComment ""
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep t :folding? t :label "PyIcm" :icmName "palsSiGeneweb.cs" :comment "" :afterComment ""
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /PyIcm/ |]] :: [[elisp:(lsip-local-run-command "palsSiGeneweb.py -i examples")][palsSiGeneweb.py]]  [[elisp:(lsip-local-run-command "palsSiGeneweb.py -i visit")][visit]]  [[elisp:(lsip-local-run-command "palsSiGeneweb.py -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /PyIcm/ |]] :: [[elisp:(lsip-local-run-command "palsSiGeneweb.cs -i examples")][palsSiGeneweb.cs]]  [[elisp:(lsip-local-run-command "palsSiGeneweb.cs -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a palsSiGeneweb.cs")][which -a]]  [[elisp:(lsip-local-run-command "palsSiGeneweb.cs -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** -
 ** B|

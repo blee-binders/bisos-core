@@ -39,10 +39,8 @@ _CommentBegin_
 _CommentEnd_
 
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
-# {{{ DBLOCK-leavesList
 leavesList="
 "
-# }}} DBLOCK-leavesList
 ####+END:
 
 
@@ -55,20 +53,20 @@ _CommentEnd_
 #
 
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
-# {{{ DBLOCK-nodesList
 nodesList="
-bisos.b
-metaROSE
-bisos-pip-pkgs
-bisos-pip-apps
-_nodeBase_
 bisos-pip-process
-b-plus-pkgs
-bisos-pip-all-pkgs
-blee-pip-pkgs
+metaROSE
+seededCS
+loadAsCS
+bisos.b
+pythonDev
+_nodeBase_
 pyAdoptedPkgs
+pypiProc
+bisos-pip-pkgs
+csPlayers
+b-plus-pkgs
 "
-# }}} DBLOCK-nodesList
 ####+END:
 
 ####+BEGINNOT: bx:dblock:ploneProc:bash:nodesList :types ""

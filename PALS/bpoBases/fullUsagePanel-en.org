@@ -37,40 +37,40 @@
 ** +
 ** Scope of this panel is creation and verification of Pals Bpo Bases.
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Manage PALS BPO" :anchor "" :extraInfo "palsBpoManage.py"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Manage PALS BPO" :anchor "" :extraInfo "palsBpoManage.cs"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Manage PALS BPO:* |]]  palsBpoManage.py  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Manage PALS BPO:* |]]  palsBpoManage.cs  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep t :folding? t :label "PyIcm" :icmName "palsBpoManage.py" :comment "" :afterComment ""
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep t :folding? t :label "PyIcm" :icmName "palsBpoManage.cs" :comment "" :afterComment ""
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /PyIcm/ |]] :: [[elisp:(lsip-local-run-command "palsBpoManage.py -i examples")][palsBpoManage.py]]  [[elisp:(lsip-local-run-command "palsBpoManage.py -i visit")][visit]]  [[elisp:(lsip-local-run-command "palsBpoManage.py -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /PyIcm/ |]] :: [[elisp:(lsip-local-run-command "palsBpoManage.cs -i examples")][palsBpoManage.cs]]  [[elisp:(lsip-local-run-command "palsBpoManage.cs -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a palsBpoManage.cs")][which -a]]  [[elisp:(lsip-local-run-command "palsBpoManage.cs -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** -
 ** B|
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep t :folding? t :label "pyCmd" :icmName "echo palsBpoManage.py --bpoId=pmi_ByD-100001  -i bpoBaseDirObtain" :comment "" :afterComment ""
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep t :folding? t :label "pyCmd" :icmName "echo palsBpoManage.cs --bpoId=pmi_ByD-100001  -i bpoBaseDirObtain" :comment "" :afterComment ""
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /pyCmd/ |]] :: [[elisp:(lsip-local-run-command "echo palsBpoManage.py --bpoId=pmi_ByD-100001  -i bpoBaseDirObtain")][echo palsBpoManage.py --bpoId=pmi_ByD-100001  -i bpoBaseDirObtain]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /pyCmd/ |]] :: [[elisp:(lsip-local-run-command "echo palsBpoManage.cs --bpoId=pmi_ByD-100001  -i bpoBaseDirObtain")][echo palsBpoManage.cs --bpoId=pmi_ByD-100001  -i bpoBaseDirObtain]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** -
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PALS Profile Repo" :anchor "" :extraInfo "palsRepoProfile.py"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PALS Profile Repo" :anchor "" :extraInfo "palsRepoProfile.cs"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PALS Profile Repo:* |]]  palsRepoProfile.py  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PALS Profile Repo:* |]]  palsRepoProfile.cs  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep t :folding? t :label "PyIcm" :icmName "palsRepoProfile.py" :comment "" :afterComment ""
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep t :folding? t :label "PyIcm" :icmName "palsRepoProfile.cs" :comment "" :afterComment ""
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /PyIcm/ |]] :: [[elisp:(lsip-local-run-command "palsRepoProfile.py -i examples")][palsRepoProfile.py]]  [[elisp:(lsip-local-run-command "palsRepoProfile.py -i visit")][visit]]  [[elisp:(lsip-local-run-command "palsRepoProfile.py -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /PyIcm/ |]] :: [[elisp:(lsip-local-run-command "palsRepoProfile.cs -i examples")][palsRepoProfile.cs]]  [[elisp:(lsip-local-run-command "palsRepoProfile.cs -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a palsRepoProfile.cs")][which -a]]  [[elisp:(lsip-local-run-command "palsRepoProfile.cs -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** -
 ** B|
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep t :folding? t :label "pyCmd" :icmName "echo palsRepoProfile.py -v 20 --bpoId=pmi_ByD-100001 --cls=PalsRepo_Profile -i bpoFpParamsRead" :comment "" :afterComment ""
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep t :folding? t :label "pyCmd" :icmName "echo palsRepoProfile.cs -v 20 --bpoId=pmi_ByD-100001 --cls=PalsRepo_Profile -i bpoFpParamsRead" :comment "" :afterComment ""
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /pyCmd/ |]] :: [[elisp:(lsip-local-run-command "echo palsRepoProfile.py -v 20 --bpoId=pmi_ByD-100001 --cls=PalsRepo_Profile -i bpoFpParamsRead")][echo palsRepoProfile.py -v 20 --bpoId=pmi_ByD-100001 --cls=PalsRepo_Profile -i bpoFpParamsRead]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /pyCmd/ |]] :: [[elisp:(lsip-local-run-command "echo palsRepoProfile.cs -v 20 --bpoId=pmi_ByD-100001 --cls=PalsRepo_Profile -i bpoFpParamsRead")][echo palsRepoProfile.cs -v 20 --bpoId=pmi_ByD-100001 --cls=PalsRepo_Profile -i bpoFpParamsRead]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** -
 ** B|
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? t :label "pyCmd" :icmName "echo palsRepoProfile.py -v 20 --bpoId=pmi_ByD-100001 --cls=PalsRepo_Profile --correspondingEntity=exampleBpoId --baseDomain=example.com --bystarType=bysmb -i bpoFpParamsSet" :comment "" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /pyCmd/ |]] :: [[elisp:(lsip-local-run-command "echo palsRepoProfile.py -v 20 --bpoId=pmi_ByD-100001 --cls=PalsRepo_Profile --correspondingEntity=exampleBpoId --baseDomain=example.com --bystarType=bysmb -i bpoFpParamsSet")][echo palsRepoProfile.py -v 20 --bpoId=pmi_ByD-100001 --cls=PalsRepo_Profile --correspondingEntity=exampleBpoId --baseDomain=example.com --bystarType=bysmb -i bpoFpParamsSet]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? t :label "pyCmd" :icmName "echo palsRepoProfile.cs -v 20 --bpoId=pmi_ByD-100001 --cls=PalsRepo_Profile --correspondingEntity=exampleBpoId --baseDomain=example.com --bystarType=bysmb -i bpoFpParamsSet" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /pyCmd/ |]] :: [[elisp:(lsip-local-run-command "echo palsRepoProfile.cs -v 20 --bpoId=pmi_ByD-100001 --cls=PalsRepo_Profile --correspondingEntity=exampleBpoId --baseDomain=example.com --bystarType=bysmb -i bpoFpParamsSet")][echo palsRepoProfile.cs -v 20 --bpoId=pmi_ByD-100001 --cls=PalsRepo_Profile --correspondingEntity=exampleBpoId --baseDomain=example.com --bystarType=bysmb -i bpoFpParamsSet]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** -
 ** B|

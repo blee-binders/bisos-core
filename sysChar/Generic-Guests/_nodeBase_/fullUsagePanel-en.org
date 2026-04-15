@@ -45,58 +45,38 @@ and tried out using
 /bisos/git/auth/bxRepos/blee-binders/bisos-core/virtualization/vagrant/lcaVagrantBoxRun.sh/fullUsagePanel-en.org
 ** -B|
 * +
-* TODO  2 Steps   --- 1) Creates "Base BISOS Platform"  --- 2) Creates Configured BISOS Platform
-* TODO  Capture concept of configuration based on base platform
+* Related
+* TODO  Describe How to run after creation
 * -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Related Panels (Chain To)" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Related Panels (Chain To)_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep nil :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "Bootstrap Development" :dest "/bisos/panels/development/bisos-dev/bootstrapDev/_nodeBase_"
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/bootstrapDev/_nodeBase_")][@ ~Bootstrap Development~ @]]  [[elisp:(org-cycle)][| *=* |]] :: /Agenda/ <<PROBLEM: Missing FV /bisos/panels/development/bisos-dev/bootstrapDev/_nodeBase_/foldDesc>> [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "user" :icmName "sysCharGenericRealize.sh" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /user/ :: [[elisp:(lsip-local-run-command "sysCharGenericRealize.sh -i examples")][sysCharGenericRealize.sh]]  [[elisp:(lsip-local-run-command "sysCharGenericRealize.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a sysCharGenericRealize.sh")][which -a]]  [[elisp:(lsip-local-run-command "sysCharGenericRealize.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep t :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "auto" :dest "/bisos/git/auth/bxRepos/blee-binders/bisos-core/virtualization/vagrant/lcaVagrantBoxBuild.sh"
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/virtualization/vagrant/lcaVagrantBoxBuild.sh")][@ ~lcaVagrantBoxBuild.sh~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<lcaVagrantBoxBuild.sh>> [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "user" :icmName "sysCharRawDeploy.sh" :comment "" :afterComment "<<sysCharRawDeploy.sh>> [[sysCharRawDeploy]]"
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /user/ :: [[elisp:(lsip-local-run-command "sysCharRawDeploy.sh -i examples")][sysCharRawDeploy.sh]]  [[elisp:(lsip-local-run-command "sysCharRawDeploy.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a sysCharRawDeploy.sh")][which -a]]  [[elisp:(lsip-local-run-command "sysCharRawDeploy.sh -i describe")][describe]] *|*  == *|*  <<sysCharRawDeploy.sh>> [[sysCharRawDeploy]] [[elisp:(org-shifttab)][<)]] E|
-####+END:
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "user" :icmName "sysCharBoxDeploy.sh" :comment "Reged Container" :afterComment "<<sysCharBoxDeploy.sh>>"
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /user/ :: [[elisp:(lsip-local-run-command "sysCharBoxDeploy.sh -i examples")][sysCharBoxDeploy.sh]]  [[elisp:(lsip-local-run-command "sysCharBoxDeploy.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a sysCharBoxDeploy.sh")][which -a]]  [[elisp:(lsip-local-run-command "sysCharBoxDeploy.sh -i describe")][describe]] *|*  =Reged Container= *|*  <<sysCharBoxDeploy.sh>> [[elisp:(org-shifttab)][<)]] E|
-####+END:
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "user" :icmName "sysCharBoxDeploy.sh" :comment "Reged Container" :afterComment "<<sysCharBoxDeploy.sh>>"
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /user/ :: [[elisp:(lsip-local-run-command "sysCharBoxDeploy.sh -i examples")][sysCharBoxDeploy.sh]]  [[elisp:(lsip-local-run-command "sysCharBoxDeploy.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a sysCharBoxDeploy.sh")][which -a]]  [[elisp:(lsip-local-run-command "sysCharBoxDeploy.sh -i describe")][describe]] *|*  =Reged Container= *|*  <<sysCharBoxDeploy.sh>> [[elisp:(org-shifttab)][<)]] E|
-####+END:
-
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "sysChar ICM/CS Facilities Table" :anchor "sysCharFacilities" :extraInfo ""
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep t :outLevel 2 :model "auto" :foldDesc "auto" :destDesc "auto" :dest "/bisos/git/auth/bxRepos/blee-binders/bisos-core/virtualization/vagrant/lcaVagrantBoxRun.sh"
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/virtualization/vagrant/lcaVagrantBoxRun.sh")][@ ~lcaVagrantBoxRun.sh~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<lcaVagrantBoxRun.sh>> [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Process To Follow After New Release of Debian" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _sysChar ICM/CS Facilities Table_: |]] <<sysCharFacilities>>   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Process To Follow After New Release of Debian_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-
-|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
-| Name                        | Link | User     | Comments                                                                              |
-|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
-| <<sysCharDeployRaw>>        | [[sysCharRawDeploy.sh][🔗]]   | Lcl+Mngr | Produces: [[RawPlatform]]  ( Common [[Raw-BISOS]] + [[Raw-Blee]] )                                |
-| <<sysCharDeployBox>>        | [[sysCharBoxDeploy.sh][🔗]]   | Lcl+Mngr | Produces: *Realized*  [[RegPlatform]] (sysChar-bpoId)                                     |
-| <<sysCharDeployBox>>        | [[sysCharBoxDeploy.sh][🔗]]   | Lcl+Mngr | Produces: *Materialized*  [[RegPlatform]] (identity Assigned)                             |
-|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
-| <<sysCharMaterializeBox>>   |      | Local    | Convenience Layer for *Box* Materialization                                           |
-| <<sysCharMaterializeGuest>> |      | Local    | Primary Layer for *Guest* Materialization                                             |
-|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
-| <<sysCharRealize>>          |      | infra    | Registers and Creates sysCharBpo                                                      |
-| <<sysCharActivate>>         |      | infra    | Activates an existing sysCharBpo (re-creation and mgmt)                               |
-| <<sysCharIdentity>>         |      | infra    | Materializes identity based on sysCharBpo                                             |
-| <<sysCharPreps>>            |      | infra    | Prepares a *HOST* for guest creation (vagrants)                                       |
-|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
-| KVM                         |      |          | NOTYET, KVM Panel                                                                     |
-| Vagrant                     |      |          | [[file:/bisos/panels/bisos-core/virtualization/vagrant/_nodeBase_/fullUsagePanel-en.org]] |
-|-----------------------------+------+----------+---------------------------------------------------------------------------------------|
-
-
+* +
+* Create Base Box for New Debian
+* Realize new BPO as pmp_VAG-deb13 and pmp_VSG-deb13
 ** +
-** All "Start State" labels are defined in [[file:/bisos/panels/bisos-core/modelAndTerminology/_nodeBase_/fullUsagePanel-en.org::Systems Terminology]]
-** -B|
-####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep t :outLevel 3 :model "auto" :foldDesc "auto" :destDesc "auto" :dest "/bisos/panels/bisos-core/bootstrap/configuredBisosPlatform"
-** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/configuredBisosPlatform")][@ ~PROBLEM: Missing FV /bisos/panels/bisos-core/bootstrap/configuredBisosPlatform/destDesc~ @]]  [[elisp:(org-cycle)][| *=* |]] :: /Agenda/ <<PROBLEM: Missing FV /bisos/panels/bisos-core/bootstrap/configuredBisosPlatform/foldDesc>> [[elisp:(org-shifttab)][<)]] E|
-####+END
+** -
+* Update files in ~pmp_VAG-deb13
+** +
+** -
+* Create VM based on ~pmp_VAG-deb13
+* -B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END

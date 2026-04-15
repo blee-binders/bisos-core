@@ -191,7 +191,7 @@
 ***
 **  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Delete Branch Locally And Remote: =/ | ]]  |
 Delete Branch Both Local and Remote
-$ git push --delete <remote_name> <branch_name>
+$ git push origin --delete <branch_name>
 $ git branch -d <branch_name>
 Note that in most cases the remote name is origin.Delete Local Branch
 To delete the local branch use one of the following:
@@ -287,8 +287,8 @@ B|
 ** +
 **  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Merging Master Into DevBranch -- Do This First: =/ | ]]  |
 ***
-*** (With devBranch) git fetch origin master
-*** (With devBranch) git merge master  # Resolve conflicts at this stage
+*** (With devBranch) git fetch origin master  # Or main
+*** (With devBranch) git merge master  # Or main -- Resolve conflicts at this stage
 ***
 *** Or Instead of the above do:  -- below is prefered over above as it fits magit
 ***
