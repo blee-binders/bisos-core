@@ -43,9 +43,15 @@
 ####+END
 ** +
 **  [[elisp:(org-cycle)][| ]]  Subject      ::   Initializing/Setting-Up Local Git |  [[elisp:(org-cycle)][| ]]
-***  git --no-pager config --list --global
-***  [[elisp:(org-cycle)][| ]]  Subject     :: git config --global user.email "git@example.com" [[elisp:(org-cycle)][| ]]
-***  [[elisp:(org-cycle)][| ]]  Subject     :: git config --global user.name "First Last" [[elisp:(org-cycle)][| ]]
+####+BEGIN: blee:bxPanel:runResult :outLevel 3  :command "git --no-pager config --list --global"  :results "none" :comment "Allows you to edit" :afterComment "-- tailor the command line"
+*** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "git --no-pager config --list --global")][git --no-pager config --list --global]] *|*  =Allows you to edit= *|*  -- tailor the command line  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 3  :command "echo git config --global user.email git@example.com"  :results "none" :comment "Allows you to edit" :afterComment "-- tailor the command line"
+*** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "echo git config --global user.email git@example.com")][echo git config --global user.email git@example.com]] *|*  =Allows you to edit= *|*  -- tailor the command line  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 3  :command "echo git config --global user.name \\\\'First Last\\\\'"  :results "none" :comment "Allows you to edit" :afterComment "-- tailor the command line"
+*** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "echo git config --global user.name \\'First Last\\'")][echo git config --global user.name \\'First Last\\']] *|*  =Allows you to edit= *|*  -- tailor the command line  [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ***  [[elisp:(org-cycle)][| ]]  Subject     :: The above two needs to be automated based on BxSO [[elisp:(org-cycle)][| ]]
 **  [[elisp:(org-cycle)][| ]]  Subject      ::   Command Line:  [[elisp:(lsip-local-run-command "lcaGitManage.sh")][lcaGitManage.sh]] |  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(org-cycle)][| ]]  Subject      ::   Blee Git (MaGit)|  [[elisp:(org-cycle)][| ]]
