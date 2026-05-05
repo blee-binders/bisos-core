@@ -39,11 +39,9 @@ _CommentBegin_
 _CommentEnd_
 
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
-# {{{ DBLOCK-leavesList
 leavesList="
 bpoReposManage
 "
-# }}} DBLOCK-leavesList
 ####+END:
 
 
@@ -56,14 +54,16 @@ _CommentEnd_
 #
 
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
-# {{{ DBLOCK-nodesList
 nodesList="
-privBposSync
-_nodeBase_
-gitUsage
+gcm-credentials
 githubSync
+gitUsage
+githubUsage
+_nodeBase_
+privBposSync
+git-lfs
+gitAccess
 "
-# }}} DBLOCK-nodesList
 ####+END:
 
 ####+BEGINNOT: bx:dblock:ploneProc:bash:nodesList :types ""

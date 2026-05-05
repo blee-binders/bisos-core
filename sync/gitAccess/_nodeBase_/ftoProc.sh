@@ -5,7 +5,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] |
 "
 FILE="
-*  /This File/ :: /bisos/panels/bisos-core/sync/git-lfs/ftoProc.sh
+*  /This File/ :: /bisos/panels/bisos-core/sync/gitAccess/_nodeBase_/ftoProc.sh
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@"
@@ -30,7 +30,6 @@ leavesList="
 
 ####+BEGIN: bx:dblock:pypi:bash:nodesList :types ""
 nodesList="
-_nodeBase_
 "
 ####+END:
 

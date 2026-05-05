@@ -1,8 +1,8 @@
 * B|
 ####+BEGIN: bxPanel:common/title-plus
-#+title: sync/privBposSync
+#+title: sync/gitAccess
 #+roam_tags: branch
-#+roam_key: bisos-core/sync/privBposSync
+#+roam_key: bisos-core/sync/gitAccess
 [[roam:bisos-core/sync]]
 ####+END
 ####+BEGIN: blee:bxPanel:topPanelControls
@@ -11,8 +11,8 @@
 **  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
 **  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
 **  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
-**  This File :: *= /bisos/panels/bisos-core/sync/privBposSync/_nodeBase_/fullUsagePanel-en.org =*
-* /file-truename:/  /bisos/git/auth/bxRepos/blee-binders/bisos-core/sync/privBposSync/_nodeBase_/fullUsagePanel-en.org
+**  This File :: *= /bisos/panels/bisos-core/sync/gitAccess/_nodeBase_/fullUsagePanel-en.org =*
+* /file-truename:/  /bisos/git/auth/bxRepos/blee-binders/bisos-core/sync/gitAccess/_nodeBase_/fullUsagePanel-en.org
 *  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
 **  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
 **  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
@@ -20,7 +20,7 @@
 ####+END
 ####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
 * [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   bisos--~Node:: bisos-core/sync -- privBposSync~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   bisos--~Node:: bisos-core/sync -- gitAccess~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
 * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
@@ -32,24 +32,134 @@
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/sync/_nodeBase_")][ =sync= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview and Use Cases" :anchor "Panel" :extraInfo "  /::Blank Starting Point::/"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview and Use Cases:* |]] <<Panel>>   /::Blank Starting Point::/  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** Overview Comes Here.
-** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Popup Menu" :anchor "" :extraInfo "[[elisp:(popup-menu (symbol-value (apps:magit:bpoMenu|define)))][ _||Magit BPOs Menu_ ]]"
+** -B|
+* +
+* -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "SSH Key Based Access to Gitlab" :anchor "" :extraInfo "Windows+Linux"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Popup Menu:* |]]  [[elisp:(popup-menu (symbol-value (apps:magit:bpoMenu|define)))][ _||Magit BPOs Menu_ ]]  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *SSH Key Based Access to Gitlab:* |]]  Windows+Linux  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Related Chained Panels" :anchor "" :extraInfo ""
+** +
+** Info About Avoiding Password/Browser Prompts on Gitlab by Using SSH Keys instead of https
+** Full Instructions are at: https://docs.gitlab.com/user/ssh/
+Use SSH keys to communicate with GitLab | GitLab Docs
+Understand how to use SSH keys with GitLab for secure authentication and repository access.
+** Short version:
+*** On Windows create the key pair or use your existing one.
+*** Run::  cat ~/.ssh/id_ed25519.pub | clip
+*** On gitlab web page to get to SSH Keys. Click on your avitar. Then profile. Preferences. SSH Keys is under your profile-preferences.
+*** On gitlab Go to add a key and paste the public key.
+*** After that, when you clone, Don't use https. Use Clone with SSH instead.
+*** If you use git on multiple machines, either enter the public key of each machine on gitlab website
+*** Or scp your id_ed25519 from your pc to redhat server. And then a chmod 400 ~/.ssh/id_ed25519. You will then be using same keys.
+*** That is all there is to it. It works for me.
+** -
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "SSH over HTTPS (Port 443) Workaround" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Related Chained Panels_: |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *SSH over HTTPS (Port 443) Workaround:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep t :outLevel 2 :model "auto" :foldDesc "BxE and BxO Management" :destDesc "BxE And BxO Management" :dest "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bxeAndBxo/_nodeBase_"
-* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/bxeAndBxo/_nodeBase_")][@ ~BxE And BxO Management~ @]]  [[elisp:(org-cycle)][| *=* |]] :: /Agenda/ <<BxE and BxO Management>> [[elisp:(org-shifttab)][<)]] E|
+** +
+Corporate firewalls often block outbound SSH (port 22) but leave port 443 open.
+GitLab runs a second SSH listener on port 443 at ~altssh.gitlab.com~.
+The traffic is still SSH protocol — just arriving on the port firewalls trust.
+
+** Step 1: Test the tunnel first
+
+#+begin_src bash
+ssh -T -p 443 git@altssh.gitlab.com
+#+end_src
+
+If you see ~Welcome to GitLab, @username!~ — the tunnel works and you can proceed.
+
+** Step 2: Configure ~/.ssh/config
+
+Add the following to ~~/.ssh/config~ (create the file if it does not exist):
+
+#+begin_src
+Host gitlab.com
+  Hostname altssh.gitlab.com
+  User git
+  Port 443
+  IdentityFile ~/.ssh/id_ed25519
+#+end_src
+
+After this, ~git clone git@gitlab.com:group/repo.git~ silently uses port 443.
+No change to your git commands is needed.
+** -
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "GitHub SSH over HTTPS (Port 443)" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *GitHub SSH over HTTPS (Port 443):* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** +
+GitHub also supports SSH over port 443.
+
+** Direct test
+
+#+begin_src bash
+ssh -T -p 443 git@ssh.github.com
+#+end_src
+
+If successful, GitHub prints a welcome/authentication message and confirms the tunnel works.
+
+** ~/.ssh/config entry
+
+#+begin_src
+Host github.com
+  HostName ssh.github.com
+  User git
+  Port 443
+  IdentityFile ~/.ssh/id_ed25519
+#+end_src
+
+After this, the normal clone URL works as-is:
+
+#+begin_src bash
+git clone git@github.com:ORG/REPO.git
+#+end_src
+
+*** Notes
+
+- This remains SSH authentication, not PAT/HTTPS authentication.
+- This helps when port 22 is blocked but port 443 is open.
+- If corporate DPI/proxy policies inspect or intercept non-HTTPS traffic on 443, this may still be blocked.
+** -
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "SSH vs PAT vs GCM Best Practices" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *SSH vs PAT vs GCM Best Practices:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+Use both SSH keys and PATs. They are complementary.
+
+** Recommended daily split
+
+- SSH keys for daily clone/pull/push on trusted developer machines.
+- PAT for fine-grained, time-limited access to a specific repo, API use, and automation.
+- GCM for HTTPS workflows when SSH is blocked or when SSO/browser-based sign-in is required.
+
+** Current practice (2026)
+
+- SSH keys are still a best practice for interactive developer workflows.
+- PAT usage has increased for automation and scoped delegation, not as a replacement for SSH.
+- GCM is a convenience layer for HTTPS credentials storage and token refresh, especially on Windows.
+
+** PAT hygiene
+
+- Always set an expiration date.
+- Use minimum scopes (example: read-only when push is not needed).
+- Store PAT in credential manager or password manager, never in repo files.
+- Rotate/revoke tokens quickly if exposure is suspected.
+
+** Team policy suggestion
+
+- Default to SSH keys for normal development.
+- Use PAT only when scoped or temporary access is needed.
+- Keep HTTPS+GCM as fallback when corporate network restrictions block SSH.
+** -
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
@@ -80,7 +190,7 @@
 #+STARTUP: inlineimages
 #+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
 #+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
-#+CATEGORY: N:privBposSync
+#+CATEGORY: N:gitAccess
 
 ####+END
 ####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"

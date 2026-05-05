@@ -6,7 +6,8 @@
 [[roam:sync/githubSync]]
 ####+END
 ####+BEGIN: blee:bxPanel:topPanelControls
-*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]] [[elisp:(magit)][Magit]] [[elisp:(call-interactively 'b:rg:panels/all)][rg:panels/all]]  [[elisp:(org-cycle)][| ]]
+**  RipGrep:: [[elisp:(rg-menu)][rg-menu]] ||
 **  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
 **  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
 **  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
@@ -19,7 +20,7 @@
 ####+END
 ####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
 * [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Leaf:: sync/githubSync -- githubSyncIcms~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   bisos--~Leaf:: sync/githubSync -- githubSyncIcms~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
 * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
@@ -54,13 +55,13 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Realted ICMs Introductions_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? t :label "OSMT ICM" :icmName "bx-gitRepos" :comment "Status Reports And Updates" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /OSMT ICM/ |]] :: [[elisp:(lsip-local-run-command "bx-gitRepos -i examples")][bx-gitRepos]]  [[elisp:(lsip-local-run-command "bx-gitRepos -i visit")][visit]]  [[elisp:(lsip-local-run-command "bx-gitRepos -i describe")][describe]] *|*  =Status Reports And Updates= *|*   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /OSMT ICM/ |]] :: [[elisp:(lsip-local-run-command "bx-gitRepos -i examples")][bx-gitRepos]]  [[elisp:(lsip-local-run-command "bx-gitRepos -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a bx-gitRepos")][which -a]]  [[elisp:(lsip-local-run-command "bx-gitRepos -i describe")][describe]] *|*  =Status Reports And Updates= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? t :label "OSMT ICM" :icmName "bisosBaseDirs.sh" :comment "ReClone github repos" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /OSMT ICM/ |]] :: [[elisp:(lsip-local-run-command "bisosBaseDirs.sh -i examples")][bisosBaseDirs.sh]]  [[elisp:(lsip-local-run-command "bisosBaseDirs.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bisosBaseDirs.sh -i describe")][describe]] *|*  =ReClone github repos= *|*   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /OSMT ICM/ |]] :: [[elisp:(lsip-local-run-command "bisosBaseDirs.sh -i examples")][bisosBaseDirs.sh]]  [[elisp:(lsip-local-run-command "bisosBaseDirs.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a bisosBaseDirs.sh")][which -a]]  [[elisp:(lsip-local-run-command "bisosBaseDirs.sh -i describe")][describe]] *|*  =ReClone github repos= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:panel:icm:py:intro :outLevel 1 :sep nil :folding? t :label "Py ICM" :icmName "bx-gitReposBases" :comment "Create Repo Bases" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /Py ICM/ |]] :: [[elisp:(lsip-local-run-command "bx-gitReposBases -i examples")][bx-gitReposBases]]  [[elisp:(lsip-local-run-command "bx-gitReposBases -i visit")][visit]]  [[elisp:(lsip-local-run-command "bx-gitReposBases -i describe")][describe]] *|*  =Create Repo Bases= *|*   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /Py ICM/ |]] :: [[elisp:(lsip-local-run-command "bx-gitReposBases -i examples")][bx-gitReposBases]]  [[elisp:(lsip-local-run-command "bx-gitReposBases -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a bx-gitReposBases")][which -a]]  [[elisp:(lsip-local-run-command "bx-gitReposBases -i describe")][describe]] *|*  =Create Repo Bases= *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Pointing Of bxRepos to Auth or Anon" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
@@ -163,7 +164,6 @@
 * /Footer Controls/ ::  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:footerOrgParams
-* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerOrgParams)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Org-Mode Local Params: =* | ]]
 #+STARTUP: overview
 #+STARTUP: lognotestate
@@ -174,9 +174,9 @@
 
 ####+END
 ####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
-* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerEmacsParams)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
 # Local Variables:
+# eval: (setq-local toc-org-max-depth 4)
 # eval: (setq-local ~selectedSubject "noSubject")
 # eval: (setq-local ~primaryMajorMode 'org-mode)
 # eval: (setq-local ~blee:panelUpdater nil)
