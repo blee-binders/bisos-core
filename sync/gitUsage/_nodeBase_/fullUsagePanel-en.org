@@ -53,6 +53,9 @@
 ####+BEGIN: blee:bxPanel:runResult :outLevel 3  :command "echo git config --global user.name \\\\'First Last\\\\'"  :results "none" :comment "Allows you to edit" :afterComment "-- tailor the command line"
 *** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "echo git config --global user.name \\'First Last\\'")][echo git config --global user.name \\'First Last\\']] *|*  =Allows you to edit= *|*  -- tailor the command line  [[elisp:(org-shifttab)][<)]] E|
 ####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 3  :command "cd /bisos/git/bxRepos/bisos/blee ; git config --show-origin --get user.email"  :results "none" :comment "Allows you to edit" :afterComment "-- tailor the command line"
+*** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "cd /bisos/git/bxRepos/bisos/blee ; git config --show-origin --get user.email")][cd /bisos/git/bxRepos/bisos/blee ; git config --show-origin --get user.email]] *|*  =Allows you to edit= *|*  -- tailor the command line  [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ***  [[elisp:(org-cycle)][| ]]  Subject     :: The above two needs to be automated based on BxSO [[elisp:(org-cycle)][| ]]
 **  [[elisp:(org-cycle)][| ]]  Subject      ::   Command Line:  [[elisp:(lsip-local-run-command "lcaGitManage.sh")][lcaGitManage.sh]] |  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(org-cycle)][| ]]  Subject      ::   Blee Git (MaGit)|  [[elisp:(org-cycle)][| ]]

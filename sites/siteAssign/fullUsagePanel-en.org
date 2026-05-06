@@ -35,6 +35,18 @@
 ** 
 ** Overview Comes Here.
 ** B|
+
+####+BEGIN: blee:panel:icm:py:intro :outLevel 1 :sep nil :folding? nil :label "ICM" :icmName "bisosSiteSetup.sh" :comment "Allows you to edit" :afterComment "-- tailor the command line"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ICM/ :: [[elisp:(lsip-local-run-command "bisosSiteSetup.sh -i examples")][bisosSiteSetup.sh]]  [[elisp:(lsip-local-run-command "bisosSiteSetup.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a bisosSiteSetup.sh")][which -a]]  [[elisp:(lsip-local-run-command "bisosSiteSetup.sh -i describe")][describe]] *|*  =Allows you to edit= *|*  -- tailor the command line [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "which bisosSiteSetup.sh"  :results "stdout" :comment "Allows you to edit" :afterComment "-- tailor the command line"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "which bisosSiteSetup.sh")][which bisosSiteSetup.sh]] *|*  =Allows you to edit= *|*  -- tailor the command line  |
+Last Executed at: 202605-06-10:54:23  by: bystar on: 4eb00a4a0fb6
+----------------------------
+/bisos/core/bsip/bin/bisosSiteSetup.sh
+
+* [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Physical Platform (Box) Info" :anchor nil :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Physical Platform (Box) Info_: |]]    [[elisp:(org-shifttab)][<)]] E|
