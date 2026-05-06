@@ -43,38 +43,37 @@ GCM encrypts tokens/passwords with your GPG key — no plaintext on disk.
 * +
 * -B|
 
-####+BEGIN: blee:panel:icm:py:intro :outLevel 1 :sep nil :folding? nil :label "SBOM" :icmName "gpg-sbom.pcs" :comment "Allows you to edit" :afterComment "-- tailor the command line"
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /SBOM/ :: [[elisp:(lsip-local-run-command "gpg-sbom.pcs -i examples")][gpg-sbom.pcs]]  [[elisp:(lsip-local-run-command "gpg-sbom.pcs -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a gpg-sbom.pcs")][which -a]]  [[elisp:(lsip-local-run-command "gpg-sbom.pcs -i describe")][describe]] *|*  =Allows you to edit= *|*  -- tailor the command line [[elisp:(org-shifttab)][<)]] E|
-####+END:
 ####+BEGIN: blee:panel:icm:py:intro :outLevel 1 :sep nil :folding? nil :label "SBOM" :icmName "git-sbom.pcs" :comment "Allows you to edit" :afterComment "-- tailor the command line"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /SBOM/ :: [[elisp:(lsip-local-run-command "git-sbom.pcs -i examples")][git-sbom.pcs]]  [[elisp:(lsip-local-run-command "git-sbom.pcs -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a git-sbom.pcs")][which -a]]  [[elisp:(lsip-local-run-command "git-sbom.pcs -i describe")][describe]] *|*  =Allows you to edit= *|*  -- tailor the command line [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-
 ####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "git-sbom.pcs -i readme"  :results "stdout" :comment "Allows you to edit" :afterComment "-- tailor the command line"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "git-sbom.pcs -i readme")][git-sbom.pcs -i readme]] *|*  =Allows you to edit= *|*  -- tailor the command line  |
-Last Executed at: 202605-06-10:40:29  by: bystar on: 4eb00a4a0fb6
+Last Executed at: 202605-06-10:46:10  by: bystar on: 4eb00a4a0fb6
 ----------------------------
 Executing /bisos/venv/py3/bisos3/bin/seedSbom.cs
-* Scope: git, Git Credential Manager (GCM), and related git tooling (gh CLI, gitlab APIs).
+** Scope: git, Git Credential Manager (GCM), and related git tooling (gh CLI, gitlab APIs).
 
-* Layering and order:
+** Layering and order:
   1) Run gpg-sbom first:
        gpg-sbom.pcs -i sbom_fullUpdate
   2) Complete GPG/pass key-store init (see gpg-sbom readme/examples).
   3) Then run git-sbom:
        git-sbom.pcs -i sbom_fullUpdate
 
-* What this layer does:
+** What this layer does:
   - Installs GCM from a pinned Linux .deb release (v2.7.3).
   - Configures GCM as git credential helper.
   - Sets credential.credentialStore to gpg so credentials are stored through
     the gpg/pass BackStore prepared by gpg-sbom.
 
-* By design, gpg package dependencies are NOT installed here.
+** By design, gpg package dependencies are NOT installed here.
   - gpg-related packages and key setup belong to gpg-sbom.pcs.
   - This keeps git and gpg concerns split into two explicit layers.
 
 * [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:py:intro :outLevel 1 :sep nil :folding? nil :label "SBOM" :icmName "gpg-sbom.pcs" :comment "Allows you to edit" :afterComment "-- tailor the command line"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /SBOM/ :: [[elisp:(lsip-local-run-command "gpg-sbom.pcs -i examples")][gpg-sbom.pcs]]  [[elisp:(lsip-local-run-command "gpg-sbom.pcs -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a gpg-sbom.pcs")][which -a]]  [[elisp:(lsip-local-run-command "gpg-sbom.pcs -i describe")][describe]] *|*  =Allows you to edit= *|*  -- tailor the command line [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "gpg-sbom.pcs -i readme"  :results "stdout" :comment "Allows you to edit" :afterComment "-- tailor the command line"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "gpg-sbom.pcs -i readme")][gpg-sbom.pcs -i readme]] *|*  =Allows you to edit= *|*  -- tailor the command line  |
