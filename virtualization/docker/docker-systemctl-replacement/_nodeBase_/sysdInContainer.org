@@ -1,0 +1,242 @@
+#+TITLE: docker-systemctl-replacement in Containers
+#+AUTHOR: 
+#+DATE: [2026-05-07]
+#+OPTIONS: toc:t num:t
+
+* Overview
+
+=docker-systemctl-replacement= is a Python script that replaces =/usr/bin/systemctl= so you can run systemd services inside Docker containers without requiring a full systemd daemon.
+
+This is useful for:
+- Testing deployment scripts in containers
+- Running multiple services in a single container (like a light-weight VM)
+- Allowing Ansible and other deployment tools to work with containers seamlessly
+- Automatic service startup/shutdown and zombie reaping
+
+** Key Features
+
+- Service manager: start/stop/enable/disable services
+- Init daemon: automatically start enabled services at container boot
+- Zombie reaper: reaps orphaned processes
+- Drop-in replacement for systemctl
+- Parses *.service files from standard packages
+
+* Installation
+
+** Option 1: From PyPI (Recommended for venvs)
+
+#+BEGIN_SRC bash
+pip install docker-systemctl-replacement
+#+END_SRC
+
+** Option 2: Manual Installation (Direct File)
+
+#+BEGIN_SRC bash
+curl -o /usr/bin/systemctl \
+  https://raw.githubusercontent.com/gdraheim/docker-systemctl-replacement/master/files/docker/systemctl3.py
+chmod +x /usr/bin/systemctl
+#+END_SRC
+
+** Option 3: In Dockerfile
+
+#+BEGIN_SRC dockerfile
+FROM debian:bookworm
+RUN apt-get update && apt-get install -y python3 curl
+RUN curl -o /usr/bin/systemctl \
+  https://raw.githubusercontent.com/gdraheim/docker-systemctl-replacement/master/files/docker/systemctl3.py
+RUN chmod +x /usr/bin/systemctl
+RUN mkdir -p /run/systemd/system
+#+END_SRC
+
+* Usage
+
+** Basic Commands
+
+After installation, use it like normal systemctl:
+
+#+BEGIN_SRC bash
+# Start a service
+systemctl start myservice.service
+
+# Enable a service (auto-start on container boot)
+systemctl enable myservice.service
+
+# Check status of a service
+systemctl status myservice.service
+
+# Stop a service
+systemctl stop myservice.service
+
+# List running services
+systemctl list-units --state=running
+
+# Disable a service
+systemctl disable myservice.service
+
+# Mask/unmask a service
+systemctl mask myservice.service
+systemctl unmask myservice.service
+#+END_SRC
+
+** Service Files
+
+Services are defined in standard systemd *.service files, typically located in:
+- =/etc/systemd/system/=
+- =/usr/lib/systemd/system/=
+
+The script parses ExecStart and ExecStop directives to manage services.
+
+* Container Entrypoint Mode
+
+To use as the main container init (PID 1) with automatic service startup:
+
+** Dockerfile Configuration
+
+#+BEGIN_SRC dockerfile
+FROM debian:bookworm
+
+# Install dependencies
+RUN apt-get update && apt-get install -y python3 curl
+
+# Install systemctl replacement
+RUN curl -o /usr/bin/systemctl \
+  https://raw.githubusercontent.com/gdraheim/docker-systemctl-replacement/master/files/docker/systemctl3.py
+RUN chmod +x /usr/bin/systemctl
+
+# Create systemd directory structure
+RUN mkdir -p /run/systemd/system
+
+# Copy or install your service definitions
+# (e.g., COPY myservice.service /etc/systemd/system/)
+
+# Set as entrypoint
+ENTRYPOINT ["/usr/bin/systemctl"]
+
+# Default: start multi-user.target (all enabled services)
+CMD ["default"]
+#+END_SRC
+
+** Running the Container
+
+#+BEGIN_SRC bash
+# Container starts, systemctl becomes PID 1 and auto-starts all enabled services
+docker run myimage
+
+# From another terminal, check running services
+docker exec mycontainer systemctl list-units --state=running
+
+# Graceful shutdown: all services are stopped cleanly
+docker stop mycontainer
+#+END_SRC
+
+** Behavior
+
+When run as PID 1 entrypoint:
+- Automatically starts all services marked with =systemctl enable=
+- Automatically stops all services when container receives SIGTERM (docker stop)
+- Reaps zombie processes (handles PID 1 reaping responsibility)
+- Provides systemctl interface for deployment automation
+
+* Integration with Deployment Tools
+
+** Ansible Example
+
+#+BEGIN_SRC yaml
+- hosts: containers
+  vars:
+    ansible_connection: docker
+  tasks:
+    - name: Start Apache
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+    
+    - name: Start MariaDB
+      service:
+        name: mariadb
+        state: started
+        enabled: yes
+#+END_SRC
+
+When using =ansible_connection: docker=, Ansible can provision containers as if they were VMs, using standard service management tasks.
+
+* Example: LAMP Stack in Container
+
+#+BEGIN_SRC bash
+# Check which services are running
+docker exec lamp-container systemctl list-units --state=running
+
+# Output example:
+# httpd.service      loaded active running   The Apache HTTP Server
+# mariadb.service    loaded active running   MariaDB database server
+
+# View process tree
+docker exec lamp-container pstree -ap
+#+END_SRC
+
+Output:
+#+BEGIN_EXAMPLE
+systemctl,1 /usr/bin/systemctl
+  |-httpd,7 -DFOREGROUND
+  |   |-httpd,9 -DFOREGROUND
+  |   |-httpd,10 -DFOREGROUND
+  `-mysqld_safe,44 /usr/bin/mysqld_safe
+      `-mysqld,187
+          |-{mysqld},191
+          |-{mysqld},192
+#+END_EXAMPLE
+
+* Documentation and Resources
+
+- **GitHub**: https://github.com/gdraheim/docker-systemctl-replacement
+- **PyPI**: https://pypi.org/project/docker-systemctl-replacement/
+- **LICENSE**: EUPL-1.2 (permissive, allows copying to projects)
+
+** Key Documentation Files
+
+- ARCHITECTURE.md - Implementation details
+- SERVICE-MANAGER.md - Service management specifics
+- INIT-DAEMON.md - Init daemon functionality
+- SYSTEMD_CONF.md - systemd configuration handling
+- USERMODE.md - User-mode Docker containers
+- TESTSUITE.md - Test suite information
+- BUGS.md - Known issues and limitations
+
+* Limitations
+
+- Does not implement all systemctl commands (covers major ones)
+- systemd documentation is incomplete; trial-and-error approach used
+- Some features may have edge cases
+
+See BUGS.md in the project for known issues and workarounds.
+
+* Common Issues and Solutions
+
+| Issue | Solution |
+|-------|----------|
+| Service doesn't start | Check *.service file ExecStart directive syntax |
+| Zombie processes persist | Ensure systemctl is running as PID 1 (ENTRYPOINT) |
+| Services not auto-starting | Run systemctl enable for each service |
+| Ansible connection fails | Verify ansible_connection: docker in inventory |
+
+* Quick Reference
+
+#+BEGIN_SRC bash
+# Installation
+pip install docker-systemctl-replacement
+
+# Usage as CLI tool
+systemctl start|stop|restart|enable|disable|status SERVICE
+
+# Usage as container init
+ENTRYPOINT ["/usr/bin/systemctl"]
+CMD ["default"]  # starts multi-user.target
+
+# Check status
+systemctl list-units --state=running
+systemctl show SERVICE
+
+# Debugging
+systemctl status SERVICE  # detailed status output
+#+END_SRC

@@ -1,4 +1,4 @@
-* B|
+git clone git@mb2_github:bisos-web/gatsby-starter-bystar-nestedSidebar* B|
 ####+BEGIN: bxPanel:common/title-plus
 #+title: PyCsFwrk/csPlayers
 #+roam_tags: branch
