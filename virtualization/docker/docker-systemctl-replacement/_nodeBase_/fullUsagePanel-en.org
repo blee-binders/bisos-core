@@ -1,24 +1,3 @@
-
-* Quick Reference
-
-#+BEGIN_SRC bash
-# Installation
-pip install docker-systemctl-replacement
-
-# Usage as CLI tool
-systemctl start|stop|restart|enable|disable|status SERVICE
-
-# Usage as container init
-ENTRYPOINT ["/usr/bin/systemctl"]
-CMD ["default"]  # starts multi-user.target
-
-# Check status
-systemctl list-units --state=running
-systemctl show SERVICE
-
-# Debugging
-systemctl status SERVICE  # detailed status output
-#+END_SRC
 * B|
 ####+BEGIN: bxPanel:common/title-plus
 #+title: docker/docker-systemctl-replacement

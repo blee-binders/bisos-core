@@ -25,6 +25,7 @@
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/docker/docker-systemctl-replacement/_nodeBase_")][ =docker-systemctl-replacement= ]] *|*
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/docker/_nodeBase_")][ =docker= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/hostFirmware")][hostFirmware]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/kvm")][kvm]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/legacy-virsh")][legacy-virsh]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/legacy-vmware")][legacy-vmware]] *|*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/libvirt/_nodeBase_")][ =libvirt= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/vagrant/_nodeBase_")][ =vagrant= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/virsh")][virsh]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/virtualbox")][virtualbox]] *|*
@@ -53,6 +54,26 @@
 ** TODO Get rid of git hub setup in Dockerfile
 ** -
 * +
+* TODO [#A] docker-compose.yml Updates for sysctl replacement and chrome
+SCHEDULED: <2026-05-11 Mon>
+See: /bisos/git/auth/bxRepos/blee-binders/bisos-core/virtualization/docker/docker-systemctl-replacement/_nodeBase_/fullUsagePanel-en.org
+services:
+  your-service:
+    cap_add:
+      - SYS_ADMIN
+      - SYS_PTRACE
+    security_opt:
+      - seccomp=unconfined
+
+* TODO [#A] -- Capture this: google-chrome --no-sandbox --disable-setuid-sandbox --disable-gpu --disable-dev-shm-usage
+SCHEDULED: <2026-05-11 Mon>
+services:
+  your-service:
+    cap_add:
+      - SYS_ADMIN
+      - SYS_PTRACE
+    security_opt:
+      - seccomp=unconfined
 * TODO Systemd replacement
 * DockerProc Pkg :: file:/bisos/git/bxRepos/bisos-pip/dockerProc/py3/panels/bisos.dockerProc/_nodeBase_/fullUsagePanel-en.org
 * Debian Docker BISOS Repo Object :: file:/bisos/git/bxRepos/bxObjects/bro_dockerfiles/README.org
