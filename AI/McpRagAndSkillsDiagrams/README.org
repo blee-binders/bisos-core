@@ -1,10 +1,3 @@
-* B|
-####+BEGIN: bxPanel:common/title-plus
-#+title: AI/McpRagAndSkillsDiagrams
-#+roam_tags: leaf
-#+roam_key: bisos-core/AI/McpRagAndSkillsDiagrams
-[[roam:bisos-core/AI]]
-####+END
 
 * Diagram [[file:./McpRagAndSkillsDiagrams.gif]]
 
@@ -74,29 +67,3 @@ Key insight: Without Skills, you bloat every prompt with repeated instructions. 
 Use when: You want reusable, token-efficient actions your agent can execute without being re-instructed every time.
 
 Source: Andrew Joubert
-####+BEGIN: blee:bxPanel:footerOrgParams
-* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Org-Mode Local Params: =* | ]]
-#+STARTUP: overview
-#+STARTUP: lognotestate
-#+STARTUP: inlineimages
-#+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
-#+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
-#+CATEGORY: L:McpRagAndSkillsDiagrams
-
-####+END
-####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
-* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
-# Local Variables:
-# eval: (setq-local toc-org-max-depth 4)
-# eval: (setq-local ~selectedSubject "noSubject")
-# eval: (setq-local ~primaryMajorMode 'org-mode)
-# eval: (setq-local ~blee:panelUpdater nil)
-# eval: (setq-local ~blee:dblockEnabler nil)
-# eval: (setq-local ~blee:dblockController "interactive")
-# eval: (img-link-overlays)
-# eval: (set-fill-column 115)
-# eval: (blee:fill-column-indicator/enable)
-# eval: (bx:load-file:ifOneExists "./panelActions.el")
-# End:
-
-####+END
