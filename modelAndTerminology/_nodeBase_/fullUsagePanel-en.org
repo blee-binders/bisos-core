@@ -39,7 +39,7 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** ByStar Internet Service Operating System (BISOS)
+** Model and Terminology of ByStar Digital Ecosystem (DE) and  ByStar Internet Service Operating System (BISOS)
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar DE As An Applied Math Theory" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
@@ -51,12 +51,19 @@
 ** With ByStar in terms of formality of introduction of concepts and precision of the introduced vocabulary
 ** our aim is to come as close to the style of applied math definition as possible.
 ** ByStar DE exists in the  context of today's internet and FLOSS software technologies.
-** As necessary ByStar's use of these technologies is expressed in ByStar's context.
+** As necessary ByStar's use of these technologies is expressed in ByStar's context and with ByStar terminology.
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "The Universal BISOS" :anchor "" :extraInfo "A Convivial Layer Over Unix"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *The Universal BISOS:* |]]  A Convivial Layer Over Unix  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** +
+** The primary goal for design of ByStar DE and BISOS is to create a convivial digital environment.
+** By convivial we are reffering to Ivan Illich's tools for conviviality.
+** Digital conviviality demands digital individual autonomy.
+** Hence digital individual autonomy is ByStar DE's prime directive.
+** Towards maximizing convivilaity, BISOS inherits from UNIX, Emacs and Python.
+** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Blee: A Unified Usage Environment" :anchor "" :extraInfo "/bisos/blee"
 ** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 ** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Blee: A Unified Usage Environment:/ |]]  /bisos/blee  [[elisp:(org-shifttab)][<)]] E|
@@ -101,9 +108,16 @@
 ** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 ** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /BISOS Capabilities Extentions:/ |]]  /bisos/ce  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar Realms" :anchor "" :extraInfo "Place Holder -- For Now"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PyCS Framework --- A Comprehensive Substrate" :anchor "PyCS-Framework" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *ByStar Realms:* |]]  Place Holder -- For Now  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PyCS Framework --- A Comprehensive Substrate:* |]] <<PyCS-Framework>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Commands, Services, Aeeds and Planting, csPlayer, Modules and Targets
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar Realms" :anchor "ByStar-Realms" :extraInfo "~::For Customization and for Scoping::~"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *ByStar Realms:* |]] <<ByStar-Realms>> ~::For Customization and for Scoping::~  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** ByStar Realms represent a strict hierarchy for inheritance and for gathering.
@@ -127,9 +141,9 @@ gathering.
 ** BPO Realm Base  --- ~bpo/realm/panel/~
 ** Default BISOS Realms -- /bisos/git/bxRepos/bisos/gatherer
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "System, Platform, BpoContainer" :anchor "Systems Terminology" :extraInfo "BSOs vs BPOs (Static vs Portable)"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "System, Platform, BxoHolder" :anchor "Systems Terminology" :extraInfo "BSOs vs BPOs (Static vs Portable)"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *System, Platform, BpoContainer:* |]] <<Systems Terminology>> BSOs vs BPOs (Static vs Portable)  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *System, Platform, BxoHolder:* |]] <<Systems Terminology>> BSOs vs BPOs (Static vs Portable)  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** A /Box/, is computer hardware without regard to its OS.
@@ -166,6 +180,38 @@ gathering.
 ** ====
 **  what are other names for computer
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Disposable Platform and Platform Reconstruction" :anchor "platformReconstruction" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Disposable Platform and Platform Reconstruction:* |]] <<platformReconstruction>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** BISOS Platforms are disposable. You can reconstruct them at will.
+** Or upgrade them to the next debain/python easily.
+** You can also easily remove a PALS from Platform and add it to a different platform. PALS-Portability.
+** Reconstruction of a platform involves these steps:
+1) Select a Platform-BXO
+2) Use Vagrant to build (reconstruct) a new image for that platform
+3.1) Debian image selection based on Platform-BXO information (or default to Vagrant selction)
+3.2) Assign Memory, Disk, Network based on Platform-BXO information
+3.3) Assign IP Addresess based on  Platform-BXO information
+4.1) Apply /bisos/git/bxRepos/bisos-pip/capability/py3/bin/capMaterializationDispatch.cs
+and /bisos/git/bxRepos/bisos-pip/capability/py3/bin/cbm-materialize-cbs.cs
+to /bisos/platform/sys/cbm/    file.
+4.2) If any PALS are specified, trigger materialization of those as well
+5.1) Activate the specified PALS
+5.2) For each PALS, go to the sys/cbm dir of the PALS and materialize them
+** Reboot After initial Platform VM Image Reconstruction
+** Login triggers Gnome initial Customizations
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "RawBISOS Capabilities and PALS" :anchor "RawBISOS-Capabilities and PALS" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *RawBISOS Capabilities and PALS:* |]] <<RawBISOS-Capabilities and PALS>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** RawBISOS Capabilities and PALS Will Be:
+- /bisos/git/bxRepos/bxObjects/bro_rawBisos/bro_rawBisosPlatform/sys/cbm
+
+** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS Platform Layerings" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS Platform Layerings:* |]]    [[elisp:(org-shifttab)][<)]] E|
@@ -205,13 +251,34 @@ gathering.
 ** file:/bisos/panels/bisos-core/bisos-pip/bisos.capability/_nodeBase_/fullUsagePanel-en.org
 ** file:/bisos/panels/bisos-core/bisos-pip/bisos.capability/materializationLayers/_nodeBase_/fullUsagePanel-en.org
 ** -B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PALS and PAAI" :anchor "" :extraInfo "Possession Assertion Autonomous Identity"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Portable ByStar Service (PBS) and Instances (PBSIs)" :anchor "pbs" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PALS and PAAI:* |]]  Possession Assertion Autonomous Identity  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Portable ByStar Service (PBS) and Instances (PBSIs):* |]] <<pbs>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Some ByStar services are central (bySearch.net), some ByStar services are portable and posession assertable.
+** A Portable ByStar Service (PBS) is a ByStar Service that can autonomously be Instantiated.
+** Examples of PBSs are:  byname.com , bynumber, bywhere, bytopic
+** PBSs can be instastatiated as PBSIs.
+** Examples of PBSIs are:  1.mohsen.banan.byname.net, 1-425-555-1000.bynumber.net
+** pbsis have their own repos in PALS. Typically as ~pals/pbsi-<instanceNumber>.
+** pbsi-<instanceNumber> is then created as a user on the platform.
+** The information related to registration of pbsi-<instanceNumber> is kept as [[PAAI]] in ~pals/pbsi-<instanceNumber>
+** ~pals/pbsi-<instanceNumber>/paai -- Which include the information by which pbsi-<in> was obtained.
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PAAI" :anchor "paai" :extraInfo "~Possession Assertion Autonomous Identity~"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PAAI:* |]] <<paai>> Possession Assertion Autonomous Identity  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Possesion Assertable Autonomous Identity (PAAI) = PAAI-Framework + domainName + registrations + PALSs
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PALS" :anchor "pals" :extraInfo "~Possession Assertion Libre-Hallal Services~"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PALS:* |]] <<pals>> ~Possession Assertion Libre-Hallal Services~  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** Possesion Assertable Libre-Halaal Service (PALS) = paai-BPO + Service Software + PAAI-Framework ()
-** Possesion Assertable Autonomous Identity (PAAI) = PAAI-Framework + domainName + registrations + PALSs
 ** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PALS Materialization" :anchor "" :extraInfo "Relates to both Capability and PBS Materialization"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
@@ -219,21 +286,13 @@ gathering.
 ####+END
 ** +
 ** PALS Materialization is a special form of Capability Materialization
-** PLAS Materialization is in the context of PBS-BPO
-** PALS Materialization is triggered by PBS Materialization
 ** -B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Portable ByStar Service (PBS) Materialization" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Portable ByStar Service Instance (PBSI) Materialization" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Portable ByStar Service (PBS) Materialization:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** A PBS-BPO is a PAAI repo + a repo containing a list of PBOs
-** The PBS-BPOs are in /bisos/platform/sys/pbsm/somePbsId
-** These are then made accessible as /bisos/var/pbs/somePbs
-** Each PBS-BPS has one PAAI and list of  PALS
-** Web PALS are in the form of cbs-wvds-o-type_special.cs
-** Mail PALS are in the form of cbs-mvds-o-type_special.cs
-**
+** PBSI Materialization is in the context of PALS and Capabilities Materialization
 ** -B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
