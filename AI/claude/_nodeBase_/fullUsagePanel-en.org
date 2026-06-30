@@ -42,6 +42,22 @@
 SCHEDULED: <2026-05-30 Sat>
 * TODO Build claude-sbom.pcs and include here
 SCHEDULED: <2026-05-30 Sat>
+* TODO [#A] Running Claude in a container without its own Browser
+SCHEDULED: <2026-06-30 Tue>
+Here is the process with the following assumptions:
+   - Local environment is a Windows-11 Setup
+   - Container environment is a Debian-12 Setup
+
+First Time Configuration:
+  - Install claude on both Windows and Debian
+  - scp to deb12-ssh: ~/.claude/.credentials.json
+  - I don't remember if an additional settings was also needed
+
+Upon OAuth Expiration:
+  - On Windoews issue a /login and plugin  the code and make sure you are in
+  - scp to deb12-ssh: ~/.claude/.credentials.json
+
+
 * -B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
