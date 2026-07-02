@@ -6,7 +6,8 @@
 [[roam:panels/bisos-core]]
 ####+END
 ####+BEGIN: blee:bxPanel:topPanelControls
-*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]] [[elisp:(magit)][Magit]] [[elisp:(call-interactively 'b:rg:panels/all)][rg:panels/all]]  [[elisp:(org-cycle)][| ]]
+**  RipGrep:: [[elisp:(rg-menu)][rg-menu]] ||
 **  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
 **  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
 **  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
@@ -141,9 +142,20 @@ gathering.
 ** BPO Realm Base  --- ~bpo/realm/panel/~
 ** Default BISOS Realms -- /bisos/git/bxRepos/bisos/gatherer
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "System, Platform, BxoHolder" :anchor "Systems Terminology" :extraInfo "BSOs vs BPOs (Static vs Portable)"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BXO Types: BPOs, BROs, BFO, BSO" :anchor "bxo" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *System, Platform, BxoHolder:* |]] <<Systems Terminology>> BSOs vs BPOs (Static vs Portable)  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BXO Types: BPO, BRO, BFO, BSO:* |]] <<bxo>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** A BXO (ByStar Object) can be one of:
+** BPO (ByStar Portable Object) -- A gitlab account with multiple repos, that can be managed collectively
+** BRO (ByStar Repo Object) -- A base directory that is inside a repo -- is read-write
+** BFO (ByStar File Object) -- A base directory, that is local to the platform and is read-write
+** BSO (ByStar Static Object) -- A base directory that is read-only. Same as read-only BFO, BRO or BPO
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "System, Platform, BpoHolder" :anchor "Systems Terminology" :extraInfo "BSOs vs BPOs (Static vs Portable)"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *System, Platform, BpoHolder:* |]] <<Systems Terminology>> BSOs vs BPOs (Static vs Portable)  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** A /Box/, is computer hardware without regard to its OS.
@@ -210,7 +222,9 @@ to /bisos/platform/sys/cbm/    file.
 ** +
 ** RawBISOS Capabilities and PALS Will Be:
 - /bisos/git/bxRepos/bxObjects/bro_rawBisos/bro_rawBisosPlatform/sys/cbm
-
+- /bisos/git/bxRepos/bxObjects/bro_rawBisos/bro_rawBisosPlatform/sys/palsList
+- /bisos/git/bxRepos/bxObjects/bro_rawBisos/bro_rawBisosPals
+- /bisos/git/bxRepos/bxObjects/bro_rawBisos/bro_rawBisos_pbsi-00
 ** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS Platform Layerings" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
@@ -266,9 +280,23 @@ to /bisos/platform/sys/cbm/    file.
 ** The information related to registration of pbsi-<instanceNumber> is kept as [[PAAI]] in ~pals/pbsi-<instanceNumber>
 ** ~pals/pbsi-<instanceNumber>/paai -- Which include the information by which pbsi-<in> was obtained.
 ** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Portable ByStar Service Instances (PBSIs) BPOs and Accounts" :anchor "pbsi" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Portable ByStar Service (PBS) and Instances (PBSIs):* |]] <<pbs>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** pbsis have their own BPOs that are reffered to in PALS BPO.
+** The pbsi BPO is usually in the form of xxx_pbsi-<instanceNumber>
+** There is a ~xxx_pbsi-<instanceNumber>/home which becomes the home directory of ~pbsi-<instanceNumber> account.
+** Typically as ~pals/pbsi-<instanceNumber>.
+** pbsi-<instanceNumber> is then created as a user on the platform.
+** The information related to registration of pbsi-<instanceNumber> is kept as [[PAAI]] in ~pals/pbsi-<instanceNumber>
+** ~pals/pbsi-<instanceNumber>/paai -- Which include the information by which pbsi-<in> was obtained.
+** -B|
+
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PAAI" :anchor "paai" :extraInfo "~Possession Assertion Autonomous Identity~"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PAAI:* |]] <<paai>> Possession Assertion Autonomous Identity  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PAAI:* |]] <<paai>> ~Possession Assertion Autonomous Identity~  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** Possesion Assertable Autonomous Identity (PAAI) = PAAI-Framework + domainName + registrations + PALSs
@@ -289,7 +317,7 @@ to /bisos/platform/sys/cbm/    file.
 ** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Portable ByStar Service Instance (PBSI) Materialization" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Portable ByStar Service (PBS) Materialization:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Portable ByStar Service Instance (PBSI) Materialization:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** PBSI Materialization is in the context of PALS and Capabilities Materialization
