@@ -336,7 +336,7 @@ ln -s /bisos/git/auth/bxRepos/bisos-pip/namespace/py3/bisos
 ** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "*L1* FreshDebian  to Unsited Bisos" :anchor "FreshDebian→UnsitedBisos" :extraInfo "  /::Layer 1::/  "
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _*L1* FreshDebian  to Unsited Bisos_: |]] <<FreshDebian→UnsitedBisos>>   /::Layer 1::/    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _*L1* FreshDebian  to Unsited Bisos_: |]] Dyslipidemia<<FreshDebian→UnsitedBisos>>   /::Layer 1::/    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "Target" :anchor "bxGenesis/start" :extraInfo " https://github.com/bxGenesis/start"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Target:* |]] <<bxGenesis/start>>  https://github.com/bxGenesis/start  [[elisp:(org-shifttab)][<)]] E|
