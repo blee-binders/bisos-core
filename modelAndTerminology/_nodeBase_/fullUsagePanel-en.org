@@ -114,7 +114,7 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PyCS Framework --- A Comprehensive Substrate:* |]] <<PyCS-Framework>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** Commands, Services, Aeeds and Planting, csPlayer, Modules and Targets
+** Commands, Services, Seeds and Planting, csPlayer, Modules and Targets
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByStar Realms" :anchor "ByStar-Realms" :extraInfo "~::For Customization and for Scoping::~"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
