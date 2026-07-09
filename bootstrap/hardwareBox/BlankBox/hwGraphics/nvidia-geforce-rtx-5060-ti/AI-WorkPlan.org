@@ -1,0 +1,117 @@
+#+title: Capabilities Improvement for airflow.here --- Work Plan
+#+DATE: <2026-06-10 Wed 13:54>
+#+AUTHOR: Mohsen BANAN
+#+OPTIONS: toc:4
+#+TAGS: me ai aiAndMe
+
+This Work Plan file drives the AI collaborative development.
+Interactions are broken down into "Stages". Each Stage has a set
+of TODOs that I work with Claude to accomplish.
+
+Companion docs: [[file:AI-AGENTS.org][AI-AGENTS.org]] (agent guidance / layering), [[file:README.org][README.org]] (overview).
+
+* Stage 1: Confirm that blee-panels and prior work on this panel is understood
+
+Goal: Status of Exisiting Panel Before being split into nvidia and debian
+
+
+* Stage 1 TODOs
+** +
+** DONE [#A] Confirm understanding that current panel has both nvidia and debian with nvidia as fall back
+CLOSED: [2026-07-06 Mon 21:39] SCHEDULED: <2026-06-28 Sun 15:22>
+@./_nodeBase_/fullUsagePanel-en.org has both. and scripts for both.
+----- AI Results: ------
+Confirmed. The current combined panel =./_nodeBase_/fullUsagePanel-en.org= (476 lines)
+documents BOTH driver approaches for the RTX 5060 Ti (Blackwell GB206) on Debian 13:
+
+1. PRIMARY (as written) --- the *Debian / apt* route:
+   - Step 1 Confirm card (=confirmCardAndDriver.sh=)
+   - Step 2 Enable non-free-firmware + trixie-backports, pin to backports
+     (=createNvidiaBackportsPref.sh=)
+   - Step 3 Install kernel headers
+   - Step 4 Install open-module driver =nvidia-open-kernel-dkms nvidia-driver=
+     (=installOpenDriver.sh=)
+   - Step 5 Secure Boot MOK enrollment (=enrollMok.sh=)
+   - Step 6 Reboot + verify (=verifyDriverLoaded.sh=)
+
+2. FALLBACK (as written) --- the *NVIDIA .run installer* route:
+   - "Fallback -- NVIDIA .run Installer (Open Modules)" section
+     (=runInstallerFallback.sh= + =NVIDIA-Linux-x86_64-595.84.run=)
+
+IMPORTANT REALITY (per the Verifications section, =intra= 2026-07-05): the apt/backports
+route FAILED --- backports carries only =550.163.01=, which has no device-ID for GB206;
+DKMS also failed to build 550 against kernel 7.0.12. So the NVIDIA =.run= path (595.84,
+=--kernel-module-type=open=) is actually the WORKING one, and the Debian path is the
+failed attempt being kept for later.
+
+So the split in Stage 2 maps as:
+  - =./rtx-5060-ti-driver-nvidia/=  <- the .run installer route (WORKS)
+  - =./rtx-5060-ti-driver-debian/=  <- the apt/backports route (FAILED, kept for later)
+  - =./_nodeBase_/=  parent <- points to both children, describes the situation
+
+Both child panels currently exist only as blank skeleton panels ("Overview Comes Here");
+all real content and all scripts + the .run file currently live in the parent =_nodeBase_=.
+The parent's terseTreeNavigator already lists both children as =Decedents=.
+** -
+
+* Stage 2: Split into 3 Panels
+
+Goal: Complete consistent set of 3 panels
+
+
+* Stage 2 TODOs
+** +
+** DONE [#A] There will be two child panels. One that works is the nvidia driver.  The one being kept for later is debian build. The parent points to both and describes the situation.
+CLOSED: [2026-07-06 Mon 21:39] SCHEDULED: <2026-06-28 Sun 15:22>
+./_nodeBase_/fullUsagePanel-en.org is the parent.
+./rtx-5060-ti-driver-nvidia/   will have the driver download from nvidia -- This is working.
+./rtx-5060-ti-driver-debian/   Captures the curreent failed attempt. We are keeping it for later.
+----- AI Results: ------
+Split completed --- three consistent panels:
+
+1. PARENT =./_nodeBase_/fullUsagePanel-en.org= (slimmed from 476 -> ~155 lines):
+   Overview describing the situation + inline goto links to both children; new
+   "Two Approaches -- Choose a Child Panel" section (comparison table + dual-GPU
+   guidance); kept "This Card -- Why the Packaged Driver Fails", "Relevant Resources",
+   and the "Verifications" record. All per-step content removed (now in children).
+   terseTreeNavigator already lists both children as =Decedents=.
+
+2. =./rtx-5060-ti-driver-nvidia/= --- the WORKING NVIDIA =.run= route (open modules,
+   MOK-signed). Steps: confirm card -> purge packaged nvidia -> get .run -> enroll MOK ->
+   run installer (text console) -> reboot/verify. All as active runResult dblocks.
+   Scripts here: confirmCardAndDriver.sh, enrollMok.sh, runInstallerFallback.sh,
+   verifyDriverLoaded.sh + NVIDIA-Linux-x86_64-595.84.run + mok.passwd.
+
+3. =./rtx-5060-ti-driver-debian/= --- the apt/trixie-backports open-module route
+   (FAILED 2026-07-05, kept for later). Steps 1--6 + a "Failure Record" section
+   explaining why it is kept and when to retry (backports shows 570+). Scripts here:
+   confirmCardAndDriver.sh, createNvidiaBackportsPref.sh, installOpenDriver.sh,
+   enrollMok.sh, verifyDriverLoaded.sh.
+
+File handling notes:
+- The 423MB =NVIDIA-Linux-x86_64-595.84.run= and the =mok.passwd= secret were MOVED into
+  the nvidia child and are git-ignored there (new =.gitignore=); do NOT commit either.
+- Shared scripts were copied into both children; parent =_nodeBase_= is now machinery-only.
+- All runResult "cat ./script.sh" dblock bodies are left empty (no fabricated output/
+  timestamps); D-Run / dblock-update in Emacs will populate them.
+- All three panels pass the ####+BEGIN/####+END dblock-balance check.
+** DONE My computer has two cards one nvidia and one intel. What is the best way of using them. Should I disable the intel on motherboard.
+CLOSED: [2026-07-06 Mon 21:39]
+----- AI Results: ------
+Short answer: do NOT disable the Intel iGPU. Recommended options (documented in the parent
+panel's "Two Approaches" section):
+- Keep both enabled, NVIDIA as primary (simplest for a desktop with the monitor on the
+  NVIDIA card). The iGPU stays available and does no harm --- and gives you a fallback
+  display/console if the NVIDIA driver ever breaks.
+- PRIME render-offload (hybrid): run the desktop on the iGPU and offload chosen apps to
+  NVIDIA via =prime-run= / =__NV_PRIME_RENDER_OFFLOAD=1=. Best for a power/heat trade-off.
+- Disabling the iGPU in BIOS is only worth it if it actively causes boot/display confusion;
+  it costs you that safety fallback, so it is not recommended.
+** -
+
+
+
+# Local Variables:
+# eval: (setq-local toc-org-max-depth 4)
+# eval: (setq-local org-log-done 'time)
+# End:

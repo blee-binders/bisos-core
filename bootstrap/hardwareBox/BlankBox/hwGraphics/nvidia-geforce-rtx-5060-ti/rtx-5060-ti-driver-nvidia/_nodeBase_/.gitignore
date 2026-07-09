@@ -1,0 +1,4 @@
+# Large NVIDIA .run installer (~400MB) -- a downloaded local artifact, not source.
+NVIDIA-Linux-x86_64-*.run
+# MOK enrollment password -- a local secret; never commit.
+mok.passwd

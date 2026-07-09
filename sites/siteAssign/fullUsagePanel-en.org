@@ -25,8 +25,8 @@
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sites/siteAssign")][siteAssign]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sites/siteStorage/_nodeBase_")][ =siteStorage= ]] *|*
-*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/sites/siteAssign")][siteAssign]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/sites/_nodeBase_")][ =sites= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sites/siteAssign")][siteAssign]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sites/siteGenericVMsAndCaps/_nodeBase_")][ =siteGenericVMsAndCaps= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/sites/siteStorage/_nodeBase_")][ =siteStorage= ]] *|* 
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/sites/siteAssign")][siteAssign]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/sites/_nodeBase_")][ =sites= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|* 
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"

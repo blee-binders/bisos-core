@@ -5,7 +5,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] | 
 "
 FILE="
-*  /This File/ :: /bisos/panels/bisos-core/bootstrap/hardwareBox/BlankBox/hwGraphics/nvidia-geforce-rtx-5060-ti/ftoProc.sh 
+*  /This File/ :: /bisos/panels/bisos-core/bootstrap/hardwareBox/BlankBox/hwGraphics/nvidia-geforce-rtx-5060-ti/rtx-5060-ti-driver-debian/_nodeBase_/ftoProc.sh 
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@" 
@@ -30,9 +30,6 @@ leavesList="
 
 ####+BEGIN: bx:dblock:pypi:bash:nodesList :types ""
 nodesList="
-rtx-5060-ti-driver-debian
-rtx-5060-ti-driver-nvidia
-_nodeBase_
 "
 ####+END:
 

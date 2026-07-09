@@ -1,0 +1,57 @@
+#+title: Development Status & Continuation Handoff
+#+TAGS: me(m) ai(a)
+
+This file is a working-state handoff so development can continue on another
+machine (which has this repo but NOT the developer's =~=). It captures the
+architecture, what works, what is untested and the design decisions made so far.
+
+This file is to be maintained by Claude. When a release is being made, claude should be
+prompted to update this document.
+
+Companion docs: [[file:AI-AGENTS.org][AI-AGENTS.org]] (agent guidance / layering), [[file:README.org][README.org]] (overview).
+
+* Current State --- <2026-07-06>
+
+** What this panel is
+Install guidance for the *NVIDIA GeForce RTX 5060 Ti* (Blackwell, =GB206=, PCI =10de:2d04=)
+on *Debian 13 (Trixie)*, UEFI + Secure Boot ON. Blackwell needs a *570+* driver AND the
+*open* kernel modules; stock Trixie =nvidia-driver 550.xx= does not drive this card.
+
+** Layout (after the Stage 2 split --- <2026-07-06>)
+Now THREE panels (was one combined panel):
+- =./_nodeBase_/fullUsagePanel-en.org= --- PARENT, slimmed. Describes the situation, links to
+  both children, has a "Two Approaches" chooser (comparison table + dual-GPU guidance), plus
+  the shared "Why the Packaged Driver Fails", "Resources" and "Verifications" sections. No
+  per-step content. Parent =_nodeBase_= is now machinery-only (no driver scripts).
+- =./rtx-5060-ti-driver-nvidia/_nodeBase_/= --- the WORKING NVIDIA =.run= route. Scripts:
+  =confirmCardAndDriver.sh=, =enrollMok.sh=, =runInstallerFallback.sh=, =verifyDriverLoaded.sh=,
+  =createPrimeRun.sh=; plus =NVIDIA-Linux-x86_64-595.84.run= (423MB) and =mok.passwd= --- both
+  *git-ignored* (see =.gitignore= there); do NOT commit them. Has an optional
+  "Dual-GPU PRIME Render-Offload" section (installs =/usr/local/bin/prime-run=).
+- =./rtx-5060-ti-driver-debian/_nodeBase_/= --- the apt/backports route (FAILED, kept for later).
+  Scripts: =confirmCardAndDriver.sh=, =createNvidiaBackportsPref.sh=, =installOpenDriver.sh=,
+  =enrollMok.sh=, =verifyDriverLoaded.sh=. Has a "Failure Record" section.
+- All command steps are active =blee:bxPanel:runResult= dblocks; "cat ./script.sh" bodies are
+  empty until refreshed with D-Run in Emacs.
+
+** Verified facts (machine =intra=, 2026-07-05)
+- apt/backports route FAILED: backports had only =550.163.01= (no GB206 device-ID); DKMS
+  failed to build 550 against kernel =7.0.12+deb13=. Left =nvidia-open-kernel-dkms= (=iF=)
+  and =nvidia-driver= (=iU=) half-configured. Decision: stay on kernel 7.0.12.
+- The NVIDIA =.run= (=595.84=, =--kernel-module-type=open=, DKMS-signed with MOK) is the
+  path expected to work; MOK auto-generated at =/var/lib/dkms/mok.{key,pub}=, *not yet enrolled*.
+- NOTYET: record the working =nvidia-smi= output once the .run install + MOK enrollment completes.
+
+** Where the work is headed (see AI-WorkPlan.org)
+- Stage 1 (DONE): confirmed the combined panel documented both routes. [[file:AI-WorkPlan.org]]
+- Stage 2 (DONE <2026-07-06>): split into the 3 panels above; parent slimmed; scripts and the
+  .run/mok.passwd distributed to the children; dual-GPU question answered in the parent + WorkPlan.
+- Open follow-ups (NOTYET):
+  - Record the working =nvidia-smi= output + confirmed 570+/595.84 driver version in the nvidia
+    child once verified on =intra=.
+  - Re-run D-Run / dblock-update in Emacs on all three panels to populate the "cat" dblock bodies.
+  - Retry the debian/apt route once =trixie-backports= carries a 570+ open-module driver.
+
+# Local Variables:
+# eval: (setq-local toc-org-max-depth 4)
+# End:
