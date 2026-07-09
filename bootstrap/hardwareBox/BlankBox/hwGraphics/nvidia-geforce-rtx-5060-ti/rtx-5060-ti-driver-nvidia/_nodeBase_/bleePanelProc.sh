@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedBleePanelProc.sh]] | 
 "
 FILE="
-*  /This File/ :: /bisos/panels/bisos-core/bootstrap/hardwareBox/BlankBox/hwGraphics/nvidia-geforce-rtx-5060-ti/_nodeBase_/bleePanelProc.sh 
+*  /This File/ :: /bisos/panels/bisos-core/bootstrap/hardwareBox/BlankBox/hwGraphics/nvidia-geforce-rtx-5060-ti/rtx-5060-ti-driver-nvidia/_nodeBase_/bleePanelProc.sh 
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedBleePanelProc.sh -l $0 "$@" 

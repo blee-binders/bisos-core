@@ -54,6 +54,15 @@
 ####+BEGIN: blee:panel:unix:cmndIntro :outLevel 1 :sep nil :folding? nil :label "Gui" :command "keepassxc &" :comment "Launch" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Gui/ :: [[elisp:(lsip-local-run-command "keepassxc &")][keepassxc &]] *|*  =Launch= *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Post Installation Configurations" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Post Installation Configurations:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** KeePassXC 2.7.10  -- Debian 13 -- <2026-07-08 Wed 22:09>
+** Settings -> Browser Integration ->  Enable browser integration + Google Chrom and others
+** Settings -> Lock databases after inactivity of 240 sec
+** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BinsPreps --- Installation" :anchor "anchor" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BinsPreps --- Installation:* |]] <<anchor>>   [[elisp:(org-shifttab)][<)]] E|
@@ -181,6 +190,7 @@
 ####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerEmacsParams)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
+####+END
 # Local Variables:
 # eval: (setq-local ~selectedSubject "noSubject")
 # eval: (setq-local ~primaryMajorMode 'org-mode)
@@ -193,4 +203,3 @@
 # eval: (bx:load-file:ifOneExists "./panelActions.el")
 # End:
 
-####+END

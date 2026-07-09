@@ -1,0 +1,341 @@
+* B|
+####+BEGIN: bxPanel:common/title-plus
+#+title: nvidia-geforce-rtx-5060-ti/rtx-5060-ti-driver-nvidia
+#+roam_tags: branch
+#+roam_key: hwGraphics/nvidia-geforce-rtx-5060-ti/rtx-5060-ti-driver-nvidia
+[[roam:hwGraphics/nvidia-geforce-rtx-5060-ti]]
+####+END
+####+BEGIN: blee:bxPanel:topPanelControls
+*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]] [[elisp:(magit)][Magit]] [[elisp:(call-interactively 'b:rg:panels/all)][rg:panels/all]]  [[elisp:(org-cycle)][| ]]
+**  RipGrep:: [[elisp:(rg-menu)][rg-menu]] ||
+**  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
+**  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
+**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]] 
+**  This File :: *= /bisos/panels/bisos-core/bootstrap/hardwareBox/BlankBox/hwGraphics/nvidia-geforce-rtx-5060-ti/rtx-5060-ti-driver-nvidia/_nodeBase_/fullUsagePanel-en.org =* 
+* /file-truename:/  /bisos/git/auth/bxRepos/blee-binders/bisos-core/bootstrap/hardwareBox/BlankBox/hwGraphics/nvidia-geforce-rtx-5060-ti/rtx-5060-ti-driver-nvidia/_nodeBase_/fullUsagePanel-en.org
+*  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
+**  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
+**  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
+**  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]  E|
+####+END
+####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   bisos--~Node:: hwGraphics/nvidia-geforce-rtx-5060-ti -- rtx-5060-ti-driver-nvidia~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
+* +
+*                                        *━━━━━━━━━━━━━━━━━━━━━━━━*                            
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/hardwareBox/BlankBox/hwGraphics/nvidia-geforce-rtx-5060-ti/rtx-5060-ti-driver-debian/_nodeBase_")][ =rtx-5060-ti-driver-debian= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/hardwareBox/BlankBox/hwGraphics/nvidia-geforce-rtx-5060-ti/rtx-5060-ti-driver-nvidia/_nodeBase_")][ =rtx-5060-ti-driver-nvidia= ]] *|* 
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bootstrap/hardwareBox/BlankBox/hwGraphics/nvidia-geforce-rtx-5060-ti/_nodeBase_")][ =nvidia-geforce-rtx-5060-ti= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bootstrap/hardwareBox/BlankBox/hwGraphics/_nodeBase_")][ =hwGraphics= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bootstrap/hardwareBox/BlankBox/_nodeBase_")][ =BlankBox= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bootstrap/hardwareBox/_nodeBase_")][ =hardwareBox= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bootstrap/_nodeBase_")][ =bootstrap= ]] *|* 
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|* 
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview and Use Cases" :anchor "Panel" :extraInfo "  /NVIDIA .run -- Open Modules -- WORKS/"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview and Use Cases:* |]] <<Panel>>   /NVIDIA .run -- Open Modules -- WORKS/  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+This child panel documents the *working* way to drive a *GeForce RTX 5060 Ti*
+(Blackwell, =GB206=) on *Debian 13 (Trixie)*: NVIDIA's official =.run= installer,
+building the *open* kernel modules and signing them for Secure Boot.
+
+*Why this route (and not apt):* the RTX 5060 Ti is *Blackwell*, which needs a *570-series
+or newer* driver AND the *open* kernel modules. As of *2026-07-05* Debian =trixie-backports=
+carried only =550.163.01= (no =GB206= support), so the apt route could not drive this card ---
+see the sibling [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/hardwareBox/BlankBox/hwGraphics/nvidia-geforce-rtx-5060-ti/rtx-5060-ti-driver-debian/_nodeBase_")][ =rtx-5060-ti-driver-debian= ]] panel for that (kept-for-later) attempt.
+
+*Route summary:*
+- Confirm the card, then *purge* any packaged NVIDIA driver so the two do not collide.
+- Download the current *570+* driver (this panel used =595.84=) into this =_nodeBase_=.
+- Enroll a *MOK* (Secure Boot stays ON) so the signed module loads.
+- Run the =.run= from a *text console* with =--kernel-module-type=open --dkms=, signing with the MOK.
+- Reboot and verify with =nvidia-smi=.
+
+*Trade-off:* the =.run= lives *outside apt*, so it must be rebuilt/reinstalled after every
+kernel change. Registering it with DKMS (=--dkms=) makes it rebuild automatically on kernel upgrades.
+Prefer the apt/backports route (sibling panel) once backports ships a Blackwell-capable driver.
+
+/NOTE: On =intra= the running kernel is =7.0.12+deb13=; the modules are built against it. Re-verify
+the driver version and =nvidia-smi= output on the specific machine before relying on this./
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "This Card -- Why 570+ and Open Modules" :anchor "" :extraInfo "Blackwell -- GB206"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *This Card -- Why 570+ and Open Modules:* |]]  Blackwell -- GB206  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+The card, as reported by =lspci -nn= on the target machine:
+
+#+begin_example
+01:00.0 VGA compatible controller [0300]: NVIDIA Corporation GB206 [GeForce RTX 5060 Ti] [10de:2d04] (rev a1)
+01:00.1 Audio device [0403]: NVIDIA Corporation GB206 High Definition Audio Controller [10de:22eb] (rev a1)
+#+end_example
+
+- *Architecture* :: Blackwell (=GB206=); PCI vendor:device =10de:2d04=.
+- *Driver floor* :: Blackwell needs the *570-series* driver (or newer). Older drivers have no
+  device-ID match for =GB206= and will not drive the card.
+- *Open modules mandatory* :: For Blackwell the *open* (MIT/GPL) kernel module is required; the
+  closed/proprietary module refuses to initialize on these GPUs. Hence =--kernel-module-type=open=.
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Prerequisites and Assumptions" :anchor "" :extraInfo "Debian 13 -- UEFI -- Secure Boot ON"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Prerequisites and Assumptions:* |]]  Debian 13 -- UEFI -- Secure Boot ON  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+- A working *Debian 13 (Trixie)* install, booted in *UEFI* mode, with network access.
+- Matching *kernel headers* installed (=sudo apt install linux-headers-$(uname -r)=) so DKMS can build.
+- *Secure Boot ON* --- we enroll a MOK so the signed module loads (Step 4).
+- =sudo=/root access and a plan for *console access* (=Ctrl-Alt-F3=, or another machine + SSH) in case
+  X/Wayland fails to start.
+- A few hundred MB free for the installer and its DKMS builds.
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Step 1 -- Confirm the Card and Current State" :anchor "" :extraInfo "lspci"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Step 1 -- Confirm the Card and Current State:* |]]  lspci  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+Confirm the GPU is present and see which driver is currently bound:
+
+####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "cat ./confirmCardAndDriver.sh"  :results "stdout" :comment "See content of the script" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "cat ./confirmCardAndDriver.sh")][cat ./confirmCardAndDriver.sh]] *|*  =See content of the script= *|*    |
+** [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "./confirmCardAndDriver.sh"  :results "none" :comment "Confirm card and bound driver" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "./confirmCardAndDriver.sh")][./confirmCardAndDriver.sh]] *|*  =Confirm card and bound driver= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Step 2 -- Purge Any Packaged NVIDIA Driver" :anchor "" :extraInfo "avoid collisions"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Step 2 -- Purge Any Packaged NVIDIA Driver:* |]]  avoid collisions  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+Remove any apt-installed NVIDIA driver so it does not collide with the =.run= install (this also
+clears the half-configured state left by a failed backports attempt):
+
+####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "sudo apt purge '^nvidia-.*' && sudo apt autoremove"  :results "none" :comment "Purge packaged NVIDIA driver" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "sudo apt purge '^nvidia-.*' && sudo apt autoremove")][sudo apt purge '^nvidia-.*' && sudo apt autoremove]] *|*  =Purge packaged NVIDIA driver= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Step 3 -- Get the .run Installer" :anchor "" :extraInfo "570+ into _nodeBase_"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Step 3 -- Get the .run Installer:* |]]  570+ into _nodeBase_  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+Download the current *570+* (Linux 64-bit) driver from https://www.nvidia.com/Download/index.aspx
+and save it into *this panel's =_nodeBase_= directory* --- =runInstallerFallback.sh= auto-detects the
+newest =NVIDIA-Linux-x86_64-*.run= here. (This panel was built with =595.84=.)
+
+/The =.run= file is a large (~400MB) local artifact and is git-ignored on purpose; it is not source./
+
+####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "ls -1t ./NVIDIA-Linux-x86_64-*.run"  :results "none" :comment "Confirm the installer is present here" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "ls -1t ./NVIDIA-Linux-x86_64-*.run")][ls -1t ./NVIDIA-Linux-x86_64-*.run]] *|*  =Confirm the installer is present here= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Step 4 -- Secure Boot: Enroll Your MOK" :anchor "" :extraInfo "Sign the module"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Step 4 -- Secure Boot: Enroll Your MOK:* |]]  Sign the module  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+With Secure Boot ON, an unsigned kernel module will *not load*. DKMS auto-generates a *Machine Owner
+Key (MOK)* at =/var/lib/dkms/mok.key= / =mok.pub= and signs the module with it; you enroll the public
+key into the firmware once. /(If those files are missing: =sudo dkms generate_mok=.)/
+
+Import the public key --- you set a *one-time password* (8--16 chars) to re-enter at the next boot:
+
+####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "cat ./enrollMok.sh"  :results "stdout" :comment "See content of the script" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "cat ./enrollMok.sh")][cat ./enrollMok.sh]] *|*  =See content of the script= *|*    |
+** [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "./enrollMok.sh"  :results "none" :comment "Import MOK and queue for enrollment" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "./enrollMok.sh")][./enrollMok.sh]] *|*  =Import MOK and queue for enrollment= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+Now *reboot*. At the blue *MOK Manager* screen: *Enroll MOK* -> *Continue* -> *Yes* -> enter the
+one-time password -> *Reboot*. /You may enroll the MOK before or after running the installer, but the
+module will not load until it is enrolled./
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Step 5 -- Run the .run Installer (Open Modules)" :anchor "" :extraInfo "from a text console"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Step 5 -- Run the .run Installer (Open Modules):* |]]  from a text console  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+Run this from a *text console* (=Ctrl-Alt-F3=), *not* from X/Wayland --- it stops the graphical
+target. It builds the *open* modules against the running kernel and signs them with the DKMS MOK:
+
+####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "cat ./runInstallerFallback.sh"  :results "stdout" :comment "See content of the script" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "cat ./runInstallerFallback.sh")][cat ./runInstallerFallback.sh]] *|*  =See content of the script= *|*    |
+** [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "./runInstallerFallback.sh"  :results "none" :comment "Run .run installer with open modules (from a text console)" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "./runInstallerFallback.sh")][./runInstallerFallback.sh]] *|*  =Run .run installer with open modules (from a text console)= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+- =--kernel-module-type=open= is *mandatory* for Blackwell.
+- Let the installer register with DKMS (=--dkms=) so it rebuilds on kernel upgrades.
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Step 6 -- Reboot and Verify" :anchor "" :extraInfo "nvidia-smi"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Step 6 -- Reboot and Verify:* |]]  nvidia-smi  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+After the MOK-enrollment reboot, verify the driver is loaded and bound to the card:
+
+####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "cat ./verifyDriverLoaded.sh"  :results "stdout" :comment "See content of the script" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "cat ./verifyDriverLoaded.sh")][cat ./verifyDriverLoaded.sh]] *|*  =See content of the script= *|*    |
+** [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "./verifyDriverLoaded.sh"  :results "none" :comment "Verify driver loaded and bound to the card" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "./verifyDriverLoaded.sh")][./verifyDriverLoaded.sh]] *|*  =Verify driver loaded and bound to the card= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+=nvidia-smi= should print the GPU name (GeForce RTX 5060 Ti) and the driver version (570.x+).
+
+/NOTYET: paste the working =nvidia-smi= output and confirmed driver version here once verified on =intra=./
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Optional -- Dual-GPU PRIME Render-Offload" :anchor "" :extraInfo "iGPU drives desktop, offload apps to NVIDIA"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Optional -- Dual-GPU PRIME Render-Offload:* |]]  iGPU drives desktop, offload apps to NVIDIA  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+*Optional --- only if you want the Intel iGPU to drive the desktop and use the NVIDIA GPU
+per-application.* The default assumed by this panel is *NVIDIA-primary* (monitor on the NVIDIA card,
+everything renders on NVIDIA); if that is your setup you can skip this section.
+
+*What PRIME render-offload does:* the *Intel Arrow Lake-S iGPU* drives the monitors and the desktop
+(compositor, browser, video), while the *NVIDIA GPU stays idle/powered-down* until you *explicitly*
+launch a chosen app on it (a game, Blender, CUDA/AI work). That app renders on NVIDIA and the frames
+are copied to the iGPU's framebuffer for display. This is the power/heat trade-off: the big GPU only
+spins up on demand.
+
+*Desktop caveat --- which GPU drives the monitor depends on the physical port:*
+- Monitor in the *motherboard* video output -> the *iGPU* drives it -> PRIME offload applies (this section).
+- Monitor in the *NVIDIA card's* DP/HDMI -> *NVIDIA* already drives the display -> you are effectively
+  NVIDIA-primary and offload is unnecessary. Check with the provider list below.
+
+####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "xrandr --listproviders"  :results "none" :comment "List GPU providers (expect both Intel and NVIDIA)" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "xrandr --listproviders")][xrandr --listproviders]] *|*  =List GPU providers (expect both Intel and NVIDIA)= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+*Prerequisites:* NVIDIA driver installed and loaded (Steps 1--6), =nvidia-drm.modeset=1= (default on
+recent drivers), and the *iGPU set as the display/primary GPU*. Render-offload via these env vars is
+an *Xorg* feature; a Wayland session offloads per-app similarly but the mechanics differ.
+
+*Install a =prime-run= wrapper.* Debian ships no =prime-run= of its own; =prime-run= is just a tiny
+script that sets the NVIDIA offload environment variables before launching a program. Create it once
+at =/usr/local/bin/prime-run=:
+
+####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "cat ./createPrimeRun.sh"  :results "stdout" :comment "See content of the script" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "cat ./createPrimeRun.sh")][cat ./createPrimeRun.sh]] *|*  =See content of the script= *|*    |
+Last Executed at: 202607-07-21:02:08  by: bystar on: intra
+----------------------------
+#!/bin/bash
+# Create /usr/local/bin/prime-run -- a small wrapper for PRIME render-offload.
+# It sets the NVIDIA offload env vars so a SINGLE app renders on the NVIDIA GPU
+# while the Intel iGPU keeps driving the desktop. Debian has no prime-run of its
+# own, so we install this one ourselves.
+#
+# Prereq: NVIDIA driver installed and loaded (this panel), iGPU as the display GPU.
+# Usage after install:  prime-run <app>     e.g.  prime-run glxgears
+
+sudo tee /usr/local/bin/prime-run > /dev/null <<'EOF'
+#!/bin/sh
+# Offload one app to the NVIDIA GPU (PRIME render-offload).
+__NV_PRIME_RENDER_OFFLOAD=1 \
+__GLX_VENDOR_LIBRARY_NAME=nvidia \
+__VK_LAYER_NV_optimus=NVIDIA_only \
+    "$@"
+EOF
+
+sudo chmod +x /usr/local/bin/prime-run
+echo "Installed /usr/local/bin/prime-run"
+
+** [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "./createPrimeRun.sh"  :results "none" :comment "Install /usr/local/bin/prime-run" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "./createPrimeRun.sh")][./createPrimeRun.sh]] *|*  =Install /usr/local/bin/prime-run= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+*Use it* by prefixing any app so it renders on NVIDIA (the app's env vars are the actual mechanism;
+=prime-run= just sets them for you):
+- Terminal :: =prime-run blender= , =prime-run glxgears=
+- Steam game :: set Launch Options to =prime-run %command%=
+- App icon :: edit the =.desktop= file's =Exec== line to =Exec=prime-run /path/to/app=
+
+*Verify offload works* (needs =glxinfo= from the =mesa-utils= package). The default renderer should be
+Intel; under =prime-run= it should be the NVIDIA GPU:
+
+####+BEGIN: blee:bxPanel:runResult :outLevel 2  :command "glxinfo | grep 'OpenGL renderer';  prime-run glxinfo | grep 'OpenGL renderer'"  :results "none" :comment "Default renderer (Intel) vs offloaded (NVIDIA)" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "glxinfo | grep 'OpenGL renderer';  prime-run glxinfo | grep 'OpenGL renderer'")][glxinfo | grep 'OpenGL renderer';  prime-run glxinfo | grep 'OpenGL renderer']] *|*  =Default renderer (Intel) vs offloaded (NVIDIA)= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+/While an offloaded app runs, it also shows up in =nvidia-smi='s process list. When nothing is
+offloaded, the NVIDIA GPU can idle/power down (dynamic power management)./
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Troubleshooting" :anchor "" :extraInfo "Black screen, module not loading"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Troubleshooting:* |]]  Black screen, module not loading  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+- *Black screen / boots to nouveau after install* :: The signed module is not loading --- almost always
+  the MOK is not enrolled. Redo Step 4 and watch for the blue MOK Manager screen. Check with
+  =sudo dmesg | egrep -i 'nvidia|nouveau|taint'=.
+- *After a kernel upgrade the module is gone* :: The =.run= is outside apt. If you used =--dkms= it
+  rebuilds automatically; otherwise re-run =runInstallerFallback.sh= from a text console.
+- *=nvidia-smi= says "No devices were found"* :: Driver too old for Blackwell --- confirm you installed
+  a =570+= =.run=.
+- *Recover a broken graphical boot* :: At GRUB boot with =nomodeset= (or an older kernel) to get a
+  console, then correct the driver/MOK and reboot.
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Relevant Resources and Pointers" :anchor "" :extraInfo "URLs, Links"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Relevant Resources and Pointers:* |]]  URLs, Links  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+- NVIDIA driver downloads :: https://www.nvidia.com/Download/index.aspx
+- NVIDIA open GPU kernel modules :: https://github.com/NVIDIA/open-gpu-kernel-modules
+- Debian Secure Boot / MOK wiki :: https://wiki.debian.org/SecureBoot
+- Sibling (apt/backports, kept for later) :: =rtx-5060-ti-driver-debian=
+- Parent panel :: =nvidia-geforce-rtx-5060-ti=
+####+BEGIN: blee:bxPanel:separator :outLevel 1
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+####+END
+####+BEGIN: blee:bxPanel:evolution
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *Maintenance:* | ]]  [[elisp:(blee:menu-sel:agenda:popupMenu)][||Agenda]]  <<Evolution>>  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Notes, Ideas, Tasks, Agenda" :anchor "Tasks"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** TODO Some Idea
+####+BEGIN: blee:bxPanel:evolutionMaintainers
+** [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolutionMaintainers)][dbf]]
+** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>  
+***  Problem Report                       ::   [[elisp:(find-file "")][Send debbug Email]]
+***  Maintainers                          ::   [[bbdb:Mohsen.*Banan]]  :: http://mohsen.1.banan.byname.net  E|
+####+END
+* B|
+####+BEGIN: blee:bxPanel:footerPanelControls
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+* /Footer Controls/ ::  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:footerOrgParams
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Org-Mode Local Params: =* | ]]
+#+STARTUP: overview
+#+STARTUP: lognotestate
+#+STARTUP: inlineimages
+#+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
+#+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
+#+CATEGORY: N:rtx-5060-ti-driver-nvidia
+
+####+END
+####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
+# Local Variables:
+# eval: (setq-local toc-org-max-depth 4)
+# eval: (setq-local ~selectedSubject "noSubject")
+# eval: (setq-local ~primaryMajorMode 'org-mode)
+# eval: (setq-local ~blee:panelUpdater nil)
+# eval: (setq-local ~blee:dblockEnabler nil)
+# eval: (setq-local ~blee:dblockController "interactive")
+# eval: (img-link-overlays)
+# eval: (set-fill-column 115)
+# eval: (blee:fill-column-indicator/enable)
+# eval: (bx:load-file:ifOneExists "./panelActions.el")
+# End:
+
+####+END
