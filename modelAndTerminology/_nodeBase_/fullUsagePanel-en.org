@@ -215,6 +215,17 @@ to /bisos/platform/sys/cbm/    file.
 ** Reboot After initial Platform VM Image Reconstruction
 ** Login triggers Gnome initial Customizations
 ** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS Capabilities -- Inceptors, Inception and Induction" :anchor "BISOS-Capability" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS Capabilities -- Inceptors, Inception and Induction:* |]] <<BISOS-Capability>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Recommended Naming Chain
+- Capability: The feature being added. -- NOTYET, point to Capability Taxonomy
+- Inceptor: The portable object that initiates the process.
+- Inception: The specific event/trigger that kicks off the sequence.
+- Induction: The background process of integrating the capability into the platform.
+** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "RawBISOS Capabilities and PALS" :anchor "RawBISOS-Capabilities and PALS" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *RawBISOS Capabilities and PALS:* |]] <<RawBISOS-Capabilities and PALS>>   [[elisp:(org-shifttab)][<)]] E|

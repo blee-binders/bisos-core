@@ -6,10 +6,13 @@
 [[roam:panels/bisos-dev]]
 ####+END
 ####+BEGIN: blee:bxPanel:topPanelControls
-*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]] [[elisp:(magit)][Magit]] [[elisp:(call-interactively 'b:rg:panels/all)][rg:panels/all]]  [[elisp:(org-cycle)][| ]]
+**  RipGrep:: [[elisp:(rg-menu)][rg-menu]] ||
+**  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
 **  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
 **  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
-**  This File :: *= /bisos/panels/bisos-dev/pythonDev/_nodeBase_/fullUsagePanel-en.org =*
+**  This File :: *= /bisos/panels/development/bisos-dev/pythonDev/_nodeBase_/fullUsagePanel-en.org =*
+* /file-truename:/  /bisos/git/auth/bxRepos/blee-binders/bisos-core/PyCsFwrk/pythonDev/_nodeBase_/fullUsagePanel-en.org
 *  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
 **  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
 **  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
@@ -63,6 +66,7 @@ Here it is in tabular form:
 | Type    | Type          |         | Tag      |         |             |                              |
 |---------+---------------+---------+----------+---------+-------------+------------------------------|
 | CSMU    |               |         |          |         | xx.cs       | CS Multi-Units with main     |
+| XU      |               |         |          |         | xx.cs       | XU (eXecution Unit) aka CSMU |
 |---------+---------------+---------+----------+---------+-------------+------------------------------|
 |         | [[Pkg-Direct]]    | pip     | CmndSvc+ |         | Pkg, Direct | Examples only, no cmnds      |
 |         | [[Single-Direct]] | stndaln | CmndSvc+ |         | Single, Dir | params + cmnds + examples    |
@@ -92,11 +96,11 @@ Here it is in tabular form:
 |---------+---------------+---------+----------+---------+-------------+------------------------------|
 
 
-** CSMU <<Pkg-Direct>> ::  CmndSvs: Packaged+Direct+Seeded+Uploadable
+** XU (CSMU) <<Pkg-Direct>> ::  CmndSvs: Packaged+Direct+Seeded+Uploadable
 
-** CSMU <<Single-Direct>> :: CmndSvc: Standalone+Direct  (Not Seeded, Not Uploadable)
+** XU (CSMU) <<Single-Direct>> :: CmndSvc: Standalone+Direct  (Not Seeded, Not Uploadable)
 
-** CSMU <<Pkg-RO>>  ::  CmndSvc: Packaged+RO
+** XU (CSMU) <<Pkg-RO>>  ::  CmndSvc: Packaged+RO
 
 ** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PyCS Multi-Unit Files Setup" :anchor "" :extraInfo "Starting Point and Transition"
@@ -125,18 +129,18 @@ Here it is in tabular form:
 ** pypiProc.sh ---
 ** panel ---
 ** -B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ICM To CS Transition" :anchor "" :extraInfo "unisos.icm elimination"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ICM To CS Transition --- Obsoleted" :anchor "" :extraInfo "unisos.icm elimination"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *ICM To CS Transition:* |]]  unisos.icm elimination  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *ICM To CS Transition --- Obsoleted:* |]]  unisos.icm elimination  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** Modernize Module Structure
 ** Run ConvertIcmToCs
 ** Test with new
 ** -B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Policies And Adopted Tools (Python 2.7 to 3.x Transition)" :anchor "" :extraInfo "Done in 2020"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Policies And Adopted Tools (Python 2.7 to 3.x Transition) -- Obsoleted" :anchor "" :extraInfo "Done in 2020"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Policies And Adopted Tools (Python 2.7 to 3.x Transition):* |]]  Done in 2020  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Policies And Adopted Tools (Python 2.7 to 3.x Transition) -- Obsoleted:* |]]  Done in 2020  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** Done in 2020 -- Refer to old gits -- Otherwise cleaned and deleted.
