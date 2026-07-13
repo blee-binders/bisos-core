@@ -54,18 +54,15 @@ _CommentEnd_
 
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 nodesList="
-bisos-pip-process
 metaROSE
-seededCS
-loadAsCS
-bisos.b
+bisos-pip-packaging
+pycsFwrkLayerings
 pythonDev
 _nodeBase_
 pyAdoptedPkgs
 pypiProc
-bisos-pip-pkgs
+pycsPkgTypes
 csPlayers
-b-plus-pkgs
 "
 ####+END:
 

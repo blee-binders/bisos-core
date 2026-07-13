@@ -29,9 +29,8 @@ git clone git@mb2_github:bisos-web/gatsby-starter-bystar-nestedSidebar* B|
 * +
 *   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/csPlayers/csPlayer/_nodeBase_")][ =csPlayer= ]] *|*
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/b-plus-pkgs/_nodeBase_")][ =b-plus-pkgs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/bisos-pip-pkgs/_nodeBase_")][ =bisos-pip-pkgs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/bisos-pip-process/_nodeBase_")][ =bisos-pip-process= ]] *|* [[elisp:(dired "/bisos/panels/bisos-core/PyCsFwrk/bisos.b")][ ~bisos.b~ ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/csPlayers/_nodeBase_")][ =csPlayers= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/loadAsCS/_nodeBase_")][ =loadAsCS= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/metaROSE/_nodeBase_")][ =metaROSE= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pyAdoptedPkgs/_nodeBase_")][ =pyAdoptedPkgs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pypiProc/_nodeBase_")][ =pypiProc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pythonDev/_nodeBase_")][ =pythonDev= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/seededCS/_nodeBase_")][ =seededCS= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/bisos-pip-packaging/_nodeBase_")][ =bisos-pip-packaging= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/csPlayers/_nodeBase_")][ =csPlayers= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/metaROSE/_nodeBase_")][ =metaROSE= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pyAdoptedPkgs/_nodeBase_")][ =pyAdoptedPkgs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pycsFwrkLayerings/_nodeBase_")][ =pycsFwrkLayerings= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pycsPkgTypes/_nodeBase_")][ =pycsPkgTypes= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pypiProc/_nodeBase_")][ =pypiProc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pythonDev/_nodeBase_")][ =pythonDev= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/PyCsFwrk/_nodeBase_")][ =PyCsFwrk= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
@@ -39,8 +38,13 @@ git clone git@mb2_github:bisos-web/gatsby-starter-bystar-nestedSidebar* B|
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** Overview Comes Here.
+** Scope of this panel is CSPlayers. Both Web-UI CS-Player and Blee CS-Player.
 ** B|
+* +
+* [[file:/bisos/git/bxRepos/bisos-pip/csPlayer/py3/panels/bisos.csPlayer/_nodeBase_/fullUsagePanel-en.org]]
+* [[file:/bisos/git/bxRepos/bisos-pip/csPlayer/py3/panels/bisos.csPlayer/README/fullUsagePanel-en.org]]
+* [[file:/bisos/git/bxRepos/bisos-pip/csPlayer/py3/panels/bisos.csPlayer/ModelAndTerminology/fullUsagePanel-en.org]]
+* -
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END

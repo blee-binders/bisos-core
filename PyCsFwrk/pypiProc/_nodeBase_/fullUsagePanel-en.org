@@ -27,9 +27,8 @@
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/b-plus-pkgs/_nodeBase_")][ =b-plus-pkgs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/bisos-pip-pkgs/_nodeBase_")][ =bisos-pip-pkgs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/bisos-pip-process/_nodeBase_")][ =bisos-pip-process= ]] *|* [[elisp:(dired "/bisos/panels/bisos-core/PyCsFwrk/bisos.b")][ ~bisos.b~ ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/csPlayers/_nodeBase_")][ =csPlayers= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/loadAsCS/_nodeBase_")][ =loadAsCS= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/metaROSE/_nodeBase_")][ =metaROSE= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pyAdoptedPkgs/_nodeBase_")][ =pyAdoptedPkgs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pypiProc/_nodeBase_")][ =pypiProc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pythonDev/_nodeBase_")][ =pythonDev= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/seededCS/_nodeBase_")][ =seededCS= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/bisos-pip-packaging/_nodeBase_")][ =bisos-pip-packaging= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/csPlayers/_nodeBase_")][ =csPlayers= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/metaROSE/_nodeBase_")][ =metaROSE= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pyAdoptedPkgs/_nodeBase_")][ =pyAdoptedPkgs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pycsFwrkLayerings/_nodeBase_")][ =pycsFwrkLayerings= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pycsPkgTypes/_nodeBase_")][ =pycsPkgTypes= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pypiProc/_nodeBase_")][ =pypiProc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pythonDev/_nodeBase_")][ =pythonDev= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/PyCsFwrk/_nodeBase_")][ =PyCsFwrk= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
@@ -42,7 +41,6 @@
 * +
 * TODO take care of pipx of bisos.pycs
 * TODO In devel mode pip install build somewhere
-* TODO
 * -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Pip Install Editable" :anchor "" :extraInfo "https://setuptools.pypa.io/en/latest/userguide/development_mode.html"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
