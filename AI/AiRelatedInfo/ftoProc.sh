@@ -13,13 +13,13 @@ __copying__="
 
 ####+BEGIN: bx:bsip:bash:seed-spec :types  "seedFtoCommon.sh"
 SEED="
-*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] |
+*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] | 
 "
 FILE="
-*  /This File/ :: /bisos/panels/bisos-core/AI/McpRagAndSkillsDiagrams/ftoProc.sh
+*  /This File/ :: /bisos/panels/blee-core/AI/BISOS-AI/AiRelatedInfo/ftoProc.sh 
 "
 if [ "${loadFiles}" == "" ] ; then
-    /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@"
+    /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@" 
     exit $?
 fi
 ####+END:
