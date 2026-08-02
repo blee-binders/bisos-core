@@ -27,8 +27,9 @@
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/bashDev/_nodeBase_")][ =bashDev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/developmentRoadmap/_nodeBase_")][ =developmentRoadmap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/howToBecomeDeveloper")][howToBecomeDeveloper]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/pythonDev/_nodeBase_")][ =pythonDev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/webServicesDev/_nodeBase_")][ =webServicesDev= ]] *|*
-*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/development/bisos-dev/_nodeBase_")][ =bisos-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/development/_nodeBase_")][ =development= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/bisos-pip-packaging/_nodeBase_")][ =bisos-pip-packaging= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/csPlayers/_nodeBase_")][ =csPlayers= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/metaROSE/_nodeBase_")][ =metaROSE= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pyAdoptedPkgs/_nodeBase_")][ =pyAdoptedPkgs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pycsFwrkLayerings/_nodeBase_")][ =pycsFwrkLayerings= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pypiProc/_nodeBase_")][ =pypiProc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/pythonDev/_nodeBase_")][ =pythonDev= ]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/PyCsFwrk/_nodeBase_")][ =PyCsFwrk= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
@@ -52,7 +53,7 @@ SCHEDULED: <2024-02-23 Fri>
 SCHEDULED: <2025-11-01 Sat>
 ** Broadly speaking, PyCS files are of of the following:
 *** +
-*** CSMU  -- main for CS Multi-Units -- Could be Packaged or Standalone. Could be Direct, RO, or Planted
+*** CSXU  -- main for CS Multi-Units -- Could be Packaged or Standalone. Could be Direct, RO, or Planted
 *** CSU   -- A CS Unit -- Always Packaged. -- Could be Generic or Specific
 *** PyCS Library  -- Includes No Cmnds and no Params. Classes and Functions and Operations
 *** Uploadable Modules -- Used by uploadAsCs
@@ -65,8 +66,8 @@ Here it is in tabular form:
 | General | Specific      | Pkging  | Summary  | snippet | Naming      | Comments                     |
 | Type    | Type          |         | Tag      |         |             |                              |
 |---------+---------------+---------+----------+---------+-------------+------------------------------|
-| CSMU    |               |         |          |         | xx.cs       | CS Multi-Units with main     |
-| XU      |               |         |          |         | xx.cs       | XU (eXecution Unit) aka CSMU |
+| CSXU    |               |         |          |         | xx.cs       | CS Multi-Units with main     |
+| XU      |               |         |          |         | xx.cs       | XU (eXecution Unit) aka CSXU |
 |---------+---------------+---------+----------+---------+-------------+------------------------------|
 |         | [[Pkg-Direct]]    | pip     | CmndSvc+ |         | Pkg, Direct | Examples only, no cmnds      |
 |         | [[Single-Direct]] | stndaln | CmndSvc+ |         | Single, Dir | params + cmnds + examples    |
@@ -96,11 +97,11 @@ Here it is in tabular form:
 |---------+---------------+---------+----------+---------+-------------+------------------------------|
 
 
-** XU (CSMU) <<Pkg-Direct>> ::  CmndSvs: Packaged+Direct+Seeded+Uploadable
+** XU (CSXU) <<Pkg-Direct>> ::  CmndSvs: Packaged+Direct+Seeded+Uploadable
 
-** XU (CSMU) <<Single-Direct>> :: CmndSvc: Standalone+Direct  (Not Seeded, Not Uploadable)
+** XU (CSXU) <<Single-Direct>> :: CmndSvc: Standalone+Direct  (Not Seeded, Not Uploadable)
 
-** XU (CSMU) <<Pkg-RO>>  ::  CmndSvc: Packaged+RO
+** XU (CSXU) <<Pkg-RO>>  ::  CmndSvc: Packaged+RO
 
 ** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PyCS Multi-Unit Files Setup" :anchor "" :extraInfo "Starting Point and Transition"
