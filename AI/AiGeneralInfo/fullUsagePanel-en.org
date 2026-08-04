@@ -37,20 +37,12 @@
 ** +
 ** Overview Comes Here.
 ** B|
-####+BEGIN: blee:pdf|disposition :outLevel 1 :sep t :folding t :file "./3805689.3812232.pdf" :title "What if AI systems weren't chatbots?"  :comment ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| What if AI systems weren't chatbots?: |]]      :: [[elisp:(find-file "./3805689.3812232.pdf")][Pdf Here]] || [[elisp:(find-file-other-window "./3805689.3812232.pdf")][Pdf Other]] || [[elisp:(lsip-local-run-command "acroread -openInNewInstance /bisos/panels/bisos-core/AI/AiGeneralInfo/3805689.3812232.pdf &")][Pdf Acroread]] ||  [[elisp:(org-shifttab)][<)]] E|
-####+END:
 ####+BEGIN: blee:pdf|disposition :outLevel 1 :sep t :folding t :file "./McpRagAndSkillsDiagrams.gif" :title "MCP vs RAG vs Skills"  :comment ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| MCP vs RAG vs Skills: |]]      :: [[elisp:(find-file "./m")][Pdf Here]] || [[elisp:(find-file-other-window "./m")][Pdf Other]] || [[elisp:(lsip-local-run-command "acroread -openInNewInstance /bisos/panels/bisos-core/AI/AiGeneralInfo/m &")][Pdf Acroread]] ||  [[elisp:(org-shifttab)][<)]] E|
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| MCP vs RAG vs Skills: |]]      :: [[elisp:(find-file "./McpRagAndSkillsDiagrams.gif")][Pdf Here]] || [[elisp:(find-file-other-window "./McpRagAndSkillsDiagrams.gif")][Pdf Other]] || [[elisp:(lsip-local-run-command "acroread -openInNewInstance /bisos/panels/bisos-core/AI/AiGeneralInfo/McpRagAndSkillsDiagrams.gif &")][Pdf Acroread]] ||  [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 
-
-* Diagram [[file:./McpRagAndSkillsDiagrams.gif]]
-
-
-* MCP vs RAG vs Skills 🔁
+** MCP vs RAG vs Skills 🔁
 
 Understanding architectures that improve AI agents
 __________
@@ -115,6 +107,25 @@ Key insight: Without Skills, you bloat every prompt with repeated instructions. 
 Use when: You want reusable, token-efficient actions your agent can execute without being re-instructed every time.
 
 Source: Andrew Joubert
+
+
+####+BEGIN: blee:pdf|disposition :outLevel 1 :sep t :folding t :file "./3805689.3812232.pdf" :title "What if AI systems weren't chatbots?"  :comment ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| What if AI systems weren't chatbots?: |]]      :: [[elisp:(find-file "./3805689.3812232.pdf")][Pdf Here]] || [[elisp:(find-file-other-window "./3805689.3812232.pdf")][Pdf Other]] || [[elisp:(lsip-local-run-command "acroread -openInNewInstance /bisos/panels/bisos-core/AI/AiGeneralInfo/3805689.3812232.pdf &")][Pdf Acroread]] ||  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:pdf|disposition :outLevel 1 :sep t :folding t :file "./s10676-025-09828-3.pdf" :title "Cut the Crap: A Critical Response to ChatGPT is Bullshit"  :comment ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| Cut the Crap: A Critical Response to ChatGPT is Bulshit: |]]      :: [[elisp:(find-file "./s10676-025-09828-3.pdf")][Pdf Here]] || [[elisp:(find-file-other-window "./s10676-025-09828-3.pdf")][Pdf Other]] || [[elisp:(lsip-local-run-command "acroread -openInNewInstance /bisos/panels/bisos-core/AI/AiGeneralInfo/s10676-025-09828-3.pdf &")][Pdf Acroread]] ||  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:pdf|disposition :outLevel 1 :sep t :folding t :file "./s10676-024-09775-5.pdf" :title "ChatGPT is Bullshit"  :comment ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| ChatGPT is Bullshit: |]]      :: [[elisp:(find-file "./s10676-024-09775-5.pdf")][Pdf Here]] || [[elisp:(find-file-other-window "./s10676-024-09775-5.pdf")][Pdf Other]] || [[elisp:(lsip-local-run-command "acroread -openInNewInstance /bisos/panels/bisos-core/AI/AiGeneralInfo/s10676-024-09775-5.pdf &")][Pdf Acroread]] ||  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:pdf|disposition :outLevel 1 :sep t :folding t :file "./Illich_Tools_for_Conviviality.pdf" :title "Tools for Conviviality"  :comment "Ivan Illich"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| Tools for Conviviality: |]]      :: [[elisp:(find-file "./Illich_Tools_for_Conviviality.pdf")][Pdf Here]] || [[elisp:(find-file-other-window "./Illich_Tools_for_Conviviality.pdf")][Pdf Other]] || [[elisp:(lsip-local-run-command "acroread -openInNewInstance /bisos/panels/bisos-core/AI/AiGeneralInfo/Illich_Tools_for_Conviviality.pdf &")][Pdf Acroread]] ||  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
