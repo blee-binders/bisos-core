@@ -1,0 +1,278 @@
+* B|
+####+BEGIN: bxPanel:common/title-plus
+#+title: docker/backupAndRestore
+#+roam_tags: branch
+#+roam_key: virtualization/docker/backupAndRestore
+[[roam:virtualization/docker]]
+####+END
+####+BEGIN: blee:bxPanel:topPanelControls
+*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]] [[elisp:(magit)][Magit]] [[elisp:(call-interactively 'b:rg:panels/all)][rg:panels/all]]  [[elisp:(org-cycle)][| ]]
+**  RipGrep:: [[elisp:(rg-menu)][rg-menu]] ||
+**  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
+**  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
+**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
+**  This File :: *= /bisos/panels/bisos-core/virtualization/docker/backupAndRestore/_nodeBase_/fullUsagePanel-en.org =*
+* /file-truename:/  /bisos/git/auth/bxRepos/blee-binders/bisos-core/virtualization/docker/backupAndRestore/_nodeBase_/fullUsagePanel-en.org
+*  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
+**  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
+**  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
+**  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]  E|
+####+END
+####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   bisos--~Node:: virtualization/docker -- backupAndRestore~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
+* +
+*                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/docker/backupAndRestore/_nodeBase_")][ =backupAndRestore= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/virtualization/docker/docker-systemctl-replacement/_nodeBase_")][ =docker-systemctl-replacement= ]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/virtualization/docker/_nodeBase_")][ =docker= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/virtualization/_nodeBase_")][ =virtualization= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview and Use Cases" :anchor "Panel" :extraInfo "  /::backup, save, commit, export::/"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview and Use Cases:* |]] <<Panel>>   /::backup, save, commit, export::/  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Scope of this panel is docker/podman backup and restore --- container content
+persistence, snapshotting a running container to an image, transporting images
+between hosts, and backing up volumes.
+**
+** -B|
+* B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "The Three-Layer Model" :anchor "layers" :extraInfo ""
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *The Three-Layer Model:* |]] <<layers>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** A docker/podman container is three stacked layers.
+
+#+begin_example
+  ┌─────────────────────────────────────────────────┐
+  │  Container's writable layer (top)               │  ← lost on `docker rm`
+  │  ─────────────────────────────────              │
+  │  Image (read-only, many stacked layers)         │  ← lost on `docker rmi`
+  │  ─────────────────────────────────              │
+  │  Volumes / bind-mounts (separate, outside)      │  ← lost on `docker volume rm`
+  └─────────────────────────────────────────────────┘
+#+end_example
+
+** *Image* --- read-only, immutable, layered filesystem built by =docker build= from
+a Dockerfile. One image, many containers, all sharing the same read-only layers.
+** *Container* --- a running (or stopped) *instance* of an image. Gets its own
+thin *writable layer* on top of the image's read-only layers, via copy-on-write
+(overlay2). Anything the container writes lands in that writable layer.
+** *Volumes / bind-mounts* --- storage that lives *outside* the container's
+writable layer. Either named volumes managed by Docker, or bind-mounts of host
+directories. They persist across container =rm= and are how you keep databases,
+user data, or anything you actually care about.
+** -B|
+* B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Container Lifecycle --- What Persists When" :anchor "lifecycle" :extraInfo ""
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Container Lifecycle --- What Persists When:* |]] <<lifecycle>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** *=docker stop=* --- sends SIGTERM to the container's PID 1, gives it a grace
+period (default 10s), then SIGKILL. The writable layer stays on disk.
+** *=docker start=* --- restarts the same container from that writable layer.
+File changes, installed packages, edited configs --- everything is still there.
+Stop/start the same container hundreds of times, all state preserved.
+** *=docker rm=* --- deletes the writable layer *permanently*. The image is
+untouched (it's shared, immutable). But *anything the container wrote to its own
+filesystem is gone.* This is why "containers are ephemeral": the intended
+lifecycle is create → run → destroy → create fresh from image. State should
+live in *volumes*, not in the container.
+** *=docker rmi=* --- deletes the image. Refuses if any container still refers to
+it (running or stopped). Once the image is gone, only host tarballs / registries
+can bring it back.
+** *=docker volume rm=* --- deletes a named volume. Independent of any container
+lifecycle.
+
+** *Why this matters for backup:* the three storage locations are backed up
+*separately*. There is no single "back up my container" command that captures
+everything --- you compose it from three operations.
+** -B|
+* B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "The Four Backup / Transfer Operations" :anchor "operations" :extraInfo ""
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *The Four Backup / Transfer Operations:* |]] <<operations>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+
+| Operation        | Command                          | What it captures                                  | Restore command                    |
+|------------------+----------------------------------+---------------------------------------------------+------------------------------------|
+| /Commit/           | =docker commit <container> <img>=  | Container's writable layer → new image layer     | =docker run <img>= (same host)       |
+| /Image save/       | =docker save <img> -o img.tar=     | An image (all layers) → portable tarball         | =docker load -i img.tar=             |
+| /Container export/ | =docker export <container> -o t.tar= | Container's flat filesystem (no layer history)  | =docker import t.tar <newimg>=       |
+| /Volume backup/    | =docker run --rm -v <v>:/d -v $PWD:/b alpine tar czf /b/v.tgz /d= | A named volume's contents → tar | Same idiom, =tar xzf= on the receiving side |
+
+** *Commit* --- snapshots a running container's writable layer as a new read-only
+image layer on top of the original image. *Discouraged as a workflow* --- the
+resulting image has no Dockerfile trail (opaque history), may include logs / tmp
+files / apt caches (layer bloat), and *does not capture volumes*. Use it for
+one-off checkpoints ("I've been debugging in this container for an hour and
+want a rollback point"), not for reproducible builds.
+** *Image save* --- lossless export of a whole image (all layers, metadata) to a
+portable tarball. Use when you have a working image and want to move it to
+another host without a registry push, or to keep an offline archive of a build.
+=save/load= is the recommended path for image transfer.
+** *Container export* --- dumps the container's *flat* filesystem to a tarball.
+Faster than =commit= (no layer machinery) but loses layer history entirely ---
+the resulting import is a single-layer image. Also does not capture volumes.
+Rarely used unless you specifically need the flattened filesystem.
+** *Volume backup* --- a workflow (not a single command). Runs a helper container
+with the volume mounted at =/data= and the host's cwd mounted at =/backup=, then
+tars =/data= into =/backup/<name>.tgz=. Restore is the same idiom in reverse.
+Podman has =podman volume export= as a native equivalent.
+
+** *Podman note:* every command above has an identical =podman ...= form
+(=podman commit=, =podman save=, =podman load=, =podman export=, =podman import=,
+=podman volume export=).
+** -B|
+* B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Can an Instance Become an Image? Can It Be Moved?" :anchor "movingAround" :extraInfo ""
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Can an Instance Become an Image? Can It Be Moved?:* |]] <<movingAround>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** *Instance → image:* yes, =docker commit= does exactly this. See the previous
+section for the caveats (opaque history, no volumes, layer bloat).
+** *Instance → another host:* three-and-a-half ways.
+*** Way 1: /Commit + save + load./ Snapshot the running container to an image,
+save the image to a tarball, transfer the tarball, load on the receiving host,
+run. Carries the writable layer's contents; does *not* carry volumes.
+: docker commit mycontainer myimage:snapshot
+: docker save myimage:snapshot -o snapshot.tar
+: scp snapshot.tar host2:/tmp/
+: ssh host2 docker load -i /tmp/snapshot.tar
+: ssh host2 docker run -d --name mycontainer myimage:snapshot
+*** Way 2: /Export + import./ Dumps the container's flat filesystem to a tar,
+imports as a single-layer image on the other side. Faster than commit-save-load
+but loses layer history and image metadata (CMD, ENV, volumes, etc.).
+*** Way 3: /Volume backup separately./ Since neither commit nor export capture
+volume data, you back volumes up with a helper container:
+: docker run --rm -v myvol:/data -v $(pwd):/backup alpine tar czf /backup/myvol.tgz /data
+: scp myvol.tgz host2:/tmp/
+: ssh host2 docker volume create myvol
+: ssh host2 docker run --rm -v myvol:/data -v /tmp:/backup alpine tar xzf /backup/myvol.tgz -C /
+*** The "half" way: /Checkpoint/restore (CRIU)./ Live migration of a *running*
+process with its memory state. Experimental, Linux-only, rarely used. Ignore
+unless you specifically need it.
+
+** *Full-fidelity transfer:* combines Way 1 + Way 3 --- commit, save, and
+separately back up every named volume. There is no single command for this.
+** -B|
+* B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Where Files Live on the Host" :anchor "hostPaths" :extraInfo ""
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Where Files Live on the Host:* |]] <<hostPaths>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** *Backup tarballs* --- wherever *you* put them. Docker doesn't manage a
+"backup directory." Common conventions:
+
+| Convention        | Path                                                          | Who uses it            |
+|-------------------+---------------------------------------------------------------+------------------------|
+| Ad-hoc            | =~/docker-backups/=, =~/backups/docker/=                          | Most people casually   |
+| System-wide       | =/var/backups/docker/=                                          | Sysadmins, cron jobs   |
+| Per-project       | Next to the Dockerfile in a repo checkout                     | Dev workflows          |
+| /BISOS convention/  | =/bisos/var/dockerProc/backups/<user>/<imageName>/=             | =bisos.dockerProc=       |
+
+** BISOS-convention backup path: =/bisos/var/dockerProc/backups/<user>/<imageName>/<imageName>-<timestamp>.tar=.
+Symlinked in both directions to the source leaf under =bro_dockerfiles=:
+=<leafDir>/backups → /bisos/var/dockerProc/backups/<user>/<imageName>/=
+and =/bisos/var/dockerProc/backups/<user>/<imageName>/leaf → <leafDir>/=.
+The =containerProc_imageSave= Cmnd (see the =bisos.dockerProc= panel)
+creates both symlinks lazily on first invocation.
+
+** *Docker's internal storage* --- on Linux:
+: /var/lib/docker/                       # image layers, container writable layers, volumes (rootful docker)
+: /var/lib/containers/                   # rootful podman
+: ~/.local/share/containers/             # rootless podman
+*Never touch these directly.* They're managed by the daemon. Reading is
+sometimes safe (a named volume =myvol= is inspectable at
+=/var/lib/docker/volumes/myvol/_data/=), but writing while the daemon is
+running is asking for corruption.
+** -B|
+* B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Which Operation for Which Scenario" :anchor "scenarios" :extraInfo ""
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Which Operation for Which Scenario:* |]] <<scenarios>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** *Scenario A --- "Checkpoint my experimental container."* User has been
+iterating inside a running container (installing packages, editing files) and
+wants a rollback point. → =commit= only. Simple, single-host, no tarballs.
+** *Scenario B --- "Transfer this image to another host."* User has a working
+image (either built or committed) and wants to move it. → =save= + transport
++ =load=. Does *not* require commit if the image is already what they want to
+move.
+** *Scenario C --- "Full backup of a running instance, including its data."*
+User has a container running for days with volumes holding real data (a
+database, git server, etc.) and wants a restore-able snapshot. → =commit= +
+=save= + separate volume backup. Multi-step; requires knowing which volumes
+exist.
+
+** In BISOS specifically:
+- *B* is the most useful case, because =bisos.dockerProc= already has
+  =containerProc_imageBuild=. Users may want to save a build result and load
+  it on a fresh VM without rebuilding (base-image transfer, offline install,
+  air-gapped labs).
+- *A* is less BISOS-idiomatic --- the whole point of BISOS is that everything
+  comes from a Dockerfile in =bro_dockerfiles=. If you find yourself
+  committing, you should probably be updating the Dockerfile instead. But
+  commit is still useful as an escape hatch.
+- *C* needs a formal volume policy (which volumes exist per leaf). BISOS
+  leaves don't declare volumes formally yet --- this is a future concern.
+
+** *=bisos.dockerProc= currently automates A + B* via =containerProc_instanceCommit=
+and =containerProc_imageSave= on the planted =.spcs= side. Load is available
+via plain =docker load= / =podman load=; see the =bisos.dockerProc= panel.
+** -B|
+####+BEGIN: blee:bxPanel:separator :outLevel 1
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+####+END
+####+BEGIN: blee:bxPanel:evolution
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *Maintenance:* | ]]  [[elisp:(blee:menu-sel:agenda:popupMenu)][||Agenda]]  <<Evolution>>  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Notes, Ideas, Tasks, Agenda" :anchor "Tasks"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** TODO Add =blee:bxPanel:runResult= examples showing =docker commit / save / load= against a live BISOS image.
+*** TODO Once =bisos.dockerProc= implements =containerProc_instanceCommit= and =containerProc_imageSave=, add clickable =icm:py:cmnd= entries here.
+*** TODO Volume backup: define BISOS convention for per-leaf volume declaration + a =containerProc_volumeBackup= Cmnd (Scenario C).
+####+BEGIN: blee:bxPanel:evolutionMaintainers
+** [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolutionMaintainers)][dbf]]
+** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>
+***  Problem Report                       ::   [[elisp:(find-file "")][Send debbug Email]]
+***  Maintainers                          ::   [[bbdb:Mohsen.*Banan]]  :: http://mohsen.1.banan.byname.net  E|
+####+END
+* B|
+####+BEGIN: blee:bxPanel:footerPanelControls
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+* /Footer Controls/ ::  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:footerOrgParams
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Org-Mode Local Params: =* | ]]
+#+STARTUP: overview
+#+STARTUP: lognotestate
+#+STARTUP: inlineimages
+#+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
+#+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
+#+CATEGORY: N:backupAndRestore
+
+####+END
+####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
+# Local Variables:
+# eval: (setq-local toc-org-max-depth 4)
+# eval: (setq-local ~selectedSubject "noSubject")
+# eval: (setq-local ~primaryMajorMode 'org-mode)
+# eval: (setq-local ~blee:panelUpdater nil)
+# eval: (setq-local ~blee:dblockEnabler nil)
+# eval: (setq-local ~blee:dblockController "interactive")
+# eval: (img-link-overlays)
+# eval: (set-fill-column 115)
+# eval: (blee:fill-column-indicator/enable)
+# eval: (bx:load-file:ifOneExists "./panelActions.el")
+# End:
+
+####+END
