@@ -65,15 +65,27 @@ services:
     security_opt:
       - seccomp=unconfined
 
-* TODO [#A] -- Capture this: google-chrome --no-sandbox --disable-setuid-sandbox --disable-gpu --disable-dev-shm-usage
-SCHEDULED: <2026-05-11 Mon>
-services:
-  your-service:
-    cap_add:
-      - SYS_ADMIN
-      - SYS_PTRACE
-    security_opt:
-      - seccomp=unconfined
+* DONE [#A] Chrome /dev/shm too small (64M) --- resolved via systemd remount
+CLOSED: <2026-08-30>
+Docker mounts /dev/shm as a 64M tmpfs, which crashes Chrome/Chromium renderers.
+Fix (boot-time, NOT --shm-size at bring-up): a systemd oneshot unit
+=dev-shm-resize.service= running =mount -o remount,size=2G /dev/shm= before
+=sysinit.target= --- mirrors the existing =tmp-exec.service= idiom.
+
+Added to the *privileged* leaves (dockerConf/dev-shm-resize.service + Dockerfile
+COPY + =systemctl enable=):
+- bro_dockerfiles/debian/12/privileged/vnc/xfce/bisos_deb12-sysd
+- bro_dockerfiles/debian/13/privileged/vnc/xfce/bisos_deb13-sysd
+
+Size 2G is comfortable for Chrome; tmpfs is lazy (a cap, not a reservation).
+After rebuild + recreate, Chrome runs WITHOUT --disable-dev-shm-usage.
+
+Caveat --- the *rootless-sysd* (podman) leaves were NOT changed: rootless lacks
+CAP_SYS_ADMIN, so =mount -o remount= is not permitted (same reason those leaves
+omit tmp-exec). There, use =podman run --shm-size=2g= or the old chrome flag.
+
+Old workaround (superseded): google-chrome --no-sandbox --disable-setuid-sandbox
+--disable-gpu --disable-dev-shm-usage
 * TODO Systemd replacement
 * DockerProc Pkg :: file:/bisos/git/bxRepos/bisos-pip/dockerProc/py3/panels/bisos.dockerProc/_nodeBase_/fullUsagePanel-en.org
 * Debian Docker BISOS Repo Object :: file:/bisos/git/bxRepos/bxObjects/bro_dockerfiles/README.org
