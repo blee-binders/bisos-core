@@ -26,10 +26,10 @@
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
-*                                        *━━━━━━━━━━━━━━━━━━━━━━━━*                            
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/AI/AiGeneralInfo")][AiGeneralInfo]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/AI/Blee-AI/_nodeBase_")][ = /<Blee-AI>/ = ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/AI/aider/_nodeBase_")][ =aider= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/AI/claude/_nodeBase_")][ =claude= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/AI/deepSeek/_nodeBase_")][ =deepSeek= ]] *|* 
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/AI/ollama/_nodeBase_")][ =ollama= ]] *|* 
-*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/AI/_nodeBase_")][ =AI= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|* 
+*                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/AI/Blee-AI/_nodeBase_")][ = /<Blee-AI>/ = ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/AI/aider/_nodeBase_")][ =aider= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/AI/claude/_nodeBase_")][ =claude= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/AI/deepSeek/_nodeBase_")][ =deepSeek= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/AI/ollama/_nodeBase_")][ =ollama= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/AI/relevant-info.AI")][relevant-info.AI]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/AI/_nodeBase_")][ =AI= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "/bisos")][ ~bisos~ ]] *|* [[elisp:(dired "//")][ ~~ ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview and Use Cases" :anchor "Panel" :extraInfo "  /::Blank Starting Point::/"
