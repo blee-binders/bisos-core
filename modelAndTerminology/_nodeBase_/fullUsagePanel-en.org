@@ -158,18 +158,21 @@ gathering.
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *System, Platform, BpoHolder:* |]] <<Systems Terminology>> BSOs vs BPOs (Static vs Portable)  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** A /Box/, is computer hardware without regard to its OS.
+** A /Box/, is computer hardware without regard to its OS. A Box can be physical or virtual.
 ** /BlankBox/:: A blank computer, capable of becomeing a DebianBox
 ** /DebianBox/:: A computer loaded with Debian
 ** /ChromeBox/:: A Google ChromeBook
 ** /ChromeOsDeb::/ Debian VM in ChromeBox
-** /AndroidBox::/ An Android device (ChromeBook or Phone) capable of Termux and Emacs
-** A /System/, is a box plus an OS which can be of various types. A BISOS Sys, An Alien Sys or a Dedicated Sys
-** /<<BISOS-System>>/:: Any of: DebianBox, A ChromBox or an AndroidBox, which can become a Platform
+** /AndroidBox::/ An Android device (ChromeBook or Phone) capable of Termux (a limited Debian OS in the userland of Android) and Emacs
+** /<<BISOS-Compatible-OS>>/:: An OS onto which BISOS can be loaded. All are Debian: Debian (one of the two latest releases) on a Box, Debian as a VM under ChromeOS (ChromeOsDeb), and Termux, a limited Debian OS in the userland of Android.
+** /<<BISOS-Compatible-Box>>/:: A Box plus a [[BISOS-Compatible-OS]]. DebianBox, ChromeOsDeb and AndroidBox are kinds of it. A BlankBox becomes one when a BISOS-Compatible-OS is loaded. A bare ChromeBox is not one; the ChromeOsDeb inside it is.
+** A /System/, is a box plus an OS which can be of various types. A [[BISOS-Compatible-Box]], An Alien Sys or a Dedicated Sys
+** /<<BISOS-System>>/:: This particular BISOS-Platform: the one on which we are executing (what =sys/= denotes in the CBM tree). Formerly this entry named the kind of Box that can become a Platform; that is now the [[BISOS-Compatible-Box]].
 ** /Alien System/:: A windows11, WinXp, etc
 ** /Dedicated System/:: A printer, a scanner
 ** /Unix System/: A computer loaded with Unix that is other than Debian
-** /<<Raw-Platform>>::/ A [[BISOS-System]] loaded with BISOS Software as box00-bystar. Not registered in a BISOS-Site.
+** /<<Fresh-Debian>>::/ A DebianBox with a fresh Debian installation: the first stage of a platform's build evolution.
+** /<<Raw-Platform>>::/ A stage in the build evolution of a platform: a [[BISOS-Compatible-Box]], derived from a [[Fresh-Debian]], loaded with BISOS Software as box00-bystar. Not registered in a BISOS-Site (not "sited" yet).
 ** /<<Reg-Platform>>::/ A [[Raw-Platform]]  registered in a BISOS-Site.
 ** /<<Platform>>::/ is either of [[BSO-Platform]] or [[BPO-Container]]
 ** /<<BSO-Platform>>::/ is Debian + BISOS Environment (basic accounts, groups, software) + Bootstraping BSO
