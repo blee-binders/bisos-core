@@ -43,6 +43,36 @@ SCHEDULED: <2022-08-28 Sun>
 ** TODO In paralell with bisos-pip create a CS-ModulesDev panel.
 SCHEDULED: <2022-08-28 Sun>
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Layerings Terminology: .b, Foundation, Fwrk, Substrate" :anchor "" :extraInfo "TABULAR"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Layerings Terminology: .b, Foundation, Fwrk, Substrate:* |]]  TABULAR  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+Idea captureed on <2026-10-11 Sun 13:54>
+
+|-----------------------+---------------------------------------------------------------------------------|
+| Layer Names           | Description and Package positionings                                            |
+|-----------------------+---------------------------------------------------------------------------------|
+| BISOS-AppsAndServices | Specialized Apps and Services. Both Adopted and Native.                         |
+|                       | Typically manifest as CBMs.                                                     |
+|-----------------------+---------------------------------------------------------------------------------|
+| PyCS-BISOS-Substrate  | Adds general purpose packages such as lcnt and marmee                           |
+|                       | Assumes Sites, helps building Sites, Asumes                                     |
+|-----------------------+---------------------------------------------------------------------------------|
+| PyCS Framework        | Basic BISOS Concept Packages: bpos, crypt, capabilities                         |
+|                       | Needed for running Raw-BISOS-PALS -- BXO=BRO is acceptable                      |
+|                       | Raw-BISOS process                                                               |
+|-----------------------+---------------------------------------------------------------------------------|
+| PyCS Foundation       | Additional Packages that support .pcs, modules, etc.                            |
+|                       | Brings in telemetry. Need not run on Windows.                                   |
+|                       | Still not ties to BISOS. May be usable outside of BISOS                         |
+|-----------------------+---------------------------------------------------------------------------------|
+| bisos.b               | Minimal package. Perhaps even usable under Windows.                             |
+|                       | Focuses on running of the basic CSXU. Perhaps with minimal hooks for foundation |
+|                       | No telemetry, but includes logging. Telemetry usage can be run-time decisions.  |
+|-----------------------+---------------------------------------------------------------------------------|
+
+
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Conceptual Layering Of BISOS Packages" :anchor "" :extraInfo "TABULAR"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Conceptual Layering Of BISOS Packages:* |]]  TABULAR  [[elisp:(org-shifttab)][<)]] E|
