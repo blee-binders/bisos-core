@@ -1,4 +1,4 @@
-#+title: RANA-NOTES/common/gitlab/lfs: Git-LFS (Large File Storage)
+#+title:  Git-LFS (Large File Storage)
 #+DATE: <2024-02-19 Mon 16:27>
 #+AUTHOR: Mohsen BANAN
 #+OPTIONS: toc:4
