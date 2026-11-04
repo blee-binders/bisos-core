@@ -44,6 +44,75 @@
 ####+END
 ** +
 ** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Basic Standard Site Clusters" :anchor "" :extraInfo "TABULAR -- NOTYET"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Basic Standard Site Clusters:* |]]  TABULAR -- NOTYET  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+|----------------+-----------------+-----------------+---------+---------+-----+-----------------|
+| VMs Cluster    | VM Name         | Capability Name | Abode   | ipAddrs | ifs | Comment         |
+| (Host Name)    | VM BPOId        | CBM - BPOId     |         |         |     |                 |
+|----------------+-----------------+-----------------+---------+---------+-----+-----------------|
+|----------------+-----------------+-----------------+---------+---------+-----+-----------------|
+| Inner-Router   | InnerRouter     | nater           | Inner   |   192.x | LAN | Adds iptables   |
+|                | pmp_innerRouter | pmp_cbm_nat     |         |         | WAN | through systemd |
+|----------------+-----------------+-----------------+---------+---------+-----+-----------------|
+|                |                 | dhcp            |         |         | LAN |                 |
+|                |                 | pmp-dhcp        |         |         |     |                 |
+|----------------+-----------------+-----------------+---------+---------+-----+-----------------|
+|                |                 | siteDns         |         |         | LAN |                 |
+|                |                 | pmp_siteDns     |         |         |     |                 |
+|----------------+-----------------+-----------------+---------+---------+-----+-----------------|
+|                |                 | siteWifiBridge  |         |         | LAN |                 |
+|                |                 | pmp_wifiBrideg  |         |         |     |                 |
+|----------------+-----------------+-----------------+---------+---------+-----+-----------------|
+|----------------+-----------------+-----------------+---------+---------+-----+-----------------|
+| Exposed-Router | exposedRouter   | vpn             | Exposed |         | LAN |                 |
+|                |                 | pmp-siteVpn     |         |         | WAN |                 |
+|----------------+-----------------+-----------------+---------+---------+-----+-----------------|
+| Inner-Gitlab   |                 |                 | Inner   |         | LAN |                 |
+| Server         |                 |                 |         |         |     |                 |
+|----------------+-----------------+-----------------+---------+---------+-----+-----------------|
+| Inner-Infra    |                 | Registrar       |         |         |     |                 |
+|                |                 |                 |         |         |     |                 |
+|----------------+-----------------+-----------------+---------+---------+-----+-----------------|
+|                |                 | Airflow-1       |         |         |     |                 |
+|                |                 |                 |         |         |     |                 |
+|----------------+-----------------+-----------------+---------+---------+-----+-----------------|
+|                |                 | Kafka-1         |         |         |     |                 |
+|                |                 |                 |         |         |     |                 |
+|----------------+-----------------+-----------------+---------+---------+-----+-----------------|
+|                |                 | Inner-DCIM      |         |         |     |                 |
+|                |                 |                 |         |         |     |                 |
+|----------------+-----------------+-----------------+---------+---------+-----+-----------------|
+|----------------+-----------------+-----------------+---------+---------+-----+-----------------|
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Site PALS Hosting Clusters" :anchor "" :extraInfo "TABULAR -- NOTYET"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Site PALS Hosting Clusters:* |]]  TABULAR -- NOTYET  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+PIN (Perimeter Isolation Network)
+
+|-------------+--------------+-----------------+--------+---------+-----+----------------------------|
+| VMs Cluster | VM Name      | Capability Name | Abode  | ipAddrs | ifs | Comment                    |
+| (Host Name) | VM BPOId     | CBM - BPOId     |        |         |     |                            |
+|-------------+--------------+-----------------+--------+---------+-----+----------------------------|
+|-------------+--------------+-----------------+--------+---------+-----+----------------------------|
+| PIN-Router  |              |                 |        |         | PIN | From Inner to PIN -- NAT   |
+|             |              |                 |        |         | WAN | From PIN to WAN -- NAT     |
+|             |              |                 |        |         | LAN | From WAN, no PIN, no Inner |
+|-------------+--------------+-----------------+--------+---------+-----+----------------------------|
+|-------------+--------------+-----------------+--------+---------+-----+----------------------------|
+| PALS Host   | PALS Host    | PALS            | Public |    10.x | PIN |                            |
+|             | pmp_palsHost | pmp_pals_A      |        |         | WAN |                            |
+|-------------+--------------+-----------------+--------+---------+-----+----------------------------|
+|-------------+--------------+-----------------+--------+---------+-----+----------------------------|
+
+
+
+
+
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Essential RIM Site VMs" :anchor "" :extraInfo "TABULAR -- NOTYET"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Essential RIM Site VMs:* |]]    [[elisp:(org-shifttab)][<)]] E|
@@ -62,7 +131,7 @@
 | Registrars |          | Inner   | Registrar+DCIM+     |          |
 |            |          |         | Observability       |          |
 |------------+----------+---------+---------------------+----------|
-|            |          |         |                     |          |
+
 
 ** +
 ** -B|
