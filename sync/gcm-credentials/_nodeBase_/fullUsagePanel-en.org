@@ -43,11 +43,11 @@ GCM encrypts tokens/passwords with your GPG key — no plaintext on disk.
 * +
 * -B|
 
-####+BEGIN: blee:panel:icm:py:intro :outLevel 1 :sep nil :folding? nil :label "SBOM" :icmName "git-sbom.pcs" :comment "Allows you to edit" :afterComment "-- tailor the command line"
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /SBOM/ :: [[elisp:(lsip-local-run-command "git-sbom.pcs -i examples")][git-sbom.pcs]]  [[elisp:(lsip-local-run-command "git-sbom.pcs -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a git-sbom.pcs")][which -a]]  [[elisp:(lsip-local-run-command "git-sbom.pcs -i describe")][describe]] *|*  =Allows you to edit= *|*  -- tailor the command line [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:py:intro :outLevel 1 :sep nil :folding? nil :label "SBOM" :icmName "gitCreds-sbom.pcs" :comment "Allows you to edit" :afterComment "-- tailor the command line"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /SBOM/ :: [[elisp:(lsip-local-run-command "gitCreds-sbom.pcs -i examples")][gitCreds-sbom.pcs]]  [[elisp:(lsip-local-run-command "gitCreds-sbom.pcs -i visit")][visit]]  [[elisp:(lsip-local-run-command "which -a gitCreds-sbom.pcs")][which -a]]  [[elisp:(lsip-local-run-command "gitCreds-sbom.pcs -i describe")][describe]] *|*  =Allows you to edit= *|*  -- tailor the command line [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "git-sbom.pcs -i readme"  :results "stdout" :comment "Allows you to edit" :afterComment "-- tailor the command line"
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "git-sbom.pcs -i readme")][git-sbom.pcs -i readme]] *|*  =Allows you to edit= *|*  -- tailor the command line  |
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "gitCreds-sbom.pcs -i readme"  :results "stdout" :comment "Allows you to edit" :afterComment "-- tailor the command line"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "gitCreds-sbom.pcs -i readme")][gitCreds-sbom.pcs -i readme]] *|*  =Allows you to edit= *|*  -- tailor the command line  |
 Last Executed at: 202605-06-10:46:10  by: bystar on: 4eb00a4a0fb6
 ----------------------------
 Executing /bisos/venv/py3/bisos3/bin/seedSbom.cs
